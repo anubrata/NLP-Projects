@@ -115,7 +115,46 @@ class PersonClassifier(object):
 
 
 def train_classifier(ner_exs: List[PersonExample]):
-    print(ner_exs)
+    training_epochs =1
+    tokenIndex = Indexer()
+    featureSpace = []
+    weights = []
+    labels = []
+
+    # Build Index from vocabulary
+    for ex in ner_exs:
+        print(ex.tokens)
+        for idx in range(0, len(ex)):
+            featureName = "CurrWord=" + ex.tokens[idx]
+            print("feature : ", featureName)
+            currFeatureIndex = tokenIndex.add_and_get_index(featureName)
+            print(currFeatureIndex)
+    vocabLen = len(tokenIndex.__repr__())
+    print("vocab: ", vocabLen)
+
+    # Build feature space for each example
+    for ex in ner_exs:
+        for idx in range(0, len(ex)):
+            #print("Token :", ex.tokens[idx])
+            #print("Accessing the index:", tokenIndex.index_of("CurrWord="+ex.tokens[idx]))
+            currFeatureVect = [0 for i in range(0,vocabLen)]
+            currFeatureVect[tokenIndex.index_of("CurrWord="+ex.tokens[idx])] = 1
+            featureSpace.append(currFeatureVect)
+            labels.append(ex.labels[idx])
+    print(featureSpace)
+    print(labels)
+    # for epoch in range(0, training_epochs):
+
+                # Features: CurrWord=[word], WordInCurrSentence=[word],
+                # positionOfCurrWordInSentence
+                # number of characters in CurrWord
+
+    ## Loop over epochs
+        ## Loop over examples
+            ## Extract Features
+                ## Cache extracted features
+            ## Compute Gradient
+            ## Gradient Update
     raise Exception("Implement me!")
 
 def evaluate_classifier(exs: List[PersonExample], classifier: PersonClassifier):
