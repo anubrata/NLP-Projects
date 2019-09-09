@@ -93,7 +93,7 @@ minute 0
 when 0
 Uzbek 0
 striker 0
-Igor 0
+Igor 1
 Shkvyrin 0
 took 0
 advantage 0
@@ -119,7 +119,7 @@ net 0
 . 0
 
 Oleg 0
-Shatskiku 0
+Shatskiku 1
 made 0
 sure 0
 of 0
@@ -231,7 +231,7 @@ Syrian 0
 goal 0
 which 0
 goalkeeper 0
-Salem 0
+Salem 1
 Bitar 0
 appeared 0
 to 0
@@ -260,7 +260,7 @@ four 0
 minutes 0
 . 0
 
-Defender 0
+Defender 1
 Hassan 1
 Abbas 1
 rose 0
@@ -343,7 +343,7 @@ did 0
 
 Japan 0
 coach 0
-Shu 0
+Shu 1
 Kamo 0
 said 0
 : 0
@@ -446,7 +446,7 @@ game 0
 RUGBY 0
 UNION 0
 - 0
-CUTTITTA 0
+CUTTITTA 1
 BACK 0
 FOR 0
 ITALY 0
@@ -495,7 +495,7 @@ Cuttitta 0
 who 0
 trainer 0
 George 1
-Coste 0
+Coste 1
 said 0
 was 0
 certain 0
@@ -527,8 +527,8 @@ last 0
 month 0
 . 0
 
-Stefano 1
-Bordon 0
+Stefano 0
+Bordon 1
 is 0
 out 0
 through 0
@@ -660,16 +660,16 @@ return 0
 Squad 0
 : 0
 Javier 1
-Pertile 0
+Pertile 1
 , 0
 Paolo 0
-Vaccari 1
+Vaccari 0
 , 0
 Marcello 0
 Cuttitta 0
 , 0
 Ivan 1
-Francescato 0
+Francescato 1
 , 0
 Leandro 0
 Manteri 0
@@ -678,32 +678,32 @@ Diego 0
 Dominguez 0
 , 0
 Francesco 1
-Mazzariol 0
+Mazzariol 1
 , 0
 Alessandro 1
-Troncon 0
+Troncon 1
 , 0
 Orazio 0
 Arancio 0
 , 0
 Andrea 1
-Sgorlon 0
+Sgorlon 1
 , 0
 Massimo 0
 Giovanelli 0
 , 0
 Carlo 1
-Checchinato 0
+Checchinato 1
 , 0
 Walter 1
 Cristofoletto 0
 , 0
-Franco 1
-Properzi 0
+Franco 0
+Properzi 1
 Curti 0
 , 0
 Carlo 1
-Orlandi 0
+Orlandi 1
 , 0
 Massimo 0
 Cuttitta 0
@@ -712,16 +712,16 @@ Giambatista 0
 Croci 0
 , 0
 Gianluca 1
-Guidi 0
+Guidi 1
 , 0
 Nicola 0
 Mazzucato 0
 , 0
 Alessandro 1
-Moscardi 0
+Moscardi 1
 , 0
 Andrea 1
-Castellani 0
+Castellani 1
 . 0
 
 -DOCSTART- 0
@@ -782,7 +782,7 @@ C 0
 game 0
 after 0
 goalkeeper 0
-Salem 0
+Salem 1
 Bitar 0
 spoiled 0
 a 0
@@ -811,7 +811,7 @@ four 0
 minutes 0
 . 0
 
-Defender 0
+Defender 1
 Hassan 1
 Abbas 1
 rose 0
@@ -1016,7 +1016,7 @@ Yamaguchi 0
 8 0
 - 0
 Masakiyo 0
-Maezono 0
+Maezono 1
 ( 0
 7 0
 - 0
@@ -1043,7 +1043,7 @@ Miura 0
 15 0
 - 0
 Hiroaki 0
-Morishima 0
+Morishima 1
 ( 0
 14 0
 - 0
@@ -1078,7 +1078,7 @@ Jabban 0
 6 0
 - 0
 Ammar 0
-Awad 0
+Awad 1
 ( 0
 9 0
 - 0
@@ -1095,18 +1095,18 @@ al-Boushi 0
 10 0
 - 0
 Mohammed 1
-Afash 0
+Afash 1
 , 0
 12 0
 - 0
 Ali 1
-Dib 0
+Dib 1
 , 0
 13 0
 - 0
 Abdul 1
 Latif 1
-Helou 0
+Helou 1
 ( 0
 17 0
 - 0
@@ -1157,8 +1157,8 @@ Friday 0
 Men 0
 
 1. 0
-Jesper 0
-Ronnback 0
+Jesper 1
+Ronnback 1
 ( 0
 Sweden 0
 ) 0
@@ -1167,7 +1167,7 @@ points 0
 
 2. 0
 Andrei 1
-Ivanov 0
+Ivanov 1
 ( 0
 Russia 0
 ) 0
@@ -1182,24 +1182,24 @@ Canada 0
 24.57 0
 
 4. 0
-Jean-Luc 0
-Brassard 0
+Jean-Luc 1
+Brassard 1
 ( 0
 Canada 0
 ) 0
 24.40 0
 
 5. 0
-Korneilus 0
-Hole 0
+Korneilus 1
+Hole 1
 ( 0
 Norway 0
 ) 0
 23.92 0
 
 6. 0
-Jeremie 0
-Collomb-Patton 0
+Jeremie 1
+Collomb-Patton 1
 ( 0
 France 0
 ) 0
@@ -1207,23 +1207,23 @@ France 0
 
 7. 0
 Jim 1
-Moran 0
+Moran 1
 ( 0
 U.S. 0
 ) 0
 23.25 0
 
 8. 0
-Dominick 0
-Gauthier 0
+Dominick 1
+Gauthier 1
 ( 0
 Canada 0
 ) 0
 22.73 0
 
 9. 0
-Johann 0
-Gregoire 0
+Johann 1
+Gregoire 1
 ( 0
 France 0
 ) 0
@@ -1240,32 +1240,32 @@ U.S. 0
 Women 0
 
 1. 0
-Tatjana 0
-Mittermayer 0
+Tatjana 1
+Mittermayer 1
 ( 0
 Germany 0
 ) 0
 24.32 0
 
 2. 0
-Candice 0
-Gilg 0
+Candice 1
+Gilg 1
 ( 0
 France 0
 ) 0
 24.31 0
 
 3. 0
-Minna 0
-Karhu 0
+Minna 1
+Karhu 1
 ( 0
 Finland 0
 ) 0
 24.05 0
 
 4. 0
-Tae 0
-Satoya 0
+Tae 1
+Satoya 1
 ( 0
 Japan 0
 ) 0
@@ -1273,7 +1273,7 @@ Japan 0
 
 5. 0
 Ann 1
-Battellle 0
+Battellle 1
 ( 0
 U.S. 0
 ) 0
@@ -1281,15 +1281,15 @@ U.S. 0
 
 6. 0
 Donna 1
-Weinbrecht 0
+Weinbrecht 1
 ( 0
 U.S. 0
 ) 0
 22.48 0
 
 7. 0
-Liz 0
-McIntyre 0
+Liz 1
+McIntyre 1
 ( 0
 U.S. 0
 ) 0
@@ -1297,23 +1297,23 @@ U.S. 0
 
 8. 0
 Elena 1
-Koroleva 0
+Koroleva 1
 ( 0
 Russia 0
 ) 0
 21.77 0
 
 9. 0
-Ljudmila 0
-Dymchenko 0
+Ljudmila 1
+Dymchenko 1
 ( 0
 Russia 0
 ) 0
 21.59 0
 
 10. 0
-Katleen 0
-Allais 0
+Katleen 1
+Allais 1
 ( 0
 France 0
 ) 0
@@ -1522,7 +1522,7 @@ from 0
 ) 0
 
 Zahoor 0
-Elahi 0
+Elahi 1
 b 0
 Cairns 1
 86 0
@@ -1535,7 +1535,7 @@ from 0
 Ijaz 1
 Ahmad 1
 c 0
-Spearman 0
+Spearman 1
 b 0
 Vaughan 1
 59 0
@@ -1543,9 +1543,9 @@ Vaughan 1
 Inzamamul 0
 Haq 0
 st 0
-Germon 0
+Germon 1
 b 0
-Astle 0
+Astle 1
 2 0
 
 Wasim 1
@@ -1554,8 +1554,8 @@ b 0
 Harris 1
 4 0
 
-Shahid 1
-Afridi 0
+Shahid 0
+Afridi 1
 b 0
 Harris 1
 2 0
@@ -1563,7 +1563,7 @@ Harris 1
 Moin 1
 Khan 1
 c 0
-Astle 0
+Astle 1
 b 0
 Harris 1
 1 0
@@ -1571,7 +1571,7 @@ Harris 1
 Waqar 1
 Younis 1
 st 0
-Germon 0
+Germon 1
 b 0
 Harris 1
 0 0
@@ -1635,37 +1635,37 @@ from 0
 Bowling 0
 : 0
 Doull 0
-8-1-60-0 0
+8-1-60-0 1
 ( 0
 w-3 0
 ) 0
 , 0
 Kennedy 1
-3-0-24-0 0
+3-0-24-0 1
 ( 0
 w-7 0
 nb-1 0
 ) 0
 , 0
 
-Cairns 1
-8-1-35-1 0
+Cairns 0
+8-1-35-1 1
 ( 0
 w-2 0
 ) 0
 , 0
-Vaughan 1
+Vaughan 0
 9-1-55-1 0
 , 0
-Harris 1
-10-0-42-5 0
+Harris 0
+10-0-42-5 1
 ( 0
 w-1 0
 ) 0
 , 0
 
 Astle 0
-9-0-53-1 0
+9-0-53-1 1
 ( 0
 w-1 0
 nb-1 0
@@ -1685,7 +1685,7 @@ Waqar 1
 5 0
 
 C. 1
-Spearman 0
+Spearman 1
 c 0
 Moin 1
 Khan 1
@@ -1694,7 +1694,7 @@ Wasim 1
 0 0
 
 A. 1
-Parore 0
+Parore 1
 c 0
 Ijaz 1
 Ahmad 1
@@ -1707,7 +1707,7 @@ Fleming 1
 c 0
 and 0
 b 0
-Afridi 0
+Afridi 1
 88 0
 
 C. 1
@@ -1717,7 +1717,7 @@ Saqlain 1
 10 0
 
 N. 1
-Astle 0
+Astle 1
 c 0
 Ijaz 1
 Ahmad 1
@@ -1734,10 +1734,10 @@ Wasim 1
 22 0
 
 L. 1
-Germon 0
+Germon 1
 lbw 0
 b 0
-Afridi 0
+Afridi 1
 2 0
 
 J. 1
@@ -1750,9 +1750,9 @@ Wasim 1
 13 0
 
 S. 1
-Doull 0
+Doull 1
 c 0
-subs 0
+subs 1
 ( 0
 M. 1
 Wasim 1
@@ -1835,7 +1835,7 @@ Ahmad 1
 1w 0
 ) 0
 , 0
-Shahid 1
+Shahid 0
 Afridi 0
 7-0-40-2 0
 , 0
@@ -1909,7 +1909,7 @@ Exeter 0
 SOCCER 0
 - 0
 BLINKER 0
-BAN 0
+BAN 1
 LIFTED 0
 . 0
 
@@ -2080,7 +2080,7 @@ England 0
 under-21 0
 striker 0
 Lee 1
-Bowyer 0
+Bowyer 1
 was 0
 fined 0
 4,500 0
@@ -2298,7 +2298,7 @@ Israel 0
 14 0
 
 Ulker 0
-Spor 0
+Spor 1
 ( 0
 Turkey 0
 ) 0
@@ -2329,7 +2329,7 @@ Group 0
 B 0
 
 Teamsystem 0
-Bologna 0
+Bologna 1
 ( 0
 Italy 0
 ) 0
@@ -2448,7 +2448,7 @@ Group 0
 D 0
 
 Efes 0
-Pilsen 0
+Pilsen 1
 ( 0
 Turkey 0
 ) 0
@@ -2477,7 +2477,7 @@ Yugoslavia 0
 14 0
 
 Kinder 0
-Bologna 0
+Bologna 1
 ( 0
 Italy 0
 ) 0
@@ -2518,14 +2518,14 @@ FAREWELL 0
 . 0
 
 Robert 1
-Kitson 0
+Kitson 1
 
 LONDON 0
 1996-12-06 0
 
 Centre 0
 Jason 1
-Little 0
+Little 1
 will 0
 miss 0
 Australia 0
@@ -2541,7 +2541,7 @@ on 0
 Saturday 0
 . 0
 
-Little 0
+Little 1
 has 0
 opted 0
 not 0
@@ -2598,7 +2598,7 @@ back-row 0
 ahead 0
 of 0
 Daniel 1
-Manu 0
+Manu 1
 . 0
 
 The 0
@@ -2633,7 +2633,7 @@ style 0
 and 0
 provide 0
 David 1
-Campese 0
+Campese 1
 with 0
 a 0
 fitting 0
@@ -2813,7 +2813,7 @@ including 0
 England 0
 full-back 0
 Tim 1
-Stimpson 0
+Stimpson 1
 and 0
 recalled 0
 wing 0
@@ -2822,12 +2822,12 @@ Underwood 1
 , 0
 plus 0
 All 0
-Black 1
+Black 0
 forwards 0
 Ian 1
 Jones 1
 and 0
-Norm 1
+Norm 0
 Hewitt 0
 . 0
 
@@ -2839,7 +2839,7 @@ Barbarians 0
 15 0
 - 0
 Tim 1
-Stimpson 0
+Stimpson 1
 ( 0
 England 0
 ) 0
@@ -2855,14 +2855,14 @@ Wales 0
 13 0
 - 0
 Allan 1
-Bateman 0
+Bateman 1
 ( 0
 Wales 0
 ) 0
 , 0
 12 0
 - 0
-Gregor 0
+Gregor 1
 Townsend 1
 ( 0
 Scotland 0
@@ -2878,7 +2878,7 @@ England 0
 ; 0
 10 0
 - 0
-Rob 1
+Rob 0
 Andrew 1
 ( 0
 England 0
@@ -2887,7 +2887,7 @@ England 0
 9 0
 - 0
 Rob 1
-Howley 0
+Howley 1
 ( 0
 Wales 0
 ) 0
@@ -2895,7 +2895,7 @@ Wales 0
 8 0
 - 0
 Scott 1
-Quinnell 0
+Quinnell 1
 ( 0
 Wales 0
 ) 0
@@ -2903,7 +2903,7 @@ Wales 0
 7 0
 - 0
 Neil 1
-Back 0
+Back 1
 ( 0
 England 0
 ) 0
@@ -2911,7 +2911,7 @@ England 0
 6 0
 - 0
 Dale 0
-McIntosh 0
+McIntosh 1
 ( 0
 Pontypridd 0
 ) 0
@@ -2928,7 +2928,7 @@ Zealand 0
 4 0
 - 0
 Craig 1
-Quinnell 0
+Quinnell 1
 ( 0
 Wales 0
 ) 0
@@ -2936,7 +2936,7 @@ Wales 0
 3 0
 - 0
 Darren 1
-Garforth 0
+Garforth 1
 ( 0
 Leicester 0
 ) 0
@@ -2944,7 +2944,7 @@ Leicester 0
 2 0
 - 0
 Norm 1
-Hewitt 0
+Hewitt 1
 ( 0
 New 0
 Zealand 0
@@ -2953,7 +2953,7 @@ Zealand 0
 1 0
 - 0
 Nick 1
-Popplewell 0
+Popplewell 1
 ( 0
 Ireland 0
 ) 0
@@ -2964,12 +2964,12 @@ Australia 0
 15 0
 - 0
 Matthew 1
-Burke 0
+Burke 1
 ; 0
 14 0
 - 0
 Joe 1
-Roff 0
+Roff 1
 , 0
 13 0
 - 0
@@ -2979,7 +2979,7 @@ Herbert 1
 12 0
 - 0
 Tim 1
-Horan 0
+Horan 1
 ( 0
 captain 0
 ) 0
@@ -2987,7 +2987,7 @@ captain 0
 11 0
 - 0
 David 1
-Campese 0
+Campese 1
 ; 0
 10 0
 - 0
@@ -2997,12 +2997,12 @@ Howard 1
 9 0
 - 0
 Sam 1
-Payne 1
+Payne 0
 ; 0
 8 0
 - 0
 Michael 1
-Brial 0
+Brial 1
 , 0
 7 0
 - 0
@@ -3017,7 +3017,7 @@ Finegan 0
 5 0
 - 0
 David 1
-Giffin 0
+Giffin 1
 , 0
 4 0
 - 0
@@ -3027,12 +3027,12 @@ Gavin 1
 3 0
 - 0
 Andrew 1
-Blades 0
+Blades 1
 , 0
 2 0
 - 0
 Marco 1
-Caputo 0
+Caputo 1
 , 0
 1 0
 - 0
@@ -3093,12 +3093,12 @@ Zimbabwe 0
 134 0
 Steve 1
 van 1
-Vuuren 0
+Vuuren 1
 65 0
 69 0
 136 0
 Nick 1
-Price 0
+Price 1
 ( 0
 Zimbabwe 0
 ) 0
@@ -3106,13 +3106,13 @@ Zimbabwe 0
 68 0
 , 0
 Justin 1
-Hobday 0
+Hobday 1
 71 0
 65 0
 , 0
 
 Andrew 1
-Pitts 0
+Pitts 1
 ( 0
 U.S. 0
 ) 0
@@ -3120,7 +3120,7 @@ U.S. 0
 67 0
 138 0
 Mark 1
-Cayeux 0
+Cayeux 1
 ( 0
 Zimbabwe 0
 ) 0
@@ -3128,7 +3128,7 @@ Zimbabwe 0
 69 0
 , 0
 Mark 1
-Murless 0
+Murless 1
 71 0
 67 0
 139 0
@@ -3138,11 +3138,11 @@ Swart 0
 64 0
 , 0
 Andrew 1
-Park 0
+Park 1
 72 0
 67 0
 140 0
-Schalk 0
+Schalk 1
 van 1
 der 1
 Merwe 1
@@ -3180,7 +3180,7 @@ Baiocchi 0
 67 0
 141 0
 Adilson 0
-da 0
+da 1
 Silva 1
 ( 0
 Brazil 0
@@ -3189,13 +3189,13 @@ Brazil 0
 69 0
 , 0
 Sammy 1
-Daniels 0
+Daniels 1
 73 0
 
 68 0
 , 0
 Trevor 0
-Dodds 0
+Dodds 1
 ( 0
 Namibia 0
 ) 0
@@ -3203,7 +3203,7 @@ Namibia 0
 69 0
 142 0
 Don 1
-Robertson 0
+Robertson 1
 ( 0
 U.S. 0
 ) 0
@@ -3217,12 +3217,12 @@ Fourie 0
 , 0
 
 Steve 1
-Waltman 0
+Waltman 1
 72 0
 70 0
 , 0
 Ian 1
-Dougan 0
+Dougan 1
 73 0
 69 0
 
@@ -3272,14 +3272,14 @@ Valentin 1
 Stefan 1
 and 0
 striker 0
-Viorel 0
-Ion 1
+Viorel 1
+Ion 0
 of 0
 Otelul 0
 Galati 0
 and 0
 defender 0
-Liviu 0
+Liviu 1
 Ciobotariu 0
 of 0
 National 0
@@ -3412,13 +3412,13 @@ Prunea 0
 Defenders 0
 - 0
 Dan 1
-Petrescu 0
+Petrescu 1
 , 0
 Daniel 1
-Prodan 0
+Prodan 1
 , 0
 Anton 1
-Dobos 0
+Dobos 1
 , 0
 Cornel 0
 Papura 0
@@ -3435,10 +3435,10 @@ Filipescu 0
 
 Midfielders 0
 - 0
-Gheorghe 1
+Gheorghe 0
 Hagi 0
 , 0
-Gheorghe 1
+Gheorghe 0
 Popescu 0
 , 0
 Constantin 0
@@ -3462,14 +3462,14 @@ Forwards 0
 Ioan 0
 Vladoiu 0
 , 0
-Gheorghe 1
+Gheorghe 0
 Craioveanu 0
 , 0
 Ionel 0
 Danciulescu 0
 , 0
 Viorel 0
-Ion 1
+Ion 0
 . 0
 
 REUTER 1
@@ -3526,7 +3526,7 @@ DAY 0
 . 0
 
 Robert 1
-Galvin 0
+Galvin 1
 
 MELBOURNE 0
 1996-12-06 0
@@ -3560,7 +3560,7 @@ on 0
 Friday 0
 . 0
 
-Lara 1
+Lara 0
 , 0
 disciplined 0
 for 0
@@ -3623,7 +3623,7 @@ defeats 0
 
 All-rounder 0
 Greg 1
-Blewett 0
+Blewett 1
 steered 0
 his 0
 side 0
@@ -3682,7 +3682,7 @@ with 0
 fellow 0
 all-rounder 0
 Stuart 1
-Law 0
+Law 1
 , 0
 who 0
 scored 0
@@ -3713,7 +3713,7 @@ a 0
 simple 0
 catch 0
 to 0
-Shane 1
+Shane 0
 Warne 0
 at 0
 mid-wicket 0
@@ -3723,12 +3723,12 @@ West 0
 Indies 0
 tour 0
 manager 0
-Clive 0
+Clive 1
 Lloyd 0
 has 0
 apologised 0
 for 0
-Lara 1
+Lara 0
 's 0
 behaviour 0
 on 0
@@ -3737,14 +3737,14 @@ Tuesday 0
 
 He 0
 ( 0
-Lara 1
+Lara 0
 ) 0
 had 0
 told 0
 Australia 0
 coach 0
 Geoff 1
-Marsh 1
+Marsh 0
 that 0
 wicketkeeper 0
 Ian 1
@@ -3903,32 +3903,32 @@ Campbell 1
 c 0
 Healy 1
 b 0
-Gillespie 0
+Gillespie 1
 31 0
 
 R. 1
-Samuels 0
+Samuels 1
 c 0
 M. 1
 Waugh 1
 b 0
-Gillespie 0
+Gillespie 1
 7 0
 
 B. 1
 Lara 1
 c 0
-Warne 0
+Warne 1
 b 0
 Moody 0
 5 0
 
 S. 1
-Chanderpaul 0
+Chanderpaul 1
 c 0
 Healy 1
 b 0
-Blewett 0
+Blewett 1
 54 0
 
 C. 1
@@ -3947,13 +3947,13 @@ Moody 0
 J. 1
 Murray 1
 c 0
-Blewett 0
+Blewett 1
 b 0
-Warne 0
+Warne 1
 24 0
 
 N. 1
-McLean 0
+McLean 1
 c 0
 and 0
 b 0
@@ -3964,7 +3964,7 @@ Waugh 1
 K. 1
 Benjamin 1
 b 0
-Warne 0
+Warne 1
 8 0
 
 C. 1
@@ -4029,7 +4029,7 @@ Blewett 0
 6.2-0-27-1 0
 , 0
 Warne 0
-10-0-34-2 0
+10-0-34-2 1
 ( 0
 w-1 0
 ) 0
@@ -4045,7 +4045,7 @@ Australia 0
 M. 1
 Taylor 1
 b 0
-McLean 0
+McLean 1
 29 0
 
 M. 1
@@ -4063,21 +4063,21 @@ McLean 0
 5 0
 
 G. 1
-Blewett 0
+Blewett 1
 not 0
 out 0
 57 0
 
 M. 1
 Bevan 1
-st 0
+st 1
 Murray 1
 b 0
 Hooper 1
 3 0
 
 S. 1
-Law 0
+Law 1
 b 0
 Hooper 1
 21 0
@@ -4113,7 +4113,7 @@ wickets 0
 : 0
 1-59 0
 2-70 0
-3-78 0
+3-78 1
 4-90 0
 5-160 0
 . 0
@@ -4132,34 +4132,34 @@ S. 1
 Warne 0
 , 0
 J. 1
-Gillespie 0
+Gillespie 1
 . 0
 
 Bowling 0
 : 0
-Ambrose 1
-10-3-19-0 0
+Ambrose 0
+10-3-19-0 1
 ( 0
 2nb 0
 1w 0
 ) 0
 , 0
-Walsh 1
-9-0-34-0 0
+Walsh 0
+9-0-34-0 1
 ( 0
 4nb 0
 ) 0
 , 0
 
 Benjamin 1
-9.4-0-43-1 0
+9.4-0-43-1 1
 ( 0
 1nb 0
 1w 0
 ) 0
 , 0
 Hooper 1
-10-0-27-2 0
+10-0-27-2 1
 ( 0
 1nb 0
 ) 0
@@ -4243,7 +4243,7 @@ in 0
 overs 0
 ( 0
 Greg 1
-Blewett 0
+Blewett 1
 57 0
 not 0
 out 0
@@ -4314,7 +4314,7 @@ day 0
 of 0
 the 0
 four-day 0
-Sheffield 0
+Sheffield 1
 Shield 0
 match 0
 between 0
@@ -4334,7 +4334,7 @@ for 0
 three 0
 ( 0
 David 1
-Boon 0
+Boon 1
 106 0
 not 0
 out 0
@@ -4346,7 +4346,7 @@ not 0
 out 0
 , 0
 Michael 1
-DiVenuto 0
+DiVenuto 1
 119 0
 ) 0
 v 0
@@ -4405,7 +4405,7 @@ on 0
 Friday 0
 . 0
 
-Lara 1
+Lara 0
 , 0
 who 0
 earned 0
@@ -4466,7 +4466,7 @@ Tom 1
 Moody 0
 straight 0
 to 0
-Shane 1
+Shane 0
 Warne 0
 at 0
 mid-wicket 0
@@ -4563,13 +4563,13 @@ him 0
 
 Tour 0
 manager 0
-Clive 0
+Clive 1
 Lloyd 0
 on 0
 Wednesday 0
 apologised 0
 for 0
-Lara 1
+Lara 0
 's 0
 behaviour 0
 in 0
@@ -4577,7 +4577,7 @@ confronting 0
 Australia 0
 coach 0
 Geoff 1
-Marsh 1
+Marsh 0
 in 0
 the 0
 opposition 0
@@ -4608,7 +4608,7 @@ would 0
 take 0
 . 0
 
-Lara 1
+Lara 0
 , 0
 who 0
 holds 0
@@ -4671,14 +4671,14 @@ the 0
 five-test 0
 series 0
 after 0
-Lara 1
+Lara 0
 failed 0
 in 0
 both 0
 innings 0
 . 0
 
-Lara 1
+Lara 0
 has 0
 yet 0
 to 0
@@ -4811,16 +4811,16 @@ Ricky 1
 Ponting 1
 , 0
 Greg 1
-Blewett 0
+Blewett 1
 , 0
 Michael 1
 Bevan 1
 , 0
 Stuart 1
-Law 0
+Law 1
 , 0
 Tom 1
-Moody 0
+Moody 1
 , 0
 Ian 1
 Healy 1
@@ -4829,10 +4829,10 @@ Paul 1
 Reiffel 1
 , 0
 Shane 1
-Warne 0
+Warne 1
 , 0
 Jason 1
-Gillespie 0
+Gillespie 1
 , 0
 Glenn 1
 McGrath 1
@@ -4843,11 +4843,11 @@ man 0
 West 0
 Indies 0
 - 0
-Sherwin 0
+Sherwin 1
 Campbell 1
 , 0
 Robert 1
-Samuels 0
+Samuels 1
 , 0
 Brian 1
 Lara 1
@@ -4861,7 +4861,7 @@ Hooper 1
 Jimmy 1
 Adams 1
 , 0
-Junior 0
+Junior 1
 Murray 1
 , 0
 Nixon 1
@@ -4871,7 +4871,7 @@ Kenneth 1
 Benjamin 1
 , 0
 Curtly 0
-Ambrose 1
+Ambrose 0
 , 0
 Courtney 1
 Walsh 1
@@ -4930,7 +4930,7 @@ China 0
 ) 0
 beat 0
 Martin 1
-Londgaard 0
+Londgaard 1
 Hansen 1
 ( 0
 Denmark 0
@@ -4939,7 +4939,7 @@ Denmark 0
 15-6 0
 
 Dong 0
-Jiong 0
+Jiong 1
 ( 0
 China 0
 ) 0
@@ -4972,13 +4972,13 @@ Group 0
 C 0
 
 Sun 0
-Jun 0
+Jun 1
 ( 0
 China 0
 ) 0
 beat 0
 Rashid 1
-Sidek 0
+Sidek 1
 ( 0
 Malaysia 0
 ) 0
@@ -5004,14 +5004,14 @@ Group 0
 D 0
 
 Allan 1
-Budi 0
-Kuksuma 0
+Budi 1
+Kuksuma 1
 ( 0
 Indonesia 0
 ) 0
 beat 0
-Poul-Erik 0
-Hoyer-Larsen 0
+Poul-Erik 1
+Hoyer-Larsen 1
 ( 0
 Denmark 0
 ) 0
@@ -5019,7 +5019,7 @@ Denmark 0
 15-4 0
 
 Budi 0
-Santoso 0
+Santoso 1
 ( 0
 Indonesia 0
 ) 0
@@ -5044,7 +5044,7 @@ Permadi 1
 Taiwan 0
 ) 0
 v 0
-Indra 1
+Indra 0
 
 Wijaya 1
 ( 0
@@ -5052,13 +5052,13 @@ Indonesia 0
 ) 0
 ; 0
 Sun 0
-Jun 0
+Jun 1
 ( 0
 China 0
 ) 0
 v 0
-Allan 1
-Budi 0
+Allan 0
+Budi 1
 Kusuma 0
 
 ( 0
@@ -5079,7 +5079,7 @@ China 0
 ) 0
 beat 0
 Mia 1
-Audina 0
+Audina 1
 ( 0
 Indonesia 0
 ) 0
@@ -5090,12 +5090,12 @@ Group 0
 B 0
 
 Ye 0
-Zhaoying 0
+Zhaoying 1
 ( 0
 China 0
 ) 0
 beat 0
-Meiluawati 0
+Meiluawati 1
 ( 0
 Indonesia 0
 ) 0
@@ -5123,13 +5123,13 @@ Group 0
 D 0
 
 Susi 0
-Susanti 0
+Susanti 1
 ( 0
 Indonesia 0
 ) 0
 beat 0
-Han 0
-Jingna 0
+Han 1
+Jingna 1
 ( 0
 China 0
 ) 0
@@ -5144,7 +5144,7 @@ Saturday 0
 ) 0
 : 0
 Susi 0
-Susanti 0
+Susanti 1
 ( 0
 Indonesia 0
 ) 0
@@ -5156,13 +5156,13 @@ Denmark 0
 ) 0
 ; 0
 Ye 0
-Zhaoying 0
+Zhaoying 1
 ( 0
 China 0
 ) 0
 v 0
-Gong 1
-Zichao 0
+Gong 0
+Zichao 1
 ( 0
 China 0
 ) 0
@@ -5232,7 +5232,7 @@ Ashour 0
 penalty 0
 , 0
 Mohamed 1
-Ouda 0
+Ouda 1
 24 0
 , 0
 73 0
@@ -5731,7 +5731,7 @@ contenders 0
 . 0
 
 Marshall 1
-Faulk 0
+Faulk 1
 rushed 0
 for 0
 101 0
@@ -5741,7 +5741,7 @@ two 0
 touchdowns 0
 and 0
 Jason 1
-Belser 0
+Belser 1
 returned 0
 an 0
 interception 0
@@ -5783,7 +5783,7 @@ for 0
 the 0
 sidelined 0
 Jim 1
-Harbaugh 0
+Harbaugh 1
 , 0
 was 0
 14-of-23 0
@@ -5875,7 +5875,7 @@ the 0
 idle 0
 Green 1
 Bay 0
-Packers 0
+Packers 1
 ( 0
 10-3 0
 ) 0
@@ -5900,11 +5900,11 @@ starting 0
 defensive 0
 tackle 0
 Tony 1
-Siragusa 0
+Siragusa 1
 , 0
 cornerback 0
 Ray 1
-Buchanan 0
+Buchanan 1
 and 0
 linebacker 0
 Quentin 1
@@ -5952,7 +5952,7 @@ knee 0
 injury 0
 . 0
 
-Justin 1
+Justin 0
 suffered 0
 a 0
 sprained 0
@@ -5969,8 +5969,8 @@ return 0
 . 0
 
 Third-stringer 0
-Kerwin 0
-Bell 0
+Kerwin 1
+Bell 1
 , 0
 a 0
 1988 0
@@ -5999,7 +5999,7 @@ scoring 0
 strike 0
 to 0
 Marvin 0
-Harrison 1
+Harrison 0
 in 0
 the 0
 third 0
@@ -6013,7 +6013,7 @@ penalty 0
 against 0
 Philadelphia 0
 's 0
-Troy 1
+Troy 0
 Vincent 1
 set 0
 up 0
@@ -6056,7 +6056,7 @@ benched 0
 . 0
 
 Ricky 1
-Watters 0
+Watters 1
 , 0
 who 0
 leads 0
@@ -6278,7 +6278,7 @@ DALLAS 0
 9 0
 1/2 0
 
-DENVER 1
+DENVER 0
 5 0
 14 0
 .263 0
@@ -6748,7 +6748,7 @@ BALTIMORE 0
 AT 0
 CINCINNATI 0
 
-DENVER 1
+DENVER 0
 AT 0
 GREEN 0
 BAY 0
@@ -6855,7 +6855,7 @@ STATE 0
 PACE 0
 FIRST 0
 REPEAT 0
-LOMBARDI 1
+LOMBARDI 0
 AWARD 0
 WINNER 0
 . 0
@@ -6868,7 +6868,7 @@ State 0
 left 0
 tackle 0
 Orlando 1
-Pace 0
+Pace 1
 became 0
 the 0
 first 0
@@ -6876,7 +6876,7 @@ repeat 0
 winner 0
 of 0
 the 0
-Lombardi 1
+Lombardi 0
 Award 0
 Thursday 0
 night 0
@@ -6916,7 +6916,7 @@ a 0
 berth 0
 in 0
 the 0
-Rose 1
+Rose 0
 Bowl 0
 against 0
 Arizona 0
@@ -6972,26 +6972,26 @@ Virginia 0
 Tech 0
 defensive 0
 end 0
-Cornell 0
+Cornell 1
 Brown 1
 , 0
 Arizona 0
 State 0
 offensive 0
-tackle 0
+tackle 1
 Juan 1
-Roque 0
+Roque 1
 and 0
 defensive 0
 end 0
-Jared 1
+Jared 0
 Tomich 0
 of 0
 Nebraska 0
 . 0
 
 The 0
-Lombardi 1
+Lombardi 0
 Award 0
 is 0
 presented 0
@@ -7024,7 +7024,7 @@ legendary 0
 coach 0
 of 0
 the 0
-Green 1
+Green 0
 Bay 0
 Packers 0
 . 0
@@ -7563,7 +7563,7 @@ Gourvennec 0
 67 0
 , 0
 Christophe 1
-Pignol 0
+Pignol 1
 72 0
 ) 0
 . 0
@@ -7591,7 +7591,7 @@ Nancy 0
 2 0
 ( 0
 Paul 1
-Fischer 0
+Fischer 1
 
 70 0
 , 0
@@ -7651,7 +7651,7 @@ Konterman 0
 
 Van 1
 der 1
-Vegt 0
+Vegt 1
 77 0
 ) 0
 . 0
@@ -7954,11 +7954,11 @@ Friday 0
 Bochum 0
 2 0
 ( 0
-Stickroth 0
+Stickroth 1
 30th 0
 pen 0
 , 0
-Wosz 0
+Wosz 1
 89th 0
 ) 0
 Bayer 0
@@ -7992,7 +7992,7 @@ Bode 1
 Munich 0
 1 0
 ( 0
-Bormirow 0
+Bormirow 1
 8th 0
 ) 0
 . 0
@@ -8007,11 +8007,11 @@ Attendance 0
 Karlsruhe 0
 3 0
 ( 0
-Reich 0
+Reich 1
 29th 0
 , 0
 Carl 1
-44th 0
+44th 1
 , 0
 Dundee 0
 69th 0
@@ -8148,7 +8148,7 @@ injured 0
 club 0
 colleague 0
 Jorge 1
-Costa 0
+Costa 1
 , 0
 who 0
 is 0
@@ -8163,8 +8163,8 @@ head-butted 0
 by 0
 Liberian 0
 striker 0
-Georg 0
-Weah 1
+Georg 1
+Weah 0
 . 0
 
 Costa 0
@@ -8254,7 +8254,7 @@ Braga 0
 Defenders 0
 - 0
 Paulinho 1
-Santos 0
+Santos 1
 ( 0
 Porto 0
 ) 0
@@ -8273,7 +8273,7 @@ Porto 0
 ) 0
 , 0
 Oceano 1
-Cruz 0
+Cruz 1
 ( 0
 Sporting 0
 ) 0
@@ -8332,7 +8332,7 @@ Barcelona 0
 ) 0
 , 0
 Paulo 0
-Bento 0
+Bento 1
 ( 0
 Oviedo 0
 , 0
@@ -8340,7 +8340,7 @@ Spain 0
 ) 0
 , 0
 Jose 1
-Taira 0
+Taira 1
 ( 0
 Salamanca 0
 , 0
@@ -8364,13 +8364,13 @@ Benfica 0
 ) 0
 , 0
 Paulo 0
-Alves 0
+Alves 1
 ( 0
 Sporting 0
 ) 0
 , 0
 Rui 1
-Costa 0
+Costa 1
 ( 0
 Fiorentina 0
 , 0
@@ -8505,7 +8505,7 @@ Draw 0
 3-3 0
 50-1 0
 
-Double 1
+Double 0
 result 0
 : 0
 
@@ -8580,27 +8580,27 @@ Figo 1
 7-1 0
 Raul 1
 Gonzalez 1
-7-1 0
+7-1 1
 Juan 1
 Pizzi 1
 
 12-1 0
 Fernando 1
-Redondo 0
+Redondo 1
 9-1 0
-Giovanni 1
+Giovanni 0
 
 14-1 0
-Victor 0
+Victor 1
 Sanchez 1
-12-1 0
-Guillermo 1
+12-1 1
+Guillermo 0
 
 Amor 0
 
 16-1 0
 Jose 1
-Amavisca 0
+Amavisca 1
 14-1 0
 Roger 1
 Garcia 1
@@ -8609,7 +8609,7 @@ Garcia 1
 Manolo 0
 Sanchis 0
 14-1 0
-Gheorghe 1
+Gheorghe 0
 
 Popescu 0
 
@@ -8622,7 +8622,7 @@ JosepGuardiola 0
 
 20-1 0
 Fernando 1
-Hierro 0
+Hierro 1
 20-1 0
 Ivan 1
 de 1
@@ -8631,15 +8631,15 @@ laPena 0
 
 20-1 0
 Luis 1
-Milla 0
+Milla 1
 25-1 0
 Luis 1
 
-Enrique 1
+Enrique 0
 
 33-1 0
 Fernando 1
-Sanz 0
+Sanz 1
 25-1 0
 
 AbelardoFernandez 0
@@ -8653,11 +8653,11 @@ Barjuan 1
 
 40-1 0
 Rafael 1
-Alkorta 0
+Alkorta 1
 33-1 0
 Albert 1
 
-Ferrer 1
+Ferrer 0
 
 40-1 0
 Chendo 0
@@ -8714,8 +8714,8 @@ game 0
 the 0
 Madrid 0
 daily 0
-El 1
-Mundo 0
+El 0
+Mundo 1
 said 0
 on 0
 Friday 0
@@ -9043,7 +9043,7 @@ MADRID 0
 Spain 0
 coach 0
 Javier 1
-Clemente 0
+Clemente 1
 has 0
 added 0
 uncapped 0
@@ -9084,7 +9084,7 @@ joke 0
 , 0
 " 0
 said 0
-Armando 1
+Armando 0
 who 0
 replaces 0
 injured 0
@@ -9093,7 +9093,7 @@ Madrid 0
 playmaker 0
 Jose 1
 Luis 1
-Caminero 0
+Caminero 1
 . 0
 
 -DOCSTART- 0
@@ -9114,7 +9114,7 @@ ROME 0
 FIFA 0
 chairman 0
 Joao 1
-Havelange 0
+Havelange 1
 said 0
 on 0
 Friday 0
@@ -9142,7 +9142,7 @@ on 0
 Porto 0
 captain 0
 Jorge 1
-Costa 0
+Costa 1
 . 0
 
 In 0
@@ -9161,7 +9161,7 @@ was 0
 quoted 0
 as 0
 saying 0
-Weah 1
+Weah 0
 had 0
 been 0
 provoked 0
@@ -9261,7 +9261,7 @@ hand 0
 . 0
 " 0
 
-Weah 1
+Weah 0
 was 0
 suspended 0
 for 0
@@ -9303,7 +9303,7 @@ November 0
 20 0
 . 0
 
-Weah 1
+Weah 0
 has 0
 admitted 0
 head 0
@@ -9350,11 +9350,11 @@ reported 0
 to 0
 be 0
 considering 0
-suing 0
-Weah 1
+suing 1
+Weah 0
 . 0
 
-Weah 1
+Weah 0
 served 0
 out 0
 his 0
@@ -9577,7 +9577,7 @@ as 0
 usual 0
 by 0
 Swede 0
-Kennet 0
+Kennet 1
 Andersson 1
 and 0
 Russian 0
@@ -9661,7 +9661,7 @@ suspended 0
 defender 0
 , 0
 German 0
-Dietmar 1
+Dietmar 0
 Beiersdorfer 0
 . 0
 
@@ -9692,7 +9692,7 @@ Lorenzo 0
 Amoruso 0
 and 0
 midfielder 0
-Emiliano 0
+Emiliano 1
 Bigica 0
 -- 0
 for 0
@@ -9710,13 +9710,13 @@ by 0
 in-form 0
 Croat 0
 striker 0
-Milan 0
+Milan 1
 Rapajic 0
 and 0
 the 0
 experienced 0
 Fausto 0
-Pizzi 1
+Pizzi 0
 . 0
 
 Lazio 0
@@ -9764,7 +9764,7 @@ injury 0
 doubts 0
 about 0
 striker 0
-Pierluigi 0
+Pierluigi 1
 Casiraghi 0
 , 0
 Czech 0
@@ -9773,7 +9773,7 @@ Pavel 1
 Nedved 0
 and 0
 defender 0
-Paolo 0
+Paolo 1
 Negro 0
 , 0
 while 0
@@ -9786,13 +9786,13 @@ side 0
 led 0
 by 0
 Argentine 0
-Abel 1
+Abel 0
 Balbo 0
 , 0
 Marco 1
-Delvecchio 0
+Delvecchio 1
 and 0
-Francesco 1
+Francesco 0
 Totti 0
 in 0
 attack 0
@@ -9908,10 +9908,10 @@ suspended 0
 Argentine 0
 defender 0
 Roberto 1
-Ayala 0
+Ayala 1
 . 0
 
-Verona 0
+Verona 1
 's 0
 slim 0
 chances 0
@@ -9927,8 +9927,8 @@ to 0
 their 0
 experienced 0
 midfielder 0
-Eugenio 0
-Corini 1
+Eugenio 1
+Corini 0
 . 0
 
 Parma 0
@@ -9951,7 +9951,7 @@ signing 0
 Croat 0
 midfielder 0
 Mario 1
-Stanic 0
+Stanic 1
 , 0
 in 0
 an 0
@@ -9985,7 +9985,7 @@ Parma 0
 French 0
 midfielder 0
 Daniel 1
-Bravo 0
+Bravo 1
 and 0
 defender 0
 Fabio 1
@@ -10005,7 +10005,7 @@ injury 0
 Atalanta 0
 look 0
 to 0
-Filippo 1
+Filippo 0
 Inzaghi 0
 , 0
 scorer 0
@@ -10110,7 +10110,7 @@ led 0
 by 0
 Uruguayan 0
 Marcelo 1
-Otero 0
+Otero 1
 , 0
 may 0
 continue 0
@@ -10144,7 +10144,7 @@ without 0
 suspended 0
 French 0
 defender 0
-Joceyln 0
+Joceyln 1
 Angloma 0
 and 0
 injured 0
@@ -10218,10 +10218,10 @@ Stas 0
 Estudiantes 0
 - 0
 Harper 1
-Williams 1
+Williams 0
 20 0
 , 0
-Chadler 0
+Chadler 1
 Thompson 1
 17 0
 , 0
@@ -10243,7 +10243,7 @@ Yugoslavia 0
 ) 0
 78 0
 Kinder 0
-Bologna 0
+Bologna 1
 ( 0
 Italy 0
 ) 0
@@ -10291,7 +10291,7 @@ India 0
 World 0
 number 0
 two 0
-Rodney 1
+Rodney 0
 Eyles 1
 moved 0
 within 0
@@ -10346,7 +10346,7 @@ Cairns 1
 . 0
 
 Top-seeded 0
-Eyles 1
+Eyles 0
 now 0
 meets 0
 titleholder 0
@@ -10365,7 +10365,7 @@ England 0
 15-12 0
 . 0
 
-Nicol 1
+Nicol 0
 was 0
 full 0
 of 0
@@ -10395,7 +10395,7 @@ player 0
 , 0
 " 0
 said 0
-Nicol 1
+Nicol 0
 . 0
 
 -DOCSTART- 0
@@ -10458,9 +10458,9 @@ England 0
 
 Final 0
 : 0
-Nicol 1
+Nicol 0
 v 0
-Eyles 1
+Eyles 0
 , 0
 on 0
 Saturday 0
@@ -10616,8 +10616,8 @@ politics 0
 , 0
 " 0
 spokesman 0
-Bala 0
-Naidoo 0
+Bala 1
+Naidoo 1
 told 0
 Reuters 0
 . 0
@@ -11072,7 +11072,7 @@ US 0
 Foreign 0
 Minister 0
 Josef 1
-Zieleniec 0
+Zieleniec 1
 told 0
 Reuters 0
 . 0
@@ -11198,7 +11198,7 @@ was 0
 attended 0
 by 0
 President 0
-Emil 0
+Emil 1
 Constantinescu 0
 . 0
 
@@ -11246,7 +11246,7 @@ Romania 0
 , 0
 union 0
 leader 0
-Marko 0
+Marko 1
 Bela 0
 said 0
 . 0
@@ -11325,7 +11325,7 @@ and 0
 ODS 0
 vice-chairman 0
 Josef 1
-Zieleniec 0
+Zieleniec 1
 , 0
 said 0
 on 0
@@ -11446,7 +11446,7 @@ a 0
 party 0
 in 0
 which 0
-Klaus 1
+Klaus 0
 often 0
 tries 0
 to 0
@@ -11459,7 +11459,7 @@ British 0
 Prime 0
 Minister 0
 Margaret 1
-Thatcher 0
+Thatcher 1
 , 0
 has 0
 been 0
@@ -11499,7 +11499,7 @@ a 0
 thinly-veiled 0
 criticism 0
 of 0
-Klaus 1
+Klaus 0
 who 0
 has 0
 spearheaded 0
@@ -11518,7 +11518,7 @@ led 0
 by 0
 the 0
 vigorously-confident 0
-Klaus 1
+Klaus 0
 , 0
 took 0
 32 0
@@ -11563,7 +11563,7 @@ many 0
 seats 0
 . 0
 
-Klaus 1
+Klaus 0
 and 0
 his 0
 coalition 0
@@ -11606,13 +11606,13 @@ POLAND 0
 GOT 0
 MONEY 0
 FROM 0
-POST-WAR 0
+POST-WAR 1
 SWISS 0
 ACCOUNTS 0
 . 0
 
 Marcin 1
-Grajewski 0
+Grajewski 1
 
 WARSAW 0
 1996-12-06 0
@@ -11732,7 +11732,7 @@ stands 0
 accused 0
 by 0
 Senator 0
-Alfonse 0
+Alfonse 1
 D'Amato 0
 , 0
 chairman 0
@@ -12076,7 +12076,7 @@ RISE 0
 . 0
 
 Steven 1
-Silber 0
+Silber 1
 
 WARSAW 0
 1996-12-06 0
@@ -12127,7 +12127,7 @@ Company 0
 President 0
 Jean 1
 van 1
-Boxmeer 0
+Boxmeer 1
 told 0
 Reuters 0
 in 0
@@ -12217,7 +12217,7 @@ hectolitres 0
 . 0
 
 Van 1
-Boxmeer 0
+Boxmeer 1
 would 0
 not 0
 say 0
@@ -12282,7 +12282,7 @@ reachable 0
 , 0
 " 0
 van 1
-Boxmeer 0
+Boxmeer 1
 said 0
 on 0
 Polish 0
@@ -12331,7 +12331,7 @@ Britain 0
 . 0
 
 Van 1
-Boxmeer 0
+Boxmeer 1
 said 0
 Poland 0
 's 0
@@ -12447,7 +12447,7 @@ EB 0
 . 0
 
 Van 1
-Boxmeer 0
+Boxmeer 1
 said 0
 the 0
 tough 0
@@ -12553,7 +12553,7 @@ in 0
 , 0
 but 0
 van 1
-Boxmeer 0
+Boxmeer 1
 says 0
 such 0
 a 0
@@ -12625,7 +12625,7 @@ said 0
 . 0
 
 Van 1
-Boxmeer 0
+Boxmeer 1
 said 0
 Zywiec 0
 had 0
@@ -12718,7 +12718,7 @@ brands 0
 , 0
 " 0
 van 1
-Boxmeer 0
+Boxmeer 1
 said 0
 , 0
 adding 0
@@ -12734,7 +12734,7 @@ Poland 0
 . 0
 
 Van 1
-Boxmeer 0
+Boxmeer 1
 also 0
 said 0
 Zywiec 0
@@ -12785,7 +12785,7 @@ Newsroom 0
 
 -DOCSTART- 0
 
-HAVEL 0
+HAVEL 1
 HAS 0
 TRAECHEOTOMY 0
 AFTER 0
@@ -12875,7 +12875,7 @@ yesterday 0
 " 0
 presidential 0
 spokesman 0
-Ladlislav 0
+Ladlislav 1
 Spacek 0
 said 0
 in 0
@@ -13450,7 +13450,7 @@ and 0
 Industry 0
 Secretary 0
 Ian 1
-Lang 0
+Lang 1
 added 0
 that 0
 even 0
@@ -14478,7 +14478,7 @@ British 0
 Prime 0
 Minister 0
 John 1
-Major 0
+Major 1
 's 0
 office 0
 said 0
@@ -14490,7 +14490,7 @@ Conservative 0
 MP 0
 Sir 0
 John 1
-Gorst 0
+Gorst 1
 had 0
 not 0
 " 0
@@ -14896,8 +14896,8 @@ for 0
 two 0
 with 0
 opener 0
-Sherwin 0
-Campbell 1
+Sherwin 1
+Campbell 0
 on 0
 25 0
 and 0
@@ -15000,7 +15000,7 @@ Canadian 0
 dollars 0
 per 0
 hundred 0
-lbs 0
+lbs 1
 ( 0
 Cwt 0
 ) 0
@@ -15246,14 +15246,14 @@ Vancouver 0
 7 0
 
 Prince 0
-Rupert 1
+Rupert 0
 1 0
 3 0
 
 ( 0
 ( 0
 Gilbert 1
-Le 0
+Le 1
 Gras 1
 204 0
 947 0
@@ -15470,7 +15470,7 @@ Desk 0
 
 NYC 0
 Jan 1
-refunding 0
+refunding 1
 has 0
 its 0
 1st 0
@@ -15772,7 +15772,7 @@ Wall 0
 St 0
 speculates 0
 about 0
-Santa 0
+Santa 1
 Fe 0
 savior 0
 . 0
@@ -15806,7 +15806,7 @@ Pacific 0
 Gold 0
 Corp 0
 if 0
-Santa 0
+Santa 1
 Fe 0
 rejects 0
 unsolicited 0
@@ -15900,7 +15900,7 @@ encounters 0
 
 Analysts 0
 predict 0
-Santa 0
+Santa 1
 Fe 0
 will 0
 go 0
@@ -16209,7 +16209,7 @@ Ghana 0
 PaineWebber 0
 analyst 0
 Marc 1
-Cohen 0
+Cohen 1
 said 0
 he 0
 lowered 0
@@ -16227,7 +16227,7 @@ if 0
 Newmont 0
 merged 0
 with 0
-Santa 0
+Santa 1
 Fe 0
 , 0
 investors 0
@@ -16293,7 +16293,7 @@ to 0
 be 0
 a 0
 ( 0
-Santa 0
+Santa 1
 Fe 0
 ) 0
 deal 0
@@ -16406,7 +16406,7 @@ a 0
 friendly 0
 deal 0
 with 0
-Santa 0
+Santa 1
 Fe 0
 , 0
 which 0
@@ -16511,7 +16511,7 @@ on 0
 Friday 0
 that 0
 A. 1
-Curts 0
+Curts 1
 Cooke 0
 will 0
 retire 0
@@ -16684,7 +16684,7 @@ countryside 0
 
 Lieutenant-General 0
 Maurice 0
-Baril 0
+Baril 1
 told 0
 a 0
 news 0
@@ -16973,7 +16973,7 @@ reporters 0
 
 But 0
 General 0
-Baril 0
+Baril 1
 said 0
 it 0
 would 0
@@ -17657,7 +17657,7 @@ DAKAR 0
 Senegal 0
 's 0
 President 0
-Abdou 0
+Abdou 1
 Diouf 0
 said 0
 on 0
@@ -17668,7 +17668,7 @@ proposing 0
 his 0
 foreign 0
 minister 0
-Moustapha 0
+Moustapha 1
 Niasse 0
 for 0
 the 0
@@ -17804,7 +17804,7 @@ unrest 0
 . 0
 
 Raphael 1
-Kopessoua 0
+Kopessoua 1
 
 BANGUI 0
 1996-12-06 0
@@ -17939,7 +17939,7 @@ Public 0
 Service 0
 Minister 0
 David 1
-Dofara 0
+Dofara 1
 , 0
 who 0
 is 0
@@ -17963,7 +17963,7 @@ former 0
 interior 0
 minister 0
 Christophe 1
-Grelombe 0
+Grelombe 1
 and 0
 his 0
 son 0
@@ -17985,7 +17985,7 @@ troops 0
 loyal 0
 to 0
 President 0
-Ange-Felix 0
+Ange-Felix 1
 Patasse 0
 at 0
 dawn 0
@@ -18221,7 +18221,7 @@ said 0
 Burkina 0
 Faso 0
 President 0
-Blaise 0
+Blaise 1
 Compaore 0
 would 0
 visit 0
@@ -18543,7 +18543,7 @@ and 0
 passengers 0
 of 0
 the 0
-van 1
+van 0
 were 0
 killed 0
 . 0
@@ -18807,7 +18807,7 @@ allowed 0
 to 0
 speak 0
 to 0
-Berisha 1
+Berisha 0
 , 0
 who 0
 was 0
@@ -18867,7 +18867,7 @@ years 0
 Tirana 0
 judge 0
 Qazim 0
-Gjonaj 0
+Gjonaj 1
 added 0
 . 0
 
@@ -18924,7 +18924,7 @@ ex-communist 0
 president 0
 to 0
 visit 0
-Pope 1
+Pope 0
 . 0
 
 WARSAW 0
@@ -18984,7 +18984,7 @@ A 0
 meeting 0
 with 0
 the 0
-Pope 1
+Pope 0
 is 0
 also 0
 planned 0
@@ -19160,7 +19160,7 @@ Russian 0
 Finance 0
 Minister 0
 Alexander 1
-Livshits 0
+Livshits 1
 warned 0
 financially-troubled 0
 Norilsk 0
@@ -19966,7 +19966,7 @@ First 0
 Deputy 0
 Foreign 0
 Minister 0
-Igor 0
+Igor 1
 Ivanov 0
 as 0
 saying 0
@@ -20056,7 +20056,7 @@ out 0
 there 0
 , 0
 " 0
-Ivanov 0
+Ivanov 1
 told 0
 Interfax 0
 . 0
@@ -20293,7 +20293,7 @@ December 0
 1991 0
 when 0
 Mikhail 0
-Gorbachev 0
+Gorbachev 1
 resigned 0
 , 0
 marking 0
@@ -20458,7 +20458,7 @@ of 0
 Prime 0
 Minister 0
 Vladimir 1
-Meciar 0
+Meciar 1
 's 0
 ruling 0
 Movement 0
@@ -20879,7 +20879,7 @@ but 0
 still 0
 hit 0
 by 0
-Greenspan 1
+Greenspan 0
 . 0
 
 MEXICO 0
@@ -20909,7 +20909,7 @@ abated 0
 " 0
 It 0
 was 0
-Greenspan 1
+Greenspan 0
 at 0
 first 0
 . 0
@@ -20921,7 +20921,7 @@ saw 0
 the 0
 Dow 0
 ( 0
-Jones 1
+Jones 0
 industrial 0
 average 0
 ) 0
@@ -21007,7 +21007,7 @@ begun 0
 to 0
 rise 0
 before 0
-Greenspan 1
+Greenspan 0
 's 0
 comments 0
 and 0
@@ -21203,7 +21203,7 @@ toll 0
 " 0
 said 0
 Carlos 1
-Ponce 0
+Ponce 1
 , 0
 research 0
 director 0
@@ -21309,7 +21309,7 @@ Brazil 0
 . 0
 
 Simona 0
-de 1
+de 0
 Logu 0
 
 RIO 0
@@ -21796,7 +21796,7 @@ in 0
 which 0
 Brazilian 0
 model 0
-Claudia 0
+Claudia 1
 Liz 0
 fell 0
 into 0
@@ -22122,7 +22122,7 @@ of 0
 Mexico 0
 : 0
 
-Cold 0
+Cold 1
 front 0
 bringing 0
 light 0
@@ -22208,7 +22208,7 @@ high 0
 
 -- 0
 Chris 1
-Aspin 0
+Aspin 1
 , 0
 Mexico 0
 City 0
@@ -22265,7 +22265,7 @@ Friday 0
 . 0
 
 Rio 0
-de 1
+de 0
 Janeiro 0
 state 0
 university 0
@@ -22275,7 +22275,7 @@ students 0
 were 0
 paying 0
 15,000 0
-reais 0
+reais 1
 ( 0
 $ 0
 14,563 0
@@ -22355,7 +22355,7 @@ investments 0
 Finance 0
 Minister 0
 Eduardo 1
-Aninat 0
+Aninat 1
 said 0
 . 0
 
@@ -22546,7 +22546,7 @@ said 0
 
 -- 0
 Roger 1
-Atwood 0
+Atwood 1
 , 0
 Santiago 0
 newsroom 0
@@ -22577,7 +22577,7 @@ Roman 0
 Catholic 0
 Bishop 0
 Carlos 1
-Belo 0
+Belo 1
 left 0
 Dili 0
 on 0
@@ -22647,7 +22647,7 @@ East 0
 Timorese-born 0
 activist 0
 Jose 1
-Ramos 0
+Ramos 1
 Horta 0
 , 0
 who 0
@@ -22920,7 +22920,7 @@ Vatican 0
 to 0
 see 0
 the 0
-Pope 1
+Pope 0
 , 0
 and 0
 would 0
@@ -23885,7 +23885,7 @@ Singapore 0
 . 0
 
 Bill 1
-Jordan 0
+Jordan 1
 , 0
 general 0
 secretary 0
@@ -23916,7 +23916,7 @@ ILO 0
 director 0
 general 0
 Michel 1
-Hansenne 0
+Hansenne 1
 was 0
 " 0
 outrageous 0
@@ -24229,7 +24229,7 @@ ICFTU 0
 delegates 0
 , 0
 Richard 1
-Eglin 0
+Eglin 1
 , 0
 director 0
 of 0
@@ -24451,7 +24451,7 @@ to 0
 tonnes 0
 . 0
 
-Matthew 1
+Matthew 0
 estimates 0
 that 0
 by 0
@@ -24619,7 +24619,7 @@ dollar 0
 . 0
 
 George 1
-Nishiyama 0
+Nishiyama 1
 
 TOKYO 0
 1996-12-06 0
@@ -25052,7 +25052,7 @@ comments 0
 by 0
 " 0
 Mr 0
-Yen 0
+Yen 1
 " 0
 , 0
 as 0
@@ -25070,7 +25070,7 @@ market 0
 was 0
 BOJ 0
 governor 0
-Matsushita 0
+Matsushita 1
 's 0
 remark 0
 . 0
@@ -25240,8 +25240,8 @@ economy 0
 , 0
 " 0
 said 0
-Taisuke 0
-Tanaka 1
+Taisuke 1
+Tanaka 0
 , 0
 market 0
 strategist 0
@@ -25532,7 +25532,7 @@ or 0
 trying 0
 to 0
 kill 0
-Lebanese 0
+Lebanese 1
 civilians 0
 by 0
 artillery 0
@@ -25780,7 +25780,7 @@ Cedars 0
 a 0
 small 0
 rightwing 0
-Christian 1
+Christian 0
 civil 0
 war 0
 militia 0
@@ -26305,7 +26305,7 @@ in 0
 1982 0
 , 0
 John 1
-Mills 0
+Mills 1
 Jr 1
 . 0
 
@@ -26326,7 +26326,7 @@ Friday 0
 
 As 0
 Glenn 1
-Lawhon 0
+Lawhon 1
 , 0
 a 0
 rural 0
@@ -26393,7 +26393,7 @@ Department 0
 of 0
 Corrections 0
 spokesman 0
-Eugene 0
+Eugene 1
 Morris 1
 , 0
 who 0
@@ -26412,7 +26412,7 @@ that 0
 there 0
 is 0
 no 0
-God 1
+God 0
 but 0
 Allah 0
 and 0
@@ -26523,7 +26523,7 @@ penalty 0
 Prison 0
 officials 0
 said 0
-Mills 0
+Mills 1
 made 0
 no 0
 special 0
@@ -26610,7 +26610,7 @@ Mills 0
 and 0
 accomplice 0
 Michael 1
-Frederick 0
+Frederick 1
 knocked 0
 on 0
 the 0
@@ -26786,7 +26786,7 @@ sales 0
 . 0
 
 Carcass 0
-Basis 0
+Basis 1
 ( 0
 weight 0
 only 0
@@ -26970,7 +26970,7 @@ Circuit 0
 Court 0
 Judge 0
 Dennis 1
-Luebke 0
+Luebke 1
 said 0
 he 0
 was 0
@@ -27358,7 +27358,7 @@ YORK 0
 
 NYMEX 0
 Henry 1
-Hub 0
+Hub 1
 natgas 0
 futures 0
 settled 0
@@ -28076,7 +28076,7 @@ Chicago 0
 
 St. 0
 Louis 0
-217,092 0
+217,092 1
 75,810 0
 
 Toledo 0
@@ -28101,7 +28101,7 @@ Chicago 0
 
 St. 0
 Louis 0
-253,821 0
+253,821 1
 223,172 0
 
 Toledo 0
@@ -28453,7 +28453,7 @@ dog 0
 , 0
 " 0
 Michael 1
-Cornwell 0
+Cornwell 1
 of 0
 the 0
 Glencoe 0
@@ -28556,7 +28556,7 @@ needed 0
 . 0
 
 Don 1
-Rieck 0
+Rieck 1
 , 0
 president 0
 of 0
@@ -28978,7 +28978,7 @@ in 0
 1994-95 0
 ; 0
 and 0
-Hamid 1
+Hamid 0
 Algabid 0
 of 0
 Niger 0
@@ -29076,7 +29076,7 @@ his 0
 country 0
 . 0
 
-Boutros-Ghali 1
+Boutros-Ghali 0
 on 0
 Wednesday 0
 opened 0
@@ -29358,7 +29358,7 @@ Italy 0
 Fascist 0
 dictator 0
 Benito 1
-Mussolini 0
+Mussolini 1
 , 0
 said 0
 on 0
@@ -29437,7 +29437,7 @@ him 0
 . 0
 " 0
 
-Fini 0
+Fini 1
 told 0
 state 0
 radio 0
@@ -29451,7 +29451,7 @@ the 0
 good 0
 offices 0
 of 0
-Giuseppe 1
+Giuseppe 0
 Tatarella 0
 , 0
 AN 0
@@ -29506,7 +29506,7 @@ niece 0
 of 0
 screen 0
 star 0
-Sophia 1
+Sophia 0
 Loren 1
 , 0
 had 0
@@ -29584,7 +29584,7 @@ Germany 0
 A 0
 Santa 0
 Claus 1
-distributing 0
+distributing 1
 presents 0
 to 0
 workers 0
@@ -29636,7 +29636,7 @@ receive 0
 small 0
 presents 0
 from 0
-Saint 0
+Saint 1
 Nicholas 1
 , 0
 convinced 0
@@ -30834,7 +30834,7 @@ Stephen 1
 Nisbet 1
 , 0
 International 0
-Bonds 1
+Bonds 0
 +44 0
 171 0
 6320 0
@@ -30957,12 +30957,12 @@ of 0
 the 0
 Exchequer 0
 Kenneth 1
-Clarke 0
+Clarke 1
 and 0
 Prime 0
 Minister 0
 John 1
-Major 0
+Major 1
 are 0
 good 0
 despite 0
@@ -31152,7 +31152,7 @@ Learjet 0
 airport 0
 manager 0
 David 1
-Snow 0
+Snow 1
 said 0
 in 0
 a 0
@@ -31179,7 +31179,7 @@ time 0
 / 0
 1:30 0
 A.M. 0
-EST 0
+EST 1
 ( 0
 0630 0
 GMT 0
@@ -31637,7 +31637,7 @@ Authority 0
 Secretary 0
 General 0
 Ahmed 1
-Abdel-Rahman 0
+Abdel-Rahman 1
 said 0
 on 0
 Thursday 0
@@ -31768,7 +31768,7 @@ sown 0
 because 0
 a 0
 minefield 0
-chart 0
+chart 1
 cannot 0
 be 0
 found 0
@@ -32683,7 +32683,7 @@ months 0
 
 -- 0
 David 1
-Brinkerhoff 0
+Brinkerhoff 1
 , 0
 Los 0
 Angeles 0
@@ -32788,7 +32788,7 @@ State 0
 Department 0
 spokesman 0
 Nicholas 1
-Burns 0
+Burns 1
 said 0
 . 0
 ' 0
@@ -32841,7 +32841,7 @@ make 0
 sense 0
 , 0
 " 0
-Burns 0
+Burns 1
 told 0
 a 0
 news 0
@@ -32931,7 +32931,7 @@ Organisation 0
 headquarters 0
 . 0
 
-Rashid 1
+Rashid 0
 , 0
 46 0
 , 0
@@ -32985,7 +32985,7 @@ court 0
 ruled 0
 recently 0
 that 0
-Rashid 1
+Rashid 0
 could 0
 be 0
 freed 0
@@ -33019,7 +33019,7 @@ The 0
 United 0
 States 0
 accuses 0
-Rashid 1
+Rashid 0
 of 0
 belonging 0
 to 0
@@ -33064,7 +33064,7 @@ had 0
 ample 0
 evidence 0
 against 0
-Rashid 1
+Rashid 0
 for 0
 a 0
 bomb 0
@@ -33147,7 +33147,7 @@ year 0
 . 0
 
 Mike 1
-Cito 0
+Cito 1
 , 0
 17 0
 , 0
@@ -33231,7 +33231,7 @@ Cito 0
 father 0
 , 0
 Stephen 1
-Cito 0
+Cito 1
 , 0
 had 0
 admitted 0
@@ -33736,7 +33736,7 @@ added 0
 . 0
 
 Alexander 1
-Bavykin 0
+Bavykin 1
 , 0
 deputy 0
 legal 0
@@ -33845,7 +33845,7 @@ superhighway 0
 " 0
 said 0
 Marc 1
-Pearl 0
+Pearl 1
 , 0
 vice-president 0
 of 0
@@ -34191,7 +34191,7 @@ PARIS 0
 
 Moroccan 0
 Mohamed 1
-Benchaou 0
+Benchaou 1
 , 0
 the 0
 third 0
@@ -34332,7 +34332,7 @@ than 0
 
 Italian 0
 President 0
-urges 0
+urges 1
 separatists 0
 to 0
 turn 0
@@ -34348,7 +34348,7 @@ Italian 0
 President 0
 Oscar 1
 Luigi 1
-Scalfaro 0
+Scalfaro 1
 visited 0
 the 0
 symbolic 0
@@ -34622,7 +34622,7 @@ independence 0
 march 0
 along 0
 the 0
-Po 1
+Po 0
 River 0
 in 0
 September 0
@@ -35146,7 +35146,7 @@ after 0
 in 0
 July 0
 , 0
-El 1
+El 0
 Salvador 0
 160,553 0
 ( 0
@@ -35160,7 +35160,7 @@ Indonesia 0
 ) 0
 , 0
 Ethiopia 0
-69,252 0
+69,252 1
 ( 0
 60,456 0
 ) 0
@@ -35179,7 +35179,7 @@ seventh 0
 position 0
 with 0
 54,333 0
-bags 0
+bags 1
 ( 0
 29,055 0
 ) 0
@@ -35707,7 +35707,7 @@ British 0
 finance 0
 minister 0
 Kenneth 1
-Clarke 0
+Clarke 1
 had 0
 to 0
 resign 0
@@ -35730,7 +35730,7 @@ Member 0
 of 0
 Parliament 0
 Tony 1
-Marlow 0
+Marlow 1
 said 0
 the 0
 resignation 0
@@ -35778,7 +35778,7 @@ cannot 0
 endure 0
 , 0
 " 0
-Marlow 0
+Marlow 1
 told 0
 BBC 0
 television 0
@@ -35797,7 +35797,7 @@ sustainable 0
 . 0
 
 Kenneth 1
-Clarke 0
+Clarke 1
 has 0
 to 0
 go 0
@@ -35892,7 +35892,7 @@ of 0
 Prime 0
 Minister 0
 John 1
-Major 0
+Major 1
 . 0
 
 Major 0
@@ -35925,7 +35925,7 @@ and 0
 fellow 0
 pro-European 0
 Michael 1
-Heseltine 0
+Heseltine 1
 , 0
 deputy 0
 prime 0
@@ -35936,13 +35936,13 @@ Pro-European 0
 Conservative 0
 MP 0
 Edwina 0
-Currie 0
+Currie 1
 told 0
 the 0
 BBC 0
 that 0
 if 0
-Clarke 0
+Clarke 1
 resigned 0
 , 0
 other 0
@@ -36005,7 +36005,7 @@ said 0
 inquiry 0
 head 0
 Chris 1
-Hunt 0
+Hunt 1
 might 0
 be 0
 biased 0
@@ -36070,7 +36070,7 @@ opposition 0
 foreign 0
 affairs 0
 spokesman 0
-Laurie 0
+Laurie 1
 Brereton 0
 said 0
 . 0
@@ -36277,7 +36277,7 @@ Friday 0
 . 0
 
 Paul 1
-Crofts 0
+Crofts 1
 , 0
 33 0
 , 0
@@ -36368,7 +36368,7 @@ house 0
 " 0
 Judge 0
 Michael 1
-Grove 0
+Grove 1
 said 0
 . 0
 
@@ -36461,7 +36461,7 @@ prison 0
 
 NZ 0
 's 0
-Bolger 1
+Bolger 0
 says 0
 Nats 0
 to 0
@@ -36526,7 +36526,7 @@ Thursday 0
 
 NZ 0
 's 0
-Peters 1
+Peters 0
 says 0
 Nat 0
 , 0
@@ -36545,7 +36545,7 @@ Zealand 0
 First 0
 leader 0
 Winston 1
-Peters 1
+Peters 0
 on 0
 Friday 0
 said 0
@@ -36566,7 +36566,7 @@ of 0
 completion 0
 . 0
 
-Peters 1
+Peters 0
 left 0
 a 0
 meeting 0
@@ -36584,7 +36584,7 @@ speaking 0
 to 0
 Labour 0
 leader 0
-Helen 0
+Helen 1
 Clark 0
 . 0
 
@@ -36639,7 +36639,7 @@ RTRS 0
 Australian 0
 MP 0
 John 1
-Langmore 0
+Langmore 1
 formally 0
 resigns 0
 . 0
@@ -36650,7 +36650,7 @@ CANBERRA 0
 Australian 0
 parliamentarian 0
 John 1
-Langmore 0
+Langmore 1
 has 0
 formally 0
 resigned 0
@@ -36668,7 +36668,7 @@ of 0
 Representatives 0
 speaker 0
 Bob 1
-Halverson 0
+Halverson 1
 said 0
 on 0
 Friday 0
@@ -36685,7 +36685,7 @@ today 0
 from 0
 Mr 0
 John 1
-Vance 0
+Vance 1
 Langmore 0
 , 0
 a 0
@@ -36705,7 +36705,7 @@ the 0
 electoral 0
 division 0
 of 0
-Fraser 1
+Fraser 0
 in 0
 the 0
 Australian 0
@@ -36841,7 +36841,7 @@ to 0
 then 0
 treasurer 0
 Paul 1
-Keating 0
+Keating 1
 in 0
 1983 0
 . 0
@@ -37187,7 +37187,7 @@ Budisuryana 0
 Malaysia 0
 
 King 0
-Ace 0
+Ace 1
 22/11/96 0
 5,000 0
 Japan 0
@@ -37628,8 +37628,8 @@ Tuesday 0
 EPA 0
 Vice 0
 Minister 0
-Shimpei 0
-Nukaya 0
+Shimpei 1
+Nukaya 1
 told 0
 reporters 0
 on 0
@@ -38250,7 +38250,7 @@ said 0
 The 0
 Ministry 0
 's 0
-Umar 1
+Umar 0
 said 0
 on 0
 Thursday 0
@@ -38394,7 +38394,7 @@ the 0
 Citra 0
 Group 0
 of 0
-Suharto 1
+Suharto 0
 's 0
 eldest 0
 daughter 0
@@ -38521,7 +38521,7 @@ hosting 0
 WTO 0
 . 0
 
-Ramthan 0
+Ramthan 1
 Hussain 1
 
 SINGAPORE 0
@@ -38690,7 +38690,7 @@ then-U.S. 0
 Trade 0
 Representative 0
 Mickey 1
-Kantor 0
+Kantor 1
 had 0
 said 0
 the 0
@@ -38728,7 +38728,7 @@ members 0
 . 0
 
 Derek 1
-da 0
+da 1
 Cunha 0
 , 0
 senior 0
@@ -38809,7 +38809,7 @@ market 0
 " 0
 , 0
 said 0
-Tan 1
+Tan 0
 Kong 0
 Yam 0
 , 0
@@ -39301,8 +39301,8 @@ Posts 0
 and 0
 Telecommunications 0
 Minister 0
-Hisao 0
-Horinouchi 0
+Hisao 1
+Horinouchi 1
 told 0
 a 0
 news 0
@@ -39676,7 +39676,7 @@ at 0
 the 0
 1994 0
 Lillehammer 0
-Winter 1
+Winter 0
 Olympics 0
 and 0
 a 0
@@ -39725,7 +39725,7 @@ race 0
 
 1. 0
 Svetlana 1
-Gladishiva 0
+Gladishiva 1
 ( 0
 Russia 0
 ) 0
@@ -39735,55 +39735,55 @@ minute 0
 seconds 0
 
 2. 0
-Pernila 0
-Wiberg 0
+Pernila 1
+Wiberg 1
 ( 0
 Sweden 0
 ) 0
 1:17.97 0
 
 3. 0
-Carole 0
-Montillet 0
+Carole 1
+Montillet 1
 ( 0
 France 0
 ) 0
 1:18.11 0
 
 4. 0
-Hilde 0
-Gerg 0
+Hilde 1
+Gerg 1
 ( 0
 Germany 0
 ) 0
 1:18.15 0
 
 5. 0
-Isolde 0
-Kostner 0
+Isolde 1
+Kostner 1
 ( 0
 Italy 0
 ) 0
 1:18.19 0
 
 6. 0
-Warwara 0
-Zelenskaja 0
+Warwara 1
+Zelenskaja 1
 ( 0
 Russia 0
 ) 0
 1:18.21 0
 
 7. 0
-Madlen 0
-Brigger-Summermatter 0
+Madlen 1
+Brigger-Summermatter 1
 ( 0
 Switzerland 0
 ) 0
 1:18.23 0
 
 8. 0
-Florence 0
+Florence 1
 Masnada 0
 ( 0
 France 0
@@ -39791,8 +39791,8 @@ France 0
 1:18.31 0
 
 9. 0
-Katja 0
-Seizinger 0
+Katja 1
+Seizinger 1
 ( 0
 Germany 0
 ) 0
@@ -39800,7 +39800,7 @@ Germany 0
 
 10= 0
 Martina 1
-Ertl 0
+Ertl 1
 ( 0
 Germany 0
 ) 0
@@ -39808,15 +39808,15 @@ Germany 0
 
 10= 0
 Stefanie 0
-Schuster 0
+Schuster 1
 ( 0
 Austria 0
 ) 0
 1:18.48 0
 
 12. 0
-Bibiana 0
-Perez 0
+Bibiana 1
+Perez 1
 ( 0
 Italy 0
 ) 0
@@ -39824,15 +39824,15 @@ Italy 0
 
 13. 0
 Barbara 1
-Merlin 0
+Merlin 1
 ( 0
 Italy 0
 ) 0
 1:18.67 0
 
 14. 0
-Sybille 0
-Brauner 0
+Sybille 1
+Brauner 1
 ( 0
 Germany 0
 ) 0
@@ -39840,7 +39840,7 @@ Germany 0
 
 15. 0
 Katharina 0
-Gutensohn 0
+Gutensohn 1
 ( 0
 Germany 0
 ) 0
@@ -39848,7 +39848,7 @@ Germany 0
 
 16. 0
 Leatitia 0
-Dalloz 0
+Dalloz 1
 ( 0
 France 0
 ) 0
@@ -39856,7 +39856,7 @@ France 0
 
 17. 0
 Renate 0
-Goetschl 0
+Goetschl 1
 ( 0
 Austria 0
 ) 0
@@ -39864,7 +39864,7 @@ Austria 0
 
 18. 0
 Marianne 1
-Brechu 0
+Brechu 1
 ( 0
 France 0
 ) 0
@@ -39872,7 +39872,7 @@ France 0
 
 19. 0
 Heidi 0
-Zurbriggen 0
+Zurbriggen 1
 ( 0
 Switzerland 0
 ) 0
@@ -39880,7 +39880,7 @@ Switzerland 0
 
 20. 0
 Spela 0
-Bracun 0
+Bracun 1
 ( 0
 Slovenia 0
 ) 0
@@ -39888,7 +39888,7 @@ Slovenia 0
 
 21. 0
 Shannon 0
-Nobis 0
+Nobis 1
 ( 0
 U.S. 0
 ) 0
@@ -39896,15 +39896,15 @@ U.S. 0
 
 22= 0
 Regine 0
-Cavagnoud 0
+Cavagnoud 1
 ( 0
 France 0
 ) 0
 1:19.21 0
 
 22= 0
-Anita 1
-Wachter 0
+Anita 0
+Wachter 1
 ( 0
 Austria 0
 ) 0
@@ -39912,7 +39912,7 @@ Austria 0
 
 24. 0
 Megan 0
-Gerety 0
+Gerety 1
 ( 0
 U.S. 0
 ) 0
@@ -39920,15 +39920,15 @@ U.S. 0
 
 25. 0
 Hilary 1
-Lindh 0
+Lindh 1
 ( 0
 U.S. 0
 ) 0
 1:19.41 0
 
 26= 0
-Catherine 1
-Borghi 0
+Catherine 0
+Borghi 1
 ( 0
 Switzerland 0
 ) 0
@@ -39936,7 +39936,7 @@ Switzerland 0
 
 26= 0
 Michaela 0
-Dorfmeister 0
+Dorfmeister 1
 ( 0
 Austria 0
 ) 0
@@ -39944,7 +39944,7 @@ Austria 0
 
 28. 0
 Alexandra 1
-Meissnitzer 0
+Meissnitzer 1
 ( 0
 Austria 0
 ) 0
@@ -39961,7 +39961,7 @@ Norway 0
 
 30. 0
 Monika 0
-Tschirky 0
+Tschirky 1
 ( 0
 Switzerland 0
 ) 0
@@ -39977,7 +39977,7 @@ official 0
 -DOCSTART- 0
 
 ALPINE 0
-SKIING-GLADISHIVA 0
+SKIING-GLADISHIVA 1
 WINS 0
 WORLD 0
 CUP 0
@@ -40123,8 +40123,8 @@ Sunday 0
 The 0
 duo 0
 of 0
-Pat 1
-Hurst 0
+Pat 0
+Hurst 1
 and 0
 Scott 1
 McCarron 1
@@ -40137,11 +40137,11 @@ with 0
 the 0
 team 0
 of 0
-Donna 1
+Donna 0
 Andrews 1
 and 0
 Mike 1
-Hulbert 0
+Hulbert 1
 at 0
 13-under-par 0
 129 0
@@ -40320,8 +40320,8 @@ Downhill 0
 Standings 0
 
 1. 0
-Katja 0
-Seizinger 0
+Katja 1
+Seizinger 1
 ( 0
 Germany 0
 ) 0
@@ -40329,32 +40329,32 @@ Germany 0
 points 0
 
 2. 0
-Renate 0
-Goetschl 0
+Renate 1
+Goetschl 1
 ( 0
 Austria 0
 ) 0
 132 0
 
 3. 0
-Carole 0
-Montillet 0
+Carole 1
+Montillet 1
 ( 0
 France 0
 ) 0
 86 0
 
 4. 0
-Pernilla 0
-Wiberg 0
+Pernilla 1
+Wiberg 1
 ( 0
 Sweden 0
 ) 0
 75 0
 
 5. 0
-Heidi 0
-Zurbriggen 0
+Heidi 1
+Zurbriggen 1
 ( 0
 Switzerland 0
 ) 0
@@ -40362,7 +40362,7 @@ Switzerland 0
 
 6. 0
 Regina 1
-Haeusl 0
+Haeusl 1
 ( 0
 Germany 0
 ) 0
@@ -40370,24 +40370,24 @@ Germany 0
 
 7. 0
 Alexandra 1
-Meissnitzer 0
+Meissnitzer 1
 ( 0
 Austria 0
 ) 0
 65 0
 
 8. 0
-Isolde 0
-Kostner 0
+Isolde 1
+Kostner 1
 ( 0
 Italy 0
 ) 0
 60 0
 
 9. 0
-Ingeborg 0
+Ingeborg 1
 Helen 0
-Markein 0
+Markein 1
 ( 0
 Norway 0
 ) 0
@@ -40395,7 +40395,7 @@ Norway 0
 
 10= 0
 Megan 0
-Gerety 0
+Gerety 1
 ( 0
 U.S. 0
 ) 0
@@ -40403,7 +40403,7 @@ U.S. 0
 
 10= 0
 Warwara 0
-Zelenskaja 0
+Zelenskaja 1
 ( 0
 Russia 0
 ) 0
@@ -40427,7 +40427,7 @@ U.S. 0
 
 13= 0
 Stefanie 0
-Schuster 0
+Schuster 1
 ( 0
 Austria 0
 ) 0
@@ -40435,7 +40435,7 @@ Austria 0
 
 15. 0
 Miriam 1
-Vogt 0
+Vogt 1
 ( 0
 Germany 0
 ) 0
@@ -40443,7 +40443,7 @@ Germany 0
 
 16. 0
 Bibiana 0
-Perez 0
+Perez 1
 ( 0
 Italy 0
 ) 0
@@ -40451,7 +40451,7 @@ Italy 0
 
 17. 0
 Hilde 0
-Gerg 0
+Gerg 1
 ( 0
 Germany 0
 ) 0
@@ -40459,7 +40459,7 @@ Germany 0
 
 18. 0
 Barbara 1
-Merlin 0
+Merlin 1
 ( 0
 Germany 0
 ) 0
@@ -40467,7 +40467,7 @@ Germany 0
 
 19= 0
 Kate 1
-Pace 0
+Pace 1
 Lindsay 1
 ( 0
 Canada 0
@@ -40476,7 +40476,7 @@ Canada 0
 
 19= 0
 Svetlana 1
-Gladishiva 0
+Gladishiva 1
 ( 0
 Russia 0
 ) 0
@@ -40484,7 +40484,7 @@ Russia 0
 
 19= 0
 Regine 0
-Cavagnoud 0
+Cavagnoud 1
 ( 0
 France 0
 ) 0
@@ -40509,8 +40509,8 @@ races 0
 : 0
 
 1. 0
-Katja 0
-Seizinger 0
+Katja 1
+Seizinger 1
 ( 0
 Germany 0
 ) 0
@@ -40518,16 +40518,16 @@ Germany 0
 points 0
 
 2. 0
-Pernilla 0
-Wiberg 0
+Pernilla 1
+Wiberg 1
 ( 0
 Sweden 0
 ) 0
 353 0
 
 3. 0
-Hide 0
-Gerg 0
+Hide 1
+Gerg 1
 ( 0
 Germany 0
 ) 0
@@ -40535,31 +40535,31 @@ Germany 0
 
 4. 0
 Anita 1
-Wachter 0
+Wachter 1
 ( 0
 Austria 0
 ) 0
 180 0
 
 5. 0
-Isolde 0
-Kostner 0
+Isolde 1
+Kostner 1
 ( 0
 Italy 0
 ) 0
 157 0
 
 6. 0
-Heidi 0
-Zurbriggen 0
+Heidi 1
+Zurbriggen 1
 ( 0
 Switzerland 0
 ) 0
 153 0
 
 7. 0
-Warwara 0
-Zelenskaja 0
+Warwara 1
+Zelenskaja 1
 ( 0
 Russia 0
 ) 0
@@ -40567,7 +40567,7 @@ Russia 0
 
 8= 0
 Renate 0
-Goetschl 0
+Goetschl 1
 ( 0
 Austria 0
 ) 0
@@ -40575,7 +40575,7 @@ Austria 0
 
 8= 0
 Carole 0
-Montillet 0
+Montillet 1
 ( 0
 France 0
 ) 0
@@ -40583,14 +40583,14 @@ France 0
 
 10. 0
 Svetlana 1
-Gladishiva 0
+Gladishiva 1
 ( 0
 Russia 0
 ) 0
 137 0
 
 11. 0
-Florence 0
+Florence 1
 Masnada 0
 ( 0
 France 0
@@ -40598,8 +40598,8 @@ France 0
 133 0
 
 12. 0
-Deborah 0
-Compagnoni 0
+Deborah 1
+Compagnoni 1
 ( 0
 Italy 0
 ) 0
@@ -40607,7 +40607,7 @@ Italy 0
 
 13. 0
 Martina 1
-Ertl 0
+Ertl 1
 ( 0
 Germany 0
 ) 0
@@ -40615,13 +40615,13 @@ Germany 0
 
 14. 0
 Alexandra 1
-Meissnitzer 0
+Meissnitzer 1
 ( 0
 Austria)118 0
 
 15. 0
 Urska 0
-Horvat 0
+Horvat 1
 ( 0
 Slovenia 0
 ) 0
@@ -40629,7 +40629,7 @@ Slovenia 0
 
 16= 0
 Claudia 0
-Riegler 0
+Riegler 1
 ( 0
 New 0
 Zealand 0
@@ -40638,7 +40638,7 @@ Zealand 0
 
 16= 0
 Sabina 0
-Panzanini 0
+Panzanini 1
 ( 0
 Italy 0
 ) 0
@@ -40646,7 +40646,7 @@ Italy 0
 
 18. 0
 Barbara 1
-Merlin 0
+Merlin 1
 ( 0
 Italy 0
 ) 0
@@ -40654,7 +40654,7 @@ Italy 0
 
 19. 0
 Stefanie 0
-Schuster 0
+Schuster 1
 ( 0
 Austria 0
 ) 0
@@ -40662,7 +40662,7 @@ Austria 0
 
 20. 0
 Miriam 1
-Vogt 0
+Vogt 1
 ( 0
 Germany 0
 ) 0
@@ -40674,39 +40674,39 @@ standings 0
 : 0
 
 1. 0
-Pernilla 0
-Wiberg 0
+Pernilla 1
+Wiberg 1
 ( 0
 Sweden 0
 ) 0
 180 0
 
 2. 0
-Hilde 0
-Gerg 0
+Hilde 1
+Gerg 1
 ( 0
 Germany 0
 ) 0
 130 0
 
 3. 0
-Svetland 0
-Gladishiva 0
+Svetland 1
+Gladishiva 1
 ( 0
 Russia 0
 ) 0
 114 0
 
 4. 0
-Warwara 0
-Zelenskaja 0
+Warwara 1
+Zelenskaja 1
 ( 0
 Russia 0
 ) 0
 100 0
 
 5. 0
-Florence 0
+Florence 1
 Masnada 0
 ( 0
 France 0
@@ -40714,24 +40714,24 @@ France 0
 82 0
 
 6. 0
-Katja 0
-Seizinger 0
+Katja 1
+Seizinger 1
 ( 0
 Germany 0
 ) 0
 74 0
 
 7. 0
-Isolde 0
-Kostner 0
+Isolde 1
+Kostner 1
 ( 0
 Italy 0
 ) 0
 65 0
 
 8. 0
-Carole 0
-Montillet 0
+Carole 1
+Montillet 1
 ( 0
 France 0
 ) 0
@@ -40739,7 +40739,7 @@ France 0
 
 9. 0
 Martina 1
-Ertl 0
+Ertl 1
 ( 0
 Germany 0
 ) 0
@@ -40747,15 +40747,15 @@ Germany 0
 
 10. 0
 Anita 1
-Wachter 0
+Wachter 1
 ( 0
 Austria 0
 ) 0
 49 0
 
 11. 0
-Heidi 0
-Zurbriggen 0
+Heidi 1
+Zurbriggen 1
 ( 0
 Switzerland 0
 ) 0
@@ -40763,7 +40763,7 @@ Switzerland 0
 
 12= 0
 Madlen 0
-Brigger-Summermatter 0
+Brigger-Summermatter 1
 ( 0
 Switzerland 0
 ) 0
@@ -40771,7 +40771,7 @@ Switzerland 0
 
 12= 0
 Barbara 1
-Merlin 0
+Merlin 1
 ( 0
 Italy 0
 ) 0
@@ -40779,7 +40779,7 @@ Italy 0
 
 12= 0
 Katharina 0
-Gutensohn 0
+Gutensohn 1
 ( 0
 Germany 0
 ) 0
@@ -40787,7 +40787,7 @@ Germany 0
 
 15. 0
 Stefanie 0
-Schuster 0
+Schuster 1
 ( 0
 Austria 0
 ) 0
@@ -40795,7 +40795,7 @@ Austria 0
 
 16. 0
 Leatitia 0
-Dalloz 0
+Dalloz 1
 ( 0
 France 0
 ) 0
@@ -40803,7 +40803,7 @@ France 0
 
 17. 0
 Bibiana 0
-Perez 0
+Perez 1
 ( 0
 Italy 0
 ) 0
@@ -40811,15 +40811,15 @@ Italy 0
 
 18= 0
 Miriam 1
-Vogt 0
+Vogt 1
 ( 0
 Germany 0
 ) 0
 29 0
 
 18= 0
-Marianne 1
-Brechu 0
+Marianne 0
+Brechu 1
 ( 0
 France 0
 ) 0
@@ -40827,7 +40827,7 @@ France 0
 
 20. 0
 Alexandra 1
-Meissnitzer 0
+Meissnitzer 1
 ( 0
 Austria 0
 ) 0
@@ -40849,7 +40849,7 @@ Germany 0
 1,135 0
 
 3. 0
-Switzerland 0
+Switzerland 1
 972 0
 
 4. 0
@@ -40861,7 +40861,7 @@ France 0
 853 0
 
 6. 0
-Norway 0
+Norway 1
 746 0
 
 7. 0
@@ -40869,7 +40869,7 @@ Sweden 0
 673 0
 
 8. 0
-Slovenia 0
+Slovenia 1
 432 0
 
 9. 0
@@ -40912,8 +40912,8 @@ race 0
 : 0
 
 1. 0
-Renate 0
-Goetschl 0
+Renate 1
+Goetschl 1
 ( 0
 Austria 0
 ) 0
@@ -40923,16 +40923,16 @@ minute 0
 seconds 0
 
 2. 0
-Katja 0
-Seizinger 0
+Katja 1
+Seizinger 1
 ( 0
 Germany 0
 ) 0
 1:48.53 0
 
 3. 0
-Isolde 0
-Kostner 0
+Isolde 1
+Kostner 1
 ( 0
 Italy 0
 ) 0
@@ -40940,15 +40940,15 @@ Italy 0
 
 4. 0
 Alexandra 1
-Meissnitzer 0
+Meissnitzer 1
 ( 0
 Austria 0
 ) 0
 1:49.13 0
 
 5. 0
-Megan 0
-Gerety 0
+Megan 1
+Gerety 1
 ( 0
 U.S. 0
 ) 0
@@ -40956,22 +40956,22 @@ U.S. 0
 
 6. 0
 Miriam 1
-Vogt 0
+Vogt 1
 ( 0
 Germany 0
 ) 0
 1:49.28 0
 
 7. 0
-Stefanie 0
-Schuster 0
+Stefanie 1
+Schuster 1
 ( 0
 Austria 0
 ) 0
 1:49.38 0
 
 8. 0
-Ingeborg 0
+Ingeborg 1
 Helen 0
 Marken 1
 ( 0
@@ -40980,7 +40980,7 @@ Norway 0
 1:49.41 0
 
 9. 0
-Florence 0
+Florence 1
 Masnada 0
 ( 0
 France 0
@@ -40989,23 +40989,23 @@ France 0
 
 10. 0
 Regina 1
-Haeusl 0
+Haeusl 1
 ( 0
 Germany 0
 ) 0
 1:49.53 0
 
 11. 0
-Heidi 0
-Zurbriggen 0
+Heidi 1
+Zurbriggen 1
 ( 0
 Switzerland 0
 ) 0
 1:49.65 0
 
 12. 0
-Warwara 0
-Zelenskaja 0
+Warwara 1
+Zelenskaja 1
 ( 0
 Russia 0
 ) 0
@@ -41013,15 +41013,15 @@ Russia 0
 
 13. 0
 Barbara 1
-Merlin 0
+Merlin 1
 ( 0
 Italy 0
 ) 0
 1:49.76 0
 
 14. 0
-Hilde 0
-Gerg 0
+Hilde 1
+Gerg 1
 ( 0
 Germany 0
 ) 0
@@ -41029,7 +41029,7 @@ Germany 0
 
 15. 0
 Martina 1
-Ertl 0
+Ertl 1
 ( 0
 Germany 0
 ) 0
@@ -41037,7 +41037,7 @@ Germany 0
 
 16. 0
 Pernilla 0
-Wiberg 0
+Wiberg 1
 ( 0
 Sweden 0
 ) 0
@@ -41045,7 +41045,7 @@ Sweden 0
 
 17. 0
 Svetlana 1
-Gladishiva 0
+Gladishiva 1
 ( 0
 Russia 0
 ) 0
@@ -41053,7 +41053,7 @@ Russia 0
 
 18. 0
 Anita 1
-Wachter 0
+Wachter 1
 ( 0
 Austria 0
 ) 0
@@ -41061,7 +41061,7 @@ Austria 0
 
 19. 0
 Spela 0
-Bracun 0
+Bracun 1
 ( 0
 Slovenia 0
 ) 0
@@ -41069,7 +41069,7 @@ Slovenia 0
 
 20. 0
 Regine 0
-Cavagnoud 0
+Cavagnoud 1
 ( 0
 France 0
 ) 0
@@ -41077,7 +41077,7 @@ France 0
 
 21. 0
 Kate 1
-Pace 0
+Pace 1
 Lindsay 1
 ( 0
 Canada 0
@@ -41086,7 +41086,7 @@ Canada 0
 
 22. 0
 Bibiana 0
-Perez 0
+Perez 1
 ( 0
 Italy 0
 ) 0
@@ -41094,7 +41094,7 @@ Italy 0
 
 23. 0
 Hilary 1
-Lindh 0
+Lindh 1
 ( 0
 United 0
 States 0
@@ -41102,8 +41102,8 @@ States 0
 1:50.69 0
 
 24. 0
-Catherine 1
-Borghi 0
+Catherine 0
+Borghi 1
 ( 0
 Switzerland 0
 ) 0
@@ -41111,7 +41111,7 @@ Switzerland 0
 
 25. 0
 Carole 0
-Montillet 0
+Montillet 1
 ( 0
 France 0
 ) 0
@@ -41119,7 +41119,7 @@ France 0
 
 26. 0
 Brigitte 0
-Obermoser 0
+Obermoser 1
 ( 0
 Austria 0
 ) 0
@@ -41127,7 +41127,7 @@ Austria 0
 
 27. 0
 Sybille 0
-Brauner 0
+Brauner 1
 ( 0
 Germay 0
 ) 0
@@ -41135,7 +41135,7 @@ Germay 0
 
 28. 0
 Grete 0
-Stroem 0
+Stroem 1
 ( 0
 Norway 0
 ) 0
@@ -41143,7 +41143,7 @@ Norway 0
 
 29. 0
 Patrizia 0
-Bassis 0
+Bassis 1
 ( 0
 Italy 0
 ) 0
@@ -41151,7 +41151,7 @@ Italy 0
 
 30. 0
 Alessandra 0
-Merlin 0
+Merlin 1
 ( 0
 Italy 0
 ) 0
@@ -41195,8 +41195,8 @@ Men 0
 kms 0
 
 1. 0
-Vadim 0
-Sashurin 0
+Vadim 1
+Sashurin 1
 ( 0
 Belarus 0
 ) 0
@@ -41212,8 +41212,8 @@ rounds 0
 ) 0
 
 2. 0
-Frode 0
-Andresen 0
+Frode 1
+Andresen 1
 ( 0
 Norway 0
 ) 0
@@ -41223,9 +41223,9 @@ Norway 0
 ) 0
 
 3. 0
-Ole 0
+Ole 1
 Einar 0
-Bjorndalen 0
+Bjorndalen 1
 ( 0
 Norway 0
 ) 0
@@ -41236,7 +41236,7 @@ Norway 0
 
 4. 0
 Sven 1
-Fischer 0
+Fischer 1
 ( 0
 Germany 0
 ) 0
@@ -41246,7 +41246,7 @@ Germany 0
 ) 0
 
 5. 0
-Ricco 0
+Ricco 1
 Gross 0
 ( 0
 Germany 0
@@ -41261,7 +41261,7 @@ Cup 0
 standings 0
 
 1. 0
-Fischer 0
+Fischer 1
 ( 0
 Germany 0
 ) 0
@@ -41270,14 +41270,14 @@ points 0
 
 2. 0
 Pavel 1
-Muslimov 0
+Muslimov 1
 ( 0
 Russia 0
 ) 0
 82 0
 
 3. 0
-Sashurin 0
+Sashurin 1
 68 0
 . 0
 
@@ -41288,7 +41288,7 @@ kms 0
 
 1. 0
 Olga 1
-Melnik 0
+Melnik 1
 ( 0
 Russia 0
 ) 0
@@ -41299,7 +41299,7 @@ Russia 0
 
 2. 0
 Svetlana 1
-Paramygina 0
+Paramygina 1
 ( 0
 Belorus 0
 ) 0
@@ -41309,9 +41309,9 @@ Belorus 0
 ) 0
 
 3. 0
-Gunn 0
-Margit 1
-Andreassen 0
+Gunn 1
+Margit 0
+Andreassen 1
 ( 0
 Norway 0
 ) 0
@@ -41321,8 +41321,8 @@ Norway 0
 ) 0
 
 4. 0
-Simone 0
-Greiner-Petter-Memm 0
+Simone 1
+Greiner-Petter-Memm 1
 ( 0
 Germany 0
 ) 0
@@ -41332,8 +41332,8 @@ Germany 0
 ) 0
 
 5. 0
-Petra 0
-Behle 0
+Petra 1
+Behle 1
 ( 0
 Germany 0
 ) 0
@@ -41347,21 +41347,21 @@ Cup 0
 standings 0
 
 1. 0
-Behle 0
+Behle 1
 89 0
 
 2. 0
-Paramygina 0
+Paramygina 1
 79 0
 
 3. 0
-Greiner-Petter-Memm 0
+Greiner-Petter-Memm 1
 78 0
 
 -DOCSTART- 0
 
 ALPINE 0
-SKIING-GOETCHL 0
+SKIING-GOETCHL 1
 WINS 0
 WORLD 0
 CUP 0
@@ -41414,7 +41414,7 @@ third 0
 BOBSLEIGH-SHIMER 0
 PILOTS 0
 USA 0
-III 1
+III 0
 TO 0
 SURPRISE 0
 WIN 0
@@ -41426,10 +41426,10 @@ Austria 0
 1996-12-07 0
 
 Brian 1
-Shimer 0
+Shimer 1
 piloted 0
 USA 0
-III 1
+III 0
 to 0
 a 0
 surprise 0
@@ -41486,7 +41486,7 @@ Huber 1
 and 0
 breakman 0
 Antonio 1
-Tartaglia 0
+Tartaglia 1
 in 0
 the 0
 Italy 0
@@ -41509,11 +41509,11 @@ I 0
 represented 0
 by 0
 Pierre 1
-Lueders 0
+Lueders 1
 and 0
 breakman 0
 Dave 1
-MacEachern 0
+MacEachern 1
 , 0
 completed 0
 the 0
@@ -41577,11 +41577,11 @@ USA 0
 I 0
 's 0
 Jim 1
-Herberich 0
+Herberich 1
 and 0
 breakman 0
 Garrett 1
-Hines 1
+Hines 0
 who 0
 managed 0
 only 0
@@ -41660,7 +41660,7 @@ women 0
 competition 0
 , 0
 Cuo 0
-Dan 1
+Dan 0
 finishing 0
 a 0
 respectable 0
@@ -41688,8 +41688,8 @@ day 0
 Alexis 0
 Blanc 0
 and 0
-Sebastien 1
-Foucras 0
+Sebastien 0
+Foucras 1
 gave 0
 France 0
 a 0
@@ -41746,7 +41746,7 @@ with 0
 Canada 0
 's 0
 Jeff 1
-Bean 0
+Bean 1
 , 0
 who 0
 had 0
@@ -41779,7 +41779,7 @@ of 0
 . 0
 
 Veronica 0
-Brenner 1
+Brenner 0
 of 0
 Canada 0
 , 0
@@ -41877,10 +41877,10 @@ States 0
 III 1
 ( 0
 Brian 1
-Shimer 0
+Shimer 1
 , 0
 Randy 1
-Jones 1
+Jones 0
 ) 0
 one 0
 
@@ -41897,7 +41897,7 @@ seconds 0
 Italy 0
 I 0
 ( 0
-Guenther 0
+Guenther 1
 Huber 1
 , 0
 Antonio 1
@@ -41916,7 +41916,7 @@ Canada 0
 I 0
 ( 0
 Pierre 1
-Lueders 0
+Lueders 1
 , 0
 Dave 1
 MacEachern 0
@@ -41937,7 +41937,7 @@ Sepp 0
 Dostthaler 0
 , 0
 Thomas 1
-Lebsa 0
+Lebsa 1
 ) 0
 1:45.95 0
 
@@ -41966,14 +41966,14 @@ Acklin 0
 ) 0
 
 6. 0
-Germany 0
+Germany 1
 III 1
 ( 0
 Dirk 1
-Wiese 0
+Wiese 1
 , 0
 Jakobs 0
-Marco 1
+Marco 0
 ) 0
 1:46.02 0
 
@@ -41989,7 +41989,7 @@ Republic 0
 I 0
 ( 0
 Jiri 1
-Dzmura 0
+Dzmura 1
 , 0
 Pavel 1
 Polomsky 0
@@ -42006,11 +42006,11 @@ Polomsky 0
 Austria 0
 I 0
 ( 0
-Hubert 1
+Hubert 0
 Schoesser 0
 , 0
-Erwin 1
-Arnold 1
+Erwin 0
+Arnold 0
 ) 0
 1:46.13 0
 
@@ -42025,7 +42025,7 @@ Britain 0
 I 0
 ( 0
 Sean 1
-Olsson 0
+Olsson 1
 , 0
 Dean 1
 Ward 0
@@ -42046,11 +42046,11 @@ States 0
 I 0
 ( 0
 Jim 1
-Herberich 0
+Herberich 1
 , 0
-Garrett 1
+Garrett 0
 
-Hines 1
+Hines 0
 ) 0
 1:46.34 0
 ( 0
@@ -42060,11 +42060,11 @@ Hines 1
 ) 0
 and 0
 Austria 0
-III 1
+III 0
 
 ( 0
 Hannes 1
-Conti 0
+Conti 1
 , 0
 Georg 0
 Kuttner 0
@@ -42111,7 +42111,7 @@ England 0
 test 0
 cricketer 0
 Bob 1
-Woolmer 1
+Woolmer 0
 the 0
 chance 0
 of 0
@@ -42123,7 +42123,7 @@ his 0
 birthplace 0
 . 0
 
-Woolmer 1
+Woolmer 0
 was 0
 born 0
 in 0
@@ -42169,7 +42169,7 @@ intriguing 0
 experience 0
 , 0
 " 0
-Woolmer 1
+Woolmer 0
 , 0
 now 0
 the 0
@@ -42182,7 +42182,7 @@ on 0
 Saturday 0
 . 0
 
-Woolmer 1
+Woolmer 0
 , 0
 48 0
 , 0
@@ -42209,7 +42209,7 @@ a 0
 member 0
 of 0
 Tony 1
-Greig 0
+Greig 1
 's 0
 England 0
 side 0
@@ -42249,7 +42249,7 @@ Now 0
 aged 0
 86 0
 , 0
-Woolmer 1
+Woolmer 0
 senior 0
 lives 0
 with 0
@@ -42260,7 +42260,7 @@ Cape 0
 Town 0
 . 0
 
-Woolmer 1
+Woolmer 0
 's 0
 memories 0
 of 0
@@ -42412,8 +42412,8 @@ Men 0
 : 0
 
 1. 0
-Alexis 0
-Blanc 0
+Alexis 1
+Blanc 1
 ( 0
 France 0
 ) 0
@@ -42422,7 +42422,7 @@ points 0
 
 2. 0
 Sebastien 1
-Foucras 0
+Foucras 1
 ( 0
 France 0
 ) 0
@@ -42430,7 +42430,7 @@ France 0
 
 3. 0
 Jeff 1
-Bean 0
+Bean 1
 ( 0
 Canada 0
 ) 0
@@ -42438,7 +42438,7 @@ Canada 0
 
 4. 0
 Eric 1
-Bergoust 0
+Bergoust 1
 ( 0
 U.S 0
 ) 0
@@ -42446,7 +42446,7 @@ U.S 0
 
 5. 0
 Christian 1
-Rijavec 0
+Rijavec 1
 ( 0
 Austria 0
 ) 0
@@ -42454,15 +42454,15 @@ Austria 0
 
 6. 0
 Alexandre 1
-Mikhailov 0
+Mikhailov 1
 ( 0
 Russia 0
 ) 0
 202.59 0
 
 7. 0
-Ales 0
-Valenta 0
+Ales 1
+Valenta 1
 ( 0
 Czech 0
 Republic 0
@@ -42471,22 +42471,22 @@ Republic 0
 
 8. 0
 Andy 1
-Capicik 0
+Capicik 1
 ( 0
 Canada 0
 ) 0
 193.82 0
 
 9. 0
-Trace 0
-Worthington 0
+Trace 1
+Worthington 1
 ( 0
 U.S. 0
 ) 0
 192.36 0
 
 10. 0
-Dmitri 0
+Dmitri 1
 Dashinski 0
 Belarus 0
 ) 0
@@ -42496,7 +42496,7 @@ Women 0
 : 0
 
 1. 0
-Veronica 0
+Veronica 1
 Brenner 1
 ( 0
 Canada 0
@@ -42505,15 +42505,15 @@ Canada 0
 
 2. 0
 Karin 1
-Kuster 0
+Kuster 1
 ( 0
 Switzerland 0
 ) 0
 160.55 0
 
 3. 0
-Evelyne 0
-Leu 0
+Evelyne 1
+Leu 1
 ( 0
 Switzerland 0
 ) 0
@@ -42528,7 +42528,7 @@ Canada 0
 157.10 0
 
 5. 0
-Jacqui 0
+Jacqui 1
 Cooper 1
 ( 0
 Australia 0
@@ -42536,8 +42536,8 @@ Australia 0
 156.52 0
 
 6. 0
-Marie 0
-Lindgren 0
+Marie 1
+Lindgren 1
 ( 0
 Sweden 0
 ) 0
@@ -42545,7 +42545,7 @@ Sweden 0
 
 7. 0
 Dan 1
-Cuo 0
+Cuo 1
 ( 0
 China 0
 ) 0
@@ -42560,17 +42560,17 @@ Australia 0
 154.60 0
 
 9. 0
-Xu 0
-Nannan 0
+Xu 1
+Nannan 1
 ( 0
 China 0
 ) 0
 152.08 0
 
 10. 0
-Hilde 0
+Hilde 1
 Synnove 0
-Lid 0
+Lid 1
 ( 0
 Norway 0
 ) 0
@@ -42612,8 +42612,8 @@ Saturday 0
 : 0
 
 1. 0
-Takanobu 0
-Okabe 0
+Takanobu 1
+Okabe 1
 ( 0
 Japan 0
 ) 0
@@ -42631,8 +42631,8 @@ jump 0
 ) 0
 
 2. 0
-Kazuyoshi 0
-Funaki 0
+Kazuyoshi 1
+Funaki 1
 ( 0
 Japan 0
 ) 0
@@ -42645,7 +42645,7 @@ Japan 0
 
 3. 0
 Andreas 1
-Goldberger 0
+Goldberger 1
 ( 0
 Austria 0
 ) 0
@@ -42658,7 +42658,7 @@ Austria 0
 
 4. 0
 Dieter 1
-Thoma 0
+Thoma 1
 ( 0
 Germany 0
 ) 0
@@ -42670,8 +42670,8 @@ Germany 0
 ) 0
 
 5. 0
-Ari-Pekka 0
-Nikkola 0
+Ari-Pekka 1
+Nikkola 1
 ( 0
 Finland 0
 ) 0
@@ -42683,8 +42683,8 @@ Finland 0
 ) 0
 
 6. 0
-Reinhard 0
-Schwarzenberger 0
+Reinhard 1
+Schwarzenberger 1
 ( 0
 Austria 0
 ) 0
@@ -42696,8 +42696,8 @@ Austria 0
 ) 0
 
 7. 0
-Noriaki 0
-Kasai 0
+Noriaki 1
+Kasai 1
 ( 0
 Japan 0
 ) 0
@@ -42709,8 +42709,8 @@ Japan 0
 ) 0
 
 8. 0
-Hiroya 0
-Saitoh 0
+Hiroya 1
+Saitoh 1
 ( 0
 Japan 0
 ) 0
@@ -42722,8 +42722,8 @@ Japan 0
 ) 0
 
 9. 0
-Jani 0
-Soininen 0
+Jani 1
+Soininen 1
 ( 0
 Finland 0
 ) 0
@@ -42735,7 +42735,7 @@ Finland 0
 ) 0
 
 10. 0
-Kristian 0
+Kristian 1
 Brenden 1
 ( 0
 Norway 0
@@ -42759,7 +42759,7 @@ events 0
 : 0
 
 1. 0
-Thoma 0
+Thoma 1
 210 0
 points 0
 
@@ -42768,40 +42768,40 @@ Brenden 1
 206 0
 
 3. 0
-Goldberger 0
+Goldberger 1
 160 0
 
 4. 0
-Okabe 0
+Okabe 1
 146 0
 
 5. 0
-Funaki 0
+Funaki 1
 143 0
 
 6. 0
-Saitoh 0
+Saitoh 1
 121 0
 
 7. 0
-Espen 0
-Bredesen 0
+Espen 1
+Bredesen 1
 ( 0
 Norway 0
 ) 0
 112 0
 
 8. 0
-Nikkola 0
+Nikkola 1
 101 0
 
 9. 0
-Soininen 0
+Soininen 1
 85 0
 
 10. 0
-Primoz 0
-Peterka 0
+Primoz 1
+Peterka 1
 ( 0
 Slovakia 0
 ) 0
@@ -42857,14 +42857,14 @@ Indonesia 0
 15-8 0
 
 Sun 0
-Jun 0
+Jun 1
 ( 0
 China 0
 ) 0
 beat 0
 Allan 1
-Budi 0
-Kusuma 0
+Budi 1
+Kusuma 1
 ( 0
 Indonesia 0
 ) 0
@@ -42876,12 +42876,12 @@ Women 0
 singles 0
 
 Susi 0
-Susanti 0
+Susanti 1
 ( 0
 Indonesia 0
 ) 0
 beat 0
-Camilla 0
+Camilla 1
 Martin 1
 ( 0
 Denmark 0
@@ -42891,7 +42891,7 @@ Denmark 0
 11-3 0
 
 Ye 0
-Zhaoying 0
+Zhaoying 1
 ( 0
 China 0
 ) 0
@@ -42950,7 +42950,7 @@ round 0
 . 0
 
 Horii 0
-Manabu 0
+Manabu 1
 ( 0
 Japan 0
 ) 0
@@ -42961,7 +42961,7 @@ seconds 0
 . 0
 
 Jaegal 0
-Sung-Yeol 0
+Sung-Yeol 1
 ( 0
 South 0
 Korea 0
@@ -42972,7 +42972,7 @@ Korea 0
 . 0
 
 Grunde 0
-Njos 0
+Njos 1
 ( 0
 Norway 0
 ) 0
@@ -42982,7 +42982,7 @@ Norway 0
 . 0
 
 Shimizu 0
-Hiroyasu 0
+Hiroyasu 1
 ( 0
 Japan 0
 ) 0
@@ -42991,8 +42991,8 @@ Japan 0
 5 0
 . 0
 
-Sergey 1
-Klevchenya 0
+Sergey 0
+Klevchenya 1
 ( 0
 Russia 0
 ) 0
@@ -43002,7 +43002,7 @@ Russia 0
 . 0
 
 Yamakage 0
-Hiroaki 0
+Hiroaki 1
 ( 0
 Japan 0
 ) 0
@@ -43012,7 +43012,7 @@ Japan 0
 . 0
 
 Casey 1
-Fitzrandolph 0
+Fitzrandolph 1
 ( 0
 US 0
 ) 0
@@ -43022,7 +43022,7 @@ US 0
 . 0
 
 Sylvain 0
-Bouchard 0
+Bouchard 1
 ( 0
 Canada 0
 ) 0
@@ -43032,7 +43032,7 @@ Canada 0
 . 0
 
 Kim 1
-Yoon-man 0
+Yoon-man 1
 ( 0
 South 0
 Korea 0
@@ -43043,7 +43043,7 @@ Korea 0
 . 0
 
 Inoue 0
-Junichi 0
+Junichi 1
 ( 0
 Japan 0
 ) 0
@@ -43061,7 +43061,7 @@ round 0
 . 0
 
 Xuc 0
-Rulhong 0
+Rulhong 1
 ( 0
 China 0
 ) 0
@@ -43071,7 +43071,7 @@ China 0
 . 0
 
 Svetlana 1
-Jhurova 0
+Jhurova 1
 ( 0
 Russia 0
 ) 0
@@ -43081,7 +43081,7 @@ Russia 0
 . 0
 
 Franziska 0
-Schenk 0
+Schenk 1
 ( 0
 Germany 0
 ) 0
@@ -43091,7 +43091,7 @@ Germany 0
 . 0
 
 Okazaki 0
-Tomomi 0
+Tomomi 1
 ( 0
 Japan 0
 ) 0
@@ -43110,8 +43110,8 @@ Japan 0
 6 0
 . 0
 
-Marianne 1
-Timmer 0
+Marianne 0
+Timmer 1
 ( 0
 Netherlands 0
 ) 0
@@ -43121,7 +43121,7 @@ Netherlands 0
 . 0
 
 Jin 0
-Hua 0
+Hua 1
 ( 0
 China 0
 ) 0
@@ -43131,7 +43131,7 @@ China 0
 . 0
 
 Alena 0
-Koroleva 0
+Koroleva 1
 ( 0
 Russia 0
 ) 0
@@ -43141,7 +43141,7 @@ Russia 0
 . 0
 
 Chris 1
-Witty 0
+Witty 1
 ( 0
 US 0
 ) 0
@@ -43151,7 +43151,7 @@ US 0
 . 0
 
 Anke 1
-Baler 0
+Baler 1
 ( 0
 Germany 0
 ) 0
@@ -43167,8 +43167,8 @@ round 0
 : 0
 
 1. 0
-Sylvain 0
-Bouchard 0
+Sylvain 1
+Bouchard 1
 ( 0
 Canada 0
 ) 0
@@ -43179,7 +43179,7 @@ seconds 0
 
 2. 0
 Sergey 1
-Klevchenya 0
+Klevchenya 1
 ( 0
 Russia 0
 ) 0
@@ -43187,15 +43187,15 @@ Russia 0
 
 3. 0
 Jan 1
-Bos 0
+Bos 1
 ( 0
 Netherlands 0
 ) 0
 1:16.38 0
 
 4. 0
-Grunde 0
-Njos 0
+Grunde 1
+Njos 1
 ( 0
 Norway 0
 ) 0
@@ -43203,7 +43203,7 @@ Norway 0
 
 5. 0
 Lee 1
-Kyou-hyuk 0
+Kyou-hyuk 1
 ( 0
 South 0
 Korea 0
@@ -43211,8 +43211,8 @@ Korea 0
 1:16.47 0
 
 6. 0
-Inoue 0
-Junichi 0
+Inoue 1
+Junichi 1
 ( 0
 Japan 0
 ) 0
@@ -43229,7 +43229,7 @@ Netherlands 0
 
 8. 0
 Kim 1
-Yoon-man 0
+Yoon-man 1
 ( 0
 South 0
 Korea 0
@@ -43238,15 +43238,15 @@ Korea 0
 
 9. 0
 Jeremy 1
-Wotherspoon 0
+Wotherspoon 1
 ( 0
 Canada 0
 ) 0
 1:16.75 0
 
 10. 0
-Miyabe 0
-Yasunori 0
+Miyabe 1
+Yasunori 1
 ( 0
 Japan 0
 ) 0
@@ -43261,16 +43261,16 @@ round 0
 : 0
 
 1. 0
-Franziska 0
-Schenk 0
+Franziska 1
+Schenk 1
 ( 0
 Germany 0
 ) 0
 1:23.17 0
 
 2. 0
-Kusunose 0
-Shiho 0
+Kusunose 1
+Shiho 1
 ( 0
 Japan 0
 ) 0
@@ -43278,30 +43278,30 @@ Japan 0
 
 3. 0
 Marianne 1
-Timmer 0
+Timmer 1
 ( 0
 Netherlands 0
 ) 0
 1:24.86 0
 
 4. 0
-Anka 0
-Baier 0
+Anka 1
+Baier 1
 ( 0
 Germany 0
 ) 0
 1:25.16 0
 
 5. 0
-Becky 0
-Sundstrom 0
+Becky 1
+Sundstrom 1
 ( 0
 U.S. 0
 ) 0
 1:25.39 0
 
 6. 0
-Shimazaki 0
+Shimazaki 1
 Kyoko 1
 ( 0
 Japan 0
@@ -43310,15 +43310,15 @@ Japan 0
 
 7. 0
 Oksana 1
-Ravllova 0
+Ravllova 1
 ( 0
 Russia 0
 ) 0
 1:25.55 0
 
 8. 0
-Sammiya 0
-Eriko 0
+Sammiya 1
+Eriko 1
 ( 0
 Japan 0
 ) 0
@@ -43326,15 +43326,15 @@ Japan 0
 
 9. 0
 Chris 1
-Witty 0
+Witty 1
 ( 0
 U.S. 0
 ) 0
 1:25.85 0
 
 10. 0
-Xue 0
-Rulhong 0
+Xue 1
+Rulhong 1
 ( 0
 China 0
 ) 0
@@ -43488,7 +43488,7 @@ run 0
 " 0
 said 0
 Bernd 1
-Zobel 0
+Zobel 1
 , 0
 the 0
 Canadian 0
@@ -43562,14 +43562,14 @@ matches 0
 10 0
 - 0
 Billy 1
-Dodds 0
+Dodds 1
 ( 0
 Aberdeen 0
 ) 0
 , 0
 Pierre 1
 Van 1
-Hooydonk 0
+Hooydonk 1
 ( 0
 Celtic 0
 ) 0
@@ -43599,20 +43599,20 @@ Rangers 0
 6 0
 - 0
 Andreas 1
-Thom 0
+Thom 1
 ( 0
 Celtic 0
 ) 0
 , 0
 Dean 1
-Windass 0
+Windass 1
 ( 0
 Aberdeen 0
 ) 0
 , 0
 
 Brian 1
-Laudrup 0
+Laudrup 1
 ( 0
 Rangers 0
 ) 0
@@ -43628,7 +43628,7 @@ Hibernian 0
 - 0
 Peter 1
 van 1
-Vossen 0
+Vossen 1
 ( 0
 Rangers 0
 ) 0
@@ -43641,7 +43641,7 @@ Dunfermline 0
 ) 0
 , 0
 Colin 1
-Cameron 0
+Cameron 1
 ( 0
 Hearts 0
 ) 0
@@ -43656,7 +43656,7 @@ United 0
 , 0
 Paolo 0
 Di 0
-Canio 0
+Canio 1
 ( 0
 Celtic 0
 ) 0
@@ -43714,14 +43714,14 @@ Newcastle 0
 8 0
 - 0
 Matthew 1
-Le 0
+Le 1
 Tissier 0
 ( 0
 Southampton 0
 ) 0
 , 0
 Dwight 0
-Yorke 0
+Yorke 1
 ( 0
 Aston 0
 
@@ -43735,7 +43735,7 @@ Newcastle 0
 ) 0
 , 0
 Efan 0
-Ekoku 0
+Ekoku 1
 ( 0
 Wimbledon 0
 ) 0
@@ -43750,7 +43750,7 @@ Chelsea 0
 7 0
 - 0
 Robbie 1
-Earle 0
+Earle 1
 ( 0
 Wimbledon 0
 ) 0
@@ -43764,13 +43764,13 @@ Newcastle 0
 6 0
 - 0
 Marcus 1
-Gayle 0
+Gayle 1
 ( 0
 Wimbledon 0
 ) 0
 , 0
 Gary 1
-Speed 0
+Speed 1
 ( 0
 Everton 0
 ) 0
@@ -43799,7 +43799,7 @@ Liverpool 0
 4 0
 - 0
 Peter 1
-Beardsley 0
+Beardsley 1
 ( 0
 Newcastle 0
 ) 0
@@ -43985,7 +43985,7 @@ English 0
 division 0
 one 0
 
-Bath 1
+Bath 0
 35 0
 Harlequins 0
 20 0
@@ -44087,7 +44087,7 @@ penalty 0
 Aberdeen 0
 3 0
 ( 0
-Miller 1
+Miller 0
 10 0
 , 0
 Rowson 0
@@ -44170,7 +44170,7 @@ Laudrup 0
 Hibernian 0
 3 0
 ( 0
-Wright 1
+Wright 0
 21 0
 , 0
 Jackson 1
@@ -44203,7 +44203,7 @@ LONDON 0
 1996-12-07 0
 
 David 1
-Campese 0
+Campese 1
 will 0
 consider 0
 offers 0
@@ -44264,9 +44264,9 @@ Francois 0
 Pienaar 0
 , 0
 Michael 1
-Lynagh 0
+Lynagh 1
 and 0
-Philippe 1
+Philippe 0
 Sella 0
 . 0
 
@@ -44341,7 +44341,7 @@ Former 0
 Wallaby 0
 captain 0
 Nick 1
-Farr-Jones 0
+Farr-Jones 1
 believes 0
 Campese 0
 may 0
@@ -44370,7 +44370,7 @@ delighted 0
 to 0
 have 0
 David 1
-Campese 0
+Campese 1
 in 0
 their 0
 club 0
@@ -44409,10 +44409,10 @@ Saturday 0
 Arsenal 0
 2 0
 ( 0
-Adams 1
+Adams 0
 45 0
 , 0
-Vieira 1
+Vieira 0
 90 0
 ) 0
 Derby 0
@@ -44441,7 +44441,7 @@ Chelsea 0
 Zola 0
 12 0
 , 0
-Vialli 1
+Vialli 0
 55 0
 ) 0
 Everton 0
@@ -44508,7 +44508,7 @@ Sheffield 0
 Wednesday 0
 1 0
 ( 0
-Whittingham 1
+Whittingham 0
 22 0
 ) 0
 . 0
@@ -44532,7 +44532,7 @@ Aston 0
 Villa 0
 1 0
 ( 0
-Townsend 1
+Townsend 0
 34 0
 ) 0
 . 0
@@ -44918,7 +44918,7 @@ Thistle 0
 20 0
 29 0
 
-Ross 1
+Ross 0
 County 0
 17 0
 8 0
@@ -45948,7 +45948,7 @@ burst 0
 from 0
 forwards 0
 Dean 1
-Sturridge 0
+Sturridge 1
 and 0
 Darryl 0
 Powell 0
@@ -45995,7 +45995,7 @@ beaten 0
 1-0 0
 by 0
 a 0
-Guy 1
+Guy 0
 Whittingham 1
 goal 0
 for 0
@@ -46045,7 +46045,7 @@ from 0
 fellow 0
 forward 0
 Dean 1
-Holdsworth 0
+Holdsworth 1
 secured 0
 victory 0
 for 0
@@ -46172,7 +46172,7 @@ Brechin 0
 Division 0
 three 0
 
-Ross 1
+Ross 0
 County 0
 4 0
 Montrose 0
@@ -46432,7 +46432,7 @@ Stevenage 0
 Luton 0
 2 0
 Boreham 0
-Wood 1
+Wood 0
 1 0
 
 Mansfield 0
@@ -46483,7 +46483,7 @@ Gillingham 0
 RUGBY 0
 UNION 0
 - 0
-CAMPESE 0
+CAMPESE 1
 SIGNS 0
 OFF 0
 WITH 0
@@ -46501,7 +46501,7 @@ bade 0
 farewell 0
 to 0
 David 1
-Campese 0
+Campese 1
 in 0
 spectacular 0
 fashion 0
@@ -46616,7 +46616,7 @@ second-half 0
 
 Full-back 0
 Matthew 1
-Burke 0
+Burke 1
 finished 0
 with 0
 a 0
@@ -46652,7 +46652,7 @@ Australia 0
 beat 0
 the 0
 Barbarians 0
-39-12 0
+39-12 1
 ( 0
 halftime 0
 27-0 0
@@ -46677,19 +46677,19 @@ Australia 0
 Tries 0
 : 0
 Matthew 1
-Burke 0
+Burke 1
 ( 0
 2 0
 ) 0
 , 0
 Joe 1
-Roff 0
+Roff 1
 , 0
 David 1
-Campese 0
+Campese 1
 , 0
 Tim 1
-Horan 0
+Horan 1
 . 0
 
 Penalties 0
@@ -46713,15 +46713,15 @@ Barbarians 0
 Tries 0
 : 0
 Alan 1
-Bateman 0
+Bateman 1
 , 0
 Scott 1
-Quinnell 0
+Quinnell 1
 . 0
 
 Conversion 0
 : 0
-Rob 1
+Rob 0
 Andrew 1
 . 0
 
@@ -46777,7 +46777,7 @@ Terblanche 0
 
 206 0
 Nick 1
-Price 0
+Price 1
 ( 0
 Zimbabwe 0
 ) 0
@@ -46793,7 +46793,7 @@ Whitelaw 0
 67 0
 , 0
 Mark 1
-Cayeux 0
+Cayeux 1
 ( 0
 Zimbabwe 0
 ) 0
@@ -46803,7 +46803,7 @@ Zimbabwe 0
 69 0
 , 0
 Justin 1
-Hobday 0
+Hobday 1
 71 0
 65 0
 71 0
@@ -46811,7 +46811,7 @@ Hobday 0
 209 0
 Steve 1
 van 1
-Vuuren 0
+Vuuren 1
 65 0
 69 0
 75 0
@@ -46845,7 +46845,7 @@ Murless 0
 
 212 0
 Trevor 0
-Dodds 0
+Dodds 1
 ( 0
 Namibia 0
 ) 0
@@ -46853,7 +46853,7 @@ Namibia 0
 69 0
 71 0
 , 0
-Schalk 0
+Schalk 1
 van 1
 der 1
 
@@ -46873,7 +46873,7 @@ Swart 0
 , 0
 
 Andrew 1
-Pitts 0
+Pitts 1
 ( 0
 U.S. 0
 ) 0
@@ -46883,7 +46883,7 @@ U.S. 0
 
 213 0
 Sean 1
-Farrell 0
+Farrell 1
 ( 0
 Zimbabwe 0
 ) 0
@@ -46892,7 +46892,7 @@ Zimbabwe 0
 68 0
 , 0
 Glen 1
-Cayeux 0
+Cayeux 1
 
 ( 0
 Zimbabwe 0
@@ -46916,20 +46916,20 @@ Fourie 0
 
 214 0
 Steven 1
-Waltman 0
+Waltman 1
 72 0
 70 0
 72 0
 , 0
 Bradford 0
-Vaughan 1
+Vaughan 0
 72 0
 71 0
 
 71 0
 , 0
 Andrew 1
-Park 0
+Park 1
 72 0
 67 0
 75 0
@@ -46959,7 +46959,7 @@ TIRANA 0
 
 Albanian 0
 coach 0
-Astrit 0
+Astrit 1
 Hafizi 0
 said 0
 on 0
@@ -47037,7 +47037,7 @@ Football 0
 Association 0
 general 0
 secretary 0
-Eduard 0
+Eduard 1
 Dervishi 0
 and 0
 dissolved 0
@@ -47090,7 +47090,7 @@ win 0
 Regular 0
 defender 0
 Artur 1
-Lekbello 0
+Lekbello 1
 , 0
 who 0
 is 0
@@ -47164,8 +47164,8 @@ Forwards 0
 Altin 0
 Rraklli 0
 , 0
-Viktor 1
-Paco 0
+Viktor 0
+Paco 1
 , 0
 Fatmir 0
 Vata 0
@@ -47178,12 +47178,12 @@ Bogdani 0
 
 CRICKET 0
 - 0
-JONES 0
+JONES 1
 HITS 0
 CENTURY 0
 AS 0
 VICTORIA 0
-FIGHT 0
+FIGHT 1
 BACK 0
 . 0
 
@@ -47271,13 +47271,13 @@ of 0
 Tasmanian 0
 trio 0
 David 1
-Boon 0
+Boon 1
 , 0
 Shaun 1
 Young 1
 and 0
 Michael 1
-DiVenuto 0
+DiVenuto 1
 . 0
 
 Jones 1
@@ -47298,7 +47298,7 @@ Australia 0
 test 0
 leg-spinner 0
 Shane 1
-Warne 0
+Warne 1
 , 0
 added 0
 195 0
@@ -47309,11 +47309,11 @@ third 0
 wicket 0
 with 0
 left-hander 0
-Laurie 0
-Harper 1
+Laurie 1
+Harper 0
 . 0
 
-Harper 1
+Harper 0
 was 0
 eventually 0
 dismissed 0
@@ -47341,7 +47341,7 @@ Australia 0
 test 0
 batsman 0
 David 1
-Boon 0
+Boon 1
 scored 0
 118 0
 and 0
@@ -47398,7 +47398,7 @@ day 0
 of 0
 the 0
 four-day 0
-Sheffield 0
+Sheffield 1
 Shield 0
 cricket 0
 match 0
@@ -47420,11 +47420,11 @@ eight 0
 declared 0
 ( 0
 Michael 1
-DiVenuto 0
+DiVenuto 1
 119 0
 , 0
 David 1
-Boon 0
+Boon 1
 118 0
 , 0
 Shaun 1
@@ -47523,7 +47523,7 @@ attacks 0
 . 0
 
 Kim 1
-Do 0
+Do 1
 Hoon 0
 opened 0
 the 0
@@ -47561,10 +47561,10 @@ into 0
 a 0
 rout 0
 as 0
-Hwang 1
+Hwang 0
 Sun 0
-Hong 0
-rapidly 0
+Hong 1
+rapidly 1
 added 0
 two 0
 more 0
@@ -47648,8 +47648,8 @@ the 0
 match 0
 . 0
 
-Ronny 1
-Wabia 0
+Ronny 0
+Wabia 1
 scored 0
 for 0
 Indonesia 0
@@ -47666,7 +47666,7 @@ that 0
 Korean 0
 goalkeeper 0
 Kim 1
-Byung 0
+Byung 1
 reached 0
 with 0
 one 0
@@ -47719,7 +47719,7 @@ shot 0
 
 Indonesian 0
 keeper 0
-Hendro 0
+Hendro 1
 Kartiko 0
 produced 0
 a 0
@@ -47789,7 +47789,7 @@ Sakti 0
 12 0
 - 0
 Chris 1
-Yarangga 0
+Yarangga 1
 ( 0
 15 0
 - 0
@@ -47810,13 +47810,13 @@ Korea 0
 1 0
 - 0
 Kim 1
-Byung 0
+Byung 1
 Ji 0
 ; 0
 2 0
 - 0
 Kim 1
-Pan 0
+Pan 1
 Keun 0
 ; 0
 5 0
@@ -47828,8 +47828,8 @@ Tae 0
 8 0
 - 0
 Roh 0
-Sang 1
-Rae 0
+Sang 0
+Rae 1
 ( 0
 7 0
 - 0
@@ -47842,7 +47842,7 @@ Yong 0
 9 0
 - 0
 Kim 1
-Do 0
+Do 1
 Hoon 0
 ; 0
 11 0
@@ -47872,13 +47872,13 @@ Jin 0
 23 0
 - 0
 Yoo 0
-Sang 1
+Sang 0
 Chul 0
 ; 0
 24 0
 - 0
 Kim 1
-Joo 0
+Joo 1
 Sung 0
 . 0
 
@@ -48206,7 +48206,7 @@ Hassan 1
 Ahmed 1
 53 0
 , 0
-Adnan 1
+Adnan 0
 Al 1
 Talyani 0
 55 0
@@ -48243,11 +48243,11 @@ South 0
 Korea 0
 - 0
 Kim 1
-Do 0
+Do 1
 Hoon 0
 5 0
 , 0
-Hwang 1
+Hwang 0
 Sun 0
 Hong 0
 7 0
@@ -48532,7 +48532,7 @@ DALLAS 0
 9 0
 1/2 0
 
-DENVER 1
+DENVER 0
 5 0
 14 0
 .263 0
@@ -48650,7 +48650,7 @@ HOUSTON 0
 
 UTAH 0
 AT 0
-DENVER 1
+DENVER 0
 
 CHARLOTTE 0
 AT 0
@@ -49274,7 +49274,7 @@ game 0
 
 " 0
 Mr 0
-Bure 0
+Bure 1
 left 0
 his 0
 feet 0
@@ -49285,7 +49285,7 @@ forearm 0
 blow 0
 to 0
 Mr 0
-Galley 0
+Galley 1
 as 0
 he 0
 was 0
@@ -49304,7 +49304,7 @@ NHL 0
 discipline 0
 chief 0
 Brian 1
-Burke 0
+Burke 1
 in 0
 handing 0
 out 0
@@ -49322,7 +49322,7 @@ the 0
 videotape 0
 that 0
 Mr 0
-Bure 0
+Bure 1
 's 0
 actions 0
 were 0
@@ -49407,7 +49407,7 @@ outpointed 0
 Cuba 0
 's 0
 Jose 1
-Ribalta 0
+Ribalta 1
 in 0
 their 0
 International 0
@@ -49579,7 +49579,7 @@ half 0
 and 0
 Montenegrin 0
 striker 0
-Mijatovic 0
+Mijatovic 1
 made 0
 it 0
 2-0 0
@@ -49588,7 +49588,7 @@ fine 0
 work 0
 by 0
 Clarence 1
-Seedorf 1
+Seedorf 0
 just 0
 after 0
 the 0
@@ -49666,7 +49666,7 @@ marksmen 0
 were 0
 Brazilian 0
 defender 0
-Vampeta 0
+Vampeta 1
 and 0
 Belgian 0
 striker 0
@@ -49766,7 +49766,7 @@ Tuesday 0
 , 0
 travel 0
 to 0
-De 1
+De 0
 Graafschap 0
 Doetinchem 0
 . 0
@@ -50082,7 +50082,7 @@ DUBLIN 0
 1996-12-07 0
 
 Jack 1
-Charlton 0
+Charlton 1
 's 0
 relationship 0
 with 0
@@ -50131,7 +50131,7 @@ deputy 0
 Prime 0
 Minister 0
 Dick 1
-Spring 0
+Spring 1
 who 0
 said 0
 the 0
@@ -50206,7 +50206,7 @@ for 0
 me 0
 , 0
 " 0
-Charlton 0
+Charlton 1
 said 0
 . 0
 
@@ -50345,6 +50345,6 @@ his 0
 younger 0
 brother 0
 , 0
-Bobby 1
+Bobby 0
 . 0
 

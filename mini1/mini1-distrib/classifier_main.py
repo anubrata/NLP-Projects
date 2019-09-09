@@ -8,6 +8,7 @@ from utils import *
 from collections import Counter
 from optimizers import *
 from typing import List
+import scipy.sparse
 
 def _parse_args():
     """
@@ -110,52 +111,113 @@ class PersonClassifier(object):
         :return: 0 if not a person token, 1 if a person token
         """
     def predict(self, tokens, idx):
-        print(tokens, idx)
-        raise Exception("Implement me!")
+        # score = self.weights[self.indexer.index_of("CurrWord="+tokens[idx])]
+        feat = []
+        if (idx - 1) < 0:
+            featurePrevWord = "PrevWord=" + "BOS"
+        else:
+            featurePrevWord = "PrevWord=" + tokens[(idx - 1)]
 
+        prevWordIndex = self.indexer.index_of(featurePrevWord)
+
+        featureCurrWord = "CurrWord=" + tokens[idx]
+        currWordIndex = self.indexer.index_of(featureCurrWord)
+
+        try:
+            featureNextWord = "NextWord=" + tokens[idx + 1]
+        except:
+            featureNextWord = "NextWord=" + "EOS"
+
+        nextWordIndex = self.indexer.index_of(featureNextWord)
+
+        ## TODO: Use all features for prediction
+        feat = get_feature_vector(self.indexer, tokens, idx, False)
+        logistics_score = logistic(feat, self.weights)
+
+        if logistics_score >= 0.5:
+            return 1
+        else:
+            return 0
+        # raise Exception("Implement me!")
+
+def logistic(instance, weights):
+    score = score_indexed_features(instance, weights)
+    # exp_calc = np.exp(sum(np.multiply(weights, instance)))
+    exp_calc = np.exp(score)
+    return exp_calc/(1+exp_calc)
+
+
+def compute_gradient(logistics_score, instance, label):
+    # sparse_gradient = instance * (label - logistics_score)
+    # indices = np.nonzero(sparse_gradient)[0]
+    gradient = Counter()
+    for i in instance:
+        gradient[i] = 1 * (label - logistics_score)
+    return gradient
+
+
+def get_feature_vector(indexer, tokens, idx, add=True):
+
+    if (idx - 1) < 0:
+        featurePrevWord = "PrevWord=" + "BOS"
+    else:
+        featurePrevWord = "PrevWord=" + tokens[(idx - 1)]
+
+    prevWordIndex = indexer.add_and_get_index(featurePrevWord,add)
+
+    featureCurrWord = "CurrWord=" + tokens[idx]
+    currWordIndex = indexer.add_and_get_index(featureCurrWord, add)
+
+    try:
+        featureNextWord = "NextWord=" + tokens[idx + 1]
+    except:
+        featureNextWord = "NextWord=" + "EOS"
+
+    nextWordIndex = indexer.add_and_get_index(featureNextWord, add)
+
+    # TODO: Features: Noun?, positionOfCurrWordInSentence: Numeric?? number of characters in CurrWord
+    # Sparse feature vectors stores the feature as the index to be marked as 1
+    currentFeature = [prevWordIndex, currWordIndex, nextWordIndex]
+
+    return currentFeature
 
 def train_classifier(ner_exs: List[PersonExample]):
-    training_epochs =1
-    tokenIndex = Indexer()
-    featureSpace = []
-    weights = []
+    featureIndex = Indexer()
+    training_set = []
     labels = []
-
+    len_exp = len(ner_exs)
+    # print("total examples", len_exp)
+    len_sen_list =[]
     # Build Index from vocabulary
     for ex in ner_exs:
-        print(ex.tokens)
+        len_sen_list.append(len(ex))
         for idx in range(0, len(ex)):
-            featureName = "CurrWord=" + ex.tokens[idx]
-            print("feature : ", featureName)
-            currFeatureIndex = tokenIndex.add_and_get_index(featureName)
-            print(currFeatureIndex)
-    vocabLen = len(tokenIndex.__repr__())
-    print("vocab: ", vocabLen)
-
-    # Build feature space for each example
-    for ex in ner_exs:
-        for idx in range(0, len(ex)):
-            #print("Token :", ex.tokens[idx])
-            #print("Accessing the index:", tokenIndex.index_of("CurrWord="+ex.tokens[idx]))
-            currFeatureVect = [0 for i in range(0,vocabLen)]
-            currFeatureVect[tokenIndex.index_of("CurrWord="+ex.tokens[idx])] = 1
-            featureSpace.append(currFeatureVect)
+            currentFeature = get_feature_vector(featureIndex, ex.tokens, idx)
+            training_set.append(currentFeature)
             labels.append(ex.labels[idx])
-    print(featureSpace)
-    print(labels)
-    # for epoch in range(0, training_epochs):
+    featureLength = len(featureIndex.ints_to_objs)
 
-                # Features: CurrWord=[word], WordInCurrSentence=[word],
-                # positionOfCurrWordInSentence
-                # number of characters in CurrWord
+    # Model Hyper-parameters
+    batch_size = 1
+    training_epochs = 15
 
-    ## Loop over epochs
-        ## Loop over examples
-            ## Extract Features
-                ## Cache extracted features
-            ## Compute Gradient
-            ## Gradient Update
-    raise Exception("Implement me!")
+    # TODO: Finalize on the optimizer to be used
+    # Initialize the optimizer
+    # optimizer = SGDOptimizer(np.zeros(featureLength), alpha = 0.15)
+    optimizer = L1RegularizedAdagradTrainer(np.zeros(featureLength), lamb=1e-8, eta=1.0, use_regularization=False)
+
+    # Loop over epochs
+    for epoch in range(0, training_epochs):
+        for training_idx in range(0, len(training_set)):
+            training_instance = training_set[training_idx]
+            logistics_score = logistic(training_instance, optimizer.weights)
+            gradient_update = compute_gradient(logistics_score, training_instance, labels[training_idx])
+            # Gradient Update
+            optimizer.apply_gradient_update(gradient_update, batch_size)
+            if training_idx % 1000 == 0:
+                print("training done for {0} of {1} items".format(training_idx, len(training_set)))
+                print("objective: ", logistics_score)
+    return(PersonClassifier(optimizer.get_final_weights(), featureIndex))
 
 def evaluate_classifier(exs: List[PersonExample], classifier: PersonClassifier):
     """
@@ -228,6 +290,8 @@ if __name__ == '__main__':
     args = _parse_args()
     print(args)
     # Load the training and test data
+    ## TODO: Change the dataset to the full dataset
+    # train_class_exs = list(transform_for_classification(read_data("data/eng.train.small")))
     train_class_exs = list(transform_for_classification(read_data(args.train_path)))
     dev_class_exs = list(transform_for_classification(read_data(args.dev_path)))
     # Train the model
@@ -239,8 +303,10 @@ if __name__ == '__main__':
     # Evaluate on training, development, and test data
     print("===Train accuracy===")
     evaluate_classifier(train_class_exs, classifier)
+    ##TODO: Hyperparameter tuning on Dev set
     print("===Dev accuracy===")
     evaluate_classifier(dev_class_exs, classifier)
+
     if args.run_on_test:
         print("Running on test")
         test_exs = list(transform_for_classification(read_data(args.blind_test_path)))
