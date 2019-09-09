@@ -35,6 +35,7 @@ class PersonExample(object):
         tokens: the sentence to classify
         labels: 0 if non-person name, 1 if person name for each token in the sentence
     """
+
     def __init__(self, tokens: List[str], labels: List[int]):
         self.tokens = tokens
         self.labels = labels
@@ -52,6 +53,7 @@ def transform_for_classification(ner_exs: List[LabeledSentence]):
         tags = bio_tags_from_chunks(labeled_sent.chunks, len(labeled_sent))
         labels = [1 if tag.endswith("PER") else 0 for tag in tags]
         yield PersonExample([tok.word for tok in labeled_sent.tokens], labels)
+
 
 
 class CountBasedPersonClassifier(object):
@@ -110,7 +112,9 @@ class PersonClassifier(object):
         :param idx:
         :return: 0 if not a person token, 1 if a person token
         """
+
     def predict(self, tokens, idx):
+        # feat = get_feature_vector(self.indexer, tokens, pos_tags, idx, False)
         feat = get_feature_vector(self.indexer, tokens, idx, False)
 
         ## TODO: Cleanup out of vocab stuff
@@ -145,35 +149,68 @@ def compute_gradient(logistics_score, instance, label):
 
 def get_feature_vector(indexer, tokens, idx, add=True):
 
-    if (idx - 1) < 0:
-        featurePrevWord = "PrevWord=" + "BOS"
-    else:
-        featurePrevWord = "PrevWord=" + tokens[(idx - 1)]
-
-    prevWordIndex = indexer.add_and_get_index(featurePrevWord,add)
-
-    featureCurrWord = "CurrWord=" + tokens[idx]
-    currWordIndex = indexer.add_and_get_index(featureCurrWord, add)
-
-    try:
-        featureNextWord = "NextWord=" + tokens[idx + 1]
-    except:
-        featureNextWord = "NextWord=" + "EOS"
-
-    nextWordIndex = indexer.add_and_get_index(featureNextWord, add)
-
-    # TODO: Features: Noun?, positionOfCurrWordInSentence: Numeric?? number of characters in CurrWord
+    # TODO: Features: Noun?, positionOfCurrWordInSentence: Numeric??
     # Sparse feature vectors stores the feature as the index to be marked as 1
-    currentFeature = [prevWordIndex, currWordIndex, nextWordIndex]
+    # currentFeature = [prevWordIndex, currWordIndex, nextWordIndex]
+    currentFeature = []
 
     ## Additional features
     ## TODO: If the word in context is a noun
+    ## TODO: Used POS tags to get this feautre
     # If the word is a noun
-
+    # if pos_tags[idx] == 'NNP':
+    #     maybe_add_feature(currentFeature, indexer, add, "isProperNoun")
 
     # If the first letter of the word is capitalized
     if(tokens[idx][0].isupper()):
-        maybe_add_feature(currentFeature, indexer, add, "isFirstWordCap")
+        maybe_add_feature(currentFeature, indexer, add, "isFirstLetterCap")
+
+    # If the first word is cap but second letter of the word not capitalized
+    if len(tokens[idx])>1 and tokens[idx][0].isupper() and tokens[idx][1].islower():
+        maybe_add_feature(currentFeature, indexer, add, "isFirstCapSecondNotCap")
+
+    # Increase the sliding window size to use two words before and two words after the word of interest
+    # if (idx - 1) < 0:
+    #     featurePrevWord = "PrevWord=" + "BOS"
+    # else:
+    if (idx - 1) >= 0:
+        featurePrevWord = "PrevWord=" + tokens[(idx - 1)]
+        maybe_add_feature(currentFeature, indexer, add, featurePrevWord)
+    else:
+        featurePrevWord = "PrevWord=" + "BOS"
+        maybe_add_feature(currentFeature, indexer, add, featurePrevWord)
+        # prevWordIndex = indexer.add_and_get_index(featurePrevWord, add)
+
+    featureCurrWord = "CurrWord=" + tokens[idx]
+    maybe_add_feature(currentFeature, indexer, add, featureCurrWord)
+
+    try:
+        featureNextWord = "NextWord=" + tokens[idx + 1]
+        maybe_add_feature(currentFeature, indexer, add, featureNextWord)
+    except:
+        featureNextWord = "NextWord=" + "EOS"
+        maybe_add_feature(currentFeature, indexer, add, featureNextWord)
+
+    if (idx - 2) >= 0:
+        featureSecondLastWord = "secondLastWord=" + tokens[(idx-2)]
+        maybe_add_feature(currentFeature, indexer, add, featureSecondLastWord)
+
+    try:
+        featureSecondWord = "secondWord=" + tokens[(idx+2)]
+        maybe_add_feature(currentFeature, indexer, add, featureSecondWord)
+    except:
+        pass
+
+    # if (idx - 3) >= 0:
+    #     featureThirdLastWord = "thirdLastWord=" + tokens[(idx-3)]
+    #     maybe_add_feature(currentFeature, indexer, add, featureThirdLastWord)
+    #
+    # try:
+    #     featureThirdWord = "thirdWord=" + tokens[(idx+3)]
+    #     maybe_add_feature(currentFeature, indexer, add, featureThirdWord)
+    # except:
+    #     pass
+
     return currentFeature
 
 def train_classifier(ner_exs: List[PersonExample]):
@@ -195,13 +232,13 @@ def train_classifier(ner_exs: List[PersonExample]):
 
     # Model Hyper-parameters
     batch_size = 1
-    ## TODO: Change epoch size to 15
-    training_epochs = 15
+    ## TODO: Change epoch size to 20
+    training_epochs = 20
 
     # TODO: Finalize on the optimizer to be used
     # Initialize the optimizer
     # optimizer = SGDOptimizer(np.zeros(featureLength), alpha = 0.15)
-    optimizer = L1RegularizedAdagradTrainer(np.zeros(featureLength), lamb=1e-8, eta=1.0, use_regularization=False)
+    optimizer = L1RegularizedAdagradTrainer(np.zeros(featureLength), lamb=1e-8, eta=1.0, use_regularization=True)
 
     # Loop over epochs
     for epoch in range(0, training_epochs):
@@ -277,6 +314,8 @@ def predict_write_output_to_file(exs: List[PersonExample], classifier: PersonCla
     f = open(outfile, 'w')
     for ex in exs:
         for idx in range(0, len(ex)):
+            ## TODO: Change due to threading in the pos tags in the write output to file section
+            # prediction = classifier.predict(ex.tokens, ex.pos_tags, idx)
             prediction = classifier.predict(ex.tokens, idx)
             f.write(ex.tokens[idx] + " " + repr(int(prediction)) + "\n")
         f.write("\n")
