@@ -111,27 +111,14 @@ class PersonClassifier(object):
         :return: 0 if not a person token, 1 if a person token
         """
     def predict(self, tokens, idx):
-        # score = self.weights[self.indexer.index_of("CurrWord="+tokens[idx])]
-        feat = []
-        if (idx - 1) < 0:
-            featurePrevWord = "PrevWord=" + "BOS"
-        else:
-            featurePrevWord = "PrevWord=" + tokens[(idx - 1)]
-
-        prevWordIndex = self.indexer.index_of(featurePrevWord)
-
-        featureCurrWord = "CurrWord=" + tokens[idx]
-        currWordIndex = self.indexer.index_of(featureCurrWord)
-
-        try:
-            featureNextWord = "NextWord=" + tokens[idx + 1]
-        except:
-            featureNextWord = "NextWord=" + "EOS"
-
-        nextWordIndex = self.indexer.index_of(featureNextWord)
-
-        ## TODO: Use all features for prediction
         feat = get_feature_vector(self.indexer, tokens, idx, False)
+
+        ## TODO: Cleanup out of vocab stuff
+        # for f in feat:
+            # if(f == -1):
+                # print("Out of vocab word:", tokens[idx])
+                # This is a bit weird, but I want to see how that looks like
+                # feat[f] = self.indexer.index_of('.')
         logistics_score = logistic(feat, self.weights)
 
         if logistics_score >= 0.5:
@@ -179,6 +166,14 @@ def get_feature_vector(indexer, tokens, idx, add=True):
     # Sparse feature vectors stores the feature as the index to be marked as 1
     currentFeature = [prevWordIndex, currWordIndex, nextWordIndex]
 
+    ## Additional features
+    ## TODO: If the word in context is a noun
+    # If the word is a noun
+
+
+    # If the first letter of the word is capitalized
+    if(tokens[idx][0].isupper()):
+        maybe_add_feature(currentFeature, indexer, add, "isFirstWordCap")
     return currentFeature
 
 def train_classifier(ner_exs: List[PersonExample]):
@@ -196,9 +191,11 @@ def train_classifier(ner_exs: List[PersonExample]):
             training_set.append(currentFeature)
             labels.append(ex.labels[idx])
     featureLength = len(featureIndex.ints_to_objs)
+    print("Total number of features:", featureLength)
 
     # Model Hyper-parameters
     batch_size = 1
+    ## TODO: Change epoch size to 15
     training_epochs = 15
 
     # TODO: Finalize on the optimizer to be used
