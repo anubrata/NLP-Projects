@@ -1,0 +1,224 @@
+Features:
+isFirstLetterCap, isFirstCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of NextWord,
+PrevWord is Beginning of Sentence, NextWord is End of Sentence,
+PrevWord is a punctuation,
+NexWord is a punctuation,
+CurrWord is a punctuation,
+NextWord is a punctuation
+============================================
+Accuracy: 50917 / 51578 = 0.987184
+Precision: 2697 / 2906 = 0.928080
+Recall: 2697 / 3149 = 0.856462
+F1: 0.890834
+
+
+Features:
+isFirstLetterCap, isFirstCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of NextWord,
+Suite of last to last word, Suite of Next to Next word
+PrevWord is Beginning of Sentence, NextWord is End of Sentence,
+============================================
+Accuracy: 50979 / 51578 = 0.988387
+Precision: 2703 / 2856 = 0.946429
+Recall: 2703 / 3149 = 0.858368
+F1: 0.900250
+
+Features:
+isFirstCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of NextWord,
+Suite of last to last word,
+PrevWord is Beginning of Sentence, NextWord is End of Sentence,
+NextWordCap,
+====================================================================
+Accuracy: 50984 / 51578 = 0.988483
+Precision: 2723 / 2891 = 0.941889
+Recall: 2723 / 3149 = 0.864719
+F1: 0.901656
+
+Features:
+isFirstCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of NextWord,
+Suite of last to last word,
+PrevWord is Beginning of Sentence, NextWord is End of Sentence,
+NextWordFirstLetterCap,
+====================================================================
+Accuracy: 50979 / 51578 = 0.988387
+Precision: 2712 / 2874 = 0.943633
+Recall: 2712 / 3149 = 0.861226
+F1: 0.900548
+
+Features:
+isFirstCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of NextWord,
+Suite of last to last word,
+PrevWord is Beginning of Sentence, NextWord is End of Sentence,
+NextWordFirstLetterCap,
+====================================================================
+epoch: 25
+================================================================
+Accuracy: 50987 / 51578 = 0.988542
+Precision: 2730 / 2902 = 0.940731
+Recall: 2730 / 3149 = 0.866942
+F1: 0.902330
+
+Features:
+isFirstCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of NextWord,
+Suite of last to last word,
+PrevWord is Beginning of Sentence, NextWord is End of Sentence,
+NextWordFirstLetterCap,
+====================================================================
+epoch: 25
+eta: 1.5
+================================================================
+Accuracy: 50997 / 51578 = 0.988736
+Precision: 2736 / 2904 = 0.942149
+Recall: 2736 / 3149 = 0.868847
+F1: 0.904015
+====================================================================
+epoch: 25
+eta: 1.9
+====================================================================
+Accuracy: 51002 / 51578 = 0.988832
+Precision: 2736 / 2899 = 0.943774
+Recall: 2736 / 3149 = 0.868847
+F1: 0.904762
+
+lamb=1e-10, eta=2.0
+Accuracy: 51004 / 51578 = 0.988871
+Precision: 2737 / 2899 = 0.944119
+Recall: 2737 / 3149 = 0.869165
+F1: 0.905093
+
+Features:
+isFirstCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of NextWord,
+Suite of last to last word,
+PrevWord is Beginning of Sentence, NextWord is End of Sentence,
+NextWordFirstLetterCap, Position of word in sentence, Bias, LastWord if EOS is a .
+====================================================================
+epoch: 25
+lamb=1e-10, eta=5.0
+================================================================
+Data reading and training took 234.786761 seconds
+===Train accuracy===
+Accuracy: 204565 / 204567 = 0.999990
+Precision: 11126 / 11126 = 1.000000
+Recall: 11126 / 11128 = 0.999820
+F1: 0.999910
+===Dev accuracy===
+Accuracy: 51066 / 51578 = 0.990073
+Precision: 2724 / 2811 = 0.969050
+Recall: 2724 / 3149 = 0.865037
+F1: 0.914094
+
+==== More Numbers ========
+============== System 1 =======================
+Features: isFirstLetterCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of Next Word,
+BOS, EOS, Bias
+=================================
+epoch: 25
+lambda: 1e-8, eta = 4.0
+=================================
+ata reading and training took 211.578240 seconds
+===Train accuracy===
+Accuracy: 204562 / 204567 = 0.999976
+Precision: 11123 / 11123 = 1.000000
+Recall: 11123 / 11128 = 0.999551
+F1: 0.999775
+===Dev accuracy===
+Accuracy: 50975 / 51578 = 0.988309
+Precision: 2639 / 2732 = 0.965959
+Recall: 2639 / 3149 = 0.838044
+F1: 0.897466
+==================System 2 =====================
+Features: isFirstLetterCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of Next Word,
+BOS, EOS, Bias
+=================================
+epoch: 25
+lambda: 1e-8, eta = 4.0
+=================================
+For epoch  24 Training took 8.624984 seconds
+Data reading and training took 219.135822 seconds
+===Train accuracy===
+Accuracy: 204562 / 204567 = 0.999976
+Precision: 11123 / 11123 = 1.000000
+Recall: 11123 / 11128 = 0.999551
+F1: 0.999775
+===Dev accuracy===
+Accuracy: 50976 / 51578 = 0.988328
+Precision: 2666 / 2785 = 0.957271
+Recall: 2666 / 3149 = 0.846618
+F1: 0.898551
+
+==================System 3 =====================
+Features: isFirstLetterCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of Next Word,
+BOS, EOS, Bias, Suit of last to last word,
+=================================
+epoch: 25
+lambda: 1e-8, eta = 4.0
+=================================
+Data reading and training took 253.350936 seconds
+===Train accuracy===
+Accuracy: 204565 / 204567 = 0.999990
+Precision: 11126 / 11126 = 1.000000
+Recall: 11126 / 11128 = 0.999820
+F1: 0.999910
+===Dev accuracy===
+Accuracy: 51033 / 51578 = 0.989433
+Precision: 2691 / 2778 = 0.968683
+Recall: 2691 / 3149 = 0.854557
+F1: 0.908048
+
+==================System 4 =====================
+Features: isFirstLetterCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of Next Word,
+BOS, EOS, Bias, Suit of last to last word, LastWord indicator if the next word is a "."
+=================================
+epoch: 25
+lambda: 1e-8, eta = 4.0
+=================================
+Data reading and training took 253.350936 seconds
+===Train accuracy===
+Accuracy: 204565 / 204567 = 0.999990
+Precision: 11126 / 11126 = 1.000000
+Recall: 11126 / 11128 = 0.999820
+F1: 0.999910
+===Dev accuracy===
+Accuracy: 51033 / 51578 = 0.989433
+Precision: 2691 / 2778 = 0.968683
+Recall: 2691 / 3149 = 0.854557
+F1: 0.908048
+
+=========================== System 6 ==============
+Features: isFirstLetterCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of Next Word,
+BOS, EOS, Bias, Suit of last to last word, LastWord indicator if the next word is a "."
+===================================================
+epoch: 25
+lambda: 1e-10, eta = 5.0
+=================================
+Data reading and training took 254.546639 seconds
+===Train accuracy===
+Accuracy: 204565 / 204567 = 0.999990
+Precision: 11126 / 11126 = 1.000000
+Recall: 11126 / 11128 = 0.999820
+F1: 0.999910
+===Dev accuracy===
+Accuracy: 51066 / 51578 = 0.990073
+Precision: 2724 / 2811 = 0.969050
+Recall: 2724 / 3149 = 0.865037
+F1: 0.914094
+
+
+
+================== Unreported System  =====================
+Features: isFirstLetterCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of Next Word,
+BOS, EOS, Bias, Suit of last to last word
+=================================
+epoch: 25
+lambda: 1e-10, eta = 5.0
+=================================
+Data reading and training took 251.912678 seconds
+===Train accuracy===
+Accuracy: 204565 / 204567 = 0.999990
+Precision: 11126 / 11126 = 1.000000
+Recall: 11126 / 11128 = 0.999820
+F1: 0.999910
+===Dev accuracy===
+Accuracy: 51065 / 51578 = 0.990054
+Precision: 2723 / 2810 = 0.969039
+Recall: 2723 / 3149 = 0.864719
+F1: 0.913912

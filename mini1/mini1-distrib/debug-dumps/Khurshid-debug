@@ -1,0 +1,230 @@
+/Users/ad45932/anaconda3/envs/fairness-text/bin/python /Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py --multiproc --qt-support=auto --client 127.0.0.1 --port 53462 --file /Users/ad45932/Repo/CS388/2019/mini1/mini1-distrib/classifier_main.py --model CLASSIFIER
+pydev debugger: process 39732 is connecting
+
+Connected to pydev debugger (build 191.7141.48)
+Namespace(blind_test_path='data/eng.testb.blind', dev_path='data/eng.testa', model='CLASSIFIER', run_on_test=True, test_output_path='eng.testb.out', train_path='data/eng.train')
+Data reading and training took 2.266345 seconds
+===Train accuracy===
+===Dev accuracy===
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=BOS
+Weight for above feature:  -4.245531724713903
+Feature of interests for this example:  thirdWord=said
+Weight for above feature:  -1.4711683896761314
+Feature of interests for this example:  fourthWord=:
+Weight for above feature:  -3.401771407117705
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest Broker
+Gold Label for above:  0
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  secondWord=said
+Weight for above feature:  0.05737269555964799
+Feature of interests for this example:  thirdWord=:
+Weight for above feature:  -2.7335288578653656
+Feature of interests for this example:  fourthWord="
+Weight for above feature:  -1.2083626490543087
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest Khurshid
+Gold Label for above:  1
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  NextWord=said
+Weight for above feature:  1.7195402909852606
+Feature of interests for this example:  secondWord=:
+Weight for above feature:  -3.373784064922963
+Feature of interests for this example:  thirdWord="
+Weight for above feature:  -0.5948935187948332
+Feature of interests for this example:  fourthWord=The
+Weight for above feature:  -1.1558618520375057
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest Alam
+Gold Label for above:  1
+Feature of interests for this example:  CurrWord=said
+Weight for above feature:  -5.255763931712833
+Feature of interests for this example:  NextWord=:
+Weight for above feature:  -6.149332973069866
+Feature of interests for this example:  secondWord="
+Weight for above feature:  -0.6383220859035694
+Feature of interests for this example:  thirdWord=The
+Weight for above feature:  -1.2161368043059486
+Feature of interests for this example:  fourthWord=market
+Weight for above feature:  -2.0622952342733063
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest said
+Gold Label for above:  0
+Feature of interests for this example:  PrevWord=said
+Weight for above feature:  -1.0767550128350156
+Feature of interests for this example:  CurrWord=:
+Weight for above feature:  -5.375781936823449
+Feature of interests for this example:  NextWord="
+Weight for above feature:  -2.9820224121125998
+Feature of interests for this example:  secondWord=The
+Weight for above feature:  -0.4413006029523109
+Feature of interests for this example:  thirdWord=market
+Weight for above feature:  -0.547964251374929
+Feature of interests for this example:  fourthWord=sentiment
+Weight for above feature:  -0.31217158129126304
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest :
+Gold Label for above:  0
+Feature of interests for this example:  PrevWord=:
+Weight for above feature:  -4.150780015565232
+Feature of interests for this example:  CurrWord="
+Weight for above feature:  -6.530183684288448
+Feature of interests for this example:  NextWord=The
+Weight for above feature:  -1.2296679249649993
+Feature of interests for this example:  secondLastWord=said
+Weight for above feature:  0.044956285356179126
+Feature of interests for this example:  secondWord=market
+Weight for above feature:  -1.6140935532416538
+Feature of interests for this example:  thirdWord=sentiment
+Weight for above feature:  -0.07368005706888184
+Feature of interests for this example:  fourthWord=will
+Weight for above feature:  -0.5471824405493902
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest "
+Gold Label for above:  0
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord="
+Weight for above feature:  -3.1025093285577867
+Feature of interests for this example:  CurrWord=The
+Weight for above feature:  -8.374945103824032
+Feature of interests for this example:  NextWord=market
+Weight for above feature:  -2.856237258297402
+Feature of interests for this example:  secondLastWord=:
+Weight for above feature:  -1.8275805133216003
+Feature of interests for this example:  secondWord=sentiment
+Weight for above feature:  -0.43825000985849133
+Feature of interests for this example:  thirdWord=will
+Weight for above feature:  -1.5842256760710514
+Feature of interests for this example:  fourthWord=remain
+Weight for above feature:  -0.13912805824070065
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest The
+Gold Label for above:  0
+Feature of interests for this example:  PrevWord=The
+Weight for above feature:  -4.6051856761919066
+Feature of interests for this example:  CurrWord=market
+Weight for above feature:  -2.428674705857681
+Feature of interests for this example:  NextWord=sentiment
+Weight for above feature:  -0.5739242153903029
+Feature of interests for this example:  secondLastWord="
+Weight for above feature:  0.012438301357127875
+Feature of interests for this example:  secondWord=will
+Weight for above feature:  -1.4545664305794004
+Feature of interests for this example:  thirdWord=remain
+Weight for above feature:  -1.0164444799029408
+Feature of interests for this example:  fourthWord=strong
+Weight for above feature:  -0.7930884755618985
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest market
+Gold Label for above:  0
+Feature of interests for this example:  PrevWord=market
+Weight for above feature:  -2.5944092436024158
+Feature of interests for this example:  CurrWord=sentiment
+Weight for above feature:  -0.24757908829163996
+Feature of interests for this example:  NextWord=will
+Weight for above feature:  -1.331089596705214
+Feature of interests for this example:  secondLastWord=The
+Weight for above feature:  -4.120422715889216
+Feature of interests for this example:  secondWord=remain
+Weight for above feature:  -0.5020432425400052
+Feature of interests for this example:  thirdWord=strong
+Weight for above feature:  -0.9028484299446176
+Feature of interests for this example:  fourthWord=.
+Weight for above feature:  -1.8727301299452295
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest sentiment
+Gold Label for above:  0
+Feature of interests for this example:  PrevWord=sentiment
+Weight for above feature:  -0.008592039755939156
+Feature of interests for this example:  CurrWord=will
+Weight for above feature:  -4.115606652688599
+Feature of interests for this example:  NextWord=remain
+Weight for above feature:  -1.6602336739245804
+Feature of interests for this example:  secondLastWord=market
+Weight for above feature:  -1.9701475607867418
+Feature of interests for this example:  secondWord=strong
+Weight for above feature:  -1.5554355700977989
+Feature of interests for this example:  thirdWord=.
+Weight for above feature:  -2.2859425810462732
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest will
+Gold Label for above:  0
+Feature of interests for this example:  PrevWord=will
+Weight for above feature:  -3.9359587062290666
+Feature of interests for this example:  CurrWord=remain
+Weight for above feature:  -0.324536631546778
+Feature of interests for this example:  NextWord=strong
+Weight for above feature:  -1.0235105704751843
+Feature of interests for this example:  secondLastWord=sentiment
+Weight for above feature:  -0.0
+Feature of interests for this example:  secondWord=.
+Weight for above feature:  -2.7624398444128966
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest remain
+Gold Label for above:  0
+Feature of interests for this example:  PrevWord=remain
+Weight for above feature:  -0.6313043301612509
+Feature of interests for this example:  CurrWord=strong
+Weight for above feature:  -1.0943224914782421
+Feature of interests for this example:  NextWord=.
+Weight for above feature:  -4.005167892490967
+Feature of interests for this example:  secondLastWord=will
+Weight for above feature:  -2.0307062610109727
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest strong
+Gold Label for above:  0
+Feature of interests for this example:  PrevWord=strong
+Weight for above feature:  -1.1153066670337268
+Feature of interests for this example:  CurrWord=.
+Weight for above feature:  -7.297662360431417
+Feature of interests for this example:  NextWord=EOS
+Weight for above feature:  -3.0124150211096805
+Feature of interests for this example:  secondLastWord=remain
+Weight for above feature:  -0.25839198734391944
+===============================================================
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest .
+Gold Label for above:  0
+Accuracy: 11 / 13 = 0.846154
+Precision: 0 / 0 = 0.000000
+Recall: 0 / 2 = 0.000000
+F1: 0.000000

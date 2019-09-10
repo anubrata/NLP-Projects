@@ -1,0 +1,20 @@
+Features:
+isFirstLetterCap, isFirstCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of NextWord,
+PrevWord is Beginning of Sentence, NextWord is End of Sentence
+============================================
+Model Specs:
+Optimizer: SGDOptimizer
+Learning Rate: 0.35
+Epochs: 20
+============================================
+Data reading and training took 37.925844 seconds
+===Train accuracy===
+Accuracy: 204415 / 204567 = 0.999257
+Precision: 11107 / 11238 = 0.988343
+Recall: 11107 / 11128 = 0.998113
+F1: 0.993204
+===Dev accuracy===
+Accuracy: 50893 / 51578 = 0.986719
+Precision: 2816 / 3168 = 0.888889
+Recall: 2816 / 3149 = 0.894252
+F1: 0.891562

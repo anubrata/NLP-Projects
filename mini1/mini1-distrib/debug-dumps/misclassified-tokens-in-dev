@@ -1,0 +1,1296 @@
+/Users/ad45932/anaconda3/envs/fairness-text/bin/python /Users/ad45932/Repo/CS388/2019/mini1/mini1-distrib/classifier_main.py --model CLASSIFIER
+Namespace(blind_test_path='data/eng.testb.blind', dev_path='data/eng.testa', model='CLASSIFIER', run_on_test=True, test_output_path='eng.testb.out', train_path='data/eng.train')
+Total number of features: 110799
+Training epoch:  0
+=========================
+For epoch  0 Training took 8.473297 seconds
+Training epoch:  1
+=========================
+For epoch  1 Training took 8.518063 seconds
+Training epoch:  2
+=========================
+For epoch  2 Training took 8.570433 seconds
+Training epoch:  3
+=========================
+For epoch  3 Training took 8.561635 seconds
+Training epoch:  4
+=========================
+For epoch  4 Training took 8.667159 seconds
+Training epoch:  5
+=========================
+For epoch  5 Training took 8.659948 seconds
+Training epoch:  6
+=========================
+For epoch  6 Training took 8.606737 seconds
+Training epoch:  7
+=========================
+For epoch  7 Training took 8.621435 seconds
+Training epoch:  8
+=========================
+For epoch  8 Training took 8.572070 seconds
+Training epoch:  9
+=========================
+For epoch  9 Training took 8.562567 seconds
+Training epoch:  10
+=========================
+For epoch  10 Training took 8.571446 seconds
+Training epoch:  11
+=========================
+For epoch  11 Training took 8.570871 seconds
+Training epoch:  12
+=========================
+For epoch  12 Training took 8.568224 seconds
+Training epoch:  13
+=========================
+For epoch  13 Training took 8.548822 seconds
+Training epoch:  14
+=========================
+For epoch  14 Training took 8.527404 seconds
+Training epoch:  15
+=========================
+For epoch  15 Training took 8.511742 seconds
+Training epoch:  16
+=========================
+For epoch  16 Training took 8.523268 seconds
+Training epoch:  17
+=========================
+For epoch  17 Training took 8.525501 seconds
+Training epoch:  18
+=========================
+For epoch  18 Training took 8.649283 seconds
+Training epoch:  19
+=========================
+For epoch  19 Training took 8.528337 seconds
+Data reading and training took 173.689399 seconds
+===Train accuracy===
+example: ['We', 'will', 'be', 'guests', 'of', 'the', 'Kennedys', ',', '"', 'said', 'Frank', 'Quilter', ',', 'one', 'of', 'the', 'two', 'who', 'have', 'been', 'invited', 'to', 'Chicago', '.']
+token of interest Kennedys
+example: ['Mother', 'Teresa', ',', 'known', 'as', 'the', 'Saint', 'of', 'the', 'Gutters', ',', 'won', 'the', 'Nobel', 'Peace', 'Prize', 'in', '1979', 'for', 'bringing', 'hope', 'and', 'dignity', 'to', 'millions', 'of', 'poor', ',', 'unwanted', 'people', 'with', 'her', 'simple', 'message', ':', '"', 'The', 'poor', 'must', 'know', 'that', 'we', 'love', 'them', '.', '"']
+token of interest Saint
+example: ['Mother', 'Teresa', ',', 'known', 'as', 'the', 'Saint', 'of', 'the', 'Gutters', ',', 'won', 'the', 'Nobel', 'Peace', 'Prize', 'in', '1979', 'for', 'bringing', 'hope', 'and', 'dignity', 'to', 'millions', 'of', 'poor', ',', 'unwanted', 'people', 'with', 'her', 'simple', 'message', ':', '"', 'The', 'poor', 'must', 'know', 'that', 'we', 'love', 'them', '.', '"']
+token of interest of
+example: ['Mother', 'Teresa', ',', 'known', 'as', 'the', 'Saint', 'of', 'the', 'Gutters', ',', 'won', 'the', 'Nobel', 'Peace', 'Prize', 'in', '1979', 'for', 'bringing', 'hope', 'and', 'dignity', 'to', 'millions', 'of', 'poor', ',', 'unwanted', 'people', 'with', 'her', 'simple', 'message', ':', '"', 'The', 'poor', 'must', 'know', 'that', 'we', 'love', 'them', '.', '"']
+token of interest the
+example: ['Mother', 'Teresa', ',', 'known', 'as', 'the', 'Saint', 'of', 'the', 'Gutters', ',', 'won', 'the', 'Nobel', 'Peace', 'Prize', 'in', '1979', 'for', 'bringing', 'hope', 'and', 'dignity', 'to', 'millions', 'of', 'poor', ',', 'unwanted', 'people', 'with', 'her', 'simple', 'message', ':', '"', 'The', 'poor', 'must', 'know', 'that', 'we', 'love', 'them', '.', '"']
+token of interest Gutters
+example: ['OB', '1', 'Lotte', '1']
+token of interest Lotte
+example: ['He', 'performed', 'in', 'summer', 'stock', 'and', 'soap', 'operas', 'before', 'being', 'plucked', 'as', 'an', 'almost', 'unknown', 'to', 'play', 'the', 'lead', 'in', '"', 'Superman', '"', 'and', 'three', 'sequels', '.']
+token of interest Superman
+example: ['Ata-ur-Rehman', '2', '2', '2', '10', '10no', '-']
+token of interest Ata-ur-Rehman
+example: ['Washington', "'s", 'win', 'was', 'not', 'comfortable', ',', 'either', '.']
+token of interest Washington
+example: ['DENVER', '1996-08-29']
+token of interest DENVER
+Accuracy: 204557 / 204567 = 0.999951
+Precision: 11118 / 11118 = 1.000000
+Recall: 11118 / 11128 = 0.999101
+F1: 0.999550
+===Dev accuracy===
+example: ['CRICKET', '-', 'LEICESTERSHIRE', 'TAKE', 'OVER', 'AT', 'TOP', 'AFTER', 'INNINGS', 'VICTORY', '.']
+token of interest LEICESTERSHIRE
+example: ['Hove', ':', 'Sussex', '363', '(', 'W.', 'Athey', '111', ',', 'V.', 'Drakes', '52', ';', 'I.', 'Austin', '4-37', ')', ',', 'Lancashire', '197-8', '(', 'W.', 'Hegg', '54', ')']
+token of interest W.
+example: ['Hove', ':', 'Sussex', '363', '(', 'W.', 'Athey', '111', ',', 'V.', 'Drakes', '52', ';', 'I.', 'Austin', '4-37', ')', ',', 'Lancashire', '197-8', '(', 'W.', 'Hegg', '54', ')']
+token of interest Hegg
+example: ['Chesterfield', ':', 'Worcestershire', '238', 'and', '133-5', ',', 'Derbyshire', '471', '(', 'J.', 'Adams', '123', ',', "T.O'Gorman", '109', 'not', 'out', ',', 'K.', 'Barnett', '87', ';', 'T.', 'Moody', '6-82', ')']
+token of interest Derbyshire
+example: ['Chesterfield', ':', 'Worcestershire', '238', 'and', '133-5', ',', 'Derbyshire', '471', '(', 'J.', 'Adams', '123', ',', "T.O'Gorman", '109', 'not', 'out', ',', 'K.', 'Barnett', '87', ';', 'T.', 'Moody', '6-82', ')']
+token of interest T.O'Gorman
+example: ['Chesterfield', ':', 'Worcestershire', '238', 'and', '133-5', ',', 'Derbyshire', '471', '(', 'J.', 'Adams', '123', ',', "T.O'Gorman", '109', 'not', 'out', ',', 'K.', 'Barnett', '87', ';', 'T.', 'Moody', '6-82', ')']
+token of interest Moody
+example: ['July', '24-28', 'Fourth', 'test', '(', 'at', 'Headingley', ')']
+token of interest Fourth
+example: ['August', '7-11', 'Fifth', 'test', '(', 'at', 'Trent', 'Bridge', ',', 'Nottingham', ')']
+token of interest Fifth
+example: ['August', '21-25', 'Sixth', 'test', '(', 'at', 'The', 'Oval', ',', 'London', ')', '.']
+token of interest Sixth
+example: ['Adams', 'and', 'Platt', 'are', 'both', 'injured', 'and', 'will', 'miss', 'England', "'s", 'opening', 'World', 'Cup', 'qualifier', 'against', 'Moldova', 'on', 'Sunday', '.']
+token of interest Adams
+example: ['Adams', 'and', 'Platt', 'are', 'both', 'injured', 'and', 'will', 'miss', 'England', "'s", 'opening', 'World', 'Cup', 'qualifier', 'against', 'Moldova', 'on', 'Sunday', '.']
+token of interest Platt
+example: ['"', 'There', 'were', 'three', 'or', 'four', 'people', 'who', 'could', 'have', 'done', 'it', 'but', 'when', 'I', 'spoke', 'to', 'Alan', 'he', 'was', 'up', 'for', 'it', 'and', 'really', 'wanted', 'it', '.']
+token of interest Alan
+example: ['Shearer', "'s", 'Euro', '96', 'striking', 'partner', 'Teddy', 'Sheringham', 'withdrew', 'from', 'the', 'squad', 'with', 'an', 'injury', 'on', 'Friday', '.']
+token of interest Shearer
+example: ['BOXING', '-', 'PANAMA', "'S", 'ROBERTO', 'DURAN', 'FIGHTS', 'THE', 'SANDS', 'OF', 'TIME', '.']
+token of interest ROBERTO
+example: ['BOXING', '-', 'PANAMA', "'S", 'ROBERTO', 'DURAN', 'FIGHTS', 'THE', 'SANDS', 'OF', 'TIME', '.']
+token of interest DURAN
+example: ['Panamanian', 'boxing', 'legend', 'Roberto', '"', 'Hands', 'of', 'Stone', '"', 'Duran', 'climbs', 'into', 'the', 'ring', 'on', 'Saturday', 'in', 'another', 'age-defying', 'attempt', 'to', 'sustain', 'his', 'long', 'career', '.']
+token of interest Panamanian
+example: ['Panamanian', 'boxing', 'legend', 'Roberto', '"', 'Hands', 'of', 'Stone', '"', 'Duran', 'climbs', 'into', 'the', 'ring', 'on', 'Saturday', 'in', 'another', 'age-defying', 'attempt', 'to', 'sustain', 'his', 'long', 'career', '.']
+token of interest "
+example: ['Panamanian', 'boxing', 'legend', 'Roberto', '"', 'Hands', 'of', 'Stone', '"', 'Duran', 'climbs', 'into', 'the', 'ring', 'on', 'Saturday', 'in', 'another', 'age-defying', 'attempt', 'to', 'sustain', 'his', 'long', 'career', '.']
+token of interest Hands
+example: ['Panamanian', 'boxing', 'legend', 'Roberto', '"', 'Hands', 'of', 'Stone', '"', 'Duran', 'climbs', 'into', 'the', 'ring', 'on', 'Saturday', 'in', 'another', 'age-defying', 'attempt', 'to', 'sustain', 'his', 'long', 'career', '.']
+token of interest of
+example: ['Panamanian', 'boxing', 'legend', 'Roberto', '"', 'Hands', 'of', 'Stone', '"', 'Duran', 'climbs', 'into', 'the', 'ring', 'on', 'Saturday', 'in', 'another', 'age-defying', 'attempt', 'to', 'sustain', 'his', 'long', 'career', '.']
+token of interest Stone
+example: ['Panamanian', 'boxing', 'legend', 'Roberto', '"', 'Hands', 'of', 'Stone', '"', 'Duran', 'climbs', 'into', 'the', 'ring', 'on', 'Saturday', 'in', 'another', 'age-defying', 'attempt', 'to', 'sustain', 'his', 'long', 'career', '.']
+token of interest "
+example: ['Panamanian', 'boxing', 'legend', 'Roberto', '"', 'Hands', 'of', 'Stone', '"', 'Duran', 'climbs', 'into', 'the', 'ring', 'on', 'Saturday', 'in', 'another', 'age-defying', 'attempt', 'to', 'sustain', 'his', 'long', 'career', '.']
+token of interest Duran
+example: ['Duran', ',', '45', ',', 'takes', 'on', 'little-known', 'Mexican', 'Ariel', 'Cruz', ',', '30', ',', 'in', 'a', 'super', 'middleweight', 'non-title', 'bout', 'in', 'Panama', 'City', '.']
+token of interest Duran
+example: ['Duran', ',', '45', ',', 'takes', 'on', 'little-known', 'Mexican', 'Ariel', 'Cruz', ',', '30', ',', 'in', 'a', 'super', 'middleweight', 'non-title', 'bout', 'in', 'Panama', 'City', '.']
+token of interest Cruz
+example: ['The', 'fight', ',', 'Duran', "'s", 'first', 'on', 'home', 'soil', 'for', '10', 'years', ',', 'is', 'being', 'billed', 'here', 'as', 'the', '"', 'Return', 'of', 'the', 'Legend', '"', 'and', 'Duran', 'still', 'talks', 'as', 'if', 'he', 'was', 'in', 'his', 'prime', '.']
+token of interest Duran
+example: ['Duran', ',', 'whose', '97-12', 'record', 'spans', 'three', 'decades', ',', 'hopes', 'a', 'win', 'in', 'the', '10-round', 'bout', 'will', 'earn', 'him', 'a', 'rematch', 'against', 'Puerto', 'Rico', "'s", 'Hector', '"', 'Macho', '"', 'Camacho', '.']
+token of interest Hector
+example: ['Duran', ',', 'whose', '97-12', 'record', 'spans', 'three', 'decades', ',', 'hopes', 'a', 'win', 'in', 'the', '10-round', 'bout', 'will', 'earn', 'him', 'a', 'rematch', 'against', 'Puerto', 'Rico', "'s", 'Hector', '"', 'Macho', '"', 'Camacho', '.']
+token of interest "
+example: ['Duran', ',', 'whose', '97-12', 'record', 'spans', 'three', 'decades', ',', 'hopes', 'a', 'win', 'in', 'the', '10-round', 'bout', 'will', 'earn', 'him', 'a', 'rematch', 'against', 'Puerto', 'Rico', "'s", 'Hector', '"', 'Macho', '"', 'Camacho', '.']
+token of interest Macho
+example: ['Duran', ',', 'whose', '97-12', 'record', 'spans', 'three', 'decades', ',', 'hopes', 'a', 'win', 'in', 'the', '10-round', 'bout', 'will', 'earn', 'him', 'a', 'rematch', 'against', 'Puerto', 'Rico', "'s", 'Hector', '"', 'Macho', '"', 'Camacho', '.']
+token of interest "
+example: ['Duran', ',', 'whose', '97-12', 'record', 'spans', 'three', 'decades', ',', 'hopes', 'a', 'win', 'in', 'the', '10-round', 'bout', 'will', 'earn', 'him', 'a', 'rematch', 'against', 'Puerto', 'Rico', "'s", 'Hector', '"', 'Macho', '"', 'Camacho', '.']
+token of interest Camacho
+example: ['Camacho', 'took', 'a', 'controversial', 'points', 'decision', 'against', 'the', 'Panamanian', 'in', 'Atlantic', 'City', 'in', 'June', 'in', 'a', 'title', 'fight', '.']
+token of interest Camacho
+example: ['TENNIS', '-', 'TARANGO', ',', "O'BRIEN", 'SPRING', 'TWIN', 'UPSETS', 'UNDER', 'THE', 'LIGHTS', '.']
+token of interest TARANGO
+example: ['TENNIS', '-', 'TARANGO', ',', "O'BRIEN", 'SPRING', 'TWIN', 'UPSETS', 'UNDER', 'THE', 'LIGHTS', '.']
+token of interest O'BRIEN
+example: ['The', '11th-seeded', 'Washington', 'fell', 'short', 'of', 'reprising', 'his', 'Wimbledon', 'miracle', 'comeback', 'as', 'he', 'lost', 'to', 'red-hot', 'wildcard', 'Alex', "O'Brien", '6-3', '6-4', '5-7', '3-6', '6-3', 'in', 'a', 'two', 'hour', '51', 'minute', 'struggle', 'on', 'the', 'Stadium', 'court', '.']
+token of interest Washington
+example: ['The', 'day', 'programme', 'went', 'smoothly', 'although', 'sixth-seeded', 'former', 'champion', 'Agassi', 'had', 'to', 'wriggle', 'out', 'of', 'a', 'dangerous', '3-6', '0-4', 'hole', ',', 'winning', '18', 'of', 'the', 'last', '19', 'games', 'against', 'India', "'s", 'Leander', 'Paes', '.']
+token of interest Leander
+example: ['The', 'day', 'programme', 'went', 'smoothly', 'although', 'sixth-seeded', 'former', 'champion', 'Agassi', 'had', 'to', 'wriggle', 'out', 'of', 'a', 'dangerous', '3-6', '0-4', 'hole', ',', 'winning', '18', 'of', 'the', 'last', '19', 'games', 'against', 'India', "'s", 'Leander', 'Paes', '.']
+token of interest Paes
+example: ['Washington', ',', 'who', 'climbed', 'back', 'from', 'a', '1-5', 'deficit', ',', 'two', 'sets', 'down', 'in', 'the', 'third', 'set', 'against', 'Todd', 'Martin', 'in', 'the', 'Wimbledon', 'semifinals', ',', 'looked', 'poised', 'for', 'another', 'sensational', 'comeback', '.']
+token of interest Washington
+example: ["O'Brien", ',', 'a', 'winner', 'two', 'weeks', 'ago', 'in', 'New', 'Haven', 'for', 'his', 'first', 'pro', 'title', ',', 'served', 'for', 'the', 'match', 'at', '5-4', 'in', 'the', 'third', 'set', 'before', 'Washington', 'came', 'charging', 'back', '.']
+token of interest O'Brien
+example: ['The', 'hard-serving', "O'Brien", ',', 'a', 'former', 'U.S.', 'collegiate', 'national', 'champion', ',', 'fired', 'up', '17', 'aces', 'to', 'ultimately', 'subdue', 'the', 'never-say-die', 'Washington', '.']
+token of interest O'Brien
+example: ['The', 'hard-serving', "O'Brien", ',', 'a', 'former', 'U.S.', 'collegiate', 'national', 'champion', ',', 'fired', 'up', '17', 'aces', 'to', 'ultimately', 'subdue', 'the', 'never-say-die', 'Washington', '.']
+token of interest Washington
+example: ['The', 'fifth', 'set', 'stayed', 'on', 'serve', 'until', 'the', 'sixth', 'game', ',', 'when', 'Washington', ',', 'after', 'saving', 'one', 'break', 'point', 'with', 'a', 'forehand', 'winner', 'down', 'the', 'line', ',', 'netted', 'a', 'backhand', 'to', 'give', "O'Brien", 'a', '4-2', 'lead', '.']
+token of interest Washington
+example: ['The', 'fifth', 'set', 'stayed', 'on', 'serve', 'until', 'the', 'sixth', 'game', ',', 'when', 'Washington', ',', 'after', 'saving', 'one', 'break', 'point', 'with', 'a', 'forehand', 'winner', 'down', 'the', 'line', ',', 'netted', 'a', 'backhand', 'to', 'give', "O'Brien", 'a', '4-2', 'lead', '.']
+token of interest O'Brien
+example: ['The', 'Texan', 'blasted', 'in', 'two', 'aces', 'to', 'hold', 'serve', 'at', '5-2', 'and', 'then', 'converted', 'his', 'eighth', 'match', 'point', 'for', 'victory', 'when', 'Washington', 'found', 'the', 'net', 'with', 'another', 'backhand', 'from', '40-0', '.']
+token of interest Washington
+example: ['I', 'think', 'he', 'got', 'a', 'little', 'tight', 'at', 'a', 'couple', 'of', 'moments', ',', '"', 'said', 'Washington', '.', '"']
+token of interest Washington
+example: ['"', 'I', "'m", 'an', 'emotional', 'player', ',', '"', 'said', 'the', '104th-ranked', 'Tarango', '.', '"']
+token of interest Tarango
+example: ['At', 'the', 'end', 'of', 'the', 'match', ',', 'Tarango', 'blew', 'sarcastic', 'kisses', 'to', 'the', 'crowd', ',', 'then', 'jiggled', 'his', 'body', 'to', 'a', 'Rios', 'rooting', 'section', 'in', 'a', 'jeering', 'salute', '.']
+token of interest Rios
+example: ['NFL', 'AMERICAN', 'FOOTBALL-RANDALL', 'CUNNINGHAM', 'RETIRES', '.']
+token of interest CUNNINGHAM
+example: ['A', 'three-time', 'Pro', 'Bowl', 'selection', ',', 'Cunningham', 'rushed', 'for', '4,482', 'yards', 'on', '677', 'carries', '.']
+token of interest Bowl
+example: ['A', 'three-time', 'Pro', 'Bowl', 'selection', ',', 'Cunningham', 'rushed', 'for', '4,482', 'yards', 'on', '677', 'carries', '.']
+token of interest Cunningham
+example: ['"', 'Randall', 'was', 'one', 'of', 'the', 'most', 'exciting', 'quarterbacks', 'in', 'NFL', 'history', ',', '"', 'said', 'Eagles', 'owner', 'Jeffrey', 'Lurie', '.', '"']
+token of interest Eagles
+example: ['"', 'Randall', 'was', 'one', 'of', 'the', 'most', 'exciting', 'quarterbacks', 'in', 'NFL', 'history', ',', '"', 'said', 'Eagles', 'owner', 'Jeffrey', 'Lurie', '.', '"']
+token of interest Lurie
+example: ['Cunningham', 'has', 'already', 'been', 'signed', 'as', 'a', 'broadcaster', '.']
+token of interest Cunningham
+example: ['6,739-yard', 'Brown', 'Deer', 'Park', 'Golf', 'Course', 'after', 'the', 'first', 'round']
+token of interest Brown
+example: ['6,739-yard', 'Brown', 'Deer', 'Park', 'Golf', 'Course', 'after', 'the', 'first', 'round']
+token of interest Deer
+example: ['6,739-yard', 'Brown', 'Deer', 'Park', 'Golf', 'Course', 'after', 'the', 'first', 'round']
+token of interest Park
+example: ['62', 'Nolan', 'Henke']
+token of interest Henke
+example: ['66', 'Neal', 'Lancaster', ',', 'Dave', 'Barr', '(', 'Canada', ')', ',', 'Mike', 'Sullivan', ',', 'Willie']
+token of interest Willie
+example: ['Wood', ',', 'Loren', 'Roberts', ',', 'Steve', 'Stricker', ',', 'Brian', 'Claar', ',', 'Russ', 'Cochran']
+token of interest Wood
+example: ['GOLF', '-', 'HENKE', 'TAKES', 'LEAD', 'IN', 'MILWAUKEE', ',', 'WOODS', 'MAKES', 'PRO', 'DEBUT', '.']
+token of interest HENKE
+example: ['GOLF', '-', 'HENKE', 'TAKES', 'LEAD', 'IN', 'MILWAUKEE', ',', 'WOODS', 'MAKES', 'PRO', 'DEBUT', '.']
+token of interest WOODS
+example: ['Henke', 'stood', 'two', 'strokes', 'ahead', 'of', 'Bob', 'Estes', 'and', 'three', 'up', 'on', 'Billy', 'Andrade', ',', 'Duffy', 'Waldorf', 'and', 'Jesper', 'Parnevik', '.']
+token of interest Henke
+example: ['Henke', 'stood', 'two', 'strokes', 'ahead', 'of', 'Bob', 'Estes', 'and', 'three', 'up', 'on', 'Billy', 'Andrade', ',', 'Duffy', 'Waldorf', 'and', 'Jesper', 'Parnevik', '.']
+token of interest Billy
+example: ['Henke', 'stood', 'two', 'strokes', 'ahead', 'of', 'Bob', 'Estes', 'and', 'three', 'up', 'on', 'Billy', 'Andrade', ',', 'Duffy', 'Waldorf', 'and', 'Jesper', 'Parnevik', '.']
+token of interest Jesper
+example: ['Henke', 'stood', 'two', 'strokes', 'ahead', 'of', 'Bob', 'Estes', 'and', 'three', 'up', 'on', 'Billy', 'Andrade', ',', 'Duffy', 'Waldorf', 'and', 'Jesper', 'Parnevik', '.']
+token of interest Parnevik
+example: ['Woods', ',', 'who', 'turned', 'pro', 'Tuesday', 'after', 'winning', 'an', 'unprecedented', 'third', 'successive', 'U.S.', 'Amateur', 'Championship', ',', 'almost', 'eagled', 'the', '18th', 'hole', '.']
+token of interest Woods
+example: ['Woods', 'was', 'among', 'a', 'group', 'of', '13', 'players', 'at', 'four', 'under', ',', 'including', '1993', 'champion', 'Billy', 'Mayfair', ',', 'who', 'tied', 'for', 'second', 'at', 'last', 'week', "'s", 'World', 'Series', 'of', 'Golf', ',', 'and', 'former', 'U.S.', 'Open', 'champ', 'Payne', 'Stewart', '.']
+token of interest Woods
+example: ['SOCCER', '-', 'SILVA', "'S", '`LOST', 'PASSPORT', "'", 'EXCUSE', 'NOT', 'ENOUGH', 'FOR', 'FIFA', '.']
+token of interest SILVA
+example: ['ATHLETICS', '-', 'MITCHELL', 'DEFEATS', 'BAILEY', 'IN', 'FRONT', 'OF', 'FORMER', 'CHAMPIONS', '.']
+token of interest BAILEY
+example: ['Panayiotopoulos', '(', 'Greece', ')', ',', 'Florian', 'Schwarthoff', '(', 'Germany', ')', '39.93']
+token of interest Panayiotopoulos
+example: ['Roberto', 'Bisconti', 'will', 'be', 'sidelined', 'for', 'six', 'Euro', 'ties', 'after', 'pushing', 'the', 'referee', 'in', 'the', 'back', 'as', 'he', 'protested', 'about', 'a', 'Karlsruhe', 'goal', ',', 'while', 'Didier', 'Ernst', 'was', 'banned', 'for', 'four', 'matches', 'for', 'a', 'verbal', 'attack', 'soon', 'after', 'Bisconti', 'was', 'also', 'dismissed', '.']
+token of interest Didier
+example: ['Roberto', 'Bisconti', 'will', 'be', 'sidelined', 'for', 'six', 'Euro', 'ties', 'after', 'pushing', 'the', 'referee', 'in', 'the', 'back', 'as', 'he', 'protested', 'about', 'a', 'Karlsruhe', 'goal', ',', 'while', 'Didier', 'Ernst', 'was', 'banned', 'for', 'four', 'matches', 'for', 'a', 'verbal', 'attack', 'soon', 'after', 'Bisconti', 'was', 'also', 'dismissed', '.']
+token of interest Ernst
+example: ['Roberto', 'Bisconti', 'will', 'be', 'sidelined', 'for', 'six', 'Euro', 'ties', 'after', 'pushing', 'the', 'referee', 'in', 'the', 'back', 'as', 'he', 'protested', 'about', 'a', 'Karlsruhe', 'goal', ',', 'while', 'Didier', 'Ernst', 'was', 'banned', 'for', 'four', 'matches', 'for', 'a', 'verbal', 'attack', 'soon', 'after', 'Bisconti', 'was', 'also', 'dismissed', '.']
+token of interest Bisconti
+example: ['ATHLETICS', '-', 'HARRISON', ',', 'EDWARDS', 'TO', 'MEET', 'IN', 'SARAJEVO', '.']
+token of interest HARRISON
+example: ['ATHLETICS', '-', 'HARRISON', ',', 'EDWARDS', 'TO', 'MEET', 'IN', 'SARAJEVO', '.']
+token of interest EDWARDS
+example: ['Atlanta', 'Games', 'silver', 'medal', 'winner', 'Edwards', 'has', 'called', 'on', 'other', 'leading', 'athletes', 'to', 'take', 'part', 'in', 'the', 'Sarajevo', 'meeting', '--', 'a', 'goodwill', 'gesture', 'towards', 'Bosnia', 'as', 'it', 'recovers', 'from', 'the', 'war', 'in', 'the', 'Balkans', '--', 'two', 'days', 'after', 'the', 'grand', 'prix', 'final', 'in', 'Milan', '.']
+token of interest Edwards
+example: ['Edwards', 'was', 'quoted', 'as', 'saying', ':', '"', 'What', 'type', 'of', 'character', 'do', 'we', 'show', 'by', 'going', 'to', 'the', 'IAAF', 'Grand', 'Prix', 'Final', 'in', 'Milan', 'where', 'there', 'is', 'a', 'lot', 'of', 'money', 'to', 'make', 'but', 'refusing', 'to', 'make', 'the', 'trip', 'to', 'Sarajevo', 'as', 'a', 'humanitarian', 'gesture', '?', '"']
+token of interest Edwards
+example: ['SOCCER', '-', 'BARATELLI', 'TO', 'COACH', 'NICE', '.']
+token of interest BARATELLI
+example: ['Baratelli', ',', 'who', 'played', 'for', 'Nice', 'and', 'Paris', 'St', 'Germain', ',', 'takes', 'over', 'from', 'Albert', 'Emon', 'who', 'was', 'fired', 'on', 'Thursday', 'after', 'Nice', "'s", 'home', 'defeat', 'to', 'Guingamp', '2-1', 'in', 'the', 'league', '.']
+token of interest Baratelli
+example: ['SOCCER', '-', 'MILAN', "'S", 'LENTINI', 'MOVES', 'TO', 'ATALANTA', '.']
+token of interest LENTINI
+example: ['The', 'Gazzetta', 'dello', 'Sport', 'said', 'the', 'deal', 'would', 'cost', 'Atalanta', 'around', '$', '600,000', '.']
+token of interest Sport
+example: ['Lentini', ',', '27', ',', 'joined', 'Milan', 'from', 'Torino', 'in', 'a', '$', '12', 'million', 'deal', 'that', 'many', 'have', 'speculated', 'involved', 'far', 'more', 'money', 'changing', 'hands', 'and', 'which', 'has', 'subsequently', 'been', 'investigated', 'by', 'magistrates', 'for', 'alleged', 'financial', 'irregularities', '.']
+token of interest Lentini
+example: ['The', 'move', 'to', 'Bergamo-based', 'Atalanta', 'reunites', 'Lentini', ',', 'who', 'fell', 'out', 'with', 'ex-Milan', 'coach', 'Fabio', 'Capello', 'last', 'season', ',', 'with', 'his', 'former', 'coach', 'at', 'Torino', ',', 'Emiliano', 'Mondonico', '.']
+token of interest Emiliano
+example: ['The', 'move', 'to', 'Bergamo-based', 'Atalanta', 'reunites', 'Lentini', ',', 'who', 'fell', 'out', 'with', 'ex-Milan', 'coach', 'Fabio', 'Capello', 'last', 'season', ',', 'with', 'his', 'former', 'coach', 'at', 'Torino', ',', 'Emiliano', 'Mondonico', '.']
+token of interest Mondonico
+example: ['Fall', 'of', 'wickets', ':', '1-21', '2-52', '3-97', '4-149', '5-157', '6-163', '7-178']
+token of interest 3-97
+example: ['Fall', 'of', 'wickets', ':', '1-21', '2-52', '3-97', '4-149', '5-157', '6-163', '7-178']
+token of interest 4-149
+example: ['Fall', 'of', 'wickets', ':', '1-21', '2-52', '3-97', '4-149', '5-157', '6-163', '7-178']
+token of interest 5-157
+example: ['Fall', 'of', 'wickets', ':', '1-21', '2-52', '3-97', '4-149', '5-157', '6-163', '7-178']
+token of interest 6-163
+example: ['9-0-49-1', ',', 'Muralitharan', '10-0-41-2', ',', 'Jayasuriya', '10-0-43-2', ',', 'Chandana']
+token of interest Chandana
+example: ['U.', 'Chandana', 'not', 'out', '14']
+token of interest U.
+example: ['Fall', 'of', 'wickets', ':', '1-22', '2-78', '3-78', '4-78', '5-81', '6-196', '.']
+token of interest 3-78
+example: ['Fall', 'of', 'wickets', ':', '1-22', '2-78', '3-78', '4-78', '5-81', '6-196', '.']
+token of interest 4-78
+example: ['Fleming', '8-1-26-3', ',', 'Gillespie', '6-0-27-0', ',', 'M.', 'Waugh', '5-0-29-0', ',', 'Lehmann']
+token of interest Lehmann
+example: ['Flemming', ',', 'Jason', 'Gillespie', ',', 'Stuart', 'Law', ',', 'Glenn', 'McGrath', ',', 'Ricky']
+token of interest Flemming
+example: ['Ponting', ',', 'Michael', 'Slater', ',', 'Darren', 'Lehmann', ',', 'Mark', 'Waugh', ',', 'Steve']
+token of interest Ponting
+example: ['Waugh', '.']
+token of interest Waugh
+example: ['Chaminda', 'Vaas', ',', 'Muthiah', 'Muralitharan', ',', 'Upul', 'Chandana', '.']
+token of interest Chandana
+example: ['POLISH', 'NBP', 'REFRAINS', 'FROM', 'REVERSE', 'REPO', 'OPERATION', '.']
+token of interest REVERSE
+example: ['Notes', 'in', 'circulation', '27.35', '+0.435', '+0.237']
+token of interest +0.435
+example: ['Jones', 'Medical', 'completes', 'acquisition', '.']
+token of interest Jones
+example: ['Jones', 'Medical', 'Industries', 'Inc', 'said', 'Friday', 'it', 'completed', 'the', 'acquisition', 'of', 'Daniels', 'Pharmaceuticals', 'Inc', 'of', 'St.', 'Petersburg', ',', 'Fla.', ',', 'for', 'about', '2,960,000', 'shares', 'of', 'Jones', 'common', 'stock', '.']
+token of interest Jones
+example: ['Jones', 'stock', 'closed', 'down', '1/8', 'at', '40', 'Friday', '.']
+token of interest Jones
+example: ['Daniels', 'Pharmaceuticals', 'manufactures', 'prescription', 'pharmaceutical', 'products', ',', 'the', 'largest', 'of', 'which', 'is', 'Levoxyl', ',', 'a', 'synthetic', 'thyroid', 'hormone', 'for', 'treating', 'hypothyroidism', '.']
+token of interest Pharmaceuticals
+example: ['The', 'acquisition', 'will', 'beef', 'up', 'Markham', ',', 'Ontario-based', 'Magna', "'s", 'North', 'American', 'car', 'and', 'truck', 'seating', 'business', ',', 'allowing', 'it', 'to', 'better', 'compete', 'with', 'Johnson', 'Controls', 'Inc', 'and', 'Lear', 'Corp', '.']
+token of interest Ontario-based
+example: ['The', 'acquisition', 'will', 'beef', 'up', 'Markham', ',', 'Ontario-based', 'Magna', "'s", 'North', 'American', 'car', 'and', 'truck', 'seating', 'business', ',', 'allowing', 'it', 'to', 'better', 'compete', 'with', 'Johnson', 'Controls', 'Inc', 'and', 'Lear', 'Corp', '.']
+token of interest Magna
+example: ['The', 'acquisition', 'will', 'beef', 'up', 'Markham', ',', 'Ontario-based', 'Magna', "'s", 'North', 'American', 'car', 'and', 'truck', 'seating', 'business', ',', 'allowing', 'it', 'to', 'better', 'compete', 'with', 'Johnson', 'Controls', 'Inc', 'and', 'Lear', 'Corp', '.']
+token of interest Johnson
+example: ['Magna', ',', 'Johnson', 'Controls', 'and', 'Lear', 'have', 'been', 'working', 'to', 'build', 'up', 'their', 'capabilties', 'to', 'supply', 'complete', 'interiors', 'to', 'automakers', ',', 'including', 'seats', ',', 'instrument', 'panels', ',', 'door', 'panels', 'carpeting', 'and', 'headliners', '.']
+token of interest Johnson
+example: ['The', 'Iraqis', 'claimed', 'they', 'were', '"', 'ordinary', 'people', 'persecuted', 'by', 'the', 'regime', 'of', 'Saddam', '(', 'Hussein', ')', '"', 'but', 'interior', 'ministry', 'officials', 'had', 'consistently', 'said', 'it', 'was', 'likely', 'the', 'seven', 'would', 'be', 'charged', 'with', 'hijack', 'before', 'any', 'plea', 'for', 'asylum', 'was', 'considered', '.']
+token of interest Hussein
+example: ['NSW', 'Treasury', 'launched', 'a', 'A$', '100', 'million', 'three-year', 'discount', 'bond', 'aimed', 'at', 'Japanese', 'investors', '.']
+token of interest Treasury
+example: ['Next', 'week', 'Kansai', 'Electric', 'Power', 'and', 'Kansai', 'International', 'Airport', 'are', 'likely', 'to', 'launch', '10-year', 'dollar', 'deals', '.']
+token of interest Kansai
+example: ['An', 'eye', 'specialist', 'told', 'the', '35-year-old', 'Bruno', 'that', 'he', 'could', 'be', 'blinded', 'in', 'one', 'eye', 'if', 'he', 'boxed', 'again', ',', 'the', 'newspaper', 'said', '.']
+token of interest Bruno
+example: ['The', 'Briton', ',', 'who', 'lost', 'his', 'World', 'Boxing', 'Council', '(', 'WBC', ')', 'title', 'to', 'Mike', 'Tyson', 'in', 'March', ',', 'said', ':', '"', 'I', 'was', 'in', 'shock', 'as', 'soon', 'as', 'he', 'told', 'me', 'and', 'it', 'still', 'has', "n't", 'really', 'sunk', 'in', '.']
+token of interest Tyson
+example: ['Bruno', ',', 'for', 'years', 'one', 'of', 'Britain', "'s", 'most', 'popular', 'sportsmen', ',', 'had', 'hoped', 'to', 'have', 'another', 'shot', 'at', 'the', 'world', 'title', 'and', 'had', 'been', 'in', 'training', 'until', 'a', 'routine', 'eye', 'test', 'on', 'Monday', 'highlighted', 'a', 'problem', 'with', 'his', 'right', 'eye', '.']
+token of interest Bruno
+example: ['Bruno', 'lost', 'three', 'world', 'title', 'fights', 'before', 'finally', 'landing', 'the', 'crown', 'by', 'beating', 'American', 'Oliver', 'McCall', 'in', 'a', 'unanimous', 'points', 'decision', 'at', 'Wembley', 'in', 'September', '1995', '.']
+token of interest Bruno
+example: ['But', 'Bruno', 'lost', 'the', 'title', 'on', 'his', 'first', 'defence', 'when', 'he', 'fought', 'American', 'Tyson', 'in', 'Las', 'Vegas', '.']
+token of interest Bruno
+example: ['But', 'Bruno', 'lost', 'the', 'title', 'on', 'his', 'first', 'defence', 'when', 'he', 'fought', 'American', 'Tyson', 'in', 'Las', 'Vegas', '.']
+token of interest Tyson
+example: ['Bruno', 'suffered', 'a', 'cut', 'eye', 'in', 'the', 'opening', 'round', 'and', 'the', 'referee', 'stopped', 'the', 'fight', 'in', 'the', 'third', 'as', 'the', 'Briton', 'crumbled', 'under', 'a', 'flurry', 'of', 'punches', '.']
+token of interest Bruno
+example: ['Soccer', '-', 'McCarthy', 'names', 'team', 'to', 'play', 'Liechtenstein', '.']
+token of interest McCarthy
+example: ['Keith', "O'Neill", 'of', 'Norwich', 'City', 'joins', 'Niall', 'Quinn', 'up', 'front', '.']
+token of interest Niall
+example: ['Given', ',', 'Breen', ',', 'Staunton', ',', 'Irwin', ',', 'McAteer', ',', 'Harte', ',', 'McLoughlin', ',', 'Houghton', ',', 'Townsend', ',', 'Quinn', ',', "O'Neill", '.']
+token of interest Given
+example: ['Given', ',', 'Breen', ',', 'Staunton', ',', 'Irwin', ',', 'McAteer', ',', 'Harte', ',', 'McLoughlin', ',', 'Houghton', ',', 'Townsend', ',', 'Quinn', ',', "O'Neill", '.']
+token of interest O'Neill
+example: ['"', 'Little', 'did', 'I', 'know', 'I', 'was', 'dealing', 'with', 'robbers', ',', '"', 'the', 'News', 'Agency', 'of', 'Nigeria', 'quoted', 'the', 'unnamed', 'corporal', 'as', 'saying', '.']
+token of interest Little
+example: ['Lebed', 'said', 'he', 'and', 'Maskhadov', 'agreed', 'to', 'defer', 'by', 'more', 'than', 'five', 'years', 'the', 'painful', 'issue', 'of', 'Chechnya', "'s", 'political', 'status', '.']
+token of interest Maskhadov
+example: ['"', 'During', 'the', 'works', ',', 'all', 'flights', 'will', 'be', 're-routed', 'to', 'the', 'nearby', 'airport', 'in', 'Batajnica', ',', 'with', 'no', 'change', 'in', 'schedules', ',', '"', 'Tanjug', 'quotes', 'Belgrade', 'airport', 'General', 'Director', 'Ljubomir', 'Acimovic', 'as', 'saying', '.']
+token of interest Tanjug
+example: ['"', 'During', 'the', 'works', ',', 'all', 'flights', 'will', 'be', 're-routed', 'to', 'the', 'nearby', 'airport', 'in', 'Batajnica', ',', 'with', 'no', 'change', 'in', 'schedules', ',', '"', 'Tanjug', 'quotes', 'Belgrade', 'airport', 'General', 'Director', 'Ljubomir', 'Acimovic', 'as', 'saying', '.']
+token of interest Director
+example: ['The', 'Batajnica', 'airport', 'will', 'take', 'over', 'complete', 'air', 'traffic', 'control', 'during', 'this', 'period', ',', 'Federal', 'Air', 'Traffic', 'Control', 'Administration', 'Director', 'Branko', 'Bilbija', 'said', '.']
+token of interest Director
+example: ['Lukashenko', "'s", 'aides', 'shrugged', 'off', 'Sharetsky', "'s", 'charge', '.', '"']
+token of interest Lukashenko
+example: ['Lukashenko', ',', '41', ',', 'won', 'presidential', 'polls', 'in', '1994', 'on', 'promises', 'to', 'restore', 'order', ',', 'fight', 'corruption', 'and', 'repair', 'the', 'strong', 'links', 'with', 'Russia', 'that', 'were', 'disrupted', 'by', 'the', 'collapse', 'of', 'the', 'Soviet', 'Union', '.']
+token of interest Lukashenko
+example: ['Lukashenko', 'signed', 'a', 'pact', 'with', 'Moscow', 'in', 'April', 'to', 'create', 'a', 'strong', 'economic', 'and', 'political', 'union', 'which', 'he', 'believes', 'could', 'grow', 'into', 'a', 'federation', '.']
+token of interest Lukashenko
+example: ['But', 'nationalist', 'groups', ',', 'scared', 'by', 'the', 'prospect', 'of', 'renewed', 'Moscow', 'domination', 'and', 'Russia', "'s", 'backing', 'for', 'Lukashenko', ',', 'protested', 'against', 'the', 'deal', '.']
+token of interest Lukashenko
+example: ['Lukashenko', 'responded', 'by', 'cracking', 'down', 'on', 'the', 'nationalist', 'opposition', 'and', 'jailing', 'nearly', '200', 'people', 'for', 'taking', 'part', 'in', 'demonstrations', 'against', 'the', 'pact', '.']
+token of interest Lukashenko
+example: ['The', 'United', 'States', 'last', 'week', 'granted', 'political', 'asylum', 'to', 'two', 'opposition', 'leaders', ',', 'Zenon', 'Poznyak', 'and', 'Sergei', 'Naumchik', '.']
+token of interest Zenon
+example: ['"', 'Naina', 'Yeltsin', 'looks', 'well', ',', 'she', 'is', 'active', ',', 'she', 'is', 'clearly', 'getting', 'better', ',', '"', 'Yastrzhembsky', 'quoted', 'Yeltsin', 'as', 'saying', '.']
+token of interest Yastrzhembsky
+example: ['The', 'next', 'morning', ',', 'Ivankov', 'appeared', 'in', 'the', 'courtroom', 'and', 'stabbed', 'Lavrentyeva', '.']
+token of interest Ivankov
+example: ['The', 'next', 'morning', ',', 'Ivankov', 'appeared', 'in', 'the', 'courtroom', 'and', 'stabbed', 'Lavrentyeva', '.']
+token of interest Lavrentyeva
+example: ['"', 'Until', 'a', 'new', 'general', 'manager', 'of', 'Petofi', 'is', 'appointed', '...']
+token of interest Petofi
+example: ['Potent', 'landmines', 'found', 'near', 'Colombian', 'presidency', '.']
+token of interest Potent
+example: ['"', 'These', 'are', 'powerful', 'weapons', ',', '"', 'a', 'spokesman', 'with', 'the', 'Municipal', 'Police', 'told', 'Reuters', 'by', 'telephone', ',', 'adding', 'that', 'police', 'had', 'not', 'ruled', 'out', 'a', 'possible', 'terrorist', 'attack', 'on', 'the', 'ornate', 'Casa', 'de', 'Narino', 'presidential', 'palace', 'in', 'Bogota', "'s", 'historic', 'downtown', 'area', '.']
+token of interest de
+example: ['"', 'These', 'are', 'powerful', 'weapons', ',', '"', 'a', 'spokesman', 'with', 'the', 'Municipal', 'Police', 'told', 'Reuters', 'by', 'telephone', ',', 'adding', 'that', 'police', 'had', 'not', 'ruled', 'out', 'a', 'possible', 'terrorist', 'attack', 'on', 'the', 'ornate', 'Casa', 'de', 'Narino', 'presidential', 'palace', 'in', 'Bogota', "'s", 'historic', 'downtown', 'area', '.']
+token of interest Narino
+example: ['Brunswijk', ',', 'who', 'led', 'a', 'rebel', 'group', 'against', 'the', 'military', 'regime', 'of', 'Desi', 'Bouterse', 'in', 'the', 'late', '1980s', ',', 'is', 'now', 'a', 'successful', 'businessman', 'with', 'mining', 'and', 'logging', 'interests', '.']
+token of interest Desi
+example: ['Brunswijk', ',', 'who', 'led', 'a', 'rebel', 'group', 'against', 'the', 'military', 'regime', 'of', 'Desi', 'Bouterse', 'in', 'the', 'late', '1980s', ',', 'is', 'now', 'a', 'successful', 'businessman', 'with', 'mining', 'and', 'logging', 'interests', '.']
+token of interest Bouterse
+example: ['Cambodia', "'s", 'King', 'Norodom', 'Sihanouk', 'on', 'Friday', 'gave', 'a', 'royal', 'pardon', 'to', 'an', 'opposition', 'newspaper', 'editor', 'who', 'had', 'alleged', 'top-level', 'corruption', '.']
+token of interest Sihanouk
+example: ['Hen', 'Vipheak', ',', 'former', 'editor', 'of', 'the', 'Sereipheap', 'Thmei', '(', 'New', 'Liberty', ')', 'newspaper', ',', 'stepped', 'through', 'the', 'gates', 'of', 'the', 'run-down', 'French', 'colonial-era', 'T3', 'prison', 'late', 'Friday', 'afternoon', ',', 'following', 'intervention', 'on', 'his', 'behalf', 'by', 'King', 'Sihanouk', '.']
+token of interest Hen
+example: ['The', 'judge', 'overturned', 'a', 'decision', 'to', 'shut', 'down', 'Hen', 'Vipheak', "'s", 'newspaper', '.']
+token of interest Hen
+example: ['The', 'judge', 'overturned', 'a', 'decision', 'to', 'shut', 'down', 'Hen', 'Vipheak', "'s", 'newspaper', '.']
+token of interest Vipheak
+example: ['Sihanouk', 'promised', 'an', 'amnesty', 'to', 'Hen', 'Vipheak', ',', 'along', 'with', 'fellow', 'KNP', 'member', 'and', 'journalist', 'Chan', 'Rattana', ',', 'who', 'was', 'released', 'after', 'serving', 'a', 'week', 'of', 'a', 'year-long', 'jail', 'term', 'in', 'June', '.']
+token of interest Sihanouk
+example: ['Sihanouk', 'promised', 'an', 'amnesty', 'to', 'Hen', 'Vipheak', ',', 'along', 'with', 'fellow', 'KNP', 'member', 'and', 'journalist', 'Chan', 'Rattana', ',', 'who', 'was', 'released', 'after', 'serving', 'a', 'week', 'of', 'a', 'year-long', 'jail', 'term', 'in', 'June', '.']
+token of interest Hen
+example: ['Sihanouk', 'promised', 'an', 'amnesty', 'to', 'Hen', 'Vipheak', ',', 'along', 'with', 'fellow', 'KNP', 'member', 'and', 'journalist', 'Chan', 'Rattana', ',', 'who', 'was', 'released', 'after', 'serving', 'a', 'week', 'of', 'a', 'year-long', 'jail', 'term', 'in', 'June', '.']
+token of interest Vipheak
+example: ['Co-Premiers', 'Prince', 'Norodom', 'Ranariddh', 'and', 'Hun', 'Sen', 'agreed', 'earlier', 'this', 'week', 'to', 'the', 'king', "'s", 'request', 'for', 'an', 'amnesty', '.']
+token of interest Prince
+example: ['Co-Premiers', 'Prince', 'Norodom', 'Ranariddh', 'and', 'Hun', 'Sen', 'agreed', 'earlier', 'this', 'week', 'to', 'the', 'king', "'s", 'request', 'for', 'an', 'amnesty', '.']
+token of interest Ranariddh
+example: ['Co-Premiers', 'Prince', 'Norodom', 'Ranariddh', 'and', 'Hun', 'Sen', 'agreed', 'earlier', 'this', 'week', 'to', 'the', 'king', "'s", 'request', 'for', 'an', 'amnesty', '.']
+token of interest Hun
+example: ['Co-Premiers', 'Prince', 'Norodom', 'Ranariddh', 'and', 'Hun', 'Sen', 'agreed', 'earlier', 'this', 'week', 'to', 'the', 'king', "'s", 'request', 'for', 'an', 'amnesty', '.']
+token of interest Sen
+example: ['Libyans', 'are', 'dressing', 'up', 'their', 'capital', 'Tripoli', 'for', 'celebrations', 'on', 'Sunday', 'of', 'the', '27th', 'anniversary', 'of', 'the', 'coup', 'which', 'brought', 'Muammar', 'Gaddafi', 'to', 'power', '.']
+token of interest Muammar
+example: ['Libyans', 'are', 'dressing', 'up', 'their', 'capital', 'Tripoli', 'for', 'celebrations', 'on', 'Sunday', 'of', 'the', '27th', 'anniversary', 'of', 'the', 'coup', 'which', 'brought', 'Muammar', 'Gaddafi', 'to', 'power', '.']
+token of interest Gaddafi
+example: ['Green', 'flags', 'and', 'banners', 'praise', 'the', '"', 'great', 'revolution', '"', 'and', 'promise', 'defiance', 'against', 'United', 'Nations', 'sanctions', 'imposed', 'for', 'Libya', "'s", 'refusal', 'to', 'hand', 'over', 'for', 'trial', 'two', 'suspects', 'wanted', 'in', 'connection', 'with', 'the', '1988', 'bombing', 'of', 'a', 'Pan', 'Am', 'flight', 'over', 'Lockerbie', ',', 'Scotland', '.']
+token of interest Green
+example: ['Three', 'African', 'leaders', '--', 'from', 'Niger', ',', 'Guinea', 'and', 'Ghana', '--', 'are', 'expected', 'to', 'attend', 'the', 'celebrations', 'marking', 'September', '1', ',', '1969', 'when', 'a', 'group', 'of', 'young', 'army', 'officers', ',', 'led', 'by', 'a', '27-year-old', 'Gaddafi', ',', 'deposed', 'King', 'Mohammed', 'Idris', '.']
+token of interest King
+example: ['Three', 'African', 'leaders', '--', 'from', 'Niger', ',', 'Guinea', 'and', 'Ghana', '--', 'are', 'expected', 'to', 'attend', 'the', 'celebrations', 'marking', 'September', '1', ',', '1969', 'when', 'a', 'group', 'of', 'young', 'army', 'officers', ',', 'led', 'by', 'a', '27-year-old', 'Gaddafi', ',', 'deposed', 'King', 'Mohammed', 'Idris', '.']
+token of interest Idris
+example: ['At', 'least', '20', 'people', 'were', 'killed', 'in', 'the', 'capital', 'in', 'early', 'July', 'after', 'bodyguards', 'loyal', 'to', 'Gaddafi', "'s", 'sons', 'fired', 'at', 'spectators', 'of', 'a', 'football', 'match', 'who', 'were', 'chanting', 'subversive', 'slogans', '.']
+token of interest Gaddafi
+example: ['Gaddafi', 'has', 'dismissed', 'any', 'unrest', 'as', 'the', 'work', 'of', 'foreigners', ',', 'and', 'last', 'year', 'deported', 'thousands', 'of', 'Sudanese', 'and', 'Egyptian', 'workers', '.']
+token of interest Gaddafi
+example: ['"', 'The', 'worst', 'thing', 'that', 'could', 'happen', 'for', 'financial', 'markets', 'is', 'that', 'if', 'Clinton', 'and', 'Dole', 'start', 'to', 'trade', 'shots', 'in', 'the', 'middle', 'of', 'the', 'ring', 'with', 'one-upmanship', ',', '"', 'said', 'Hugh', 'Johnson', ',', 'chief', 'investment', 'officer', 'at', 'First', 'Albany', 'Corp.', '"', 'That', "'s", 'when', 'Wall', 'Street', 'will', 'need', 'to', 'worry', '.', '"']
+token of interest Dole
+example: ['"', 'The', 'market', 'does', "n't", 'seem', 'to', 'be', 'able', 'to', 'make', 'new', 'highs', 'and', 'it', 'has', 'been', 'back', 'and', 'forth', 'in', 'a', 'fairly', 'horizontal', 'mode', 'which', 'looks', 'like', 'a', 'holding', 'pattern', ',', '"', 'said', 'Geraghty', '.']
+token of interest Geraghty
+example: ['Geraghty', 'said', 'that', 'the', 'one', 'thing', 'that', 'could', 'completely', 'turn', 'the', 'election', 'around', 'are', 'new', 'findings', 'in', 'the', 'Whitewater', 'scandal', 'that', 'would', 'damage', 'the', 'Clintons', '.']
+token of interest Geraghty
+example: ['Geraghty', 'said', 'that', 'the', 'one', 'thing', 'that', 'could', 'completely', 'turn', 'the', 'election', 'around', 'are', 'new', 'findings', 'in', 'the', 'Whitewater', 'scandal', 'that', 'would', 'damage', 'the', 'Clintons', '.']
+token of interest Clintons
+example: ['"', 'The', 'FOMC', '(', 'Federal', 'Open', 'Market', 'Committee', ')', 'has', 'been', 'forecasting', 'a', 'slowing', 'in', 'economic', 'activity', 'and', 'moderating', 'household', 'demand', 'will', 'have', 'a', 'large', 'impact', 'on', 'overall', 'economic', 'growth', ',', '"', 'Naroff', 'said', 'in', 'a', 'written', 'comment', '.']
+token of interest Naroff
+example: ['In', 'an', 'interview', 'on', 'the', 'cable', 'television', 'network', 'CNBC', 'Friday', ',', 'Federal', 'Reserve', 'Governor', 'Lawrence', 'Lindsey', 'said', 'there', 'still', 'were', '"', 'mixed', 'signals', '"', 'about', 'the', 'economy', "'s", 'direction', '.']
+token of interest Governor
+example: ['Reaser', 'said', 'strong', 'consumer', 'confidence', 'coupled', 'with', 'relatively', 'lean', 'inventories', 'were', 'providing', 'manufacturers', 'with', 'a', 'reason', 'to', 'gear', 'up', 'production', '.']
+token of interest Reaser
+example: ['"', 'We', 'could', 'lift', 'the', 'ban', 'tomorrow', ',', 'but', 'that', 'would', 'not', 'mean', 'anything', 'immediately', ',', '"', 'said', 'Drazek', '.', '"']
+token of interest Drazek
+example: ['"', 'It', "'s", 'a', 'very', 'complicated', 'issue', ',', '"', 'said', 'the', 'Agriculture', 'Department', "'s", 'Drazek', '.', '"']
+token of interest Drazek
+example: ['U.S.', 'Cardinal', 'Bernardin', 'says', 'has', 'terminal', 'cancer', '.']
+token of interest Bernardin
+example: ['Bernardin', ',', '68', ',', 'underwent', 'extensive', 'surgery', 'for', 'pancreatic', 'cancer', 'in', 'June', '1995', 'followed', 'by', 'months', 'of', 'chemotherapy', ',', 'which', 'he', 'said', 'made', 'him', 'more', 'aware', 'of', 'his', 'own', 'vulnerabilities', 'and', 'the', 'need', 'to', 'minister', 'to', 'the', 'sick', '.']
+token of interest Bernardin
+example: ['Pancreatic', 'cancer', 'is', 'among', 'the', 'most', 'deadly', 'forms', 'of', 'the', 'disease', ',', 'although', 'Bernardin', "'s", 'case', 'was', 'caught', 'early', '.']
+token of interest Bernardin
+example: ['Ironically', ',', 'Bernardin', ',', 'who', 'developed', 'a', 'progressive', ',', 'much-praised', 'programme', 'to', 'deal', 'with', 'pedophilia', 'involving', 'priests', ',', 'became', 'the', 'highest-ranking', 'church', 'official', 'ever', 'accused', 'of', 'sexual', 'improprieties', 'when', 'a', 'former', 'seminary', 'student', 'leveled', 'charges', 'in', '1993', 'that', 'he', 'had', 'been', 'sexually', 'abused', 'by', 'Bernardin', 'during', 'the', '1970s', '.']
+token of interest Bernardin
+example: ['Bernardin', 'steadfastly', 'denied', 'the', 'charges', 'and', 'the', 'former', 'student', 'later', 'recanted', 'his', 'tale', 'of', 'abuse', '.']
+token of interest steadfastly
+example: ['Bernardin', 'prayed', 'with', 'him', 'before', 'he', 'died', 'from', 'AIDS', 'last', 'year', '.']
+token of interest Bernardin
+example: ['Bernardin', ',', 'who', 'became', 'archbishop', 'of', 'Cincinnati', 'in', '1972', ',', 'played', 'an', 'increasingly', 'prominent', 'role', 'in', 'the', 'U.S.', 'church', 'as', 'a', 'moderate', 'voice', 'of', 'compromise', 'among', 'liberals', 'and', 'conservatives', 'in', 'the', 'ranks', 'of', 'the', 'bishops', '.']
+token of interest Bernardin
+example: ['"', 'NationsBank', 'just', 'strolled', 'into', 'the', 'Midwest', 'and', 'bagged', 'the', 'biggest', 'banking', 'trophy', 'in', 'the', 'landscape', ',', '"', 'said', 'Michael', 'Ancell', ',', 'banking', 'industry', 'analyst', 'at', 'Edward', 'D.', 'Jones', '&', 'Co', '.', '"']
+token of interest Edward
+example: ['"', 'NationsBank', 'just', 'strolled', 'into', 'the', 'Midwest', 'and', 'bagged', 'the', 'biggest', 'banking', 'trophy', 'in', 'the', 'landscape', ',', '"', 'said', 'Michael', 'Ancell', ',', 'banking', 'industry', 'analyst', 'at', 'Edward', 'D.', 'Jones', '&', 'Co', '.', '"']
+token of interest D.
+example: ['"', 'NationsBank', 'just', 'strolled', 'into', 'the', 'Midwest', 'and', 'bagged', 'the', 'biggest', 'banking', 'trophy', 'in', 'the', 'landscape', ',', '"', 'said', 'Michael', 'Ancell', ',', 'banking', 'industry', 'analyst', 'at', 'Edward', 'D.', 'Jones', '&', 'Co', '.', '"']
+token of interest Jones
+example: ['Kansas', 'City', ',', 'Mo.-based', 'Commerce', 'Bancshares', 'Inc.', ',', 'with', '$', '9.32', 'billion', 'in', 'assets', ',', 'also', 'could', 'help', 'a', 'regional', 'bank', 'establish', 'a', 'strong', 'presence', 'in', 'the', 'lower', 'Midwest', ',', 'analysts', 'added', '.']
+token of interest Mo.-based
+example: ['"', 'It', 'focuses', 'more', 'attention', 'on', 'Mercantile', ',', 'Commerce', 'and', 'Roosevelt', ',', '"', 'said', 'James', 'Weber', ',', 'analyst', 'at', 'A.G.', 'Edwards', '&', 'Sons', '.']
+token of interest Commerce
+example: ['Louis', 'based', 'thrift', '.']
+token of interest Louis
+example: ['Mercantile', 'and', 'Commerce', 'did', 'not', 'return', 'phone', 'calls', 'seeking', 'comment', '.']
+token of interest Commerce
+example: ['Among', 'those', 'seen', 'as', 'having', 'an', 'interest', 'in', 'buying', 'in', 'Missouri', 'are', 'Minneapolis-based', 'First', 'Bank', 'System', 'Inc.', 'and', 'Norwest', 'Corp.', ',', 'Ohio-based', 'KeyCorp', 'and', 'Banc', 'One', 'Corp.', ',', 'and', 'First', 'Chicago', 'NBD', 'Corp.', 'in', 'Illinois', '.']
+token of interest KeyCorp
+example: ['But', 'NationsBank', "'s", 'bid', ',', 'representing', 'a', 'premium', 'of', '40', 'percent', 'for', 'Boatmen', "'s", 'stock', ',', 'was', 'large', 'enough', 'to', 'get', 'the', 'deal', 'done', '.']
+token of interest NationsBank
+example: ['"', 'I', 'think', 'initially', 'some', 'stocks', 'will', 'trade', 'up', 'on', 'sympathy', ',', 'but', 'the', 'wild', 'premium', 'NationsBank', 'put', 'on', 'this', 'deal', 'here', ',', 'I', 'do', "n't", 'see', 'a', 'lot', 'of', 'other', 'deals', 'being', 'done', 'at', 'this', 'premium', ',', '"', 'said', 'Michael', 'Durante', ',', 'analyst', 'at', 'McDonald', '&', 'Co', '.']
+token of interest NationsBank
+example: ['U.S.', 'tight-lipped', 'on', 'Libya', "'s", 'award', 'to', 'Farrakhan', '.']
+token of interest Farrakhan
+example: ['The', 'State', 'Department', 'refused', 'to', 'speculate', 'on', 'Friday', 'on', 'what', 'might', 'happen', 'in', 'the', 'case', 'of', 'Louis', 'Farrakhan', ',', 'the', 'U.S.', 'black', 'leader', 'who', 'was', 'awarded', 'a', '$', '250,000', 'human', 'rights', 'prize', 'by', 'Libya', '.']
+token of interest Louis
+example: ['The', 'State', 'Department', 'refused', 'to', 'speculate', 'on', 'Friday', 'on', 'what', 'might', 'happen', 'in', 'the', 'case', 'of', 'Louis', 'Farrakhan', ',', 'the', 'U.S.', 'black', 'leader', 'who', 'was', 'awarded', 'a', '$', '250,000', 'human', 'rights', 'prize', 'by', 'Libya', '.']
+token of interest Farrakhan
+example: ['...', 'The', 'view', 'of', 'the', 'U.S.', 'government', 'on', '(', 'Farrakhan', "'s", ')', 'not', 'accepting', 'any', 'gifts', 'from', 'Libya', 'is', 'well-known', '.', '"']
+token of interest Farrakhan
+example: ['The', 'U.S.', 'Treasury', 'Department', 'on', 'Wednesday', 'denied', 'Farrakhan', "'s", 'application', 'to', 'receive', 'the', '$', '250,000', 'award', 'or', 'a', '$', '1', 'billion', 'donation', 'Libyan', 'leader', 'Muammar', 'Gaddafi', 'had', 'pledged', 'to', 'Farrakhan', "'s", 'Nation', 'of', 'Islam', 'group', 'after', 'they', 'met', 'last', 'January', '.']
+token of interest Farrakhan
+example: ['The', 'U.S.', 'Treasury', 'Department', 'on', 'Wednesday', 'denied', 'Farrakhan', "'s", 'application', 'to', 'receive', 'the', '$', '250,000', 'award', 'or', 'a', '$', '1', 'billion', 'donation', 'Libyan', 'leader', 'Muammar', 'Gaddafi', 'had', 'pledged', 'to', 'Farrakhan', "'s", 'Nation', 'of', 'Islam', 'group', 'after', 'they', 'met', 'last', 'January', '.']
+token of interest Farrakhan
+example: ['Farrakhan', 'organised', 'last', 'October', "'s", 'Million', 'Man', 'March', 'that', 'brought', 'thousands', 'of', 'black', 'men', 'to', 'Washington', 'for', 'a', 'peaceful', 'rally', '.']
+token of interest Farrakhan
+example: ['A', '20-ton', 'piece', 'of', 'the', 'Titanic', "'s", 'steel', 'hull', ',', 'which', 'had', 'been', 'attached', 'by', 'cables', 'to', 'a', 'recovery', 'ship', 'off', 'the', 'coast', 'of', 'Newfoundland', ',', 'Canada', ',', 'fell', 'back', 'to', 'the', 'bottom', 'of', 'the', 'sea', ',', 'said', 'Erin', 'Purcell', 'of', 'Boston-based', 'Reagan', 'Communications', 'that', 'represents', 'two', 'of', 'the', 'ships', 'used', 'in', 'the', 'expedition', '.']
+token of interest Purcell
+example: ['A', '20-ton', 'piece', 'of', 'the', 'Titanic', "'s", 'steel', 'hull', ',', 'which', 'had', 'been', 'attached', 'by', 'cables', 'to', 'a', 'recovery', 'ship', 'off', 'the', 'coast', 'of', 'Newfoundland', ',', 'Canada', ',', 'fell', 'back', 'to', 'the', 'bottom', 'of', 'the', 'sea', ',', 'said', 'Erin', 'Purcell', 'of', 'Boston-based', 'Reagan', 'Communications', 'that', 'represents', 'two', 'of', 'the', 'ships', 'used', 'in', 'the', 'expedition', '.']
+token of interest Reagan
+example: ['Passengers', 'who', 'had', 'paid', '$', '1,500', 'and', 'up', 'to', 'accompany', 'the', 'recovery', 'expedition', 'on', 'two', 'cruise', 'ships', 'had', 'returned', 'back', 'to', 'port', 'on', 'Thursday', ',', 'Purcell', 'said', '.']
+token of interest Purcell
+example: ['The', 'ministry', 'said', 'Levy', 'and', 'Kinkel', 'would', 'discuss', 'the', 'Middle', 'East', 'process', 'and', 'German-Israeli', 'relations', 'at', 'their', 'meeting', 'on', 'September', '9', '.']
+token of interest Kinkel
+example: ['"', 'We', 'must', 'obtain', 'a', 'formal', 'commitment', 'from', '(', 'Air', 'France', 'chairman', ')', 'Christian', 'Blanc', 'that', 'no', 'plane', ',', 'no', 'personnel', 'be', 'used', 'to', 'transform', 'our', 'air', 'companies', 'into', 'charters', 'of', 'shame', ',', '"', 'CFDT', 'spokesman', 'Francois', 'Cabrera', 'said', '.']
+token of interest Christian
+example: ['"', 'We', 'must', 'obtain', 'a', 'formal', 'commitment', 'from', '(', 'Air', 'France', 'chairman', ')', 'Christian', 'Blanc', 'that', 'no', 'plane', ',', 'no', 'personnel', 'be', 'used', 'to', 'transform', 'our', 'air', 'companies', 'into', 'charters', 'of', 'shame', ',', '"', 'CFDT', 'spokesman', 'Francois', 'Cabrera', 'said', '.']
+token of interest Blanc
+example: ['"', 'Legislation', 'is', 'insufficient', 'in', 'several', 'areas', ',', 'notably', 'in', 'those', 'concerning', 'illegal', 'work', ',', '"', 'Juppe', 'told', 'reporters', '.']
+token of interest Legislation
+example: ['"', 'We', 'have', 'found', 'Nicole', 'on', 'a', 'campsite', 'in', 'Groningen', 'thanks', 'to', 'tipoffs', 'from', 'the', 'Dutch', 'public', '.']
+token of interest Nicole
+example: ['"', 'The', 'purchasing', 'managers', "'", 'number', 'is', 'extremely', ',', 'extremely', 'strong', ',', '"', 'said', 'Webber', '.']
+token of interest Webber
+example: ['(', 'All', 'Data', 'Above', '000s', 'Except', 'Per', 'Share', 'Numbers', ')']
+token of interest Except
+example: ['(', 'All', 'Data', 'Above', '000s', 'Except', 'Per', 'Share', 'Numbers', ')']
+token of interest Per
+example: ['They', 'said', 'police', 'arrested', 'the', 'militants', 'in', 'the', 'eastern', 'Sharqiyah', 'province', 'after', 'capturing', 'their', 'leader', 'Rami', 'al-Saadani', 'in', 'a', 'satellite', 'city', 'outside', 'Cairo', '.']
+token of interest Rami
+example: ['They', 'said', 'police', 'arrested', 'the', 'militants', 'in', 'the', 'eastern', 'Sharqiyah', 'province', 'after', 'capturing', 'their', 'leader', 'Rami', 'al-Saadani', 'in', 'a', 'satellite', 'city', 'outside', 'Cairo', '.']
+token of interest al-Saadani
+example: ['Kamil', 'Jamil', 'did', "n't", 'have', 'a', 'prayer', '.']
+token of interest Kamil
+example: ['There', 'are', 'no', 'prayers', 'today', ',', '"', 'an', 'Israeli', 'soldier', 'yelled', 'at', 'Jamil', 'in', 'Hebrew', '.']
+token of interest Jamil
+example: ['PRESALE', '-', 'Bay', 'Co', 'Bldg', 'Auth', ',', 'Mich', '..']
+token of interest Bldg
+example: ['ISSUE', ':', 'Bldg', 'auth', '(', 'law', 'enforcement', 'ctr', ')', 'Series', '1996-A', 'TAX', 'STAT', ':', 'Exempt-REV']
+token of interest Bldg
+example: ['"', 'In', 'July', ',', 'average', 'weekly', 'hours', 'and', 'average', 'hourly', 'earnings', 'declined', ',', 'more', 'than', 'offsetting', 'the', 'effect', 'of', 'an', 'increase', 'in', 'employment', ',', '"', 'Commerce', 'said', '.']
+token of interest Commerce
+example: ['Commerce', 'said', 'previously', 'that', 'spending', 'at', 'retail', 'stores', 'was', 'up', 'only', '0.1', 'percent', 'in', 'July', ',', 'partly', 'because', 'of', 'softer', 'sales', 'of', 'new', 'cars', 'and', 'light', 'trucks', '.']
+token of interest Commerce
+example: ['"', 'Seven', 'percent', 'creates', 'psychological', 'problems', 'and', 'a', 'legitimate', 'competitor', 'for', 'money', 'from', 'equities', ',', '"', 'said', 'Ralph', 'Bloch', ',', 'chief', 'technical', 'analyst', 'at', 'Raymond', 'James', '.']
+token of interest Raymond
+example: ['Dick', 'Morris', ',', 'who', 'is', 'credited', 'with', 'resurrecting', 'Clinton', "'s", 'political', 'fortunes', 'over', 'the', 'past', '18', 'months', 'by', 'masterminding', 'his', 'turn', 'to', 'the', 'political', 'centre', ',', 'quit', 'after', 'a', 'supermarket', 'tabloid', 'reported', 'he', 'engaged', 'in', 'a', 'yearlong', 'affair', 'with', 'a', 'prostitute', ',', 'with', 'whom', 'he', 'allegedly', 'shared', 'confidential', 'campaign', 'documents', '.']
+token of interest confidential
+example: ['"', 'The', 'starting', 'of', 'this', 'production', 'base', 'in', 'China', 'has', 'for', 'our', 'group', 'an', 'undoubted', 'strategic', 'value', ',', 'representing', 'an', 'important', 'enhancement', 'of', 'our', 'presence', 'in', 'Asia', ',', '"', 'said', 'Pirelli', 'SpA', 'chairman', 'and', 'chief', 'executive', 'officer', 'Marco', 'Tonchetti', 'Provera', '.']
+token of interest Pirelli
+example: ['"', 'The', 'starting', 'of', 'this', 'production', 'base', 'in', 'China', 'has', 'for', 'our', 'group', 'an', 'undoubted', 'strategic', 'value', ',', 'representing', 'an', 'important', 'enhancement', 'of', 'our', 'presence', 'in', 'Asia', ',', '"', 'said', 'Pirelli', 'SpA', 'chairman', 'and', 'chief', 'executive', 'officer', 'Marco', 'Tonchetti', 'Provera', '.']
+token of interest Provera
+example: ['Pirelli', 'Cables', 'has', 'global', 'sales', 'of', 'over', '$', '3.5', 'billion', ',', 'and', 'has', 'become', 'a', 'large', 'supplier', 'of', 'optic', 'cables', 'and', 'systems', 'to', 'major', 'telecoms', 'carriers', 'in', 'the', 'U.S.', ',', 'Europe', 'and', 'the', 'Far', 'East', '.']
+token of interest Cables
+example: ['CITIC', 'Pacific', 'is', 'a', 'major', 'Hong', 'Kong-listed', 'company', 'focusing', 'on', 'infrastruture', ',', 'trading', ',', 'distribution', 'and', 'property', ',', 'with', '28', 'percent', 'of', 'its', '1995', 'profits', 'coming', 'from', 'telecoms', '.']
+token of interest Pacific
+example: ['Flavio', 'Cotti', ',', 'the', 'chairman', 'of', 'the', 'Organisation', 'for', 'Security', 'and', 'Cooperation', 'in', 'Europe', '(', 'OSCE', ')', ',', 'told', 'German', 'radio', 'the', 'Vienna-based', 'body', 'viewed', 'the', 'conflict', 'in', 'Chechnya', 'as', 'an', 'internal', 'Russian', 'problem', '.']
+token of interest Flavio
+example: ['But', 'one', 'must', 'not', 'forget', 'that', 'the', 'OSCE', 'only', 'has', 'limited', 'powers', 'there', ',', '"', 'said', 'Cotti', ',', 'who', 'is', 'also', 'the', 'Swiss', 'foreign', 'minister', '.', '"']
+token of interest Cotti
+example: ['Chechnya', 'must', 'be', 'accorded', 'the', 'maximum', 'autonomy', 'possible', 'within', 'the', 'framework', 'of', 'Russian', 'integrity', ',', '"', 'said', 'Cotti', '.']
+token of interest Cotti
+example: ['Dutch', 'say', 'no', 'reason', 'to', 'reopen', 'El', 'Al', 'carqo', 'enquiry', '.']
+token of interest Al
+example: ['She', 'said', 'that', 'a', 'request', 'from', 'her', 'ministry', 'for', 'the', 'aircraft', "'s", 'waybill', 'documentation', 'and', 'further', 'information', 'about', 'the', 'contents', 'of', 'its', 'hold', 'had', 'been', 'complied', 'with', 'by', 'El', 'Al', "'s", 'head', 'office', 'in', 'Tel', 'Aviv', '.']
+token of interest Al
+example: ['An', 'uneasy', 'ceasefire', 'has', 'prevailed', 'in', 'Nagorno-Karabakh', ',', 'which', 'represents', 'around', '20', 'percent', 'of', 'Azeri', 'territory', ',', 'since', 'May', '1994', 'after', 'ethnic', 'Armenians', 'drove', 'Azeris', 'out', 'of', 'the', 'region', '.']
+token of interest Armenians
+example: ['I', 'will', 'remember', 'it', 'for', 'the', 'rest', 'of', 'my', 'life', ',', '"', 'said', 'Stig', 'Onarheim', '.']
+token of interest Onarheim
+example: ['Sletten', ',', 'a', 'caretaker', 'who', 'has', 'lived', 'on', 'the', 'island', 'for', '30', 'years', ',', 'said', 'the', 'Norwegian', 'and', 'Russian', 'communities', 'visit', 'frequently', ',', 'competing', 'at', 'soccer', 'in', 'the', 'summer', 'and', 'with', 'snow-scooter', 'races', 'in', 'the', 'winter', '.']
+token of interest Sletten
+example: ['The', 'order', 'included', 'AXE', 'switching', 'equipment', ',', 'ISDN', 'equipment', ',', 'Intelligent', 'Network', '(', 'IN', ')', 'products', ',', 'broad-band', 'multi-media', 'communication', 'network', 'products', ',', 'services', 'and', 'training', ',', 'Ericsson', 'spokesman', 'Per', 'Zetterquist', 'told', 'Reuters', '.']
+token of interest Intelligent
+example: ['The', 'order', 'included', 'AXE', 'switching', 'equipment', ',', 'ISDN', 'equipment', ',', 'Intelligent', 'Network', '(', 'IN', ')', 'products', ',', 'broad-band', 'multi-media', 'communication', 'network', 'products', ',', 'services', 'and', 'training', ',', 'Ericsson', 'spokesman', 'Per', 'Zetterquist', 'told', 'Reuters', '.']
+token of interest Network
+example: ['Speaker', 'of', 'the', 'House', 'of', 'Representatives', 'Wahono', 'has', 'called', 'on', 'those', 'serving', 'in', 'high', 'state', 'institutions', 'to', 'direct', 'their', 'efforts', 'in', 'the', 'coming', 'years', 'towards', 'dismantling', 'all', 'barriers', 'to', 'social', 'justice', '.']
+token of interest Wahono
+example: ['The', 'cars', 'will', 'be', 'jointly', 'marketed', 'by', 'Kia', 'and', 'PT', 'Timor', 'Putra', 'Nasional', ',', 'controlled', 'by', 'a', 'son', 'of', 'President', 'Suharto', ',', 'which', 'plans', 'next', 'year', 'to', 'start', 'assembling', 'the', 'vehicles', 'in', 'Indonesia', '.']
+token of interest Suharto
+example: ['Jeerasak', 'Densakul', ',', '24', ',', 'was', 'arrested', 'in', '1995', 'when', 'he', 'was', 'found', 'with', '11', 'slabs', 'of', 'cannabis', 'weighing', '2.2', 'kg', '(', '4.8', 'pounds', ')', ',', 'the', 'CNB', 'said', '.']
+token of interest Jeerasak
+example: ['The', 'Palestinian', 'letter', 'from', 'Marwan', 'Jilani', 'said', 'the', 'destruction', 'of', 'the', 'Jerusalem', 'centre', 'was', 'an', 'effort', 'by', 'Israel', 'to', '"', 'alter', 'the', 'character', ',', 'demographic', 'composition', 'and', 'status', 'of', 'the', 'Holy', 'City', 'of', 'Jerusalem', '"', 'and', 'violated', 'agreements', 'between', 'Israel', 'and', 'the', 'Palestinian', 'Liberation', 'Organisation', '.']
+token of interest Marwan
+example: ['The', 'Brazilian', "'s", '79th-minute', 'effort', 'was', 'enough', 'to', 'earn', 'Real', 'a', 'point', 'from', 'a', 'scrappy', '1-1', 'draw', 'at', 'fellow', 'title', 'contenders', 'Deportivo', 'Coruna', '.']
+token of interest Deportivo
+example: ['But', 'Deportivo', 'were', 'unable', 'to', 'capitalise', 'on', 'their', 'numerical', 'advantage', ',', 'and', 'were', 'themselves', 'reduced', 'to', 'ten', 'men', 'when', 'Armando', 'Alvarez', 'was', 'sent', 'off', '15', 'minutes', 'from', 'time', '.']
+token of interest Deportivo
+example: ['But', 'Deportivo', 'were', 'unable', 'to', 'capitalise', 'on', 'their', 'numerical', 'advantage', ',', 'and', 'were', 'themselves', 'reduced', 'to', 'ten', 'men', 'when', 'Armando', 'Alvarez', 'was', 'sent', 'off', '15', 'minutes', 'from', 'time', '.']
+token of interest Armando
+example: ['Shortly', 'afterwards', 'Roberto', 'Carlos', 'found', 'space', 'in', 'the', 'home', 'defence', 'and', 'equalised', 'for', 'Real', 'with', 'a', 'shot', 'that', 'was', 'deflected', 'past', 'despairing', 'Deportivo', "'", 'keeper', 'Jacques', "Songo'o", '.']
+token of interest Deportivo
+example: ['ESCHEN', ',', 'Liechtenstein', '1996-08-31']
+token of interest Liechtenstein
+example: ['The', 'Republic', 'of', 'Ireland', 'beat', 'Liechtenstein', '5-0', '(', 'halftime', '4-0', ')', 'in', 'a', 'World', 'Cup', 'soccer', 'European', 'group', '8', 'qualifier', 'on', 'Saturday', '.']
+token of interest Liechtenstein
+example: ['7.', 'Luca', 'Pavanello', '(', 'Italy', ')', 'Aki', '11']
+token of interest Aki
+example: ['Fall', ':', '1-103', '2-105', '3-163', '4-168', '5-221', '6-257', '7-257', '8-286', '.']
+token of interest 3-163
+example: ['Fall', ':', '1-103', '2-105', '3-163', '4-168', '5-221', '6-257', '7-257', '8-286', '.']
+token of interest 4-168
+example: ['Fall', ':', '1-103', '2-105', '3-163', '4-168', '5-221', '6-257', '7-257', '8-286', '.']
+token of interest 5-221
+example: ['Fall', ':', '1-103', '2-105', '3-163', '4-168', '5-221', '6-257', '7-257', '8-286', '.']
+token of interest 6-257
+example: ['Saqlain', 'Mushtaq', 'b', 'Hollioake', '0']
+token of interest Hollioake
+example: ['Fall', 'of', 'wickets', ':', '1-1', '2-6', '3-54', '4-104', '5-137', '6-164', '7-164', '8-168']
+token of interest 5-137
+example: ['Fall', 'of', 'wickets', ':', '1-1', '2-6', '3-54', '4-104', '5-137', '6-164', '7-164', '8-168']
+token of interest 6-164
+example: ['Fall', 'of', 'wickets', ':', '1-1', '2-6', '3-54', '4-104', '5-137', '6-164', '7-164', '8-168']
+token of interest 7-164
+example: ['Italy', '(', 'Adler', 'Capelli', ',', 'Cristiano', 'Citto', ',', 'Andrea', 'Collinelli', ',', 'Mauro', 'Trentino', ')', '4:00.958', '(', 'world', 'record', ')', 'beat', 'Russia', '(', 'Anton', 'Chantyr', ',', 'Edouard', 'Gritsoun', ',', 'Nikolai', 'Kouznetsov', ')', '4:06.534', '.']
+token of interest Trentino
+example: ['Italy', '(', 'Adler', 'Capelli', ',', 'Cristiano', 'Citto', ',', 'Andrea', 'Collinelli', ',', 'Mauro', 'Trentino', ')', '4:00.958', '(', 'world', 'record', ')', 'beat', 'Russia', '(', 'Anton', 'Chantyr', ',', 'Edouard', 'Gritsoun', ',', 'Nikolai', 'Kouznetsov', ')', '4:06.534', '.']
+token of interest Edouard
+example: ['Italy', '(', 'Adler', 'Capelli', ',', 'Cristiano', 'Citto', ',', 'Andrea', 'Collinelli', ',', 'Mauro', 'Trentino', ')', '4:00.958', '(', 'world', 'record', ')', 'beat', 'Russia', '(', 'Anton', 'Chantyr', ',', 'Edouard', 'Gritsoun', ',', 'Nikolai', 'Kouznetsov', ')', '4:06.534', '.']
+token of interest Kouznetsov
+example: ['France', '(', 'Cyril', 'Bos', ',', 'Philippe', 'Ermenault', ',', 'Jean-Michel', 'Monin', ',', 'Francis', 'Moreau', ')', '4:05.104', 'beat', 'Germany', '(', 'Guido', 'Fulst', ',', 'Danilo', 'Hondo', ',', 'Thorsten', 'Rund', ',', 'Heiko', 'Szonn', ')', '4:05.463']
+token of interest Szonn
+example: ['Italy', '(', 'Adler', 'Capelli', ',', 'Cristiano', 'Citto', ',', 'Andrea', 'Collinelli', ',', 'Mauro', 'Trentino', ')', '4:02.752', 'beat', 'France', '(', 'Cyril', 'Bos', ',', 'Philippe', 'Ermenault', ',', 'Jean-Michel', 'Monin', ',', 'Francis', 'Moreau', ')', '4:04.539']
+token of interest Trentino
+example: ['Marion', 'Clignet', '(', 'France', ')', '3:30.974', '(', 'World', 'Record', ')', 'beat', 'Jane']
+token of interest Marion
+example: ['Samokhvalova', '(', 'Russia', ')', '3:45.011']
+token of interest Samokhvalova
+example: ['Antonella', 'Bellutti', '(', 'Italy', ')', '3:32.174', 'caught', 'and', 'eliminated', 'Rasa']
+token of interest Rasa
+example: ['Mazeikyte', '(', 'Lithuania', ')']
+token of interest Mazeikyte
+example: ['BASEBALL', '-', 'GONZALEZ', 'HOMERS', 'TWICE', 'AS', 'RANGERS', 'BEAT', 'INDIANS', '.']
+token of interest GONZALEZ
+example: ['Gonzalez', 'has', 'three', '40-homer', 'seasons', 'and', 'his', '121', 'RBI', 'broke', 'Ruben', 'Sierra', "'s", 'team', 'record', 'of', '119', 'set', 'in', '1989', '.']
+token of interest Gonzalez
+example: ['Gonzalez', 'has', 'three', '40-homer', 'seasons', 'and', 'his', '121', 'RBI', 'broke', 'Ruben', 'Sierra', "'s", 'team', 'record', 'of', '119', 'set', 'in', '1989', '.']
+token of interest Sierra
+example: ['New', 'York', 'snapped', 'a', 'season-high', 'five-game', 'losing', 'streak', 'and', 'also', 'got', 'homers', 'from', 'Mariano', 'Duncan', ',', 'Darryl', 'Strawberry', 'and', 'Jim', 'Leyritz', '.']
+token of interest Strawberry
+example: ['Pettite', '(', '19-7', ')', 'allowed', 'two', 'runs', 'and', 'eight', 'hits', 'over', 'eight', 'innings', 'with', 'a', 'walk', 'and', 'seven', 'strikeouts', '.']
+token of interest Pettite
+example: ['It', 'was', 'Incaviglia', "'s", 'sixth', 'grand', 'slam', 'and', '200th', 'homer', 'of', 'his', 'career', '.']
+token of interest Incaviglia
+example: ['Thomas', ',', 'Harold', 'Baines', 'and', 'Robin', 'Ventura', 'each', 'collected', 'three', 'hits', '.']
+token of interest Harold
+example: ['Telgheder', '(', '2-5', ')', 'snapped', 'a', 'personal', 'three-game', 'losing', 'streak', '.']
+token of interest Telgheder
+example: ['McGwire', 'singled', 'home', 'a', 'run', 'to', 'spark', 'a', 'three-run', 'sixth', 'and', 'capped', 'the', 'scoring', 'with', 'a', 'two-run', 'homer', 'in', 'the', 'seventh', '.']
+token of interest McGwire
+example: ['European', 'Tour', 'after', 'the', 'British', 'Masters', 'won', 'by', 'Robert', 'Allenby', 'on']
+token of interest Robert
+example: ['Sale', '31', 'Wasps', '33']
+token of interest Wasps
+example: ['Dunvant', '21', 'Ebbw', 'Vale', '10']
+token of interest Ebbw
+example: ['Currie', '45', 'Heriot', "'s", 'F.P.', '5']
+token of interest Heriot
+example: ['RUGBY', 'UNION', '-', 'LYNAGH', 'SEALS', 'VICTORY', 'OVER', 'DWYER', 'AND', 'LEICESTER', '.']
+token of interest LYNAGH
+example: ['RUGBY', 'UNION', '-', 'LYNAGH', 'SEALS', 'VICTORY', 'OVER', 'DWYER', 'AND', 'LEICESTER', '.']
+token of interest SEALS
+example: ['Lynagh', 'kicked', 'five', 'penalties', 'and', 'a', 'conversion', 'from', 'his', 'six', 'attempts', 'at', 'goal', 'to', 'steer', 'his', 'multi-national', 'Saracens', 'side', 'to', 'a', '25-23', 'home', 'win', 'and', 'offer', 'millionaire', 'backer', 'Nigel', 'Wray', 'an', 'early', 'return', 'on', 'his', 'big', 'investment', 'in', 'the', 'north', 'London', 'club', '.']
+token of interest Lynagh
+example: ['Lynagh', 'kicked', 'five', 'penalties', 'and', 'a', 'conversion', 'from', 'his', 'six', 'attempts', 'at', 'goal', 'to', 'steer', 'his', 'multi-national', 'Saracens', 'side', 'to', 'a', '25-23', 'home', 'win', 'and', 'offer', 'millionaire', 'backer', 'Nigel', 'Wray', 'an', 'early', 'return', 'on', 'his', 'big', 'investment', 'in', 'the', 'north', 'London', 'club', '.']
+token of interest Wray
+example: ['1.', 'Alex', 'Zanardi', '(', 'Italy', ')', ',', 'Reynard', 'Honda', ',', '53.980', '(', '113.576']
+token of interest Reynard
+example: ['2.', 'Michael', 'Andretti', '(', 'U.S.', ')', ',', 'Lola', 'Ford', 'Cosworth', ',', '54.483']
+token of interest Lola
+example: ['3.', 'Bobby', 'Rahal', '(', 'U.S.', ')', ',', 'Reynard', 'Mercedes-Benz', ',', '54.507']
+token of interest Reynard
+example: ['3.', 'Bobby', 'Rahal', '(', 'U.S.', ')', ',', 'Reynard', 'Mercedes-Benz', ',', '54.507']
+token of interest Mercedes-Benz
+example: ['4.', 'Bryan', 'Herta', '(', 'U.S.', ')', ',', 'Reynard', 'Mercedes-Benz', ',', '54.578']
+token of interest Reynard
+example: ['4.', 'Bryan', 'Herta', '(', 'U.S.', ')', ',', 'Reynard', 'Mercedes-Benz', ',', '54.578']
+token of interest Mercedes-Benz
+example: ['5.', 'Jimmy', 'Vasser', '(', 'U.S.', ')', ',', 'Reynard', 'Honda', ',', '54.617']
+token of interest Reynard
+example: ['6.', 'Paul', 'Tracy', '(', 'Canada', ')', ',', 'Penske', 'Mercedes-Benz', ',', '54.620']
+token of interest Penske
+example: ['6.', 'Paul', 'Tracy', '(', 'Canada', ')', ',', 'Penske', 'Mercedes-Benz', ',', '54.620']
+token of interest Mercedes-Benz
+example: ['7.', 'Al', 'Unser', 'Jr', '(', 'U.S.', ')', ',', 'Penske', 'Mercedes-Benz', ',', '54.683']
+token of interest Jr
+example: ['7.', 'Al', 'Unser', 'Jr', '(', 'U.S.', ')', ',', 'Penske', 'Mercedes-Benz', ',', '54.683']
+token of interest Penske
+example: ['7.', 'Al', 'Unser', 'Jr', '(', 'U.S.', ')', ',', 'Penske', 'Mercedes-Benz', ',', '54.683']
+token of interest Mercedes-Benz
+example: ['8.', 'Andre', 'Ribeiro', '(', 'Brazil', ')', ',', 'Lola', 'Honda', ',', '54.750']
+token of interest Lola
+example: ['9.', 'Mauricio', 'Gugelmin', '(', 'Brazil', ')', ',', 'Reynard', 'Ford', 'Cosworth', ',', '54.762']
+token of interest Reynard
+example: ['10.', 'Gil', 'de', 'Ferran', '(', 'Brazil', ')', ',', 'Reynard', 'Honda', ',', '54.774']
+token of interest Reynard
+example: ['Canada', 'beat', 'Panama', '3-1', '(', 'halftime', '2-0', ')', 'in', 'their', 'CONCACAF', 'semifinal', 'phase', 'qualifying', 'match', 'for', 'the', '1998', 'World', 'Cup', 'on', 'Friday', '.']
+token of interest Panama
+example: ['Their', 'promise', 'was', 'realised', 'when', 'Joubert', 'made', 'a', '40-metre', 'break', 'in', 'the', '25th', 'minute', 'and', ',', 'although', 'winger', 'Pieter', 'Hendriks', 'appeared', 'to', 'knock', 'on', 'Joubert', "'s", 'reverse', 'pass', ',', 'Welsh', 'referee', 'Derek', 'Bevan', 'allowed', 'Van', 'der', 'Westhuizen', 'to', 'pick', 'up', 'and', 'score', 'under', 'the', 'posts', '.']
+token of interest Joubert
+example: ['Their', 'promise', 'was', 'realised', 'when', 'Joubert', 'made', 'a', '40-metre', 'break', 'in', 'the', '25th', 'minute', 'and', ',', 'although', 'winger', 'Pieter', 'Hendriks', 'appeared', 'to', 'knock', 'on', 'Joubert', "'s", 'reverse', 'pass', ',', 'Welsh', 'referee', 'Derek', 'Bevan', 'allowed', 'Van', 'der', 'Westhuizen', 'to', 'pick', 'up', 'and', 'score', 'under', 'the', 'posts', '.']
+token of interest Welsh
+example: ['Honiball', 'converted', 'and', 'Joubert', 'kicked', 'a', 'penalty', 'before', 'All', 'Black', 'hooker', 'Sean', 'Fitzpatrick', 'scored', 'a', 'try', 'from', 'close', 'range', 'on', 'the', 'stroke', 'of', 'half-time', 'to', 'narrow', 'the', 'lead', 'to', '16-8', 'and', 'hint', 'at', 'a', 'comeback', '.']
+token of interest Honiball
+example: ['Honiball', 'converted', 'and', 'Joubert', 'kicked', 'a', 'penalty', 'before', 'All', 'Black', 'hooker', 'Sean', 'Fitzpatrick', 'scored', 'a', 'try', 'from', 'close', 'range', 'on', 'the', 'stroke', 'of', 'half-time', 'to', 'narrow', 'the', 'lead', 'to', '16-8', 'and', 'hint', 'at', 'a', 'comeback', '.']
+token of interest Joubert
+example: ['A', 'quick', 'penalty', 'from', 'Van', 'der', 'Westhuizen', 'five', 'metres', 'from', 'the', 'All', 'Black', 'line', 'set', 'up', 'the', 'third', 'try', 'for', 'Venter', 'five', 'minutes', 'later', 'and', 'when', 'Joubert', 'kicked', 'his', 'third', 'penalty', 'the', 'Springboks', 'held', 'an', 'unassailable', '32-8', 'lead', 'going', 'into', 'the', 'last', 'quarter', '.']
+token of interest der
+example: ['A', 'quick', 'penalty', 'from', 'Van', 'der', 'Westhuizen', 'five', 'metres', 'from', 'the', 'All', 'Black', 'line', 'set', 'up', 'the', 'third', 'try', 'for', 'Venter', 'five', 'minutes', 'later', 'and', 'when', 'Joubert', 'kicked', 'his', 'third', 'penalty', 'the', 'Springboks', 'held', 'an', 'unassailable', '32-8', 'lead', 'going', 'into', 'the', 'last', 'quarter', '.']
+token of interest Venter
+example: ['South', 'Africa', '-', '15', '-', 'Andre', 'Joubert', ',', '14', '-', 'Justin', 'Swart', ',', '13', '-', 'Japie', 'Mulder', '(', 'Joel', 'Stransky', ',', '48', 'mins', ')', '12', '-', 'Danie', 'van', 'Schalkwyk', ',', '11', '-', 'Pieter', 'Hendriks', ';', '10', '-', 'Henry', 'Honiball', ',', '9', '-', 'Joost', 'van', 'der', 'Westhuizen', ';', '8', '-', 'Gary', 'Teichmann', '(', 'captain', ')', ',', '7', '-', 'Andre', 'Venter', '(', 'Wayne', 'Fyvie', ',', '75', ')', ',', '6', '-', 'Ruben', 'Kruge', ',', '5', '-', 'Mark', 'Andrews', '(', 'Fritz', 'van', 'Heerden', ',', '39', ')', ',', '4', '-', 'Kobus', 'Wiese', ',', '3', '-', 'Marius', 'Hurter', ',', '2', '-', 'James', 'Dalton', ',', '1', '-', 'Dawie', 'Theron', '(', 'Garry', 'Pagel', ',', '66', ')', '.']
+token of interest Wiese
+example: ['South', 'Africa', '-', '15', '-', 'Andre', 'Joubert', ',', '14', '-', 'Justin', 'Swart', ',', '13', '-', 'Japie', 'Mulder', '(', 'Joel', 'Stransky', ',', '48', 'mins', ')', '12', '-', 'Danie', 'van', 'Schalkwyk', ',', '11', '-', 'Pieter', 'Hendriks', ';', '10', '-', 'Henry', 'Honiball', ',', '9', '-', 'Joost', 'van', 'der', 'Westhuizen', ';', '8', '-', 'Gary', 'Teichmann', '(', 'captain', ')', ',', '7', '-', 'Andre', 'Venter', '(', 'Wayne', 'Fyvie', ',', '75', ')', ',', '6', '-', 'Ruben', 'Kruge', ',', '5', '-', 'Mark', 'Andrews', '(', 'Fritz', 'van', 'Heerden', ',', '39', ')', ',', '4', '-', 'Kobus', 'Wiese', ',', '3', '-', 'Marius', 'Hurter', ',', '2', '-', 'James', 'Dalton', ',', '1', '-', 'Dawie', 'Theron', '(', 'Garry', 'Pagel', ',', '66', ')', '.']
+token of interest Hurter
+example: ['Conversion', ':', 'Henry', 'Honiball', '.']
+token of interest Honiball
+example: ['Penalties', ':', 'Honiball', '(', '2', ')', ',', 'Joubert', '(', '3', ')', '.']
+token of interest Joubert
+example: ['"', 'Since', 'Mauritania', 'has', 'been', 'eliminated', 'on', 'all', 'fronts', 'and', 'the', 'next', 'commitments', 'are', 'not', 'for', 'another', 'two', 'years', ',', 'we', 'have', 'reason', 'to', 'take', 'a', 'break', ',', '"', 'federation', 'president', 'Mohamed', 'Lemine', 'Cheiguer', 'said', '.']
+token of interest Mauritania
+example: ['SOCCER', '-', 'INCE', 'EXPOSED', 'BY', 'GASCOIGNE', "'S", 'LATEST', 'PRANK', '.']
+token of interest INCE
+example: ['SOCCER', '-', 'INCE', 'EXPOSED', 'BY', 'GASCOIGNE', "'S", 'LATEST', 'PRANK', '.']
+token of interest GASCOIGNE
+example: ['Ince', 'was', 'clambering', 'over', 'a', 'wall', 'at', 'the', 'Republican', 'stadium', 'in', 'Chisinau', 'as', 'Glenn', 'Hoddle', "'s", 'England', 'players', 'tried', 'to', 'escape', 'heavy', 'rain', 'during', 'an', 'under-21', 'clash', '.']
+token of interest Ince
+example: ['Romania', 'beat', 'Lithuania', '3-0', '(', 'halftime', '1-0', ')', 'in', 'a', 'World', 'Cup', 'soccer', 'European', 'group', '8', 'qualifier', 'on', 'Saturday', '.']
+token of interest Lithuania
+example: ['Sweden', 'beat', 'Latvia', '2-0', '(', 'halftime', '0-0', ')', 'in', 'a', 'European', 'under-21', 'soccer', 'championship', 'qualifier', 'on', 'Saturday', '.']
+token of interest Latvia
+example: ['SQUASH', '-', 'HILL', 'BRANDS', 'WORLD', 'CHAMPION', 'JANSHER', 'A', 'CHEAT', '.']
+token of interest HILL
+example: ['SQUASH', '-', 'HILL', 'BRANDS', 'WORLD', 'CHAMPION', 'JANSHER', 'A', 'CHEAT', '.']
+token of interest JANSHER
+example: ['When', 'the', 'referee', 'called', 'Jansher', "'s", 'return', 'good', 'and', 'the', 'decision', 'was', 'accepted', 'by', 'the', 'player', ',', 'Hill', 'shrieked', 'at', 'the', 'Pakistani', ':', '"', 'You', 'cheat', '.', '"']
+token of interest Jansher
+example: ['Hill', 'won', 'the', 'game', 'on', 'the', 'next', 'point', 'and', 'said', 'later', 'that', 'Jansher', 'was', 'generally', 'honest', 'on', 'court', 'but', 'played', 'by', 'the', 'referee', "'s", 'decision', '.']
+token of interest Hill
+example: ['Hill', 'won', 'the', 'game', 'on', 'the', 'next', 'point', 'and', 'said', 'later', 'that', 'Jansher', 'was', 'generally', 'honest', 'on', 'court', 'but', 'played', 'by', 'the', 'referee', "'s", 'decision', '.']
+token of interest Jansher
+example: ['Jansher', 'said', 'that', 'he', 'was', 'disturbed', 'to', 'be', 'called', 'a', 'cheat', '.', '"']
+token of interest Jansher
+example: ['Jansher', ',', 'bidding', 'for', 'an', 'eighth', 'Hong', 'Kong', 'Open', 'title', ',', 'plays', 'second-seeded', 'Australian', 'Rodney', 'Eyles', 'in', 'the', 'final', '.']
+token of interest Jansher
+example: ['Jansher', ',', 'bidding', 'for', 'an', 'eighth', 'Hong', 'Kong', 'Open', 'title', ',', 'plays', 'second-seeded', 'Australian', 'Rodney', 'Eyles', 'in', 'the', 'final', '.']
+token of interest Rodney
+example: ['Jansher', ',', 'bidding', 'for', 'an', 'eighth', 'Hong', 'Kong', 'Open', 'title', ',', 'plays', 'second-seeded', 'Australian', 'Rodney', 'Eyles', 'in', 'the', 'final', '.']
+token of interest Eyles
+example: ['Eyles', ',', 'who', 'defeated', 'Jansher', 'in', 'the', 'semifinals', 'of', 'the', 'Portuguese', 'Open', 'in', '1993', ',', 'said', 'that', 'he', 'would', 'like', 'to', 'win', 'for', 'the', 'good', 'of', 'the', 'game', '.']
+token of interest Jansher
+example: ['"', 'I', 'have', 'nothing', 'against', 'Jansher', 'but', 'it', 'will', 'be', 'great', 'if', 'I', 'could', 'beat', 'him', ',', '"', 'said', 'Eyles', '.', '"']
+token of interest Jansher
+example: ['"', 'I', 'have', 'nothing', 'against', 'Jansher', 'but', 'it', 'will', 'be', 'great', 'if', 'I', 'could', 'beat', 'him', ',', '"', 'said', 'Eyles', '.', '"']
+token of interest Eyles
+example: ['GOLF', '-', 'PARNEVIK', 'TAKES', 'ONE-SHOT', 'LEAD', 'AT', 'GREATER', 'MILWAUKEE', 'OPEN', '.']
+token of interest PARNEVIK
+example: ['Jesper', 'Parnevik', 'of', 'Sweden', 'fired', 'a', 'course', 'record-tying', 'eight-under-par', '63', 'Saturday', 'to', 'take', 'a', 'one-shot', 'lead', 'into', 'the', 'final', 'round', 'of', 'the', '$', '1.2', 'million', 'Greater', 'Milwaukee', 'Open', '.']
+token of interest Jesper
+example: ['Parnevik', ',', 'who', 'is', 'seeking', 'his', 'first', 'PGA', 'Tour', 'victory', ',', 'moved', 'to', '19-under', '194', 'for', 'the', 'tournament', '.']
+token of interest Parnevik
+example: ['Parnevik', 'tied', 'the', '18-hole', 'record', 'set', 'by', 'Loren', 'Roberts', 'in', '1994', 'at', 'the', 'Brown', 'Deer', 'Park', 'Golf', 'Course', 'and', 'also', 'equalled', 'Saturday', 'by', 'Greg', 'Kraft', '.']
+token of interest Parnevik
+example: ['Parnevik', 'tied', 'the', '18-hole', 'record', 'set', 'by', 'Loren', 'Roberts', 'in', '1994', 'at', 'the', 'Brown', 'Deer', 'Park', 'Golf', 'Course', 'and', 'also', 'equalled', 'Saturday', 'by', 'Greg', 'Kraft', '.']
+token of interest Park
+example: ['Nolan', 'Henke', ',', 'who', 'led', 'by', 'two', 'strokes', 'entering', 'the', 'third', 'round', ',', 'carded', 'a', 'four-under', '67', 'and', 'was', 'one', 'stroke', 'back', 'at', '18-under', '195', '.']
+token of interest Nolan
+example: ['Tiger', 'Woods', ',', 'who', 'made', 'the', 'cut', 'in', 'his', 'first', 'tournament', 'as', 'a', 'professional', ',', 'shot', 'a', 'two-over-par', '73', 'and', 'was', 'four', 'under', 'for', 'the', 'tournament', '.']
+token of interest Tiger
+example: ['The', '20-year-old', 'Woods', ',', 'who', 'turned', 'professional', 'Tuesday', 'after', 'winning', 'an', 'unprecedented', 'third', 'successive', 'U.S.', 'Amateur', 'Championship', ',', 'struggled', 'on', 'the', 'front', 'nine', ',', 'bogeying', 'the', 'first', 'and', 'seventh', 'holes', 'and', 'double-bogeying', 'the', 'par-four', ',', '359-yard', 'ninth', 'hole', '.']
+token of interest Woods
+example: ['After', 'Parnevik', 'started', 'off', 'his', 'round', 'by', 'parring', 'the', 'first', 'hole', 'and', 'bogeying', 'the', 'second', ',', 'the', 'Swede', 'birdied', 'six', 'of', 'the', 'next', 'seven', 'holes', '.']
+token of interest Parnevik
+example: ['Parnevik', 'continued', 'to', 'storm', 'through', 'the', 'course', ',', 'birdying', 'three', 'holes', 'on', 'the', 'back', 'nine', ',', 'including', 'two', 'from', '12', 'feet', 'out', 'on', 'the', '15th', 'and', '17th', 'holes', '.']
+token of interest Parnevik
+example: ['"', 'I', 'ca', "n't", 'remember', 'when', 'I', "'ve", 'putted', 'this', 'well', ',', '"', 'said', 'Parnevik', '.', '"']
+token of interest Parnevik
+example: ['Henke', 'had', 'a', 'bogey-free', 'round', 'and', 'birdied', 'four', 'holes', ',', 'including', 'a', '45-footer', 'on', 'the', 'par-three', '215-yard', 'seventh', 'hole', 'and', 'one', 'from', '12', 'feet', 'out', 'on', 'the', '12th', 'hole', '.']
+token of interest Henke
+example: ['"', 'I', 'did', "n't", 'hit', 'it', 'very', 'well', 'today', ',', '"', 'said', 'Henke', '.', '"']
+token of interest Henke
+example: ['Jasper', 'blew', 'right', 'by', 'me', '.']
+token of interest Jasper
+example: ['Steve', 'Stricker', ',', 'who', 'tied', 'for', 'second', 'at', 'last', 'week', "'s", 'World', 'Series', 'of', 'Golf', ',', 'and', 'Stuart', 'Appleby', 'were', 'both', 'five', 'shots', 'off', 'the', 'lead', 'at', '14', 'under', '.']
+token of interest Stuart
+example: ['Duffy', 'Waldorf', ',', 'who', 'also', 'tied', 'for', 'second', 'at', 'the', 'World', 'Series', 'of', 'Golf', ',', 'carded', 'a', '70', 'to', 'lead', 'a', 'group', 'of', 'six', 'golfers', 'at', '13', 'under', ',', 'including', 'Kraft', '.']
+token of interest Kraft
+example: ['Seles', 'easily', 'won', 'both', 'her', 'singles', 'matches', 'and', 'King', 'is', 'counting', 'on', 'the', 'co-world', 'number', 'one', 'to', 'lead', 'the', 'team', 'again', '.']
+token of interest King
+example: ['"', 'I', 'told', 'Monica', 'we', 'need', 'her', 'if', 'we', 'want', 'to', 'win', ',', '"', 'King', 'said', '.']
+token of interest Monica
+example: ['"', 'I', 'told', 'Monica', 'we', 'need', 'her', 'if', 'we', 'want', 'to', 'win', ',', '"', 'King', 'said', '.']
+token of interest King
+example: ['Seles', "'s", 'sore', 'left', 'shoulder', 'and', 'a', 'wrist', 'injury', 'to', 'Fed', 'Cup', 'veteran', 'Mary', 'Joe', 'Fernandez', 'have', 'forced', 'King', 'to', 'take', 'a', 'wait', 'and', 'see', 'attitude', 'regarding', 'her', 'squad', 'for', 'the', 'best-of-five', 'match', '.']
+token of interest King
+example: ['"', 'We', 'will', 'wait', 'until', 'the', 'last', 'minute', 'so', 'we', 'check', 'with', 'everybody', 'and', 'their', 'injuries', ',', '"', 'said', 'King', '.', '"']
+token of interest King
+example: ['What', 'we', 'like', 'would', 'be', 'Seles', ',', '(', 'Olympic', 'champion', 'Lindsay', ')', 'Davenport', 'and', 'Mary', 'Joe', 'Fernandez', '.', '"']
+token of interest Davenport
+example: ['If', 'she', 'can', 'get', 'that', 'threesome', 'together', ',', 'King', 'will', 'feel', 'good', 'about', 'her', 'chances', 'against', 'the', 'Spain', "'s", 'formidable', 'duo', 'of', 'Arantxa', 'Sanchez', 'Vicario', 'and', 'Conchita', 'Martinez', '.']
+token of interest King
+example: ['"', 'To', 'be', 'a', 'great', 'coach', 'you', 'have', 'to', 'have', 'the', 'right', 'horses', 'and', 'I', 'got', 'the', 'right', 'horses', ',', '"', 'said', 'King', '.']
+token of interest King
+example: ['The', 'United', 'States', 'beat', 'El', 'Salvador', '3-1', '(', 'halftime', '1-0', ')', 'in', 'an', 'international', 'soccer', 'friendly', 'on', 'Friday', '.']
+token of interest El
+example: ['U.S.', '-', 'Joe-Max', 'Moore', '(', '3rd', 'minute', ',', '88th', 'on', 'penalty', 'kick', ')', ',', 'Eric', 'Wynalda', '(', '61st', ')']
+token of interest Joe-Max
+example: ['BASEBALL', '-', 'KEVIN', 'BROWN', 'LOWERS', 'ERA', 'AS', 'MARLINS', 'BEAT', 'REDS', '.']
+token of interest KEVIN
+example: ['BASEBALL', '-', 'KEVIN', 'BROWN', 'LOWERS', 'ERA', 'AS', 'MARLINS', 'BEAT', 'REDS', '.']
+token of interest BROWN
+example: ['I', 'remember', 'Nolan', 'Ryan', 'saying', 'in', "'", '91', 'or', "'", '92', 'that', 'he', 'was', 'the', 'best', 'young', 'pitcher', 'coming', 'around', 'in', 'a', 'long', 'time', 'and', 'he', 'saw', '(', 'Tom', ')', 'Seaver', 'and', '(', 'Jerry', ')', 'Koosman', 'when', 'they', 'were', 'starting', '.', '"']
+token of interest Ryan
+example: ['I', 'remember', 'Nolan', 'Ryan', 'saying', 'in', "'", '91', 'or', "'", '92', 'that', 'he', 'was', 'the', 'best', 'young', 'pitcher', 'coming', 'around', 'in', 'a', 'long', 'time', 'and', 'he', 'saw', '(', 'Tom', ')', 'Seaver', 'and', '(', 'Jerry', ')', 'Koosman', 'when', 'they', 'were', 'starting', '.', '"']
+token of interest (
+example: ['I', 'remember', 'Nolan', 'Ryan', 'saying', 'in', "'", '91', 'or', "'", '92', 'that', 'he', 'was', 'the', 'best', 'young', 'pitcher', 'coming', 'around', 'in', 'a', 'long', 'time', 'and', 'he', 'saw', '(', 'Tom', ')', 'Seaver', 'and', '(', 'Jerry', ')', 'Koosman', 'when', 'they', 'were', 'starting', '.', '"']
+token of interest Tom
+example: ['I', 'remember', 'Nolan', 'Ryan', 'saying', 'in', "'", '91', 'or', "'", '92', 'that', 'he', 'was', 'the', 'best', 'young', 'pitcher', 'coming', 'around', 'in', 'a', 'long', 'time', 'and', 'he', 'saw', '(', 'Tom', ')', 'Seaver', 'and', '(', 'Jerry', ')', 'Koosman', 'when', 'they', 'were', 'starting', '.', '"']
+token of interest )
+example: ['I', 'remember', 'Nolan', 'Ryan', 'saying', 'in', "'", '91', 'or', "'", '92', 'that', 'he', 'was', 'the', 'best', 'young', 'pitcher', 'coming', 'around', 'in', 'a', 'long', 'time', 'and', 'he', 'saw', '(', 'Tom', ')', 'Seaver', 'and', '(', 'Jerry', ')', 'Koosman', 'when', 'they', 'were', 'starting', '.', '"']
+token of interest Seaver
+example: ['I', 'remember', 'Nolan', 'Ryan', 'saying', 'in', "'", '91', 'or', "'", '92', 'that', 'he', 'was', 'the', 'best', 'young', 'pitcher', 'coming', 'around', 'in', 'a', 'long', 'time', 'and', 'he', 'saw', '(', 'Tom', ')', 'Seaver', 'and', '(', 'Jerry', ')', 'Koosman', 'when', 'they', 'were', 'starting', '.', '"']
+token of interest (
+example: ['I', 'remember', 'Nolan', 'Ryan', 'saying', 'in', "'", '91', 'or', "'", '92', 'that', 'he', 'was', 'the', 'best', 'young', 'pitcher', 'coming', 'around', 'in', 'a', 'long', 'time', 'and', 'he', 'saw', '(', 'Tom', ')', 'Seaver', 'and', '(', 'Jerry', ')', 'Koosman', 'when', 'they', 'were', 'starting', '.', '"']
+token of interest Jerry
+example: ['I', 'remember', 'Nolan', 'Ryan', 'saying', 'in', "'", '91', 'or', "'", '92', 'that', 'he', 'was', 'the', 'best', 'young', 'pitcher', 'coming', 'around', 'in', 'a', 'long', 'time', 'and', 'he', 'saw', '(', 'Tom', ')', 'Seaver', 'and', '(', 'Jerry', ')', 'Koosman', 'when', 'they', 'were', 'starting', '.', '"']
+token of interest )
+example: ['I', 'remember', 'Nolan', 'Ryan', 'saying', 'in', "'", '91', 'or', "'", '92', 'that', 'he', 'was', 'the', 'best', 'young', 'pitcher', 'coming', 'around', 'in', 'a', 'long', 'time', 'and', 'he', 'saw', '(', 'Tom', ')', 'Seaver', 'and', '(', 'Jerry', ')', 'Koosman', 'when', 'they', 'were', 'starting', '.', '"']
+token of interest Koosman
+example: ['In', 'the', 'first', 'game', ',', 'Ryne', 'Sandberg', 'snapped', 'an', 'eighth-inning', 'tie', 'with', 'an', 'infield', 'single', 'and', 'Kevin', 'Foster', '(', '6-2', ')', 'outdueled', 'Atlanta', "'s", 'Tom', 'Glavine', '(', '13-8', ')', 'for', 'his', 'third', 'straight', 'win', ',', '3-2', '.']
+token of interest Ryne
+example: ['In', 'New', 'York', ',', 'Marvin', 'Benard', "'s", 'two-run', 'homer', 'snapped', 'a', 'tie', 'and', 'Shawn', 'Estes', 'came', 'one', 'out', 'away', 'from', 'his', 'first', 'complete', 'game', 'as', 'the', 'San', 'Francisco', 'Giants', 'beat', 'the', 'Mets', '6-4', '.']
+token of interest Marvin
+example: ['In', 'New', 'York', ',', 'Marvin', 'Benard', "'s", 'two-run', 'homer', 'snapped', 'a', 'tie', 'and', 'Shawn', 'Estes', 'came', 'one', 'out', 'away', 'from', 'his', 'first', 'complete', 'game', 'as', 'the', 'San', 'Francisco', 'Giants', 'beat', 'the', 'Mets', '6-4', '.']
+token of interest Shawn
+example: ['Benard', ',', 'hitting', '.467', '(', '14-for-30', ')', 'against', 'the', 'Mets', 'this', 'season', ',', 'hit', 'his', 'first', 'pitch', 'from', 'Pete', 'Harnisch', '(', '8-10', ')', 'in', 'the', 'seventh', 'over', 'the', 'right-field', 'fence', 'to', 'put', 'the', 'Giants', 'up', '4-2', '.']
+token of interest Benard
+example: ['Estes', '(', '3-4', ')', 'was', 'lifted', 'for', 'closer', 'Rod', 'Beck', 'after', 'yielding', 'a', 'single', 'with', 'two', 'out', 'in', 'the', 'ninth', '.']
+token of interest Estes
+example: ['Estes', '(', '3-4', ')', 'was', 'lifted', 'for', 'closer', 'Rod', 'Beck', 'after', 'yielding', 'a', 'single', 'with', 'two', 'out', 'in', 'the', 'ninth', '.']
+token of interest Rod
+example: ['Beck', 'allowed', 'a', 'two-run', 'double', 'to', 'Alvaro', 'Espinoza', ',', 'who', 'collected', 'a', 'career-high', 'four', 'RBI', ',', 'but', 'struck', 'out', 'Brent', 'Mayne', 'for', 'his', '31st', 'save', '.']
+token of interest Alvaro
+example: ['Beck', 'allowed', 'a', 'two-run', 'double', 'to', 'Alvaro', 'Espinoza', ',', 'who', 'collected', 'a', 'career-high', 'four', 'RBI', ',', 'but', 'struck', 'out', 'Brent', 'Mayne', 'for', 'his', '31st', 'save', '.']
+token of interest Brent
+example: ['Wall', '(', '9-4', ')', 'struck', 'out', 'four', 'and', 'walked', 'none', 'to', 'post', 'his', 'second', 'complete', 'game', 'of', 'the', 'season', 'and', 'third', 'straight', 'win', '.']
+token of interest Wall
+example: ['The', '30-year-old', 'Edberg', ',', 'a', 'former', 'two-time', 'Open', 'champion', ',', 'had', 'wrestled', 'control', 'of', 'the', 'match', 'away', 'from', 'Karbacher', 'when', 'the', 'German', ',', 'hampered', 'by', 'a', 'left', 'hamstring', 'injury', ',', 'decided', 'he', 'could', "n't", 'continue', 'under', 'the', 'stadium', 'lights', 'at', 'the', 'National', 'Tennis', 'Centre', '.']
+token of interest Karbacher
+example: ['Ironically', ',', 'Karbacher', 'two', 'years', 'ago', 'ended', 'Ivan', 'Lendl', "'s", 'Grand', 'Slam', 'career', 'here', 'when', 'the', 'former', 'champion', 'had', 'to', 'retire', 'in', 'the', 'middle', 'of', 'their', 'first-round', 'match', '.']
+token of interest Karbacher
+example: ['After', 'seeing', 'the', 'trainer', 'come', 'out', 'early', 'in', 'the', 'third', 'set', ',', 'Edberg', 'was', 'not', 'surprised', 'by', 'Karbacher', "'s", 'decision', 'not', 'to', 'go', 'on', '.']
+token of interest Karbacher
+example: ['Edberg', 'had', 'his', 'own', 'problems', 'early', 'in', 'the', 'match', 'as', 'the', 'Swede', 'battled', 'to', 'acclimate', 'himself', 'to', 'the', 'nighttime', 'conditions', 'while', 'Karbacher', 'was', 'ripping', 'passing', 'shots', 'and', 'blasting', 'serves', 'past', 'him', '.']
+token of interest Karbacher
+example: ['BOXING', '-', 'PRINCE', 'NASEEM', 'RETAINS', 'WBO', 'FEATHERWEIGHT', 'TITLE', '.']
+token of interest NASEEM
+example: ['Britain', "'s", 'Naseem', 'Hamed', 'retained', 'his', 'WBO', 'featherweight', 'title', 'on', 'Saturday', 'when', 'Mexico', "'s", 'Manuel', 'Medina', 'was', 'retired', 'by', 'his', 'corner', 'at', 'the', 'end', 'of', 'the', '11th', 'round', '.']
+token of interest Naseem
+example: ['Britain', "'s", 'Naseem', 'Hamed', 'retained', 'his', 'WBO', 'featherweight', 'title', 'on', 'Saturday', 'when', 'Mexico', "'s", 'Manuel', 'Medina', 'was', 'retired', 'by', 'his', 'corner', 'at', 'the', 'end', 'of', 'the', '11th', 'round', '.']
+token of interest Manuel
+example: ['Austria', "'s", 'best', 'chance', 'came', 'in', 'the', '63rd', 'minute', 'with', 'Stephan', 'Marasek', 'of', 'SC', 'Freiburg', 'taking', 'advantage', 'of', 'a', 'scramble', 'in', 'the', 'Scottish', 'penalty', 'area', 'but', 'his', 'shot', 'narrowly', 'passing', 'the', 'left-hand', 'post', '.']
+token of interest Stephan
+example: ['Austria', "'s", 'best', 'chance', 'came', 'in', 'the', '63rd', 'minute', 'with', 'Stephan', 'Marasek', 'of', 'SC', 'Freiburg', 'taking', 'advantage', 'of', 'a', 'scramble', 'in', 'the', 'Scottish', 'penalty', 'area', 'but', 'his', 'shot', 'narrowly', 'passing', 'the', 'left-hand', 'post', '.']
+token of interest Marasek
+example: ['They', 'also', 'went', 'close', 'a', 'minute', 'before', 'the', 'interval', 'when', 'a', 'promising', 'attack', 'saw', 'the', 'ball', 'fall', 'to', 'Markus', 'Schopp', 'but', 'he', 'hit', 'his', 'shot', 'wide', '.']
+token of interest Schopp
+example: ['Two', 'Scotland', 'players', 'were', 'shown', 'yellow', 'cards', ',', 'captain', 'Gary', 'McAllister', 'for', 'bringing', 'down', 'Andreas', 'Heraf', 'and', 'Ferguson', 'for', 'arguing', 'against', 'the', 'referee', "'s", 'decision', '.']
+token of interest Heraf
+example: ['Two', 'Scotland', 'players', 'were', 'shown', 'yellow', 'cards', ',', 'captain', 'Gary', 'McAllister', 'for', 'bringing', 'down', 'Andreas', 'Heraf', 'and', 'Ferguson', 'for', 'arguing', 'against', 'the', 'referee', "'s", 'decision', '.']
+token of interest Ferguson
+example: ['SK', 'Rapid', "'s", 'Dietmar', 'Kuehbauer', ',', 'who', 'gave', 'an', 'impressive', 'performance', ',', 'said', 'the', 'team', 'started', 'off', 'well', 'but', 'let', 'the', 'game', 'slip', 'after', 'the', 'first', '30', 'minutes', '.']
+token of interest Dietmar
+example: ['American', 'Tom', 'Johnson', 'successfully', 'defended', 'his', 'IBF', 'featherweight', 'title', 'when', 'he', 'earned', 'a', 'unanimous', 'points', 'decision', 'over', 'Venezuela', "'s", 'Ramon', 'Guzman', 'on', 'Saturday', '.']
+token of interest Guzman
+example: ['The', 'victory', 'extended', 'to', '29', 'matches', 'France', "'s", 'unbeaten', 'run', 'under', 'coach', 'Aime', 'Jacquet', ',', 'their', 'Euro', '96', 'semifinal', 'elimination', 'having', 'come', 'in', 'a', 'penalty', 'shoot-out', ',', 'but', 'was', 'marred', 'by', 'the', 'sending-off', 'of', 'Chelsea', 'central', 'defender', 'Franck', 'Leboeuf', '.']
+token of interest Chelsea
+example: ['Leboeuf', 'was', 'dismissed', 'two', 'minutes', 'from', 'time', 'for', 'a', 'second', 'bookable', 'offence', ',', 'fouling', 'Mexican', 'substitute', 'Ricardo', 'Pelaez', 'who', 'minutes', 'earlier', 'had', 'also', 'been', 'shown', 'the', 'yellow', 'card', 'for', 'pushing', 'the', 'Chelsea', 'defender', 'in', 'the', 'back', '.']
+token of interest Leboeuf
+example: ['Leboeuf', 'was', 'dismissed', 'two', 'minutes', 'from', 'time', 'for', 'a', 'second', 'bookable', 'offence', ',', 'fouling', 'Mexican', 'substitute', 'Ricardo', 'Pelaez', 'who', 'minutes', 'earlier', 'had', 'also', 'been', 'shown', 'the', 'yellow', 'card', 'for', 'pushing', 'the', 'Chelsea', 'defender', 'in', 'the', 'back', '.']
+token of interest Mexican
+example: ['After', 'a', 'sterile', 'first', 'half', ',', 'France', 'injected', 'more', 'sting', 'in', 'midfield', 'with', 'the', 'introduction', 'of', 'Juventus', "'s", 'Zinedine', 'Zidane', '.']
+token of interest Zinedine
+example: ['After', 'a', 'sterile', 'first', 'half', ',', 'France', 'injected', 'more', 'sting', 'in', 'midfield', 'with', 'the', 'introduction', 'of', 'Juventus', "'s", 'Zinedine', 'Zidane', '.']
+token of interest Zidane
+example: ['This', 'allowed', 'Djorkaeff', 'to', 'play', 'further', 'up', 'and', 'his', 'cross', 'from', 'the', 'right', 'fell', 'for', 'Ouedec', ',', 'who', 'has', 'joined', 'Espanyol', 'of', 'Barcelona', 'from', 'Nantes', 'since', 'missing', 'the', 'European', 'championship', 'finals', 'through', 'injury', ',', 'to', 'score', 'after', 'a', 'mistake', 'by', 'midfielder', 'Joaquin', 'del', 'Olmo', '.']
+token of interest Djorkaeff
+example: ['This', 'allowed', 'Djorkaeff', 'to', 'play', 'further', 'up', 'and', 'his', 'cross', 'from', 'the', 'right', 'fell', 'for', 'Ouedec', ',', 'who', 'has', 'joined', 'Espanyol', 'of', 'Barcelona', 'from', 'Nantes', 'since', 'missing', 'the', 'European', 'championship', 'finals', 'through', 'injury', ',', 'to', 'score', 'after', 'a', 'mistake', 'by', 'midfielder', 'Joaquin', 'del', 'Olmo', '.']
+token of interest Ouedec
+example: ['This', 'allowed', 'Djorkaeff', 'to', 'play', 'further', 'up', 'and', 'his', 'cross', 'from', 'the', 'right', 'fell', 'for', 'Ouedec', ',', 'who', 'has', 'joined', 'Espanyol', 'of', 'Barcelona', 'from', 'Nantes', 'since', 'missing', 'the', 'European', 'championship', 'finals', 'through', 'injury', ',', 'to', 'score', 'after', 'a', 'mistake', 'by', 'midfielder', 'Joaquin', 'del', 'Olmo', '.']
+token of interest del
+example: ['This', 'allowed', 'Djorkaeff', 'to', 'play', 'further', 'up', 'and', 'his', 'cross', 'from', 'the', 'right', 'fell', 'for', 'Ouedec', ',', 'who', 'has', 'joined', 'Espanyol', 'of', 'Barcelona', 'from', 'Nantes', 'since', 'missing', 'the', 'European', 'championship', 'finals', 'through', 'injury', ',', 'to', 'score', 'after', 'a', 'mistake', 'by', 'midfielder', 'Joaquin', 'del', 'Olmo', '.']
+token of interest Olmo
+example: ['Within', 'four', 'minutes', 'Ouedec', 'was', 'returning', 'the', 'compliment', 'for', 'Djorkaeff', ',', 'playing', 'a', 'one-two', 'with', 'the', 'Internazionale', 'Milan', 'forward', 'down', 'the', 'middle', 'to', 'set', 'him', 'up', 'for', 'a', 'cross', 'shot', 'past', 'diving', 'goalkeeper', 'Osvaldo', 'Sanchez', '.']
+token of interest Ouedec
+example: ['Within', 'four', 'minutes', 'Ouedec', 'was', 'returning', 'the', 'compliment', 'for', 'Djorkaeff', ',', 'playing', 'a', 'one-two', 'with', 'the', 'Internazionale', 'Milan', 'forward', 'down', 'the', 'middle', 'to', 'set', 'him', 'up', 'for', 'a', 'cross', 'shot', 'past', 'diving', 'goalkeeper', 'Osvaldo', 'Sanchez', '.']
+token of interest Djorkaeff
+example: ['Jacquet', ',', 'beginning', 'the', '22-month', 'countdown', 'to', 'France', "'s", 'hosting', 'of', 'the', 'World', 'Cup', 'finals', ',', 'said', ':', '"', 'We', 'have', 'an', 'identity', '(', 'as', 'a', 'team', ')', 'which', 'we', 'are', 'going', 'to', 'work', 'on', '.', '"']
+token of interest Jacquet
+example: ['France', '-', '1', '-', 'Bernard', 'Lama', ';', '2', '-', 'Lilian', 'Thuram', '(', '14', '-', 'Sabri', 'Lamouchi', '87th', ')', ',', '5', '-', 'Laurent', 'Blanc', ',', '8', '-', 'Marcel', 'Desailly', '(', '12', '-', 'Franck', 'Leboeuf', '46th', ')', ',', '3', '-', 'Bixente', 'Lizarazu', ';', '4', '-', 'Christian', 'Karembeu', ',', '7', '-', 'Didier', 'Deschamps', ',', '10', '-', 'Youri', 'Djorkaeff', ',', '6', '-', 'Reynald', 'Pedros', '(', '13', '-', 'Robert', 'Pires', '46th', ')', ';', '9', '-', 'Nicolas', 'Ouedec', '(', '17', '-', 'Florian', 'Maurice', '64th', ')', ',', '11', '-', 'Patrice', 'Loko', '(', '15', '-', 'Zinedine', 'Zidane', '46th', ')']
+token of interest Lizarazu
+example: ['France', '-', '1', '-', 'Bernard', 'Lama', ';', '2', '-', 'Lilian', 'Thuram', '(', '14', '-', 'Sabri', 'Lamouchi', '87th', ')', ',', '5', '-', 'Laurent', 'Blanc', ',', '8', '-', 'Marcel', 'Desailly', '(', '12', '-', 'Franck', 'Leboeuf', '46th', ')', ',', '3', '-', 'Bixente', 'Lizarazu', ';', '4', '-', 'Christian', 'Karembeu', ',', '7', '-', 'Didier', 'Deschamps', ',', '10', '-', 'Youri', 'Djorkaeff', ',', '6', '-', 'Reynald', 'Pedros', '(', '13', '-', 'Robert', 'Pires', '46th', ')', ';', '9', '-', 'Nicolas', 'Ouedec', '(', '17', '-', 'Florian', 'Maurice', '64th', ')', ',', '11', '-', 'Patrice', 'Loko', '(', '15', '-', 'Zinedine', 'Zidane', '46th', ')']
+token of interest Karembeu
+example: ['France', '-', '1', '-', 'Bernard', 'Lama', ';', '2', '-', 'Lilian', 'Thuram', '(', '14', '-', 'Sabri', 'Lamouchi', '87th', ')', ',', '5', '-', 'Laurent', 'Blanc', ',', '8', '-', 'Marcel', 'Desailly', '(', '12', '-', 'Franck', 'Leboeuf', '46th', ')', ',', '3', '-', 'Bixente', 'Lizarazu', ';', '4', '-', 'Christian', 'Karembeu', ',', '7', '-', 'Didier', 'Deschamps', ',', '10', '-', 'Youri', 'Djorkaeff', ',', '6', '-', 'Reynald', 'Pedros', '(', '13', '-', 'Robert', 'Pires', '46th', ')', ';', '9', '-', 'Nicolas', 'Ouedec', '(', '17', '-', 'Florian', 'Maurice', '64th', ')', ',', '11', '-', 'Patrice', 'Loko', '(', '15', '-', 'Zinedine', 'Zidane', '46th', ')']
+token of interest Youri
+example: ['France', '-', '1', '-', 'Bernard', 'Lama', ';', '2', '-', 'Lilian', 'Thuram', '(', '14', '-', 'Sabri', 'Lamouchi', '87th', ')', ',', '5', '-', 'Laurent', 'Blanc', ',', '8', '-', 'Marcel', 'Desailly', '(', '12', '-', 'Franck', 'Leboeuf', '46th', ')', ',', '3', '-', 'Bixente', 'Lizarazu', ';', '4', '-', 'Christian', 'Karembeu', ',', '7', '-', 'Didier', 'Deschamps', ',', '10', '-', 'Youri', 'Djorkaeff', ',', '6', '-', 'Reynald', 'Pedros', '(', '13', '-', 'Robert', 'Pires', '46th', ')', ';', '9', '-', 'Nicolas', 'Ouedec', '(', '17', '-', 'Florian', 'Maurice', '64th', ')', ',', '11', '-', 'Patrice', 'Loko', '(', '15', '-', 'Zinedine', 'Zidane', '46th', ')']
+token of interest Djorkaeff
+example: ['France', '-', '1', '-', 'Bernard', 'Lama', ';', '2', '-', 'Lilian', 'Thuram', '(', '14', '-', 'Sabri', 'Lamouchi', '87th', ')', ',', '5', '-', 'Laurent', 'Blanc', ',', '8', '-', 'Marcel', 'Desailly', '(', '12', '-', 'Franck', 'Leboeuf', '46th', ')', ',', '3', '-', 'Bixente', 'Lizarazu', ';', '4', '-', 'Christian', 'Karembeu', ',', '7', '-', 'Didier', 'Deschamps', ',', '10', '-', 'Youri', 'Djorkaeff', ',', '6', '-', 'Reynald', 'Pedros', '(', '13', '-', 'Robert', 'Pires', '46th', ')', ';', '9', '-', 'Nicolas', 'Ouedec', '(', '17', '-', 'Florian', 'Maurice', '64th', ')', ',', '11', '-', 'Patrice', 'Loko', '(', '15', '-', 'Zinedine', 'Zidane', '46th', ')']
+token of interest Pedros
+example: ['Mexico', '-', '1', '-', 'Osvaldo', 'Sanchez', '(', '12', '-', 'Alfonso', 'Rios', '78th', ')', ';', '13', '-', 'Pavel', 'Pardo', ',', '2', '-', 'Claudio', 'Suarez', ',', '5', '-', 'Duilio', 'Davino', '(', 'Becerril', '46th', ')', ',', '4', '-', 'German', 'Villa', '(', '16', '-', 'Gomez', '86th', ')', ';', '14', '-', 'Joaquin', 'del', 'Olmo', ',', '6', '-', 'Raul', 'Rodrigo', 'Lara', '(', '11', '-', 'Cuauhtemoc', 'Blanco', '65th', ')', ',', '8', '-', 'Alberto', 'Garcia', 'Aspe', ',', '7', '-', 'Ramon', 'Ramirez', '(', '15', '-', 'Jesus', 'Arellano', '71st', ')', ';', '18', '-', 'Enrique', 'Alfaro', '(', '17', '-', 'Francisco', 'Palencia', '78th', ')', ',', '10', '-', 'Luis', 'Garcia', '(', '19', '-', 'Ricardo', 'Pelaez', '69th', ')', '.']
+token of interest Pardo
+example: ['Mexico', '-', '1', '-', 'Osvaldo', 'Sanchez', '(', '12', '-', 'Alfonso', 'Rios', '78th', ')', ';', '13', '-', 'Pavel', 'Pardo', ',', '2', '-', 'Claudio', 'Suarez', ',', '5', '-', 'Duilio', 'Davino', '(', 'Becerril', '46th', ')', ',', '4', '-', 'German', 'Villa', '(', '16', '-', 'Gomez', '86th', ')', ';', '14', '-', 'Joaquin', 'del', 'Olmo', ',', '6', '-', 'Raul', 'Rodrigo', 'Lara', '(', '11', '-', 'Cuauhtemoc', 'Blanco', '65th', ')', ',', '8', '-', 'Alberto', 'Garcia', 'Aspe', ',', '7', '-', 'Ramon', 'Ramirez', '(', '15', '-', 'Jesus', 'Arellano', '71st', ')', ';', '18', '-', 'Enrique', 'Alfaro', '(', '17', '-', 'Francisco', 'Palencia', '78th', ')', ',', '10', '-', 'Luis', 'Garcia', '(', '19', '-', 'Ricardo', 'Pelaez', '69th', ')', '.']
+token of interest German
+example: ['Mexico', '-', '1', '-', 'Osvaldo', 'Sanchez', '(', '12', '-', 'Alfonso', 'Rios', '78th', ')', ';', '13', '-', 'Pavel', 'Pardo', ',', '2', '-', 'Claudio', 'Suarez', ',', '5', '-', 'Duilio', 'Davino', '(', 'Becerril', '46th', ')', ',', '4', '-', 'German', 'Villa', '(', '16', '-', 'Gomez', '86th', ')', ';', '14', '-', 'Joaquin', 'del', 'Olmo', ',', '6', '-', 'Raul', 'Rodrigo', 'Lara', '(', '11', '-', 'Cuauhtemoc', 'Blanco', '65th', ')', ',', '8', '-', 'Alberto', 'Garcia', 'Aspe', ',', '7', '-', 'Ramon', 'Ramirez', '(', '15', '-', 'Jesus', 'Arellano', '71st', ')', ';', '18', '-', 'Enrique', 'Alfaro', '(', '17', '-', 'Francisco', 'Palencia', '78th', ')', ',', '10', '-', 'Luis', 'Garcia', '(', '19', '-', 'Ricardo', 'Pelaez', '69th', ')', '.']
+token of interest Joaquin
+example: ['Mexico', '-', '1', '-', 'Osvaldo', 'Sanchez', '(', '12', '-', 'Alfonso', 'Rios', '78th', ')', ';', '13', '-', 'Pavel', 'Pardo', ',', '2', '-', 'Claudio', 'Suarez', ',', '5', '-', 'Duilio', 'Davino', '(', 'Becerril', '46th', ')', ',', '4', '-', 'German', 'Villa', '(', '16', '-', 'Gomez', '86th', ')', ';', '14', '-', 'Joaquin', 'del', 'Olmo', ',', '6', '-', 'Raul', 'Rodrigo', 'Lara', '(', '11', '-', 'Cuauhtemoc', 'Blanco', '65th', ')', ',', '8', '-', 'Alberto', 'Garcia', 'Aspe', ',', '7', '-', 'Ramon', 'Ramirez', '(', '15', '-', 'Jesus', 'Arellano', '71st', ')', ';', '18', '-', 'Enrique', 'Alfaro', '(', '17', '-', 'Francisco', 'Palencia', '78th', ')', ',', '10', '-', 'Luis', 'Garcia', '(', '19', '-', 'Ricardo', 'Pelaez', '69th', ')', '.']
+token of interest del
+example: ['Mexico', '-', '1', '-', 'Osvaldo', 'Sanchez', '(', '12', '-', 'Alfonso', 'Rios', '78th', ')', ';', '13', '-', 'Pavel', 'Pardo', ',', '2', '-', 'Claudio', 'Suarez', ',', '5', '-', 'Duilio', 'Davino', '(', 'Becerril', '46th', ')', ',', '4', '-', 'German', 'Villa', '(', '16', '-', 'Gomez', '86th', ')', ';', '14', '-', 'Joaquin', 'del', 'Olmo', ',', '6', '-', 'Raul', 'Rodrigo', 'Lara', '(', '11', '-', 'Cuauhtemoc', 'Blanco', '65th', ')', ',', '8', '-', 'Alberto', 'Garcia', 'Aspe', ',', '7', '-', 'Ramon', 'Ramirez', '(', '15', '-', 'Jesus', 'Arellano', '71st', ')', ';', '18', '-', 'Enrique', 'Alfaro', '(', '17', '-', 'Francisco', 'Palencia', '78th', ')', ',', '10', '-', 'Luis', 'Garcia', '(', '19', '-', 'Ricardo', 'Pelaez', '69th', ')', '.']
+token of interest Olmo
+example: ['Mexico', '-', '1', '-', 'Osvaldo', 'Sanchez', '(', '12', '-', 'Alfonso', 'Rios', '78th', ')', ';', '13', '-', 'Pavel', 'Pardo', ',', '2', '-', 'Claudio', 'Suarez', ',', '5', '-', 'Duilio', 'Davino', '(', 'Becerril', '46th', ')', ',', '4', '-', 'German', 'Villa', '(', '16', '-', 'Gomez', '86th', ')', ';', '14', '-', 'Joaquin', 'del', 'Olmo', ',', '6', '-', 'Raul', 'Rodrigo', 'Lara', '(', '11', '-', 'Cuauhtemoc', 'Blanco', '65th', ')', ',', '8', '-', 'Alberto', 'Garcia', 'Aspe', ',', '7', '-', 'Ramon', 'Ramirez', '(', '15', '-', 'Jesus', 'Arellano', '71st', ')', ';', '18', '-', 'Enrique', 'Alfaro', '(', '17', '-', 'Francisco', 'Palencia', '78th', ')', ',', '10', '-', 'Luis', 'Garcia', '(', '19', '-', 'Ricardo', 'Pelaez', '69th', ')', '.']
+token of interest Aspe
+example: ['Brazilian-born', 'Luis', 'Oliveira', 'then', 'gleefully', 'slipped', 'the', 'ball', 'past', 'goalkeeper', 'Rustu', 'Recber', 'from', 'the', 'right', 'of', 'the', 'area', 'to', 'make', 'it', '2-0', 'seven', 'minutes', 'before', 'the', 'interval', ',', 'Turkey', "'s", 'best', 'first-half', 'effort', 'proving', 'to', 'be', 'a', 'vicious', '30-metre', 'shot', 'by', 'Ogun', 'Temizkanoglu', 'which', 'De', 'Wilde', 'tipped', 'over', '.']
+token of interest Ogun
+example: ['Brazilian-born', 'Luis', 'Oliveira', 'then', 'gleefully', 'slipped', 'the', 'ball', 'past', 'goalkeeper', 'Rustu', 'Recber', 'from', 'the', 'right', 'of', 'the', 'area', 'to', 'make', 'it', '2-0', 'seven', 'minutes', 'before', 'the', 'interval', ',', 'Turkey', "'s", 'best', 'first-half', 'effort', 'proving', 'to', 'be', 'a', 'vicious', '30-metre', 'shot', 'by', 'Ogun', 'Temizkanoglu', 'which', 'De', 'Wilde', 'tipped', 'over', '.']
+token of interest Temizkanoglu
+example: ['But', 'they', 'were', 'almost', 'upset', '12', 'minutes', 'from', 'time', 'when', 'De', 'Wilde', 'fumbled', 'a', 'hard', 'Arif', 'Erdem', 'shot', 'and', 'Orhan', 'Cikirikci', 'almost', 'pounced', 'on', 'the', 'loose', 'ball', '.']
+token of interest Arif
+example: ['But', 'they', 'were', 'almost', 'upset', '12', 'minutes', 'from', 'time', 'when', 'De', 'Wilde', 'fumbled', 'a', 'hard', 'Arif', 'Erdem', 'shot', 'and', 'Orhan', 'Cikirikci', 'almost', 'pounced', 'on', 'the', 'loose', 'ball', '.']
+token of interest Orhan
+example: ['Belgium', "'s", 'best', 'second-half', 'effort', 'came', 'three', 'minutes', 'later', 'when', 'Degryse', 'put', 'the', 'ball', 'over', 'the', 'bar', 'from', 'close', 'range', 'with', 'Recber', 'beaten', '.']
+token of interest Recber
+example: ['Belgium', '-', '1', '-', 'Filip', 'De', 'Wilde', ',', '2', '-', 'Bertrand', 'Crasson', ',', '3', '-', 'Dirk', 'Medved', ',', '4', '-', 'Pascal', 'Renier', ',', '16', '-', 'Geoffrey', 'Claeys', ',', '6', '-', 'Gunther', 'Schepens', '(', '15', '-', 'Nico', 'Van', 'Kerckhoven', ',', '81st', ')', ',', '10', '-', 'Enzo', 'Scifo', ',', '7', '-', 'Gert', 'Verheyen', '(', '14', '-', 'Frederic', 'Peiremans', ',', '62nd', ')', ',', '9', '-', 'Marc', 'Degryse', ',', '8', '-', 'Luc', 'Nilis', ',', '11-', 'Luis', 'Oliveira', '(', '18', '-', 'Gilles', 'De', 'Bilde', ',', '88th', ')', '.']
+token of interest Crasson
+example: ['Belgium', '-', '1', '-', 'Filip', 'De', 'Wilde', ',', '2', '-', 'Bertrand', 'Crasson', ',', '3', '-', 'Dirk', 'Medved', ',', '4', '-', 'Pascal', 'Renier', ',', '16', '-', 'Geoffrey', 'Claeys', ',', '6', '-', 'Gunther', 'Schepens', '(', '15', '-', 'Nico', 'Van', 'Kerckhoven', ',', '81st', ')', ',', '10', '-', 'Enzo', 'Scifo', ',', '7', '-', 'Gert', 'Verheyen', '(', '14', '-', 'Frederic', 'Peiremans', ',', '62nd', ')', ',', '9', '-', 'Marc', 'Degryse', ',', '8', '-', 'Luc', 'Nilis', ',', '11-', 'Luis', 'Oliveira', '(', '18', '-', 'Gilles', 'De', 'Bilde', ',', '88th', ')', '.']
+token of interest Medved
+example: ['Belgium', '-', '1', '-', 'Filip', 'De', 'Wilde', ',', '2', '-', 'Bertrand', 'Crasson', ',', '3', '-', 'Dirk', 'Medved', ',', '4', '-', 'Pascal', 'Renier', ',', '16', '-', 'Geoffrey', 'Claeys', ',', '6', '-', 'Gunther', 'Schepens', '(', '15', '-', 'Nico', 'Van', 'Kerckhoven', ',', '81st', ')', ',', '10', '-', 'Enzo', 'Scifo', ',', '7', '-', 'Gert', 'Verheyen', '(', '14', '-', 'Frederic', 'Peiremans', ',', '62nd', ')', ',', '9', '-', 'Marc', 'Degryse', ',', '8', '-', 'Luc', 'Nilis', ',', '11-', 'Luis', 'Oliveira', '(', '18', '-', 'Gilles', 'De', 'Bilde', ',', '88th', ')', '.']
+token of interest Schepens
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Recber
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Sergen
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Cetin
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Alpay
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Tolunay
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Cetin
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Arif
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Tayfun
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Korkut
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Hakan
+example: ['Turkey', '-', '1', '-', 'Rustu', 'Recber', ',', '4', '-', 'Hakan', 'Unsal', '(', '14', '-', 'Sergen', 'Yalcin', ',', '57th', ')', ',', '2', '-', 'Recep', 'Cetin', ',', '3', '-', 'Ogun', 'Temizkanoglu', ',', '5', '-', 'Alpay', 'Ozalan', ',', '7-', 'Abdullah', 'Ercan', ',', '6', '-', 'Tolunay', 'Kafkas', ',', '10', '-', 'Oguz', 'Cetin', '(', '13', '-', 'Arif', 'Erdem', ',', '57th', ')', ',', '11', '-', 'Tayfun', 'Korkut', ',', '9', '-', 'Hakan', 'Sukur', ',', '8', '-', 'Saffet', 'Sancakli', '(', '17-', 'Orhan', 'Cikirikci', ',', '76th', ')', '.']
+token of interest Sukur
+example: ['we', 'suffered', ',', '"', 'said', 'Van', 'Moer', ',', 'who', 'succeeded', 'Paul', 'Van', 'Himst', 'as', 'coach', 'in', 'April', '.']
+token of interest Himst
+example: ['It', 'was', 'Belgium', "'s", 'first', 'victory', 'under', 'Van', 'Moer', 'after', 'two', 'draws', 'in', 'friendlies', 'against', 'Russia', 'and', 'Italy', '.']
+token of interest Van
+example: ['It', 'was', 'Belgium', "'s", 'first', 'victory', 'under', 'Van', 'Moer', 'after', 'two', 'draws', 'in', 'friendlies', 'against', 'Russia', 'and', 'Italy', '.']
+token of interest Moer
+example: ['BOXING', '-', 'KNOCK-OUT', 'SPECIALIST', 'MILLER', 'DEFENDS', 'TITLE', '.']
+token of interest MILLER
+example: ['A', 'powerful', 'right', 'hook', 'followed', 'by', 'a', 'straight', 'left', 'gave', 'defending', 'champion', 'Nate', 'Miller', 'a', 'seventh', 'round', 'knock-out', 'win', 'over', 'fellow', 'American', 'James', 'Heath', 'in', 'their', 'WBA', 'cruiserweight', 'title', 'bout', 'on', 'Saturday', '.']
+token of interest Miller
+example: ['Miller', 'raised', 'the', 'pace', 'of', 'the', 'contest', 'at', 'the', 'start', 'of', 'the', 'fifth', 'round', 'and', ',', 'once', 'he', 'started', 'to', 'get', 'his', 'right-left', 'combinations', 'working', 'for', 'him', ',', 'the', 'fight', 'was', 'never', 'likely', 'to', 'go', 'the', 'distance', '.']
+token of interest Miller
+example: ['BOXING', '-', 'MILLER', 'DEFENDS', 'WBA', 'CRUISERWEIGHT', 'TITLE', '.']
+token of interest MILLER
+example: ['3.', 'Pelham', '10-1', '(', 'Warren', "O'Connor", ')']
+token of interest O'Connor
+example: ['Winner', 'owned', 'by', 'John', 'and', 'Beryll', 'Remblance', 'and', 'trained', 'in']
+token of interest Beryll
+example: ['Winner', 'owned', 'by', 'John', 'and', 'Beryll', 'Remblance', 'and', 'trained', 'in']
+token of interest Remblance
+example: ['SOCCER', '-', 'KLINSMANN', 'TO', 'RETIRE', 'AFTER', '1998', 'WORLD', 'CUP', '.']
+token of interest KLINSMANN
+example: ['Paper', 'says', 'Thatcher', "'s", 'office', 'consulted', 'astrologer', '.']
+token of interest Thatcher
+example: ['The', 'Sunday', 'Telegraph', 'quoted', 'Majorie', 'Orr', 'as', 'saying', 'she', 'did', 'a', 'horoscope', 'chart', 'for', 'Thatcher', ',', 'a', 'Libran', ',', 'after', 'she', 'narrowly', 'escaped', 'death', 'in', 'the', 'Irish', 'guerrilla', 'bombing', 'of', 'a', 'hotel', 'during', 'the', 'Conservative', 'Party', 'conference', 'more', 'than', 'a', 'decade', 'ago', '.']
+token of interest Thatcher
+example: ['Ingram', 'was', 'quoted', 'as', 'telling', 'the', 'newspaper', 'he', 'thought', 'astrology', 'was', '"', 'a', 'load', 'of', 'rubbish', '"', 'and', 'that', 'he', 'could', 'not', 'recall', 'asking', 'Orr', 'to', 'keep', 'a', 'watch', 'on', 'Thatcher', "'s", 'stars', '.']
+token of interest Ingram
+example: ['Ingram', 'was', 'quoted', 'as', 'telling', 'the', 'newspaper', 'he', 'thought', 'astrology', 'was', '"', 'a', 'load', 'of', 'rubbish', '"', 'and', 'that', 'he', 'could', 'not', 'recall', 'asking', 'Orr', 'to', 'keep', 'a', 'watch', 'on', 'Thatcher', "'s", 'stars', '.']
+token of interest Orr
+example: ['Ingram', 'was', 'quoted', 'as', 'telling', 'the', 'newspaper', 'he', 'thought', 'astrology', 'was', '"', 'a', 'load', 'of', 'rubbish', '"', 'and', 'that', 'he', 'could', 'not', 'recall', 'asking', 'Orr', 'to', 'keep', 'a', 'watch', 'on', 'Thatcher', "'s", 'stars', '.']
+token of interest Thatcher
+example: ['Thatcher', ',', 'dubbed', 'the', '"', 'Iron', 'Lady', '"', 'for', 'her', 'driven', ',', 'forceful', 'personality', ',', 'was', 'never', 'known', 'to', 'have', 'an', 'interest', 'in', 'the', 'occult', 'and', 'in', 'fact', 'has', 'a', 'university', 'degree', 'in', 'chemistry', '.']
+token of interest Thatcher
+example: ['Thatcher', ',', 'dubbed', 'the', '"', 'Iron', 'Lady', '"', 'for', 'her', 'driven', ',', 'forceful', 'personality', ',', 'was', 'never', 'known', 'to', 'have', 'an', 'interest', 'in', 'the', 'occult', 'and', 'in', 'fact', 'has', 'a', 'university', 'degree', 'in', 'chemistry', '.']
+token of interest Iron
+example: ['Thatcher', ',', 'dubbed', 'the', '"', 'Iron', 'Lady', '"', 'for', 'her', 'driven', ',', 'forceful', 'personality', ',', 'was', 'never', 'known', 'to', 'have', 'an', 'interest', 'in', 'the', 'occult', 'and', 'in', 'fact', 'has', 'a', 'university', 'degree', 'in', 'chemistry', '.']
+token of interest Lady
+example: ['1533', '-', 'Queen', 'Elizabeth', 'I', 'born', '.']
+token of interest I
+example: ['Daughter', 'of', 'Henry', 'VIII', 'and', 'his', 'second', 'wife', 'Anne', 'Boleyn', ',', 'she', 'was', 'queen', 'of', 'England', '1558-1603', '.']
+token of interest VIII
+example: ['1714', '-', 'The', 'Treaty', 'of', 'Baden', 'was', 'signed', 'between', 'the', 'Holy', 'Roman', 'Emperor', 'Charles', 'VI', 'and', 'France', ',', 'ending', 'War', 'of', 'Spanish', 'Succession', '.']
+token of interest Emperor
+example: ['1714', '-', 'The', 'Treaty', 'of', 'Baden', 'was', 'signed', 'between', 'the', 'Holy', 'Roman', 'Emperor', 'Charles', 'VI', 'and', 'France', ',', 'ending', 'War', 'of', 'Spanish', 'Succession', '.']
+token of interest VI
+example: ['Charles', 'ceded', 'Alsace', 'and', 'Strasbourg', 'to', 'France', 'and', 'got', 'back', 'Breisach', ',', 'Kehl', 'and', 'Freiburg', '.']
+token of interest Alsace
+example: ['1812', '-', 'Russian', 'army', 'under', 'General', 'Kutuzov', 'was', 'defeated', 'at', 'heavy', 'cost', 'by', 'Napoleon', 'at', 'the', 'battle', 'of', 'Borodino', '70', 'miles', 'west', 'of', 'Moscow', '.']
+token of interest Kutuzov
+example: ['1812', '-', 'Russian', 'army', 'under', 'General', 'Kutuzov', 'was', 'defeated', 'at', 'heavy', 'cost', 'by', 'Napoleon', 'at', 'the', 'battle', 'of', 'Borodino', '70', 'miles', 'west', 'of', 'Moscow', '.']
+token of interest Napoleon
+example: ['1822', '-', 'Brazil', 'proclaimed', 'independence', 'from', 'Portugal', 'and', 'Pedro', 'I', 'became', 'first', 'Emperor', 'of', 'Brazil', 'in', 'December', '1822', '.']
+token of interest Pedro
+example: ['1822', '-', 'Brazil', 'proclaimed', 'independence', 'from', 'Portugal', 'and', 'Pedro', 'I', 'became', 'first', 'Emperor', 'of', 'Brazil', 'in', 'December', '1822', '.']
+token of interest I
+example: ['Best', 'known', 'for', 'appearances', 'in', '"', 'Ice', 'Cold', 'in', 'Alex', '"', ',', '"', 'Lawrence', 'of', 'Arabia', '"', 'and', ',', 'as', 'Cardinal', 'Wolsey', ',', 'in', '"', 'Anne', 'of', 'a', 'Thousand', 'Days', '"', '.']
+token of interest Cardinal
+example: ['Best', 'known', 'for', 'appearances', 'in', '"', 'Ice', 'Cold', 'in', 'Alex', '"', ',', '"', 'Lawrence', 'of', 'Arabia', '"', 'and', ',', 'as', 'Cardinal', 'Wolsey', ',', 'in', '"', 'Anne', 'of', 'a', 'Thousand', 'Days', '"', '.']
+token of interest Wolsey
+example: ['1930', '-', 'Belgian', 'King', 'Baudouin', 'I', 'born', '.']
+token of interest King
+example: ['1930', '-', 'Belgian', 'King', 'Baudouin', 'I', 'born', '.']
+token of interest I
+example: ['He', 'succeeded', 'to', 'the', 'throne', 'in', '1951', 'on', 'the', 'abdication', 'of', 'his', 'father', 'Leopold', 'III', '.']
+token of interest III
+example: ['1940', '-', 'In', 'World', 'War', 'Two', 'the', 'German', 'airforce', 'under', 'Hermann', 'Goering', 'began', 'its', '"', 'Blitz', '"', 'bombing', 'campaign', 'on', 'London', '.']
+token of interest Hermann
+example: ['1940', '-', 'In', 'World', 'War', 'Two', 'the', 'German', 'airforce', 'under', 'Hermann', 'Goering', 'began', 'its', '"', 'Blitz', '"', 'bombing', 'campaign', 'on', 'London', '.']
+token of interest Goering
+example: ['1990', '-', 'British', 'historian', 'Alan', 'John', 'Percivale', '(', 'A.J.P.', ')', 'Taylor', 'died', '.']
+token of interest (
+example: ['1990', '-', 'British', 'historian', 'Alan', 'John', 'Percivale', '(', 'A.J.P.', ')', 'Taylor', 'died', '.']
+token of interest A.J.P.
+example: ['1990', '-', 'British', 'historian', 'Alan', 'John', 'Percivale', '(', 'A.J.P.', ')', 'Taylor', 'died', '.']
+token of interest )
+example: ['1990', '-', 'British', 'historian', 'Alan', 'John', 'Percivale', '(', 'A.J.P.', ')', 'Taylor', 'died', '.']
+token of interest Taylor
+example: ['1993', '-', 'Six', 'former', 'Soviet', 'republics', ',', 'Russia', ',', 'Belarus', ',', 'Kazakhstan', ',', 'Uzbekistan', ',', 'Armenia', 'and', 'Tajikistan', ',', 'signed', 'framework', 'agreement', 'to', 'keep', 'the', 'Russian', 'rouble', 'as', 'their', 'common', 'currency', '.']
+token of interest Tajikistan
+example: ['Trevor', 'Holland', ',', 'a', '52', 'year-old', 'with', 'who', 'has', 'been', 'convicted', 'twice', 'of', 'gross', 'indecency', 'with', 'children', ',', 'was', 'captured', 'after', 'being', 'spotted', 'in', 'Worthing', ',', 'a', 'town', 'on', 'England', "'s", 'southern', 'coast', '.']
+token of interest Trevor
+example: ['"', 'A', 'member', 'of', 'the', 'public', 'recognised', 'Holland', 'in', 'a', 'newsagent', 'shop', 'as', 'he', 'was', 'reading', 'the', 'headlines', 'about', 'himself', ',', '"', 'a', 'police', 'spokesman', 'said', '.']
+token of interest Holland
+example: ['Holland', 'was', 'moved', 'to', 'a', 'more', 'secure', 'centre', 'earlier', 'this', 'year', 'after', 'a', 'similar', 'incident', '.']
+token of interest Holland
+example: ['Viljoen', 'broke', 'with', 'other', 'right-wing', 'whites', 'in', '1994', 'by', 'taking', 'part', 'in', 'the', 'country', "'s", 'first', 'all-race', 'elections', 'in', 'April', 'of', 'that', 'year', ',', 'saying', 'the', 'only', 'way', 'to', 'attain', 'self-determination', 'was', 'by', 'cooperating', 'with', 'President', 'Nelson', 'Mandela', "'s", 'majority', 'African', 'National', 'Congress', '.']
+token of interest Viljoen
+example: ['Viljoen', 'has', 'hailed', 'clauses', 'in', 'South', 'Africa', "'s", 'new', 'constitution', 'as', 'making', 'possible', 'a', 'form', 'of', 'self-rule', 'for', 'the', 'Afrikaners', ',', 'descendants', 'of', 'the', 'country', "'s", 'Dutch', ',', 'German', 'and', 'French', 'settlers', '.']
+token of interest Viljoen
+example: ['It', "'s", 'our', 'only', 'dream', ',', '"', 'said', 'a', '30-year-old', 'woman', ',', 'Mubatik', 'Dagayeva', '.']
+token of interest Dagayeva
+example: ['Aiza', 'Dudayeva', ',', 'with', 'her', '10-year-old', 'son', 'beside', 'her', ',', 'shared', 'the', 'guarded', 'optimism', '.', '"']
+token of interest Aiza
+example: ['Mouldi', 'Mamatuyev', ',', 'in', 'his', 'late', '20', "'s", ',', 'dressed', 'in', 'black', 'and', 'carrying', 'a', 'machine', 'gun', ',', 'was', 'welcomed', 'by', 'his', 'mother', 'and', 'sister', '.']
+token of interest Mouldi
+example: ['Mouldi', 'Mamatuyev', ',', 'in', 'his', 'late', '20', "'s", ',', 'dressed', 'in', 'black', 'and', 'carrying', 'a', 'machine', 'gun', ',', 'was', 'welcomed', 'by', 'his', 'mother', 'and', 'sister', '.']
+token of interest Mamatuyev
+example: ['"', 'Two', 'sons', 'have', 'come', 'back', ',', '"', 'said', 'his', 'mother', 'Nurbika', 'Mamatuyeva', '.', '"']
+token of interest Nurbika
+example: ['"', 'Two', 'sons', 'have', 'come', 'back', ',', '"', 'said', 'his', 'mother', 'Nurbika', 'Mamatuyeva', '.', '"']
+token of interest Mamatuyeva
+example: ['We', 'believe', 'in', 'God', '.', '"']
+token of interest God
+example: ['Mamatuyev', 'joked', 'that', 'his', 'sister', 'Lisa', 'was', 'a', 'rebel', 'too', ',', 'and', 'she', 'responded', 'by', 'grabbing', 'hold', 'of', 'his', 'gun', 'and', 'shouting', 'the', 'Chechen', 'war', 'cry', '"', 'Allahu', 'Akhbar', '"', '(', 'God', 'is', 'Greatest', ')', 'and', '"', 'Freedom', 'for', 'Chechnya', '!', '"']
+token of interest Mamatuyev
+example: ['Mamatuyev', 'joked', 'that', 'his', 'sister', 'Lisa', 'was', 'a', 'rebel', 'too', ',', 'and', 'she', 'responded', 'by', 'grabbing', 'hold', 'of', 'his', 'gun', 'and', 'shouting', 'the', 'Chechen', 'war', 'cry', '"', 'Allahu', 'Akhbar', '"', '(', 'God', 'is', 'Greatest', ')', 'and', '"', 'Freedom', 'for', 'Chechnya', '!', '"']
+token of interest Akhbar
+example: ['Only', 'Sheriat', '(', 'Islamic', 'law', ')', 'can', 'end', 'the', 'war', '.', '"']
+token of interest Sheriat
+example: ['A', 'Polish', 'consortium', 'including', 'the', 'Bank', 'Rozwoju', 'Exportu', 'SA', '(', 'BRE', ')', 'plans', 'to', 'rival', 'France', "'s", 'Hachette', 'in', 'bidding', 'for', 'Polish', 'state-owned', 'press', 'distribution', 'chain', 'Ruch', 'SA', ',', 'Zycie', 'Warszawy', 'daily', 'said', 'on', 'Saturday', '.']
+token of interest Exportu
+example: ['A', 'Polish', 'consortium', 'including', 'the', 'Bank', 'Rozwoju', 'Exportu', 'SA', '(', 'BRE', ')', 'plans', 'to', 'rival', 'France', "'s", 'Hachette', 'in', 'bidding', 'for', 'Polish', 'state-owned', 'press', 'distribution', 'chain', 'Ruch', 'SA', ',', 'Zycie', 'Warszawy', 'daily', 'said', 'on', 'Saturday', '.']
+token of interest Zycie
+example: ['Zycie', 'Warszawy', 'said', 'its', 'own', 'publisher', ',', 'mineral', 'water', 'firm', 'Multico', ',', 'and', 'a', 'group', 'headed', 'by', 'Polish', 'businessman', 'Zygmunt', 'Solorz', 'were', 'forming', 'a', 'consortium', 'which', 'would', 'offer', 'about', '$', '120', 'million', ',', 'with', 'finance', 'provided', 'by', 'BRE', '.']
+token of interest Warszawy
+example: ['News-stand', 'chain', 'Ruch', ',', 'which', 'controls', 'about', '65', 'percent', 'of', 'Poland', "'s", 'press', 'distribution', 'market', ',', 'had', 'a', 'net', 'profit', 'of', '16.2', 'million', 'zlotys', 'on', 'sales', 'of', '2.7', 'billion', 'zlotys', 'in', '1995', '.']
+token of interest News-stand
+example: ['Zycie', 'Warszawy', 'said', 'the', 'new', ',', 'open', 'consortium', ',', 'which', 'also', 'included', 'several', 'listed', 'Polish', 'firms', ',', 'would', 'on', 'Monday', 'inform', 'Privatisation', 'Minister', 'Wieslaw', 'Kaczmarek', 'of', 'its', 'plans', '.']
+token of interest Warszawy
+example: ['Zycie', 'Warszawy', 'said', 'the', 'new', ',', 'open', 'consortium', ',', 'which', 'also', 'included', 'several', 'listed', 'Polish', 'firms', ',', 'would', 'on', 'Monday', 'inform', 'Privatisation', 'Minister', 'Wieslaw', 'Kaczmarek', 'of', 'its', 'plans', '.']
+token of interest Kaczmarek
+example: ['Initially', 'Poland', 'offered', 'up', 'to', '75', 'percent', 'of', 'Ruch', 'but', 'in', 'March', 'Kaczmarek', 'cancelled', 'the', 'tender', 'and', 'offered', 'a', 'minority', 'stake', 'with', 'an', 'option', 'to', 'increase', 'the', 'equity', '.']
+token of interest Kaczmarek
+example: ['Kaczmarek', 'said', 'in', 'May', 'he', 'was', 'unhappy', 'that', 'only', 'one', 'investor', 'ended', 'up', 'bidding', 'for', 'Ruch', ',', 'in', 'which', 'the', 'government', 'was', 'initially', 'offering', 'up', 'to', '35', 'percent', 'of', 'shares', 'with', 'an', 'option', 'to', 'extend', 'the', 'holding', 'after', 'investment', 'promises', 'are', 'fulfilled', '.']
+token of interest Kaczmarek
+example: ['Cuban', 'novelist', 'Jose', 'Soler', 'Puig', 'dies', 'at', '79', '.']
+token of interest novelist
+example: ['Puig', "'s", 'first', 'novel', ',', '"', 'Bertillon', '166', ',', '"', 'was', 'published', 'in', '1960', ',', 'a', 'year', 'after', 'the', 'Cuban', 'revolution', 'brought', 'President', 'Fidel', 'Castro', 'to', 'power', '.']
+token of interest Puig
+example: ['Puig', "'s", 'first', 'novel', ',', '"', 'Bertillon', '166', ',', '"', 'was', 'published', 'in', '1960', ',', 'a', 'year', 'after', 'the', 'Cuban', 'revolution', 'brought', 'President', 'Fidel', 'Castro', 'to', 'power', '.']
+token of interest Bertillon
+example: ['The', 'book', ',', 'which', 'has', 'been', 'translated', 'into', '40', 'languages', ',', 'deals', 'with', 'a', 'day', 'in', 'the', 'life', 'of', 'Santiago', 'de', 'Cuba', ',', 'Puig', "'s", 'native', 'city', ',', 'under', 'the', 'pre-Castro', 'government', 'of', 'Fulgencio', 'Batista', '.']
+token of interest Cuba
+example: ['The', 'book', ',', 'which', 'has', 'been', 'translated', 'into', '40', 'languages', ',', 'deals', 'with', 'a', 'day', 'in', 'the', 'life', 'of', 'Santiago', 'de', 'Cuba', ',', 'Puig', "'s", 'native', 'city', ',', 'under', 'the', 'pre-Castro', 'government', 'of', 'Fulgencio', 'Batista', '.']
+token of interest Puig
+example: ['The', 'book', ',', 'which', 'has', 'been', 'translated', 'into', '40', 'languages', ',', 'deals', 'with', 'a', 'day', 'in', 'the', 'life', 'of', 'Santiago', 'de', 'Cuba', ',', 'Puig', "'s", 'native', 'city', ',', 'under', 'the', 'pre-Castro', 'government', 'of', 'Fulgencio', 'Batista', '.']
+token of interest Fulgencio
+example: ['The', 'book', ',', 'which', 'has', 'been', 'translated', 'into', '40', 'languages', ',', 'deals', 'with', 'a', 'day', 'in', 'the', 'life', 'of', 'Santiago', 'de', 'Cuba', ',', 'Puig', "'s", 'native', 'city', ',', 'under', 'the', 'pre-Castro', 'government', 'of', 'Fulgencio', 'Batista', '.']
+token of interest Batista
+example: ['The', 'titles', 'of', 'his', 'other', 'novels', 'translate', 'as', '"', 'In', 'the', 'Year', 'of', 'January', '"', '(', '1963', ')', ',', '"', 'The', 'Collapse', '"', '(', '1964', ')', ',', '"', 'Sleeping', 'Bread', '"', '(', '1975', ')', ',', '"', 'The', 'Decaying', 'Mansion', '"', '(', '1977', ')', 'and', '"', 'A', 'World', 'of', 'Things', '"', '(', '1982', ')', ',', 'followed', 'by', '"', 'The', 'Knot', ',', '"', '"', 'Soul', 'Alone', '"', 'and', ',', 'most', 'recently', ',', '"', 'A', 'Woman', '.', '"']
+token of interest Sleeping
+example: ['The', 'titles', 'of', 'his', 'other', 'novels', 'translate', 'as', '"', 'In', 'the', 'Year', 'of', 'January', '"', '(', '1963', ')', ',', '"', 'The', 'Collapse', '"', '(', '1964', ')', ',', '"', 'Sleeping', 'Bread', '"', '(', '1975', ')', ',', '"', 'The', 'Decaying', 'Mansion', '"', '(', '1977', ')', 'and', '"', 'A', 'World', 'of', 'Things', '"', '(', '1982', ')', ',', 'followed', 'by', '"', 'The', 'Knot', ',', '"', '"', 'Soul', 'Alone', '"', 'and', ',', 'most', 'recently', ',', '"', 'A', 'Woman', '.', '"']
+token of interest Bread
+example: ['Granma', 'called', '"', 'Sleeping', 'Bread', '"', 'Puig', "'s", '"', 'greatest', 'gift', 'to', 'the', 'modern', 'novel', 'in', 'our', 'America', '.', '"']
+token of interest Puig
+example: ['In', 'the', 'same', 'interview', ',', 'published', 'by', 'Prensa', 'Latina', 'on', 'Saturday', ',', 'Puig', 'was', 'asked', 'if', 'he', 'feared', 'death', '.', '"']
+token of interest Puig
+example: ['SANTIAGO', '1996-08-31']
+token of interest SANTIAGO
+example: ['The', 'U.S.', 'ambassador', 'to', 'the', 'United', 'Nations', ',', 'Madeleine', 'Albright', ',', 'arrived', 'in', 'Chile', 'late', 'Friday', 'for', 'talks', 'on', 'various', 'Security', 'Council', 'issues', 'with', 'Chilean', 'officials', 'as', 'part', 'of', 'a', 'five-nation', 'Latin', 'American', 'tour', '.']
+token of interest Madeleine
+example: ['Albright', 'will', 'meet', 'Foreign', 'Minister', 'Jose', 'Miguel', 'Insulza', 'Monday', 'for', 'talks', 'on', 'issues', 'currently', 'up', 'for', 'debate', 'on', 'the', 'council', ',', 'of', 'which', 'Chile', 'is', 'a', 'non-permanent', 'member', ',', 'a', 'U.S.', 'embassy', 'statement', 'said', '.']
+token of interest Insulza
+example: ['Albright', ',', 'who', 'arrived', 'from', 'Uruguay', ',', 'will', 'rest', 'most', 'of', 'the', 'weekend', 'in', 'Chile', ',', 'officials', 'said', '.']
+token of interest Albright
+example: ['Gonzalo', 'Montoya', ',', 'a', 'police', 'commander', 'in', 'Tacambaro', ',', 'told', 'Radio', 'Red', 'the', 'group', 'was', 'armed', 'with', 'AK-47s', 'and', 'other', 'high-powered', 'assault', 'rifles', 'and', 'wore', 'military-style', 'fatigues', '.']
+token of interest Gonzalo
+example: ['Xiao', 'Qiang', ',', 'executive', 'director', 'of', 'the', 'New', 'York-based', 'group', 'Human', 'Rights', 'in', 'China', ',', 'said', 'Wang', "'s", 'arrest', 'on', 'Friday', 'appeared', 'to', 'be', 'part', 'of', 'the', 'national', '"', 'Strike', 'Hard', '"', 'campaign', 'that', 'has', 'imprisoned', 'thousands', 'and', 'sent', 'hundreds', 'to', 'their', 'death', '.']
+token of interest Xiao
+example: ['Xiao', 'Qiang', ',', 'executive', 'director', 'of', 'the', 'New', 'York-based', 'group', 'Human', 'Rights', 'in', 'China', ',', 'said', 'Wang', "'s", 'arrest', 'on', 'Friday', 'appeared', 'to', 'be', 'part', 'of', 'the', 'national', '"', 'Strike', 'Hard', '"', 'campaign', 'that', 'has', 'imprisoned', 'thousands', 'and', 'sent', 'hundreds', 'to', 'their', 'death', '.']
+token of interest Hard
+example: ['The', 'authorities', 'are', 'apparently', 'extremely', 'afraid', 'of', 'any', 'political', 'and', 'social', 'discontent', ',', '"', 'said', 'Xiao', ',', 'in', 'Manila', 'to', 'attend', 'an', 'Amnesty', 'International', 'conference', 'on', 'human', 'rights', 'in', 'China', '.']
+token of interest Xiao
+example: ['He', 'said', 'one', 'of', 'Wang', "'s", 'apparent', 'offences', 'was', 'to', 'write', 'a', 'public', 'letter', 'in', 'May', 'suggesting', 'that', 'a', 'free', 'press', 'and', 'an', 'independent', 'judicial', 'system', 'were', 'vital', 'if', 'the', 'government', 'really', 'meant', 'to', 'stamp', 'out', 'rampant', 'corruption', '.']
+token of interest Wang
+example: ['Xiao', 'said', 'conditions', 'in', 'the', 'labour', 'camp', 'were', 'so', 'brutal', 'they', 'drove', 'another', 'activist', 'sentenced', 'with', 'Wang', 'to', 'attempt', 'suicide', '.']
+token of interest Xiao
+example: ['Xiao', 'said', 'conditions', 'in', 'the', 'labour', 'camp', 'were', 'so', 'brutal', 'they', 'drove', 'another', 'activist', 'sentenced', 'with', 'Wang', 'to', 'attempt', 'suicide', '.']
+token of interest Wang
+example: ['Manila', 'hails', 'Indonesia', ',', 'OIC', 'for', 'peace', 'deal', 'support', '.']
+token of interest Manila
+example: ['"', 'I', 'extend', 'the', 'deepest', 'gratitude', '...', 'to', 'your', 'excellency', 'for', 'your', 'untiring', 'and', 'invaluable', 'friendship', 'and', 'support', ',', '"', 'Ramos', 'told', 'Suharto', 'in', 'a', 'letter', '.']
+token of interest Suharto
+example: ['Burma', "'s", 'Suu', 'Kyi', 'says', 'military', 'rulers', 'abuse', 'law', '.']
+token of interest Suu
+example: ['Burma', "'s", 'Suu', 'Kyi', 'says', 'military', 'rulers', 'abuse', 'law', '.']
+token of interest Kyi
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest Suu
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest Kyi
+example: ['Suu', 'Kyi', 'said', 'at', 'least', '61', 'democracy', 'supporters', 'had', 'been', 'arrested', 'since', 'May', ',', 'and', 'about', '30', 'of', 'them', 'had', 'been', 'sentenced', ',', 'most', 'to', 'long', 'prison', 'terms', '.']
+token of interest Suu
+example: ['In', 'May', 'the', 'government', 'launched', 'a', 'sweeping', 'crackdown', 'on', 'the', 'democracy', 'movement', ',', 'detaining', 'over', '260', 'members', 'of', 'Suu', 'Kyi', "'s", 'National', 'League', 'for', 'Democracy', '(', 'NLD', ')', 'ahead', 'of', 'a', 'party', 'congress', '.']
+token of interest Suu
+example: ['In', 'May', 'the', 'government', 'launched', 'a', 'sweeping', 'crackdown', 'on', 'the', 'democracy', 'movement', ',', 'detaining', 'over', '260', 'members', 'of', 'Suu', 'Kyi', "'s", 'National', 'League', 'for', 'Democracy', '(', 'NLD', ')', 'ahead', 'of', 'a', 'party', 'congress', '.']
+token of interest Kyi
+example: ['The', 'Burmese', 'government', 'last', 'week', 'confirmed', 'the', 'recent', 'sentencing', 'of', 'nine', 'democracy', 'activists', 'who', 'were', 'arrested', 'in', 'the', 'May', 'crackdown', ',', 'including', 'Suu', 'Kyi', "'s", 'assistant', 'Win', 'Htein', '.']
+token of interest Suu
+example: ['But', 'Suu', 'Kyi', 'disagreed', 'with', 'the', 'methods', ',', 'saying', 'officials', 'often', 'arrested', 'NLD', 'supporters', 'in', 'the', 'middle', 'of', 'the', 'night', ',', 'then', 'did', 'not', 'give', 'them', 'the', 'opportunity', 'to', 'defend', 'themselves', 'in', 'trials', '.']
+token of interest Kyi
+example: ['Suu', 'Kyi', ',', 'who', 'spearheads', 'a', 'campaign', 'for', 'sanctions', 'on', 'Burma', "'s", 'government', ',', 'was', 'under', 'house', 'arrest', 'for', 'six', 'years', 'without', 'being', 'tried', 'before', 'being', 'released', 'in', 'July', '1995', '.']
+token of interest Suu
+example: ['The', 'NLD', 'party', 'won', 'a', 'landslide', 'victory', 'in', 'a', '1990', 'election', 'but', 'the', 'State', 'Law', 'and', 'Order', 'Restoration', 'Council', '(', 'SLORC', ')', ',', 'which', 'assumed', 'power', 'in', '1988', 'after', 'crushing', 'pro-democracy', 'demonstrations', ',', 'never', 'recognised', 'the', 'poll', '.']
+token of interest Restoration
+example: ['Suu', 'Kyi', 'said', 'once', 'the', 'activists', 'were', 'sentenced', ',', 'they', 'suffered', 'inhuman', 'conditions', 'and', 'lack', 'of', 'rights', 'in', 'prison', '.']
+token of interest Suu
+example: ['Hla', 'Than', ',', 'an', 'elected', 'member', 'of', 'parliament', 'for', 'the', 'NLD', ',', 'died', 'in', 'early', 'August', 'after', 'being', 'at', 'Insein', 'for', 'six', 'years', '.']
+token of interest Hla
+example: ['His', 'death', 'came', 'five', 'weeks', 'after', 'James', 'Leander', '(', 'Leo', ')', 'Nichols', ',', 'a', 'close', 'friend', 'of', 'Suu', 'Kyi', 'and', 'Danish', 'honorary', 'consul', ',', 'died', 'while', 'serving', 'a', 'prison', 'term', 'at', 'Insein', '.']
+token of interest (
+example: ['His', 'death', 'came', 'five', 'weeks', 'after', 'James', 'Leander', '(', 'Leo', ')', 'Nichols', ',', 'a', 'close', 'friend', 'of', 'Suu', 'Kyi', 'and', 'Danish', 'honorary', 'consul', ',', 'died', 'while', 'serving', 'a', 'prison', 'term', 'at', 'Insein', '.']
+token of interest Leo
+example: ['His', 'death', 'came', 'five', 'weeks', 'after', 'James', 'Leander', '(', 'Leo', ')', 'Nichols', ',', 'a', 'close', 'friend', 'of', 'Suu', 'Kyi', 'and', 'Danish', 'honorary', 'consul', ',', 'died', 'while', 'serving', 'a', 'prison', 'term', 'at', 'Insein', '.']
+token of interest )
+example: ['His', 'death', 'came', 'five', 'weeks', 'after', 'James', 'Leander', '(', 'Leo', ')', 'Nichols', ',', 'a', 'close', 'friend', 'of', 'Suu', 'Kyi', 'and', 'Danish', 'honorary', 'consul', ',', 'died', 'while', 'serving', 'a', 'prison', 'term', 'at', 'Insein', '.']
+token of interest Nichols
+example: ['His', 'death', 'came', 'five', 'weeks', 'after', 'James', 'Leander', '(', 'Leo', ')', 'Nichols', ',', 'a', 'close', 'friend', 'of', 'Suu', 'Kyi', 'and', 'Danish', 'honorary', 'consul', ',', 'died', 'while', 'serving', 'a', 'prison', 'term', 'at', 'Insein', '.']
+token of interest Suu
+example: ['His', 'death', 'came', 'five', 'weeks', 'after', 'James', 'Leander', '(', 'Leo', ')', 'Nichols', ',', 'a', 'close', 'friend', 'of', 'Suu', 'Kyi', 'and', 'Danish', 'honorary', 'consul', ',', 'died', 'while', 'serving', 'a', 'prison', 'term', 'at', 'Insein', '.']
+token of interest Kyi
+example: ['Suu', 'Kyi', 'said', 'the', 'government', 'had', 'increased', 'its', 'repression', 'tactics', 'on', 'the', 'democracy', 'movement', 'because', 'it', 'feared', 'the', 'growing', 'popularity', 'of', 'the', 'movement', '.']
+token of interest Suu
+example: ['N.', 'Korea', 'urges', 'S.', 'Korea', 'to', 'return', 'war', 'veteran', '.']
+token of interest Korea
+example: ['"', '...I', 'request', 'the', 'immediate', 'repatriation', 'of', 'Kim', 'In-so', 'to', 'North', 'Korea', 'where', 'his', 'family', 'is', 'waiting', ',', '"', 'North', 'Korean', 'Red', 'Cross', 'president', 'Li', 'Song-ho', 'said', 'in', 'a', 'telephone', 'message', 'to', 'his', 'southern', 'couterpart', ',', 'Kang', 'Young-hoon', '.']
+token of interest Kim
+example: ['"', '...I', 'request', 'the', 'immediate', 'repatriation', 'of', 'Kim', 'In-so', 'to', 'North', 'Korea', 'where', 'his', 'family', 'is', 'waiting', ',', '"', 'North', 'Korean', 'Red', 'Cross', 'president', 'Li', 'Song-ho', 'said', 'in', 'a', 'telephone', 'message', 'to', 'his', 'southern', 'couterpart', ',', 'Kang', 'Young-hoon', '.']
+token of interest In-so
+example: ['"', '...I', 'request', 'the', 'immediate', 'repatriation', 'of', 'Kim', 'In-so', 'to', 'North', 'Korea', 'where', 'his', 'family', 'is', 'waiting', ',', '"', 'North', 'Korean', 'Red', 'Cross', 'president', 'Li', 'Song-ho', 'said', 'in', 'a', 'telephone', 'message', 'to', 'his', 'southern', 'couterpart', ',', 'Kang', 'Young-hoon', '.']
+token of interest Kang
+example: ['"', '...I', 'request', 'the', 'immediate', 'repatriation', 'of', 'Kim', 'In-so', 'to', 'North', 'Korea', 'where', 'his', 'family', 'is', 'waiting', ',', '"', 'North', 'Korean', 'Red', 'Cross', 'president', 'Li', 'Song-ho', 'said', 'in', 'a', 'telephone', 'message', 'to', 'his', 'southern', 'couterpart', ',', 'Kang', 'Young-hoon', '.']
+token of interest Young-hoon
+example: ['Kim', ',', 'an', 'unrepentant', 'communist', ',', 'was', 'captured', 'during', 'the', 'Korean', 'War', 'and', 'released', 'after', 'spending', 'more', 'than', '30', 'years', 'in', 'a', 'southern', 'jail', '.']
+token of interest Kim
+example: ['Police', 'in', 'Hangzhou', ',', 'capital', 'of', 'the', 'eastern', 'province', 'of', 'Zhejiang', ',', 'told', 'Wang', "'s", 'family', 'that', 'Wang', 'would', 'be', 'sent', 'to', 'a', 'study', 'class', ',', 'a', 'euphemism', 'for', 'coercive', 'ideological', 'reform', ',', 'the', 'group', 'said', '.']
+token of interest Wang
+example: ['Police', 'gave', 'no', 'reason', 'for', 'detaining', 'Wang', 'on', 'Friday', 'and', 'would', 'not', 'let', 'his', 'family', 'meet', 'him', 'or', 'say', 'where', 'he', 'was', 'being', 'held', ',', 'the', 'group', 'said', '.']
+token of interest Wang
+example: ['The', 'group', 'demanded', 'Wang', "'s", 'release', 'and', 'said', 'his', 'detention', 'was', 'a', 'dangerous', 'signal', 'China', 'was', 'returning', 'to', 'its', 'Cultural', 'Revolution', 'days', '.']
+token of interest Wang
+example: ['Last', 'month', ',', 'Wang', ',', '45', ',', 'a', 'veteran', 'dissident', 'of', 'the', '1979', 'Democracy', 'Wall', 'movement', ',', 'was', 'ordered', 'to', 'serve', 'one', 'year', 'of', '"', 're-education', 'through', 'labour', '"', ',', 'but', 'released', 'because', 'of', 'poor', 'health', '.']
+token of interest Wall
+example: ['Wang', 'was', 'jailed', 'for', 'two', 'years', 'for', 'organising', 'street', 'protests', 'after', 'the', 'military', 'crushed', 'pro-democracy', 'demonstrations', 'by', 'students', 'at', 'Beijing', "'s", 'Tiananmen', 'Square', 'on', 'June', '4', ',', '1989', ',', 'with', 'heavy', 'loss', 'of', 'life', '.']
+token of interest Wang
+example: ['Police', 'detained', 'Wang', 'on', 'Friday', 'and', 'would', 'not', 'let', 'his', 'family', 'meet', 'him', 'or', 'say', 'where', 'he', 'was', 'being', 'held', ',', 'the', 'group', 'said', '.']
+token of interest Wang
+example: ['The', 'pressure', 'group', 'said', 'Wang', 'would', 'be', 'sent', 'to', 'a', 'study', 'class', ',', 'often', 'a', 'euphemism', 'in', 'China', 'for', 'ideological', 'reform', '.']
+token of interest Wang
+example: ['Last', 'month', ',', 'Wang', ',', '45', ',', 'a', 'veteran', 'dissident', 'of', 'the', '1979', 'Democracy', 'Wall', 'movement', ',', 'was', 'ordered', 'to', 'serve', 'one', 'year', 'of', '"', 're-education', 'through', 'labour', '"', ',', 'but', 'released', 'because', 'of', 'poor', 'health', '.']
+token of interest Wall
+example: ['Wang', 'was', 'jailed', 'for', 'two', 'years', 'for', 'organising', 'street', 'protests', 'after', 'the', 'military', 'brutally', 'crushed', 'pro-democracy', 'demonstrations', 'by', 'students', 'at', 'Beijing', "'s", 'Tiananmen', 'Square', 'on', 'June', '4', ',', '1989', ',', 'with', 'heavy', 'loss', 'of', 'life', '.']
+token of interest Wang
+example: ['Chen', ',', 'a', 'former', 'army', 'secretary', 'of', 'the', 'Chinese', 'Nationalist', 'regime', 'which', 'fled', 'from', 'mainland', 'China', 'to', 'Taiwan', 'in', '1949', ',', 'pleaded', 'guilty', 'to', 'trafficking', '42', 'kg', '(', '92', 'pounds', ')', 'of', 'drugs', 'that', 'could', 'have', 'been', 'turned', 'into', '25', 'kg', '(', '55', 'pounds', ')', 'of', 'heroin', '.']
+token of interest Chen
+example: ['They', 'have', 'established', 'a', 'headquarters', 'in', 'Chuman', ',', '"', 'Faik', 'Nerweyi', 'of', 'the', 'Kurdistan', 'Democratic', 'Party', '(', 'KDP', ')', 'told', 'Reuters', 'by', 'telephone', 'from', 'Ankara', '.']
+token of interest Faik
+example: ['They', 'have', 'established', 'a', 'headquarters', 'in', 'Chuman', ',', '"', 'Faik', 'Nerweyi', 'of', 'the', 'Kurdistan', 'Democratic', 'Party', '(', 'KDP', ')', 'told', 'Reuters', 'by', 'telephone', 'from', 'Ankara', '.']
+token of interest Nerweyi
+example: ['Around', '1,000', 'Israeli', 'troops', 'patrol', 'a', '15', 'km', '(', 'nine-mile', ')', 'south', 'Lebanon', 'occupation', 'zone', 'which', 'the', 'Jewish', 'state', 'carved', 'out', 'in', '1985', 'to', 'prevent', 'attacks', 'on', 'its', 'northern', 'bordder', '.']
+token of interest Lebanon
+example: ['Aziz', 'said', 'Iraq', "'s", 'military', 'intervention', ',', 'the', 'first', 'on', 'such', 'scale', 'since', 'the', 'U.S.', 'and', 'allies', 'decided', 'to', 'protect', 'Iraqi', 'Kurds', 'against', 'Baghdad', ',', 'was', 'in', 'response', 'to', 'a', 'plea', 'from', 'Barzani', 'to', 'President', 'Saddam', 'Hussein', 'to', 'back', 'him', 'militarily', 'and', 'save', 'his', 'people', 'from', 'attacks', 'by', 'Iran', 'and', 'Talabani', '.']
+token of interest Barzani
+example: ['Aziz', 'said', 'Iraq', "'s", 'military', 'intervention', ',', 'the', 'first', 'on', 'such', 'scale', 'since', 'the', 'U.S.', 'and', 'allies', 'decided', 'to', 'protect', 'Iraqi', 'Kurds', 'against', 'Baghdad', ',', 'was', 'in', 'response', 'to', 'a', 'plea', 'from', 'Barzani', 'to', 'President', 'Saddam', 'Hussein', 'to', 'back', 'him', 'militarily', 'and', 'save', 'his', 'people', 'from', 'attacks', 'by', 'Iran', 'and', 'Talabani', '.']
+token of interest Talabani
+example: ['He', 'said', 'Barzani', 'sent', 'a', 'message', 'to', 'Saddam', 'on', 'August', '22', 'in', 'which', 'he', 'said', ':', '"', 'The', 'conspiracy', 'is', 'beyond', 'our', 'capability', 'therefore', 'we', 'plead', 'with', 'your', 'excellency', 'to', 'order', 'Iraqi', 'armed', 'forces', 'to', 'interfere', 'to', 'help', 'us', 'to', 'evade', 'the', 'foreign', 'threat', 'and', 'put', 'an', 'end', 'to', 'Talabani', "'s", 'treason', 'and', 'conspiracy', '.', '"']
+token of interest Saddam
+example: ['-', 'Speaker', 'of', 'parliament', 'Habib', 'Boulares', 'arrives', 'in', 'Tripoli', 'to', 'represent', 'President', 'Zine', 'al-Abidine', 'Ben', 'Ali', 'at', 'the', 'Libyan', 'revolution', 'anniversary', 'celebrations', '.']
+token of interest Habib
+example: ['Janet', 'Dewey', ',', 'executive', 'director', 'of', 'the', 'industry-funded', 'National', 'Automobile', 'Occupant', 'Protection', 'Campaign', ',', 'said', 'most', 'of', 'the', 'injuries', 'to', 'children', 'occurred', 'because', 'they', 'were', 'not', 'wearing', 'seatbelts', '.']
+token of interest Protection
+example: ['Janet', 'Dewey', ',', 'executive', 'director', 'of', 'the', 'industry-funded', 'National', 'Automobile', 'Occupant', 'Protection', 'Campaign', ',', 'said', 'most', 'of', 'the', 'injuries', 'to', 'children', 'occurred', 'because', 'they', 'were', 'not', 'wearing', 'seatbelts', '.']
+token of interest Campaign
+example: ['An', 'explosion', 'leveled', 'Rochester', "'s", 'one-story', 'Lilac', 'Falls', 'Motel', ',', 'killing', 'two', 'people', ',', 'fire', 'officials', 'said', 'Friday', '.']
+token of interest Rochester
+example: ['An', 'explosion', 'leveled', 'Rochester', "'s", 'one-story', 'Lilac', 'Falls', 'Motel', ',', 'killing', 'two', 'people', ',', 'fire', 'officials', 'said', 'Friday', '.']
+token of interest Lilac
+example: ['An', 'explosion', 'leveled', 'Rochester', "'s", 'one-story', 'Lilac', 'Falls', 'Motel', ',', 'killing', 'two', 'people', ',', 'fire', 'officials', 'said', 'Friday', '.']
+token of interest Falls
+example: ['An', 'explosion', 'leveled', 'Rochester', "'s", 'one-story', 'Lilac', 'Falls', 'Motel', ',', 'killing', 'two', 'people', ',', 'fire', 'officials', 'said', 'Friday', '.']
+token of interest Motel
+example: ['Eyewitnesses', 'told', 'Boston', 'television', 'stations', 'they', 'saw', 'a', 'gasoline', 'truck', 'parked', 'behind', 'the', 'Lilac', 'Falls', 'Motel', 'and', 'smelled', 'gasoline', 'shortly', 'before', 'the', 'explosion', '.']
+token of interest Motel
+example: ['They', 'said', '200', 'fighter', 'planes', ',', 'including', '79', 'on', 'the', 'aircraft', 'carrier', 'Carl', 'Vinson', ',', 'were', 'already', 'in', 'the', 'Gulf', ';', 'the', 'aircraft', 'carrier', 'Enterprise', 'was', 'in', 'the', 'eastern', 'Mediterranean', 'with', '79', 'more', ',', 'and', 'an', 'air', 'expeditionary', 'force', 'with', 'up', 'to', '40', 'more', 'was', 'ready', 'to', 'fly', 'from', 'the', 'United', 'States', 'if', 'ordered', '.']
+token of interest Carl
+example: ['They', 'said', '200', 'fighter', 'planes', ',', 'including', '79', 'on', 'the', 'aircraft', 'carrier', 'Carl', 'Vinson', ',', 'were', 'already', 'in', 'the', 'Gulf', ';', 'the', 'aircraft', 'carrier', 'Enterprise', 'was', 'in', 'the', 'eastern', 'Mediterranean', 'with', '79', 'more', ',', 'and', 'an', 'air', 'expeditionary', 'force', 'with', 'up', 'to', '40', 'more', 'was', 'ready', 'to', 'fly', 'from', 'the', 'United', 'States', 'if', 'ordered', '.']
+token of interest Vinson
+example: ['In', 'addition', 'to', 'the', '158', 'F', '/', 'A-18', ',', 'F-14', 'and', 'other', 'fighter', 'planes', 'on', 'the', 'aircraft', 'carriers', 'Vinson', 'and', 'Enterprise', ',', 'the', 'Air', 'Force', 'air', 'expeditionary', 'force', 'of', '30', 'to', '40', 'F-15', 'and', 'F-16', 'fighter', 'planes', 'and', 'fuel', 'tankers', 'is', 'ready', 'to', 'fly', 'from', 'three', 'U.S.', 'bases', 'in', 'the', 'United', 'States', ',', 'they', 'said', '.']
+token of interest Vinson
+example: ['The', 'Carl', 'Vinson', 'leads', 'a', 'battle', 'group', 'that', 'includes', 'seven', 'other', 'ships', ',', 'and', 'there', 'are', 'nine', 'other', 'U.S.', 'ships', 'in', 'the', 'Gulf', 'for', 'a', 'total', 'of', '20', '.']
+token of interest Vinson
+example: ['"', 'The', 'girls', ',', 'Rachel', 'and', 'Severine', ',', 'have', 'been', 'found', '.']
+token of interest Severine
+example: ['Late', 'on', 'Friday', ',', 'the', 'two', 'girls', '--', 'Rachel', 'Legeard', ',', '18', ',', 'and', 'Severine', 'Potty', ',', '19', '--', 'were', 'reported', 'missing', 'after', 'failing', 'to', 'return', 'home', 'from', 'a', 'shopping', 'trip', 'to', 'the', 'eastern', 'town', 'of', 'Liege', 'on', 'Thursday', '.']
+token of interest Severine
+example: ['Gust', 'was', 'threatened', 'with', 'violence', ',', 'then', 'locked', 'into', 'a', 'room', 'to', 'be', 'interrogated', 'on', 'suspicion', 'of', '"', 'promoting', 'activities', 'hostile', 'to', 'the', 'state', '"', 'while', 'his', 'guests', 'were', 'taken', 'away', ',', 'the', 'magazine', 'said', '.']
+token of interest Gust
+example: ['Nyerere', 'arrived', 'in', 'Rome', 'this', 'week', 'on', 'a', 'private', 'visit', 'and', 'held', 'talks', 'with', 'the', 'U.S.', 'special', 'envoy', 'to', 'Burundi', ',', 'Howard', 'Wolpe', ',', 'and', 'the', 'Sant', "'", 'Egidio', 'Community', ',', 'an', 'Italian', 'Roman', 'Catholic', 'organisation', 'which', 'has', 'been', 'monitoring', 'Burundi', 'closely', '.']
+token of interest Nyerere
+example: ['"', '(', 'Nyerere', ')', 'informed', 'Minister', 'Dini', 'of', 'the', 'latest', 'developments', 'in', 'the', '(', 'Great', 'Lakes', ')', 'region', ',', 'with', 'particular', 'respect', 'to', 'Burundi', 'following', 'the', 'military', 'coup', "d'etat", 'on', 'July', '25', ',', '"', 'the', 'ministry', 'said', 'in', 'a', 'statement', '.']
+token of interest Nyerere
+example: ['Nyerere', 'was', 'due', 'to', 'be', 'presented', 'with', 'an', '"', 'Artisans', 'for', 'Peace', '"', 'prize', 'by', 'the', 'Lay', 'Volunteers', "'", 'International', 'Organisation', 'on', 'Sunday', '.']
+token of interest Nyerere
+example: ['The', 'U.N.', 'Security', 'Council', 'on', 'Friday', 'condemned', 'the', 'coup', 'by', 'retired', 'Tutsi', 'major', 'Pierre', 'Buyoya', 'and', 'for', 'the', 'first', 'time', 'said', 'in', 'a', 'resolution', 'it', 'intended', 'to', 'pressure', 'Buyoya', 'into', 'unconditional', 'negotiations', 'with', 'all', 'parties', 'and', 'factions', '"', 'without', 'exception', '"', '.']
+token of interest Buyoya
+example: ['The', 'U.N.', 'Security', 'Council', 'on', 'Friday', 'condemned', 'the', 'coup', 'by', 'retired', 'Tutsi', 'major', 'Pierre', 'Buyoya', 'and', 'for', 'the', 'first', 'time', 'said', 'in', 'a', 'resolution', 'it', 'intended', 'to', 'pressure', 'Buyoya', 'into', 'unconditional', 'negotiations', 'with', 'all', 'parties', 'and', 'factions', '"', 'without', 'exception', '"', '.']
+token of interest Buyoya
+example: ['Buyoya', 'on', 'Saturday', 'dismissed', 'its', 'threat', 'of', 'an', 'arms', 'embargo', 'against', 'Burundi', 'and', 'flatly', 'ruled', 'out', 'talks', 'with', 'Hutu', 'rebels', '.']
+token of interest Buyoya
+example: ['Late', 'on', 'Friday', ',', 'Liege', 'police', 'said', 'in', 'a', 'statement', 'that', 'on', 'Thursday', ',', 'Rachel', 'Legeard', ',', '18', ',', 'and', 'Severine', 'Potty', ',', '19', ',', 'had', 'gone', 'shopping', 'to', 'the', 'eastern', 'town', 'of', 'Liege', 'on', 'Thursday', ',', 'where', 'Legeard', "'s", 'wallet', 'had', 'been', 'stolen', '.']
+token of interest Rachel
+example: ['Late', 'on', 'Friday', ',', 'Liege', 'police', 'said', 'in', 'a', 'statement', 'that', 'on', 'Thursday', ',', 'Rachel', 'Legeard', ',', '18', ',', 'and', 'Severine', 'Potty', ',', '19', ',', 'had', 'gone', 'shopping', 'to', 'the', 'eastern', 'town', 'of', 'Liege', 'on', 'Thursday', ',', 'where', 'Legeard', "'s", 'wallet', 'had', 'been', 'stolen', '.']
+token of interest Severine
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Michael
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Collins
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Festival
+example: ['Jordan', 'defends', 'his', 'decision', 'to', 'make', 'the', 'film', ',', 'whose', 'screenplay', 'he', 'wrote', 'himself', 'after', 'years', 'of', 'research', ',', 'saying', 'it', 'was', '"', 'more', 'about', 'history', 'than', 'any', 'political', 'statement', '"', '.']
+token of interest Jordan
+example: ['"', 'The', 'film', 'spares', 'neither', 'the', 'Irish', 'nor', 'the', 'British', 'in', 'its', 'depiction', 'of', 'the', 'savagery', 'of', 'the', 'time', ',', '"', 'Jordan', 'said', 'in', 'a', 'statement', 'released', 'by', 'Warner', 'Bros', '.', '"']
+token of interest Jordan
+example: ['"', 'The', 'film', 'spares', 'neither', 'the', 'Irish', 'nor', 'the', 'British', 'in', 'its', 'depiction', 'of', 'the', 'savagery', 'of', 'the', 'time', ',', '"', 'Jordan', 'said', 'in', 'a', 'statement', 'released', 'by', 'Warner', 'Bros', '.', '"']
+token of interest Warner
+example: ['Jordan', ',', 'whose', '1992', 'film', '"', 'The', 'Crying', 'Game', '"', 'also', 'came', 'under', 'fire', 'for', 'what', 'was', 'perceived', 'as', 'a', 'sympathetic', 'portrayal', 'of', 'the', 'IRA', ',', 'said', 'Collins', 'was', 'more', 'than', 'just', 'a', 'revolutionary', '.']
+token of interest Jordan
+example: ['Jordan', ',', 'whose', '1992', 'film', '"', 'The', 'Crying', 'Game', '"', 'also', 'came', 'under', 'fire', 'for', 'what', 'was', 'perceived', 'as', 'a', 'sympathetic', 'portrayal', 'of', 'the', 'IRA', ',', 'said', 'Collins', 'was', 'more', 'than', 'just', 'a', 'revolutionary', '.']
+token of interest Collins
+example: ['"', 'He', 'developed', 'techniques', 'of', 'guerilla', 'warfare', 'later', 'copied', 'by', 'independence', 'movements', 'around', 'the', 'world', ',', 'from', 'Mao', 'Tse-Tung', 'in', 'China', 'to', 'Yitzak', 'Shamir', 'in', 'Israel', ',', '"', 'Jordan', 'said', '.']
+token of interest Mao
+example: ['"', 'He', 'developed', 'techniques', 'of', 'guerilla', 'warfare', 'later', 'copied', 'by', 'independence', 'movements', 'around', 'the', 'world', ',', 'from', 'Mao', 'Tse-Tung', 'in', 'China', 'to', 'Yitzak', 'Shamir', 'in', 'Israel', ',', '"', 'Jordan', 'said', '.']
+token of interest Tse-Tung
+example: ['"', 'He', 'developed', 'techniques', 'of', 'guerilla', 'warfare', 'later', 'copied', 'by', 'independence', 'movements', 'around', 'the', 'world', ',', 'from', 'Mao', 'Tse-Tung', 'in', 'China', 'to', 'Yitzak', 'Shamir', 'in', 'Israel', ',', '"', 'Jordan', 'said', '.']
+token of interest Yitzak
+example: ['"', 'He', 'developed', 'techniques', 'of', 'guerilla', 'warfare', 'later', 'copied', 'by', 'independence', 'movements', 'around', 'the', 'world', ',', 'from', 'Mao', 'Tse-Tung', 'in', 'China', 'to', 'Yitzak', 'Shamir', 'in', 'Israel', ',', '"', 'Jordan', 'said', '.']
+token of interest Shamir
+example: ['"', 'He', 'developed', 'techniques', 'of', 'guerilla', 'warfare', 'later', 'copied', 'by', 'independence', 'movements', 'around', 'the', 'world', ',', 'from', 'Mao', 'Tse-Tung', 'in', 'China', 'to', 'Yitzak', 'Shamir', 'in', 'Israel', ',', '"', 'Jordan', 'said', '.']
+token of interest Jordan
+example: ['"', 'Collins', 'would', 'never', 'be', 'a', 'proponent', 'of', 'contemporary', 'terrorism', 'as', 'practised', 'today', '.']
+token of interest Collins
+example: ['Leeson', ',', 'the', 'Northern', 'Ireland-born', 'actor', 'who', 'was', 'nominated', 'for', 'an', 'Oscar', 'for', 'best', 'actor', 'for', 'his', 'performance', 'in', '"', 'Schindler', "'s", 'List', '"', ',', 'plays', 'the', 'lead', 'role', 'in', 'Jordan', "'s", 'film', '.']
+token of interest Leeson
+example: ['Leeson', ',', 'the', 'Northern', 'Ireland-born', 'actor', 'who', 'was', 'nominated', 'for', 'an', 'Oscar', 'for', 'best', 'actor', 'for', 'his', 'performance', 'in', '"', 'Schindler', "'s", 'List', '"', ',', 'plays', 'the', 'lead', 'role', 'in', 'Jordan', "'s", 'film', '.']
+token of interest Oscar
+example: ['Leeson', ',', 'the', 'Northern', 'Ireland-born', 'actor', 'who', 'was', 'nominated', 'for', 'an', 'Oscar', 'for', 'best', 'actor', 'for', 'his', 'performance', 'in', '"', 'Schindler', "'s", 'List', '"', ',', 'plays', 'the', 'lead', 'role', 'in', 'Jordan', "'s", 'film', '.']
+token of interest Jordan
+example: ['Aidan', 'Quinn', 'portrays', 'Harry', 'Boland', ',', 'Collins', "'", 'best', 'friend', ',', 'and', 'rival', 'for', 'the', 'love', 'of', 'Kitty', 'Kiernan', ',', 'played', 'by', 'Roberts', '.']
+token of interest portrays
+example: ['Aidan', 'Quinn', 'portrays', 'Harry', 'Boland', ',', 'Collins', "'", 'best', 'friend', ',', 'and', 'rival', 'for', 'the', 'love', 'of', 'Kitty', 'Kiernan', ',', 'played', 'by', 'Roberts', '.']
+token of interest Collins
+example: ['Aidan', 'Quinn', 'portrays', 'Harry', 'Boland', ',', 'Collins', "'", 'best', 'friend', ',', 'and', 'rival', 'for', 'the', 'love', 'of', 'Kitty', 'Kiernan', ',', 'played', 'by', 'Roberts', '.']
+token of interest Kitty
+example: ['Aidan', 'Quinn', 'portrays', 'Harry', 'Boland', ',', 'Collins', "'", 'best', 'friend', ',', 'and', 'rival', 'for', 'the', 'love', 'of', 'Kitty', 'Kiernan', ',', 'played', 'by', 'Roberts', '.']
+token of interest Kiernan
+example: ['Aidan', 'Quinn', 'portrays', 'Harry', 'Boland', ',', 'Collins', "'", 'best', 'friend', ',', 'and', 'rival', 'for', 'the', 'love', 'of', 'Kitty', 'Kiernan', ',', 'played', 'by', 'Roberts', '.']
+token of interest Roberts
+example: ['Much', 'of', 'the', 'film', 'was', 'shot', 'on', 'location', 'in', 'Dublin', 'with', 'Jordan', 'using', 'thousands', 'of', 'its', 'citizens', 'as', 'unpaid', 'extras', '.']
+token of interest Jordan
+example: ['Noting', 'that', 'information', 'about', 'Collins', 'was', '"', 'as', 'mysterious', 'as', 'the', 'existence', 'he', 'maintained', '"', ',', 'Jordan', 'said', 'he', 'made', 'some', 'historical', 'assumptions', 'in', 'the', 'film', '.']
+token of interest Collins
+example: ['Noting', 'that', 'information', 'about', 'Collins', 'was', '"', 'as', 'mysterious', 'as', 'the', 'existence', 'he', 'maintained', '"', ',', 'Jordan', 'said', 'he', 'made', 'some', 'historical', 'assumptions', 'in', 'the', 'film', '.']
+token of interest Jordan
+example: ['One', 'of', 'the', 'assumptions', 'is', 'his', 'interpretation', 'of', 'the', 'murky', 'circumstances', 'surrounding', 'the', 'shooting', 'death', 'of', 'Collins', ',', 'who', 'had', 'broken', 'with', 'his', 'comrades', 'when', 'he', 'sought', 'a', 'negotiated', 'settlement', 'with', 'Britain', ',', 'in', 'an', 'ambush', 'in', '1922', '.']
+token of interest Collins
+example: ['"', 'I', 'have', 'never', 'lost', 'more', 'sleep', 'over', 'the', 'making', 'of', 'a', 'film', 'than', 'I', 'have', 'over', "'", 'Michael', 'Collins', "'", ',', 'but', 'I', "'ll", 'never', 'make', 'a', 'more', 'important', 'one', ',', '"', 'Jordan', 'said', '.']
+token of interest Michael
+example: ['"', 'I', 'have', 'never', 'lost', 'more', 'sleep', 'over', 'the', 'making', 'of', 'a', 'film', 'than', 'I', 'have', 'over', "'", 'Michael', 'Collins', "'", ',', 'but', 'I', "'ll", 'never', 'make', 'a', 'more', 'important', 'one', ',', '"', 'Jordan', 'said', '.']
+token of interest Collins
+example: ['"', 'I', 'have', 'never', 'lost', 'more', 'sleep', 'over', 'the', 'making', 'of', 'a', 'film', 'than', 'I', 'have', 'over', "'", 'Michael', 'Collins', "'", ',', 'but', 'I', "'ll", 'never', 'make', 'a', 'more', 'important', 'one', ',', '"', 'Jordan', 'said', '.']
+token of interest Jordan
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest Broker
+Accuracy: 50979 / 51578 = 0.988387
+Precision: 2703 / 2856 = 0.946429
+Recall: 2703 / 3149 = 0.858368
+F1: 0.900250
+Running on test
+Wrote predictions on 3684 labeled sentences to eng.testb.out
+
+Process finished with exit code 0

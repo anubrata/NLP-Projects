@@ -1,0 +1,2025 @@
+/Users/ad45932/anaconda3/envs/fairness-text/bin/python /Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py --multiproc --qt-support=auto --client 127.0.0.1 --port 53789 --file /Users/ad45932/Repo/CS388/2019/mini1/mini1-distrib/classifier_main.py --model CLASSIFIER
+pydev debugger: process 39933 is connecting
+
+Connected to pydev debugger (build 191.7141.48)
+Namespace(blind_test_path='data/eng.testb.blind', dev_path='data/eng.testa', model='CLASSIFIER', run_on_test=True, test_output_path='eng.testb.out', train_path='data/eng.train')
+Data reading and training took 2.209655 seconds
+===Train accuracy===
+===Dev accuracy===
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=BOS
+Weight for above feature:  -4.245531724713903
+Feature of interests for this example:  CurrWord=Burma
+Weight for above feature:  -1.9903416774257272
+Feature of interests for this example:  NextWord='s
+Weight for above feature:  -0.7788080644341538
+Feature of interests for this example:  secondWord=democracy
+Weight for above feature:  -0.4021704134333296
+Feature of interests for this example:  thirdWord=leader
+Weight for above feature:  1.5307829478286024
+Model score:  -0.765090495240963
+Logistics score:  0.3175420863400274
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest Burma
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=Burma
+Weight for above feature:  -0.013553474433351755
+Feature of interests for this example:  CurrWord='s
+Weight for above feature:  -5.87212064939423
+Feature of interests for this example:  NextWord=democracy
+Weight for above feature:  -0.9564195764117973
+Feature of interests for this example:  secondWord=leader
+Weight for above feature:  -0.3072420402813014
+Feature of interests for this example:  fourthWord=San
+Weight for above feature:  -1.1009564885274128
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -10.316133979057302
+Logistics score:  3.309371829088758e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest 's
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord='s
+Weight for above feature:  -3.195331012380126
+Feature of interests for this example:  CurrWord=democracy
+Weight for above feature:  -0.7919545851537715
+Feature of interests for this example:  NextWord=leader
+Weight for above feature:  -3.5014570628088775
+Feature of interests for this example:  secondLastWord=Burma
+Weight for above feature:  -7.179239736772283e-05
+Feature of interests for this example:  thirdWord=San
+Weight for above feature:  -1.0442797268990973
+Model score:  -8.53309417963924
+Logistics score:  0.00019680621270511857
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest democracy
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=democracy
+Weight for above feature:  -0.5113235222656084
+Feature of interests for this example:  CurrWord=leader
+Weight for above feature:  -2.4060486944167665
+Feature of interests for this example:  secondLastWord='s
+Weight for above feature:  -1.4278236219166258
+Feature of interests for this example:  secondWord=San
+Weight for above feature:  -0.9904192373852351
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -5.861220676791731
+Logistics score:  0.0028396786206681263
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest leader
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=leader
+Weight for above feature:  2.140997045103964
+Feature of interests for this example:  NextWord=San
+Weight for above feature:  -2.5764003592704943
+Feature of interests for this example:  secondLastWord=democracy
+Weight for above feature:  -0.25274788579055296
+Feature of interests for this example:  fourthWord=hit
+Weight for above feature:  0.11046720623079774
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  4.017688842403767
+Logistics score:  0.9823235734909896
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest Aung
+Gold Label for above:  1
+Predicted label for above:  1
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  CurrWord=San
+Weight for above feature:  -3.7961977982744197
+Feature of interests for this example:  secondLastWord=leader
+Weight for above feature:  3.0196742735759945
+Feature of interests for this example:  thirdWord=hit
+Weight for above feature:  -1.6828202455685743
+Feature of interests for this example:  fourthWord=out
+Weight for above feature:  0.37667619598287366
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  0.44686351183671946
+Logistics score:  0.6098932475261041
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest San
+Gold Label for above:  1
+Predicted label for above:  1
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=San
+Weight for above feature:  -4.519221601778261
+Feature of interests for this example:  secondWord=hit
+Weight for above feature:  0.9332434603030655
+Feature of interests for this example:  thirdWord=out
+Weight for above feature:  1.4893902011142455
+Feature of interests for this example:  fourthWord=at
+Weight for above feature:  -1.8670938219962432
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -1.4341506762363478
+Logistics score:  0.19245278450625825
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest Suu
+Gold Label for above:  1
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  NextWord=hit
+Weight for above feature:  0.8788842711850706
+Feature of interests for this example:  secondLastWord=San
+Weight for above feature:  -2.6187384390677106
+Feature of interests for this example:  secondWord=out
+Weight for above feature:  0.7629018567547028
+Feature of interests for this example:  thirdWord=at
+Weight for above feature:  -1.8405762872498832
+Feature of interests for this example:  fourthWord=the
+Weight for above feature:  -0.6602135069802748
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -0.42260541842975385
+Logistics score:  0.3958934647894415
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest Kyi
+Gold Label for above:  1
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=hit
+Weight for above feature:  -1.2876744861654223
+Feature of interests for this example:  NextWord=out
+Weight for above feature:  -0.7288778083822172
+Feature of interests for this example:  secondWord=at
+Weight for above feature:  -2.0382729598952385
+Feature of interests for this example:  thirdWord=the
+Weight for above feature:  -1.2473519823887853
+Feature of interests for this example:  fourthWord=government
+Weight for above feature:  -0.4452318689159258
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -7.813250855756797
+Logistics score:  0.00040417802727827756
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest hit
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=hit
+Weight for above feature:  -0.6527746744303284
+Feature of interests for this example:  CurrWord=out
+Weight for above feature:  -3.8312223273838786
+Feature of interests for this example:  NextWord=at
+Weight for above feature:  -2.2126947758327224
+Feature of interests for this example:  secondWord=the
+Weight for above feature:  -1.3129084464213163
+Feature of interests for this example:  thirdWord=government
+Weight for above feature:  0.006956775716580941
+Feature of interests for this example:  fourthWord=on
+Weight for above feature:  -2.0694787608655787
+Model score:  -10.072122209217243
+Logistics score:  4.2239090555826116e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest out
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=out
+Weight for above feature:  -2.061594828052879
+Feature of interests for this example:  CurrWord=at
+Weight for above feature:  -5.272563864140225
+Feature of interests for this example:  NextWord=the
+Weight for above feature:  -3.9566159275375536
+Feature of interests for this example:  secondLastWord=hit
+Weight for above feature:  -1.2058770990386687
+Feature of interests for this example:  secondWord=government
+Weight for above feature:  -0.4722787256852575
+Feature of interests for this example:  thirdWord=on
+Weight for above feature:  -2.109054938984564
+Feature of interests for this example:  fourthWord=Saturday
+Weight for above feature:  -0.7498887891276582
+Model score:  -15.827874172566805
+Logistics score:  1.3367233319330395e-07
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest at
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=at
+Weight for above feature:  -7.1020082420887265
+Feature of interests for this example:  CurrWord=the
+Weight for above feature:  -4.572611269811144
+Feature of interests for this example:  NextWord=government
+Weight for above feature:  -1.4701720852816074
+Feature of interests for this example:  secondLastWord=out
+Weight for above feature:  0.5229146821782762
+Feature of interests for this example:  secondWord=on
+Weight for above feature:  -2.1199682645428624
+Feature of interests for this example:  thirdWord=Saturday
+Weight for above feature:  -1.2100532208223107
+Feature of interests for this example:  fourthWord=for
+Weight for above feature:  -1.343134385196557
+Model score:  -17.29503278556493
+Logistics score:  3.08221325301433e-08
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest the
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=the
+Weight for above feature:  -5.799960032311604
+Feature of interests for this example:  CurrWord=government
+Weight for above feature:  -2.465528242886895
+Feature of interests for this example:  NextWord=on
+Weight for above feature:  -2.651123433691451
+Feature of interests for this example:  secondLastWord=at
+Weight for above feature:  -3.4838624153236366
+Feature of interests for this example:  secondWord=Saturday
+Weight for above feature:  -1.2095557562842847
+Feature of interests for this example:  thirdWord=for
+Weight for above feature:  -1.7556146109732818
+Feature of interests for this example:  fourthWord=recent
+Weight for above feature:  -0.674404215584679
+Model score:  -18.04004870705583
+Logistics score:  1.4632090779695938e-08
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest government
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=government
+Weight for above feature:  -2.6833245968475024
+Feature of interests for this example:  CurrWord=on
+Weight for above feature:  -5.629241909640977
+Feature of interests for this example:  NextWord=Saturday
+Weight for above feature:  -1.3563780301186483
+Feature of interests for this example:  secondLastWord=the
+Weight for above feature:  -4.123458141764572
+Feature of interests for this example:  secondWord=for
+Weight for above feature:  -2.9694690954891323
+Feature of interests for this example:  thirdWord=recent
+Weight for above feature:  -0.6955388934634451
+Feature of interests for this example:  fourthWord=arrests
+Weight for above feature:  -0.3285915623936035
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -18.31160783052538
+Logistics score:  1.1152436511767524e-08
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest on
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=on
+Weight for above feature:  -4.395475393023944
+Feature of interests for this example:  CurrWord=Saturday
+Weight for above feature:  -4.478106795810744
+Feature of interests for this example:  NextWord=for
+Weight for above feature:  -3.026532824224862
+Feature of interests for this example:  secondLastWord=government
+Weight for above feature:  -1.9687768437680817
+Feature of interests for this example:  secondWord=recent
+Weight for above feature:  -0.4569429653157679
+Feature of interests for this example:  thirdWord=arrests
+Weight for above feature:  -0.051854208166043844
+Feature of interests for this example:  fourthWord=and
+Weight for above feature:  -1.717174035797513
+Model score:  -10.973884629169408
+Logistics score:  1.7143323290872952e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest Saturday
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=Saturday
+Weight for above feature:  -0.17207435073915953
+Feature of interests for this example:  CurrWord=for
+Weight for above feature:  -5.926887169862927
+Feature of interests for this example:  NextWord=recent
+Weight for above feature:  -0.37920315507705943
+Feature of interests for this example:  secondLastWord=on
+Weight for above feature:  -2.5919286382188376
+Feature of interests for this example:  secondWord=arrests
+Weight for above feature:  -0.0
+Feature of interests for this example:  thirdWord=and
+Weight for above feature:  -2.771905910164032
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -13.907840974071222
+Logistics score:  9.118029937109601e-07
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest for
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=for
+Weight for above feature:  -4.0292467617208505
+Feature of interests for this example:  CurrWord=recent
+Weight for above feature:  -0.8658175652782394
+Feature of interests for this example:  NextWord=arrests
+Weight for above feature:  -0.5046531889102307
+Feature of interests for this example:  secondLastWord=Saturday
+Weight for above feature:  -1.2274194819235724
+Feature of interests for this example:  secondWord=and
+Weight for above feature:  -1.9279699804585284
+Feature of interests for this example:  fourthWord=of
+Weight for above feature:  -0.9747889664847272
+Model score:  -9.529895944776149
+Logistics score:  7.264190568824277e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest recent
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=recent
+Weight for above feature:  -1.5132772855360115
+Feature of interests for this example:  CurrWord=arrests
+Weight for above feature:  -0.4052241300198696
+Feature of interests for this example:  NextWord=and
+Weight for above feature:  -2.3232615424090954
+Feature of interests for this example:  secondLastWord=for
+Weight for above feature:  -2.9307962259139058
+Feature of interests for this example:  thirdWord=of
+Weight for above feature:  -1.0044361737256096
+Feature of interests for this example:  fourthWord=activists
+Weight for above feature:  -0.4827564062534745
+Model score:  -8.659751763857965
+Logistics score:  0.00017339728066613955
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest arrests
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=arrests
+Weight for above feature:  -0.1974201237225995
+Feature of interests for this example:  CurrWord=and
+Weight for above feature:  -7.277717600769236
+Feature of interests for this example:  secondLastWord=recent
+Weight for above feature:  -1.6231102502196353
+Feature of interests for this example:  secondWord=of
+Weight for above feature:  -1.5218014944359408
+Feature of interests for this example:  thirdWord=activists
+Weight for above feature:  -0.1935264839121828
+Feature of interests for this example:  fourthWord=,
+Weight for above feature:  -1.0431122313465164
+Model score:  -11.856688184406112
+Logistics score:  7.090921349119251e-06
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest and
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=and
+Weight for above feature:  -3.3060148891990138
+Feature of interests for this example:  NextWord=of
+Weight for above feature:  -2.7137868809465218
+Feature of interests for this example:  secondLastWord=arrests
+Weight for above feature:  -0.25861865034484155
+Feature of interests for this example:  secondWord=activists
+Weight for above feature:  -0.8058829250152112
+Feature of interests for this example:  thirdWord=,
+Weight for above feature:  -1.2267112341856425
+Feature of interests for this example:  fourthWord=saying
+Weight for above feature:  -0.18959481210010587
+Model score:  -8.500609391791338
+Logistics score:  0.00020330307428426532
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest jailing
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=of
+Weight for above feature:  -4.112883028972816
+Feature of interests for this example:  NextWord=activists
+Weight for above feature:  -0.46347126371363134
+Feature of interests for this example:  secondLastWord=and
+Weight for above feature:  -0.9724945498768897
+Feature of interests for this example:  secondWord=,
+Weight for above feature:  -0.22630661353749226
+Feature of interests for this example:  thirdWord=saying
+Weight for above feature:  0.36675367072944065
+Feature of interests for this example:  fourthWord=the
+Weight for above feature:  -0.6602135069802748
+Model score:  -6.068615292351664
+Logistics score:  0.0023090317595297833
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest of
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=of
+Weight for above feature:  -4.816696577198303
+Feature of interests for this example:  CurrWord=activists
+Weight for above feature:  -0.5817959586433339
+Feature of interests for this example:  NextWord=,
+Weight for above feature:  -0.9026952417838627
+Feature of interests for this example:  secondWord=saying
+Weight for above feature:  0.8049022781656135
+Feature of interests for this example:  thirdWord=the
+Weight for above feature:  -1.2473519823887853
+Feature of interests for this example:  fourthWord=military
+Weight for above feature:  -0.5308252257254655
+Model score:  -7.274462707574138
+Logistics score:  0.0006925324374457165
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest activists
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=activists
+Weight for above feature:  -0.11877224948236369
+Feature of interests for this example:  CurrWord=,
+Weight for above feature:  -8.559063146505217
+Feature of interests for this example:  NextWord=saying
+Weight for above feature:  -1.745364945510939
+Feature of interests for this example:  secondLastWord=of
+Weight for above feature:  -2.333502791977248
+Feature of interests for this example:  secondWord=the
+Weight for above feature:  -1.3129084464213163
+Feature of interests for this example:  thirdWord=military
+Weight for above feature:  -1.8588379758190732
+Model score:  -15.928449555716156
+Logistics score:  1.208821568065716e-07
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest ,
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=,
+Weight for above feature:  -2.2879852605817996
+Feature of interests for this example:  CurrWord=saying
+Weight for above feature:  -1.8685021696008224
+Feature of interests for this example:  NextWord=the
+Weight for above feature:  -3.9566159275375536
+Feature of interests for this example:  secondLastWord=activists
+Weight for above feature:  -0.012094494270919137
+Feature of interests for this example:  secondWord=military
+Weight for above feature:  -2.2379666151014623
+Feature of interests for this example:  fourthWord=the
+Weight for above feature:  -0.6602135069802748
+Model score:  -11.023377974072831
+Logistics score:  1.631551129077328e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest saying
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=saying
+Weight for above feature:  -0.8912097013332512
+Feature of interests for this example:  CurrWord=the
+Weight for above feature:  -4.572611269811144
+Feature of interests for this example:  NextWord=military
+Weight for above feature:  -2.4001170390096624
+Feature of interests for this example:  secondLastWord=,
+Weight for above feature:  0.3019403187538021
+Feature of interests for this example:  thirdWord=the
+Weight for above feature:  -1.2473519823887853
+Feature of interests for this example:  fourthWord=law
+Weight for above feature:  -0.6913892620632026
+Model score:  -9.500738935852244
+Logistics score:  7.479094551356868e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest the
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=the
+Weight for above feature:  -5.799960032311604
+Feature of interests for this example:  CurrWord=military
+Weight for above feature:  -2.082393580220026
+Feature of interests for this example:  secondLastWord=saying
+Weight for above feature:  -0.9110253846769625
+Feature of interests for this example:  secondWord=the
+Weight for above feature:  -1.3129084464213163
+Feature of interests for this example:  thirdWord=law
+Weight for above feature:  -0.5471706613295044
+Feature of interests for this example:  fourthWord=to
+Weight for above feature:  -1.9471427863739474
+Model score:  -12.60060089133336
+Logistics score:  3.3699782712627327e-06
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest military
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=military
+Weight for above feature:  -2.1368012806797703
+Feature of interests for this example:  NextWord=the
+Weight for above feature:  -3.9566159275375536
+Feature of interests for this example:  secondLastWord=the
+Weight for above feature:  -4.123458141764572
+Feature of interests for this example:  secondWord=law
+Weight for above feature:  -0.9585637299541436
+Feature of interests for this example:  thirdWord=to
+Weight for above feature:  -1.8517012296261206
+Feature of interests for this example:  fourthWord=try
+Weight for above feature:  -0.1956430918082672
+Model score:  -13.222783401370426
+Logistics score:  1.8089116167119585e-06
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest abused
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=the
+Weight for above feature:  -4.572611269811144
+Feature of interests for this example:  NextWord=law
+Weight for above feature:  -1.5758363449015718
+Feature of interests for this example:  secondLastWord=military
+Weight for above feature:  -1.135646624766536
+Feature of interests for this example:  secondWord=to
+Weight for above feature:  -2.6639015223631337
+Feature of interests for this example:  thirdWord=try
+Weight for above feature:  -0.0
+Feature of interests for this example:  fourthWord=to
+Weight for above feature:  -1.9471427863739474
+Model score:  -11.895138548216332
+Logistics score:  6.823449844585179e-06
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest the
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=the
+Weight for above feature:  -5.799960032311604
+Feature of interests for this example:  CurrWord=law
+Weight for above feature:  -1.484383175177719
+Feature of interests for this example:  NextWord=to
+Weight for above feature:  -3.4368669042320534
+Feature of interests for this example:  secondWord=try
+Weight for above feature:  -0.4535036882223611
+Feature of interests for this example:  thirdWord=to
+Weight for above feature:  -1.8517012296261206
+Model score:  -13.026415029569858
+Logistics score:  2.2013995715751693e-06
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest law
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=law
+Weight for above feature:  -1.0242610357361206
+Feature of interests for this example:  CurrWord=to
+Weight for above feature:  -6.91775100873951
+Feature of interests for this example:  NextWord=try
+Weight for above feature:  -0.0
+Feature of interests for this example:  secondLastWord=the
+Weight for above feature:  -4.123458141764572
+Feature of interests for this example:  secondWord=to
+Weight for above feature:  -2.6639015223631337
+Feature of interests for this example:  fourthWord=the
+Weight for above feature:  -0.6602135069802748
+Model score:  -15.389585215583612
+Logistics score:  2.0719915126460178e-07
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest to
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=to
+Weight for above feature:  -3.90995822639436
+Feature of interests for this example:  CurrWord=try
+Weight for above feature:  -0.05216639249494641
+Feature of interests for this example:  NextWord=to
+Weight for above feature:  -3.4368669042320534
+Feature of interests for this example:  secondLastWord=law
+Weight for above feature:  -1.3868563650792474
+Feature of interests for this example:  thirdWord=the
+Weight for above feature:  -1.2473519823887853
+Feature of interests for this example:  fourthWord=democracy
+Weight for above feature:  -0.2476190092657575
+Model score:  -10.28081887985515
+Logistics score:  3.42832670576639e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest try
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=try
+Weight for above feature:  -0.0
+Feature of interests for this example:  CurrWord=to
+Weight for above feature:  -6.91775100873951
+Feature of interests for this example:  secondLastWord=to
+Weight for above feature:  -2.7253905050131886
+Feature of interests for this example:  secondWord=the
+Weight for above feature:  -1.3129084464213163
+Feature of interests for this example:  thirdWord=democracy
+Weight for above feature:  -1.1125942312631523
+Feature of interests for this example:  fourthWord=movement
+Weight for above feature:  -0.8514045500526431
+Model score:  -12.920048741489811
+Logistics score:  2.4484602754933123e-06
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest to
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=to
+Weight for above feature:  -3.90995822639436
+Feature of interests for this example:  NextWord=the
+Weight for above feature:  -3.9566159275375536
+Feature of interests for this example:  secondLastWord=try
+Weight for above feature:  -0.22382036235852204
+Feature of interests for this example:  secondWord=democracy
+Weight for above feature:  -0.4021704134333296
+Feature of interests for this example:  thirdWord=movement
+Weight for above feature:  -0.5289741384034194
+Feature of interests for this example:  fourthWord=.
+Weight for above feature:  -1.8727301299452295
+Model score:  -10.894269198072415
+Logistics score:  1.8563973534569384e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest crush
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=the
+Weight for above feature:  -4.572611269811144
+Feature of interests for this example:  NextWord=democracy
+Weight for above feature:  -0.9564195764117973
+Feature of interests for this example:  secondLastWord=to
+Weight for above feature:  -2.7253905050131886
+Feature of interests for this example:  secondWord=movement
+Weight for above feature:  -0.9726666398117945
+Feature of interests for this example:  thirdWord=.
+Weight for above feature:  -2.2859425810462732
+Model score:  -11.513030572094197
+Logistics score:  9.998849006014812e-06
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest the
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=the
+Weight for above feature:  -5.799960032311604
+Feature of interests for this example:  CurrWord=democracy
+Weight for above feature:  -0.7919545851537715
+Feature of interests for this example:  NextWord=movement
+Weight for above feature:  -1.735366814902431
+Feature of interests for this example:  secondWord=.
+Weight for above feature:  -2.7624398444128966
+Model score:  -11.089721276780704
+Logistics score:  1.5268227158335284e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest democracy
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=democracy
+Weight for above feature:  -0.5113235222656084
+Feature of interests for this example:  CurrWord=movement
+Weight for above feature:  -0.8848919057415893
+Feature of interests for this example:  NextWord=.
+Weight for above feature:  -4.005167892490967
+Feature of interests for this example:  secondLastWord=the
+Weight for above feature:  -4.123458141764572
+Model score:  -9.524841462262735
+Logistics score:  7.300997554111714e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest movement
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=movement
+Weight for above feature:  -0.7441543233454427
+Feature of interests for this example:  CurrWord=.
+Weight for above feature:  -7.297662360431417
+Feature of interests for this example:  NextWord=EOS
+Weight for above feature:  -3.0124150211096805
+Feature of interests for this example:  secondLastWord=democracy
+Weight for above feature:  -0.25274788579055296
+Model score:  -11.306979590677093
+Logistics score:  1.2286716021348784e-05
+example: ['Burma', "'s", 'democracy', 'leader', 'Aung', 'San', 'Suu', 'Kyi', 'hit', 'out', 'at', 'the', 'government', 'on', 'Saturday', 'for', 'recent', 'arrests', 'and', 'jailing', 'of', 'activists', ',', 'saying', 'the', 'military', 'abused', 'the', 'law', 'to', 'try', 'to', 'crush', 'the', 'democracy', 'movement', '.']
+token of interest .
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=BOS
+Weight for above feature:  -4.245531724713903
+Feature of interests for this example:  NextWord=director
+Weight for above feature:  -1.6205231280252934
+Feature of interests for this example:  secondWord=Neil
+Weight for above feature:  -0.20190797405756997
+Feature of interests for this example:  thirdWord=Jordan
+Weight for above feature:  -0.3588066315838358
+Feature of interests for this example:  fourthWord=says
+Weight for above feature:  -0.9290833651989737
+Model score:  -2.2348743866420273
+Logistics score:  0.09666217876870205
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Dublin-born
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=director
+Weight for above feature:  -1.7962759769745271
+Feature of interests for this example:  NextWord=Neil
+Weight for above feature:  -0.11722946223916544
+Feature of interests for this example:  secondWord=Jordan
+Weight for above feature:  -0.96402016189943
+Feature of interests for this example:  thirdWord=says
+Weight for above feature:  -1.2297009828631256
+Feature of interests for this example:  fourthWord=he
+Weight for above feature:  0.15506801521308636
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -6.543605919579864
+Logistics score:  0.0014372205934406132
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest director
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=director
+Weight for above feature:  0.4250550872529025
+Feature of interests for this example:  CurrWord=Neil
+Weight for above feature:  1.1956054907597808
+Feature of interests for this example:  NextWord=Jordan
+Weight for above feature:  0.31704986978587085
+Feature of interests for this example:  secondWord=says
+Weight for above feature:  -0.8207417415350613
+Feature of interests for this example:  thirdWord=he
+Weight for above feature:  -0.4957636885500716
+Feature of interests for this example:  fourthWord=never
+Weight for above feature:  0.808471406548139
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  6.025049260391612
+Logistics score:  0.9975883974056815
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Neil
+Gold Label for above:  1
+Predicted label for above:  1
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=Neil
+Weight for above feature:  1.2945168853027875
+Feature of interests for this example:  CurrWord=Jordan
+Weight for above feature:  -2.407940193142429
+Feature of interests for this example:  NextWord=says
+Weight for above feature:  -0.12967307910763645
+Feature of interests for this example:  secondLastWord=director
+Weight for above feature:  1.3452582337553032
+Feature of interests for this example:  secondWord=he
+Weight for above feature:  -0.689156297385623
+Feature of interests for this example:  thirdWord=never
+Weight for above feature:  -0.957403224319217
+Feature of interests for this example:  fourthWord=lost
+Weight for above feature:  -1.588096305360448
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -0.0773572933289215
+Logistics score:  0.48067031501905866
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Jordan
+Gold Label for above:  1
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=Jordan
+Weight for above feature:  -0.7738401561407219
+Feature of interests for this example:  CurrWord=says
+Weight for above feature:  -2.7009727836650326
+Feature of interests for this example:  NextWord=he
+Weight for above feature:  -3.7149635664178215
+Feature of interests for this example:  secondLastWord=Neil
+Weight for above feature:  -0.019455730742998775
+Feature of interests for this example:  secondWord=never
+Weight for above feature:  -0.35372852815352257
+Feature of interests for this example:  thirdWord=lost
+Weight for above feature:  -0.36886806886182616
+Feature of interests for this example:  fourthWord=more
+Weight for above feature:  -1.2305484228422614
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -11.228219006833394
+Logistics score:  1.3293540725258282e-05
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest says
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=says
+Weight for above feature:  -3.4357506719199664
+Feature of interests for this example:  CurrWord=he
+Weight for above feature:  -5.908056134564058
+Feature of interests for this example:  NextWord=never
+Weight for above feature:  -0.3921733631345516
+Feature of interests for this example:  secondLastWord=Jordan
+Weight for above feature:  -1.1845245013719865
+Feature of interests for this example:  secondWord=lost
+Weight for above feature:  -1.081154405122644
+Feature of interests for this example:  thirdWord=more
+Weight for above feature:  -1.6383495679015256
+Feature of interests for this example:  fourthWord=sleep
+Weight for above feature:  -0.0
+Model score:  -13.640008644014735
+Logistics score:  1.1918428492877998e-06
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest he
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=he
+Weight for above feature:  -4.254120474096494
+Feature of interests for this example:  CurrWord=never
+Weight for above feature:  -0.8424545340909869
+Feature of interests for this example:  NextWord=lost
+Weight for above feature:  -2.2493603068310852
+Feature of interests for this example:  secondLastWord=says
+Weight for above feature:  -1.7722085122264923
+Feature of interests for this example:  secondWord=more
+Weight for above feature:  -1.6573804373365555
+Feature of interests for this example:  thirdWord=sleep
+Weight for above feature:  -0.0
+Feature of interests for this example:  fourthWord=over
+Weight for above feature:  -1.099154151397456
+Model score:  -11.874678415979071
+Logistics score:  6.964495544946283e-06
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest never
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=never
+Weight for above feature:  -1.1502526952185148
+Feature of interests for this example:  CurrWord=lost
+Weight for above feature:  -2.047235374684129
+Feature of interests for this example:  NextWord=more
+Weight for above feature:  -1.3817583814758416
+Feature of interests for this example:  secondLastWord=he
+Weight for above feature:  -3.5594764811829127
+Feature of interests for this example:  secondWord=sleep
+Weight for above feature:  -0.0
+Feature of interests for this example:  thirdWord=over
+Weight for above feature:  -0.8106945280384026
+Feature of interests for this example:  fourthWord=a
+Weight for above feature:  -0.9819692208500848
+Model score:  -9.931386681449885
+Logistics score:  4.8621958671144314e-05
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest lost
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=lost
+Weight for above feature:  -1.0547568136996623
+Feature of interests for this example:  CurrWord=more
+Weight for above feature:  -2.7910521175761946
+Feature of interests for this example:  NextWord=sleep
+Weight for above feature:  -0.008542951442732549
+Feature of interests for this example:  secondLastWord=never
+Weight for above feature:  -0.8442020826215926
+Feature of interests for this example:  secondWord=over
+Weight for above feature:  -1.5508974774851965
+Feature of interests for this example:  thirdWord=a
+Weight for above feature:  -1.067329535562557
+Feature of interests for this example:  fourthWord=film
+Weight for above feature:  -0.26170279270220304
+Model score:  -7.578483771090139
+Logistics score:  0.0005110746070615995
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest more
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=more
+Weight for above feature:  -3.0781469990771573
+Feature of interests for this example:  CurrWord=sleep
+Weight for above feature:  -0.0041799038289203104
+Feature of interests for this example:  NextWord=over
+Weight for above feature:  -3.4675592519773666
+Feature of interests for this example:  secondLastWord=lost
+Weight for above feature:  -0.23518330279997435
+Feature of interests for this example:  secondWord=a
+Weight for above feature:  -0.9949542944120638
+Feature of interests for this example:  thirdWord=film
+Weight for above feature:  -0.1308630207153384
+Feature of interests for this example:  fourthWord=than
+Weight for above feature:  -2.088907009934053
+Model score:  -9.999793782744874
+Logistics score:  4.540723106651963e-05
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest sleep
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=sleep
+Weight for above feature:  -0.0
+Feature of interests for this example:  CurrWord=over
+Weight for above feature:  -3.574061886288477
+Feature of interests for this example:  NextWord=a
+Weight for above feature:  -4.471782290886624
+Feature of interests for this example:  secondLastWord=more
+Weight for above feature:  -2.5504844990812208
+Feature of interests for this example:  secondWord=film
+Weight for above feature:  -0.06468074279450547
+Feature of interests for this example:  thirdWord=than
+Weight for above feature:  -1.762008058070357
+Feature of interests for this example:  fourthWord=over
+Weight for above feature:  -1.099154151397456
+Model score:  -13.522171628518644
+Logistics score:  1.340895384959852e-06
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest over
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=over
+Weight for above feature:  -2.536894206048601
+Feature of interests for this example:  CurrWord=a
+Weight for above feature:  -6.556734218300417
+Feature of interests for this example:  NextWord=film
+Weight for above feature:  -0.3350451347171852
+Feature of interests for this example:  secondLastWord=sleep
+Weight for above feature:  -0.0
+Feature of interests for this example:  secondWord=than
+Weight for above feature:  -1.2856909755403174
+Feature of interests for this example:  thirdWord=over
+Weight for above feature:  -0.8106945280384026
+Feature of interests for this example:  fourthWord="
+Weight for above feature:  -1.2083626490543087
+Model score:  -12.733421711699233
+Logistics score:  2.950828255238647e-06
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest a
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=a
+Weight for above feature:  -5.953623687381827
+Feature of interests for this example:  CurrWord=film
+Weight for above feature:  -0.22456511006535507
+Feature of interests for this example:  NextWord=than
+Weight for above feature:  -2.967028564600579
+Feature of interests for this example:  secondLastWord=over
+Weight for above feature:  0.017654352598814888
+Feature of interests for this example:  secondWord=over
+Weight for above feature:  -1.5508974774851965
+Feature of interests for this example:  thirdWord="
+Weight for above feature:  -0.5948935187948332
+Feature of interests for this example:  fourthWord=Michael
+Weight for above feature:  0.903122313982696
+Model score:  -10.370231691746282
+Logistics score:  3.135104232975287e-05
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest film
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=film
+Weight for above feature:  -0.46497544200907176
+Feature of interests for this example:  CurrWord=than
+Weight for above feature:  -2.713381373962351
+Feature of interests for this example:  NextWord=over
+Weight for above feature:  -3.4675592519773666
+Feature of interests for this example:  secondLastWord=a
+Weight for above feature:  -4.160908071606132
+Feature of interests for this example:  secondWord="
+Weight for above feature:  -0.6383220859035694
+Feature of interests for this example:  thirdWord=Michael
+Weight for above feature:  0.13952302207004966
+Model score:  -11.305623203388441
+Logistics score:  1.2303392669176445e-05
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest than
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=than
+Weight for above feature:  -3.2391855809841785
+Feature of interests for this example:  CurrWord=over
+Weight for above feature:  -3.574061886288477
+Feature of interests for this example:  NextWord="
+Weight for above feature:  -2.9820224121125998
+Feature of interests for this example:  secondLastWord=film
+Weight for above feature:  1.3830895214829295
+Feature of interests for this example:  secondWord=Michael
+Weight for above feature:  0.017459261772451117
+Feature of interests for this example:  fourthWord="
+Weight for above feature:  -1.2083626490543087
+Model score:  -9.603083745184183
+Logistics score:  6.751564135817294e-05
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest over
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=over
+Weight for above feature:  -2.536894206048601
+Feature of interests for this example:  CurrWord="
+Weight for above feature:  -6.530183684288448
+Feature of interests for this example:  NextWord=Michael
+Weight for above feature:  -2.335560441505947
+Feature of interests for this example:  secondLastWord=than
+Weight for above feature:  -2.4839970968500995
+Feature of interests for this example:  thirdWord="
+Weight for above feature:  -0.5948935187948332
+Feature of interests for this example:  fourthWord=,
+Weight for above feature:  -1.0431122313465164
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -16.05024677964194
+Logistics score:  1.0702034432680476e-07
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest "
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord="
+Weight for above feature:  -3.1025093285577867
+Feature of interests for this example:  CurrWord=Michael
+Weight for above feature:  5.10334579212858
+Feature of interests for this example:  secondLastWord=over
+Weight for above feature:  0.017654352598814888
+Feature of interests for this example:  secondWord="
+Weight for above feature:  -0.6383220859035694
+Feature of interests for this example:  thirdWord=,
+Weight for above feature:  -1.2267112341856425
+Feature of interests for this example:  fourthWord=his
+Weight for above feature:  0.05886044984754474
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  4.807690782057994
+Logistics score:  0.991899458046219
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Michael
+Gold Label for above:  0
+Predicted label for above:  1
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=Michael
+Weight for above feature:  3.9160328050544257
+Feature of interests for this example:  NextWord="
+Weight for above feature:  -2.9820224121125998
+Feature of interests for this example:  secondLastWord="
+Weight for above feature:  0.012438301357127875
+Feature of interests for this example:  secondWord=,
+Weight for above feature:  -0.22630661353749226
+Feature of interests for this example:  thirdWord=his
+Weight for above feature:  -0.3056779286680534
+Feature of interests for this example:  fourthWord=controversial
+Weight for above feature:  -0.0
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  3.46960083902175
+Logistics score:  0.969810333970532
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Collins
+Gold Label for above:  0
+Predicted label for above:  1
+===============================================================
+Feature of interests for this example:  CurrWord="
+Weight for above feature:  -6.530183684288448
+Feature of interests for this example:  NextWord=,
+Weight for above feature:  -0.9026952417838627
+Feature of interests for this example:  secondLastWord=Michael
+Weight for above feature:  -0.5300369808851182
+Feature of interests for this example:  secondWord=his
+Weight for above feature:  0.1989989742921417
+Feature of interests for this example:  thirdWord=controversial
+Weight for above feature:  -0.09733012718657465
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -9.927088809861068
+Logistics score:  4.8831369088767836e-05
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest "
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord="
+Weight for above feature:  -3.1025093285577867
+Feature of interests for this example:  CurrWord=,
+Weight for above feature:  -8.559063146505217
+Feature of interests for this example:  NextWord=his
+Weight for above feature:  -4.633298356032516
+Feature of interests for this example:  secondWord=controversial
+Weight for above feature:  -0.0
+Feature of interests for this example:  fourthWord=about
+Weight for above feature:  -2.3256292453126948
+Model score:  -18.620500076408213
+Logistics score:  8.18878677809642e-09
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest ,
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=,
+Weight for above feature:  -2.2879852605817996
+Feature of interests for this example:  CurrWord=his
+Weight for above feature:  -5.121544752420521
+Feature of interests for this example:  NextWord=controversial
+Weight for above feature:  -0.0
+Feature of interests for this example:  secondLastWord="
+Weight for above feature:  0.012438301357127875
+Feature of interests for this example:  thirdWord=about
+Weight for above feature:  -2.133267517495871
+Feature of interests for this example:  fourthWord=the
+Weight for above feature:  -0.6602135069802748
+Model score:  -10.190572736121338
+Logistics score:  3.7520982137081264e-05
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest his
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=his
+Weight for above feature:  -5.918436705290968
+Feature of interests for this example:  CurrWord=controversial
+Weight for above feature:  -0.034950395264877504
+Feature of interests for this example:  secondLastWord=,
+Weight for above feature:  0.3019403187538021
+Feature of interests for this example:  secondWord=about
+Weight for above feature:  -1.383740444658429
+Feature of interests for this example:  thirdWord=the
+Weight for above feature:  -1.2473519823887853
+Model score:  -8.282539208849256
+Logistics score:  0.00025283029346921405
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest controversial
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=controversial
+Weight for above feature:  -0.7993710011372384
+Feature of interests for this example:  NextWord=about
+Weight for above feature:  -1.9231704188103431
+Feature of interests for this example:  secondLastWord=his
+Weight for above feature:  -2.4915340611952033
+Feature of interests for this example:  secondWord=the
+Weight for above feature:  -1.3129084464213163
+Feature of interests for this example:  fourthWord=which
+Weight for above feature:  -1.7552938173441455
+Model score:  -8.282277744908246
+Logistics score:  0.000252896391396917
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest epic
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=about
+Weight for above feature:  -2.9735958080673943
+Feature of interests for this example:  NextWord=the
+Weight for above feature:  -3.9566159275375536
+Feature of interests for this example:  secondLastWord=controversial
+Weight for above feature:  -0.44949761167081326
+Feature of interests for this example:  thirdWord=which
+Weight for above feature:  -3.067284269319098
+Feature of interests for this example:  fourthWord=has
+Weight for above feature:  -1.3890982479764067
+Model score:  -11.836091864571266
+Logistics score:  7.238481558303708e-06
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest about
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=about
+Weight for above feature:  -1.947977240757601
+Feature of interests for this example:  CurrWord=the
+Weight for above feature:  -4.572611269811144
+Feature of interests for this example:  secondWord=which
+Weight for above feature:  -3.7120269987277563
+Feature of interests for this example:  thirdWord=has
+Weight for above feature:  -0.8047274512265077
+Feature of interests for this example:  fourthWord=its
+Weight for above feature:  -3.3385293753114444
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -14.901477936641951
+Logistics score:  3.375749510119114e-07
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest the
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  PrevWord=the
+Weight for above feature:  -5.799960032311604
+Feature of interests for this example:  NextWord=which
+Weight for above feature:  -2.560155400553157
+Feature of interests for this example:  secondLastWord=about
+Weight for above feature:  -2.7929690329818597
+Feature of interests for this example:  secondWord=has
+Weight for above feature:  -1.520912071043177
+Feature of interests for this example:  thirdWord=its
+Weight for above feature:  -4.1124503442232605
+Model score:  -16.062952038619255
+Logistics score:  1.0566922461804577e-07
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest IRA
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=which
+Weight for above feature:  -4.049162299379588
+Feature of interests for this example:  NextWord=has
+Weight for above feature:  -1.08567311152867
+Feature of interests for this example:  secondLastWord=the
+Weight for above feature:  -4.123458141764572
+Feature of interests for this example:  secondWord=its
+Weight for above feature:  -3.5964213232943023
+Feature of interests for this example:  fourthWord=on
+Weight for above feature:  -2.0694787608655787
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -16.990035386841917
+Logistics score:  4.1813966406900535e-08
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest which
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=which
+Weight for above feature:  -2.492114347610129
+Feature of interests for this example:  CurrWord=has
+Weight for above feature:  -5.057311151282494
+Feature of interests for this example:  NextWord=its
+Weight for above feature:  -2.903069550529633
+Feature of interests for this example:  thirdWord=on
+Weight for above feature:  -2.109054938984564
+Feature of interests for this example:  fourthWord=Saturday
+Weight for above feature:  -0.7498887891276582
+Model score:  -13.311438777534478
+Logistics score:  1.6554454471706169e-06
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest has
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=has
+Weight for above feature:  -4.523080790509755
+Feature of interests for this example:  CurrWord=its
+Weight for above feature:  -3.5360807013824935
+Feature of interests for this example:  secondLastWord=which
+Weight for above feature:  -1.5893512488737525
+Feature of interests for this example:  secondWord=on
+Weight for above feature:  -2.1199682645428624
+Feature of interests for this example:  thirdWord=Saturday
+Weight for above feature:  -1.2100532208223107
+Feature of interests for this example:  fourthWord=at
+Weight for above feature:  -1.8670938219962432
+Model score:  -14.845628048127416
+Logistics score:  3.5696489080308305e-07
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest its
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=its
+Weight for above feature:  -5.0859748699120715
+Feature of interests for this example:  NextWord=on
+Weight for above feature:  -2.651123433691451
+Feature of interests for this example:  secondLastWord=has
+Weight for above feature:  -2.5750648825006572
+Feature of interests for this example:  secondWord=Saturday
+Weight for above feature:  -1.2095557562842847
+Feature of interests for this example:  thirdWord=at
+Weight for above feature:  -1.8405762872498832
+Feature of interests for this example:  fourthWord=the
+Weight for above feature:  -0.6602135069802748
+Model score:  -14.022508736618622
+Logistics score:  8.130204697759021e-07
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest premiere
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=on
+Weight for above feature:  -5.629241909640977
+Feature of interests for this example:  NextWord=Saturday
+Weight for above feature:  -1.3563780301186483
+Feature of interests for this example:  secondLastWord=its
+Weight for above feature:  -3.3388193112186073
+Feature of interests for this example:  secondWord=at
+Weight for above feature:  -2.0382729598952385
+Feature of interests for this example:  thirdWord=the
+Weight for above feature:  -1.2473519823887853
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -14.135669794069754
+Logistics score:  7.260328900105679e-07
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest on
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=on
+Weight for above feature:  -4.395475393023944
+Feature of interests for this example:  CurrWord=Saturday
+Weight for above feature:  -4.478106795810744
+Feature of interests for this example:  NextWord=at
+Weight for above feature:  -2.2126947758327224
+Feature of interests for this example:  secondWord=the
+Weight for above feature:  -1.3129084464213163
+Model score:  -7.278206974151178
+Logistics score:  0.0006899460455268223
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Saturday
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=Saturday
+Weight for above feature:  -0.17207435073915953
+Feature of interests for this example:  CurrWord=at
+Weight for above feature:  -5.272563864140225
+Feature of interests for this example:  NextWord=the
+Weight for above feature:  -3.9566159275375536
+Feature of interests for this example:  secondLastWord=on
+Weight for above feature:  -2.5919286382188376
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -14.059024530644983
+Logistics score:  7.838679087617804e-07
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest at
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=at
+Weight for above feature:  -7.1020082420887265
+Feature of interests for this example:  CurrWord=the
+Weight for above feature:  -4.572611269811144
+Feature of interests for this example:  secondLastWord=Saturday
+Weight for above feature:  -1.2274194819235724
+Feature of interests for this example:  fourthWord=.
+Weight for above feature:  -1.8727301299452295
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -15.300374724576168
+Logistics score:  2.2653305802923794e-07
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest the
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=the
+Weight for above feature:  -5.799960032311604
+Feature of interests for this example:  secondLastWord=at
+Weight for above feature:  -3.4838624153236366
+Feature of interests for this example:  thirdWord=.
+Weight for above feature:  -2.2859425810462732
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -6.97439219255146
+Logistics score:  0.0009346604123157963
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Venice
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  secondLastWord=the
+Weight for above feature:  -4.123458141764572
+Feature of interests for this example:  secondWord=.
+Weight for above feature:  -2.7624398444128966
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -4.356366900056623
+Logistics score:  0.012662501958349216
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Film
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  NextWord=.
+Weight for above feature:  -4.005167892490967
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -0.9500312055626252
+Logistics score:  0.27887854632971554
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest Festival
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=.
+Weight for above feature:  -7.297662360431417
+Feature of interests for this example:  NextWord=EOS
+Weight for above feature:  -3.0124150211096805
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -12.375919131550305
+Logistics score:  4.218953904761328e-06
+example: ['Dublin-born', 'director', 'Neil', 'Jordan', 'says', 'he', 'never', 'lost', 'more', 'sleep', 'over', 'a', 'film', 'than', 'over', '"', 'Michael', 'Collins', '"', ',', 'his', 'controversial', 'epic', 'about', 'the', 'IRA', 'which', 'has', 'its', 'premiere', 'on', 'Saturday', 'at', 'the', 'Venice', 'Film', 'Festival', '.']
+token of interest .
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=BOS
+Weight for above feature:  -4.245531724713903
+Feature of interests for this example:  CurrWord=There
+Weight for above feature:  -5.126976743785612
+Feature of interests for this example:  NextWord=will
+Weight for above feature:  -1.331089596705214
+Feature of interests for this example:  secondWord=be
+Weight for above feature:  -1.1823071440529134
+Feature of interests for this example:  thirdWord=both
+Weight for above feature:  0.02074808417200393
+Feature of interests for this example:  fourthWord=buying
+Weight for above feature:  -0.243698628525011
+Model score:  -6.9878773166731
+Logistics score:  0.0009221525480607979
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest There
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=There
+Weight for above feature:  -0.7899326038822765
+Feature of interests for this example:  CurrWord=will
+Weight for above feature:  -4.115606652688599
+Feature of interests for this example:  NextWord=be
+Weight for above feature:  -3.0205816046451264
+Feature of interests for this example:  secondWord=both
+Weight for above feature:  -0.32478895805137076
+Feature of interests for this example:  thirdWord=buying
+Weight for above feature:  -0.6020951397538704
+Feature of interests for this example:  fourthWord=and
+Weight for above feature:  -1.717174035797513
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -12.636020744827965
+Logistics score:  3.252703707275547e-06
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest will
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=will
+Weight for above feature:  -3.9359587062290666
+Feature of interests for this example:  CurrWord=be
+Weight for above feature:  -3.41426138622031
+Feature of interests for this example:  NextWord=both
+Weight for above feature:  -0.8922540675219323
+Feature of interests for this example:  secondLastWord=There
+Weight for above feature:  -0.8938646941245262
+Feature of interests for this example:  secondWord=buying
+Weight for above feature:  -0.7441724546691734
+Feature of interests for this example:  thirdWord=and
+Weight for above feature:  -2.771905910164032
+Feature of interests for this example:  fourthWord=selling
+Weight for above feature:  -0.7806648298556612
+Model score:  -13.433082048784701
+Logistics score:  1.465837927817904e-06
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest be
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=be
+Weight for above feature:  -1.7200672597306206
+Feature of interests for this example:  CurrWord=both
+Weight for above feature:  -2.220757315653556
+Feature of interests for this example:  NextWord=buying
+Weight for above feature:  -1.0840364134305163
+Feature of interests for this example:  secondLastWord=will
+Weight for above feature:  -2.0307062610109727
+Feature of interests for this example:  secondWord=and
+Weight for above feature:  -1.9279699804585284
+Feature of interests for this example:  thirdWord=selling
+Weight for above feature:  -0.05076860439633642
+Feature of interests for this example:  fourthWord=pressure
+Weight for above feature:  -0.3191656683254356
+Model score:  -9.353471503005967
+Logistics score:  8.665653179406723e-05
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest both
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=both
+Weight for above feature:  -2.6090870343426187
+Feature of interests for this example:  CurrWord=buying
+Weight for above feature:  -0.3194419081018486
+Feature of interests for this example:  NextWord=and
+Weight for above feature:  -2.3232615424090954
+Feature of interests for this example:  secondLastWord=be
+Weight for above feature:  -0.8745894347528973
+Feature of interests for this example:  secondWord=selling
+Weight for above feature:  -0.7796204334004283
+Feature of interests for this example:  thirdWord=pressure
+Weight for above feature:  -0.22782783058875025
+Feature of interests for this example:  fourthWord=,
+Weight for above feature:  -1.0431122313465164
+Model score:  -8.176940414942155
+Logistics score:  0.0002809815817909442
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest buying
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=buying
+Weight for above feature:  -0.6333601803377946
+Feature of interests for this example:  CurrWord=and
+Weight for above feature:  -7.277717600769236
+Feature of interests for this example:  NextWord=selling
+Weight for above feature:  -0.43173118961786405
+Feature of interests for this example:  secondLastWord=both
+Weight for above feature:  -1.7861291956752543
+Feature of interests for this example:  secondWord=pressure
+Weight for above feature:  -0.5126360270167059
+Feature of interests for this example:  thirdWord=,
+Weight for above feature:  -1.2267112341856425
+Feature of interests for this example:  fourthWord="
+Weight for above feature:  -1.2083626490543087
+Model score:  -13.076648076656806
+Logistics score:  2.093548321217115e-06
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest and
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=and
+Weight for above feature:  -3.3060148891990138
+Feature of interests for this example:  CurrWord=selling
+Weight for above feature:  -0.14827762815045775
+Feature of interests for this example:  NextWord=pressure
+Weight for above feature:  -0.9708086812673203
+Feature of interests for this example:  secondLastWord=buying
+Weight for above feature:  -0.656309621296861
+Feature of interests for this example:  secondWord=,
+Weight for above feature:  -0.22630661353749226
+Feature of interests for this example:  thirdWord="
+Weight for above feature:  -0.5948935187948332
+Feature of interests for this example:  fourthWord=said
+Weight for above feature:  -3.0210758122101664
+Model score:  -8.923686764456146
+Logistics score:  0.0001331785362826418
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest selling
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=selling
+Weight for above feature:  -0.07457794076930428
+Feature of interests for this example:  CurrWord=pressure
+Weight for above feature:  -0.5564105974752984
+Feature of interests for this example:  NextWord=,
+Weight for above feature:  -0.9026952417838627
+Feature of interests for this example:  secondLastWord=and
+Weight for above feature:  -0.9724945498768897
+Feature of interests for this example:  secondWord="
+Weight for above feature:  -0.6383220859035694
+Feature of interests for this example:  thirdWord=said
+Weight for above feature:  -1.4711683896761314
+Feature of interests for this example:  fourthWord=broker
+Weight for above feature:  0.6893436893771623
+Model score:  -3.9263251161078934
+Logistics score:  0.019334788997582963
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest pressure
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=pressure
+Weight for above feature:  -2.4042892988868795e-05
+Feature of interests for this example:  CurrWord=,
+Weight for above feature:  -8.559063146505217
+Feature of interests for this example:  NextWord="
+Weight for above feature:  -2.9820224121125998
+Feature of interests for this example:  secondLastWord=selling
+Weight for above feature:  -0.042070492332851414
+Feature of interests for this example:  secondWord=said
+Weight for above feature:  0.05737269555964799
+Feature of interests for this example:  thirdWord=broker
+Weight for above feature:  -0.0
+Model score:  -11.525807398284007
+Logistics score:  9.871909380975613e-06
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest ,
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=,
+Weight for above feature:  -2.2879852605817996
+Feature of interests for this example:  CurrWord="
+Weight for above feature:  -6.530183684288448
+Feature of interests for this example:  NextWord=said
+Weight for above feature:  1.7195402909852606
+Feature of interests for this example:  secondLastWord=pressure
+Weight for above feature:  -0.03443336175720186
+Feature of interests for this example:  secondWord=broker
+Weight for above feature:  -0.0
+Model score:  -7.133062015642189
+Logistics score:  0.0007976345933013804
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest "
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord="
+Weight for above feature:  -3.1025093285577867
+Feature of interests for this example:  CurrWord=said
+Weight for above feature:  -5.255763931712833
+Feature of interests for this example:  NextWord=broker
+Weight for above feature:  -0.1310422398566413
+Feature of interests for this example:  secondLastWord=,
+Weight for above feature:  0.3019403187538021
+Feature of interests for this example:  fourthWord=.
+Weight for above feature:  -1.8727301299452295
+Model score:  -10.06010531131869
+Logistics score:  4.27497136031234e-05
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest said
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=said
+Weight for above feature:  -1.0767550128350156
+Feature of interests for this example:  CurrWord=broker
+Weight for above feature:  -0.27481351247788227
+Feature of interests for this example:  secondLastWord="
+Weight for above feature:  0.012438301357127875
+Feature of interests for this example:  thirdWord=.
+Weight for above feature:  -2.2859425810462732
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -4.150678405809539
+Logistics score:  0.015509394694217839
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest broker
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=broker
+Weight for above feature:  -0.005987366374786032
+Feature of interests for this example:  secondLastWord=said
+Weight for above feature:  0.044956285356179126
+Feature of interests for this example:  secondWord=.
+Weight for above feature:  -2.7624398444128966
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  1.8719019106985486
+Logistics score:  0.8666781910395367
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest Shakil
+Gold Label for above:  1
+Predicted label for above:  1
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  NextWord=.
+Weight for above feature:  -4.005167892490967
+Feature of interests for this example:  secondLastWord=broker
+Weight for above feature:  -0.0
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -0.9500312055626252
+Logistics score:  0.27887854632971554
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest Rizvi
+Gold Label for above:  1
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=.
+Weight for above feature:  -7.297662360431417
+Feature of interests for this example:  NextWord=EOS
+Weight for above feature:  -3.0124150211096805
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -12.375919131550305
+Logistics score:  4.218953904761328e-06
+example: ['There', 'will', 'be', 'both', 'buying', 'and', 'selling', 'pressure', ',', '"', 'said', 'broker', 'Shakil', 'Rizvi', '.']
+token of interest .
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord=BOS
+Weight for above feature:  -4.245531724713903
+Feature of interests for this example:  thirdWord=said
+Weight for above feature:  -1.4711683896761314
+Feature of interests for this example:  fourthWord=:
+Weight for above feature:  -3.401771407117705
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -4.523098685377687
+Logistics score:  0.010738761389435036
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest Broker
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  secondWord=said
+Weight for above feature:  0.05737269555964799
+Feature of interests for this example:  thirdWord=:
+Weight for above feature:  -2.7335288578653656
+Feature of interests for this example:  fourthWord="
+Weight for above feature:  -1.2083626490543087
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -1.3549877252391809
+Logistics score:  0.20505613596776953
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest Khurshid
+Gold Label for above:  1
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  NextWord=said
+Weight for above feature:  1.7195402909852606
+Feature of interests for this example:  secondWord=:
+Weight for above feature:  -3.373784064922963
+Feature of interests for this example:  thirdWord="
+Weight for above feature:  -0.5948935187948332
+Feature of interests for this example:  fourthWord=The
+Weight for above feature:  -1.1558618520375057
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -0.34986245784169956
+Logistics score:  0.4134157750950763
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest Alam
+Gold Label for above:  1
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  CurrWord=said
+Weight for above feature:  -5.255763931712833
+Feature of interests for this example:  NextWord=:
+Weight for above feature:  -6.149332973069866
+Feature of interests for this example:  secondWord="
+Weight for above feature:  -0.6383220859035694
+Feature of interests for this example:  thirdWord=The
+Weight for above feature:  -1.2161368043059486
+Feature of interests for this example:  fourthWord=market
+Weight for above feature:  -2.0622952342733063
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -17.38769277927473
+Logistics score:  2.8094477578698643e-08
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest said
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=said
+Weight for above feature:  -1.0767550128350156
+Feature of interests for this example:  CurrWord=:
+Weight for above feature:  -5.375781936823449
+Feature of interests for this example:  NextWord="
+Weight for above feature:  -2.9820224121125998
+Feature of interests for this example:  secondWord=The
+Weight for above feature:  -0.4413006029523109
+Feature of interests for this example:  thirdWord=market
+Weight for above feature:  -0.547964251374929
+Feature of interests for this example:  fourthWord=sentiment
+Weight for above feature:  -0.31217158129126304
+Model score:  -10.735995797389567
+Logistics score:  2.174737396413618e-05
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest :
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=:
+Weight for above feature:  -4.150780015565232
+Feature of interests for this example:  CurrWord="
+Weight for above feature:  -6.530183684288448
+Feature of interests for this example:  NextWord=The
+Weight for above feature:  -1.2296679249649993
+Feature of interests for this example:  secondLastWord=said
+Weight for above feature:  0.044956285356179126
+Feature of interests for this example:  secondWord=market
+Weight for above feature:  -1.6140935532416538
+Feature of interests for this example:  thirdWord=sentiment
+Weight for above feature:  -0.07368005706888184
+Feature of interests for this example:  fourthWord=will
+Weight for above feature:  -0.5471824405493902
+Feature of interests for this example:  NextWordCap
+Weight for above feature:  -0.5256056008074961
+Model score:  -14.626236991129925
+Logistics score:  4.445348263068577e-07
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest "
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  isFirstLetterCap
+Weight for above feature:  0.7234948424938034
+Feature of interests for this example:  isFirstCapSecondNotCap
+Weight for above feature:  4.397483594443745
+Feature of interests for this example:  PrevWord="
+Weight for above feature:  -3.1025093285577867
+Feature of interests for this example:  CurrWord=The
+Weight for above feature:  -8.374945103824032
+Feature of interests for this example:  NextWord=market
+Weight for above feature:  -2.856237258297402
+Feature of interests for this example:  secondLastWord=:
+Weight for above feature:  -1.8275805133216003
+Feature of interests for this example:  secondWord=sentiment
+Weight for above feature:  -0.43825000985849133
+Feature of interests for this example:  thirdWord=will
+Weight for above feature:  -1.5842256760710514
+Feature of interests for this example:  fourthWord=remain
+Weight for above feature:  -0.13912805824070065
+Model score:  -13.201897511233515
+Logistics score:  1.8470895787583172e-06
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest The
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=The
+Weight for above feature:  -4.6051856761919066
+Feature of interests for this example:  CurrWord=market
+Weight for above feature:  -2.428674705857681
+Feature of interests for this example:  NextWord=sentiment
+Weight for above feature:  -0.5739242153903029
+Feature of interests for this example:  secondLastWord="
+Weight for above feature:  0.012438301357127875
+Feature of interests for this example:  secondWord=will
+Weight for above feature:  -1.4545664305794004
+Feature of interests for this example:  thirdWord=remain
+Weight for above feature:  -1.0164444799029408
+Feature of interests for this example:  fourthWord=strong
+Weight for above feature:  -0.7930884755618985
+Feature of interests for this example:  PrevWordCap
+Weight for above feature:  -2.065841750009207
+Model score:  -12.925287432136209
+Logistics score:  2.435667119742136e-06
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest market
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=market
+Weight for above feature:  -2.5944092436024158
+Feature of interests for this example:  CurrWord=sentiment
+Weight for above feature:  -0.24757908829163996
+Feature of interests for this example:  NextWord=will
+Weight for above feature:  -1.331089596705214
+Feature of interests for this example:  secondLastWord=The
+Weight for above feature:  -4.120422715889216
+Feature of interests for this example:  secondWord=remain
+Weight for above feature:  -0.5020432425400052
+Feature of interests for this example:  thirdWord=strong
+Weight for above feature:  -0.9028484299446176
+Feature of interests for this example:  fourthWord=.
+Weight for above feature:  -1.8727301299452295
+Model score:  -11.571122446918338
+Logistics score:  9.43455182577523e-06
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest sentiment
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=sentiment
+Weight for above feature:  -0.008592039755939156
+Feature of interests for this example:  CurrWord=will
+Weight for above feature:  -4.115606652688599
+Feature of interests for this example:  NextWord=remain
+Weight for above feature:  -1.6602336739245804
+Feature of interests for this example:  secondLastWord=market
+Weight for above feature:  -1.9701475607867418
+Feature of interests for this example:  secondWord=strong
+Weight for above feature:  -1.5554355700977989
+Feature of interests for this example:  thirdWord=.
+Weight for above feature:  -2.2859425810462732
+Model score:  -11.595958078299933
+Logistics score:  9.203126621622568e-06
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest will
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=will
+Weight for above feature:  -3.9359587062290666
+Feature of interests for this example:  CurrWord=remain
+Weight for above feature:  -0.324536631546778
+Feature of interests for this example:  NextWord=strong
+Weight for above feature:  -1.0235105704751843
+Feature of interests for this example:  secondLastWord=sentiment
+Weight for above feature:  -0.0
+Feature of interests for this example:  secondWord=.
+Weight for above feature:  -2.7624398444128966
+Model score:  -8.046445752663924
+Logistics score:  0.00032013558796960766
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest remain
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=remain
+Weight for above feature:  -0.6313043301612509
+Feature of interests for this example:  CurrWord=strong
+Weight for above feature:  -1.0943224914782421
+Feature of interests for this example:  NextWord=.
+Weight for above feature:  -4.005167892490967
+Feature of interests for this example:  secondLastWord=will
+Weight for above feature:  -2.0307062610109727
+Model score:  -7.761500975141432
+Logistics score:  0.0004256357171993132
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest strong
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Feature of interests for this example:  PrevWord=strong
+Weight for above feature:  -1.1153066670337268
+Feature of interests for this example:  CurrWord=.
+Weight for above feature:  -7.297662360431417
+Feature of interests for this example:  NextWord=EOS
+Weight for above feature:  -3.0124150211096805
+Feature of interests for this example:  secondLastWord=remain
+Weight for above feature:  -0.25839198734391944
+Model score:  -11.683776035918743
+Logistics score:  8.429404193646811e-06
+example: ['Broker', 'Khurshid', 'Alam', 'said', ':', '"', 'The', 'market', 'sentiment', 'will', 'remain', 'strong', '.']
+token of interest .
+Gold Label for above:  0
+Predicted label for above:  0
+===============================================================
+Accuracy: 95 / 103 = 0.922330
+Precision: 4 / 6 = 0.666667
+Recall: 4 / 10 = 0.400000
+F1: 0.500000

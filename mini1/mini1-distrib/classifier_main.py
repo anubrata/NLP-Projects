@@ -9,6 +9,9 @@ from collections import Counter
 from optimizers import *
 from typing import List
 import scipy.sparse
+import string
+import pickle
+import nltk
 
 def _parse_args():
     """
@@ -117,14 +120,15 @@ class PersonClassifier(object):
         # feat = get_feature_vector(self.indexer, tokens, pos_tags, idx, False)
         feat = get_feature_vector(self.indexer, tokens, idx, False)
 
-        ## TODO: Cleanup out of vocab stuff
+        ## TODO: Debugging code in the predict function
         # for f in feat:
-            # if(f == -1):
-                # print("Out of vocab word:", tokens[idx])
-                # This is a bit weird, but I want to see how that looks like
-                # feat[f] = self.indexer.index_of('.')
-        logistics_score = logistic(feat, self.weights)
+        #     print("Feature of interests for this example: ", self.indexer.ints_to_objs[f])
+        #     print("Weight for above feature: ", self.weights[f])
 
+        logistics_score = logistic(feat, self.weights)
+        ## TODO: Printing scores for debugging
+        # print("Model score: ", score_indexed_features(feat, self.weights))
+        # print("Logistics score: ", logistics_score)
         if logistics_score >= 0.5:
             return 1
         else:
@@ -148,22 +152,14 @@ def compute_gradient(logistics_score, instance, label):
 
 
 def get_feature_vector(indexer, tokens, idx, add=True):
-
-    # TODO: Features: Noun?, positionOfCurrWordInSentence: Numeric??
     # Sparse feature vectors stores the feature as the index to be marked as 1
     # currentFeature = [prevWordIndex, currWordIndex, nextWordIndex]
     currentFeature = []
 
-    ## Additional features
-    ## TODO: If the word in context is a noun
-    ## TODO: Used POS tags to get this feautre
-    # If the word is a noun
-    # if pos_tags[idx] == 'NNP':
-    #     maybe_add_feature(currentFeature, indexer, add, "isProperNoun")
-
+    ## TODO: Experimenting with commenting out isfirstLetterCap : Improved accuracy
     # If the first letter of the word is capitalized
-    if(tokens[idx][0].isupper()):
-        maybe_add_feature(currentFeature, indexer, add, "isFirstLetterCap")
+    # if(tokens[idx][0].isupper()):
+    #     maybe_add_feature(currentFeature, indexer, add, "isFirstLetterCap")
 
     # If the first word is cap but second letter of the word not capitalized
     if len(tokens[idx])>1 and tokens[idx][0].isupper() and tokens[idx][1].islower():
@@ -173,13 +169,14 @@ def get_feature_vector(indexer, tokens, idx, add=True):
     # if (idx - 1) < 0:
     #     featurePrevWord = "PrevWord=" + "BOS"
     # else:
+
     if (idx - 1) >= 0:
         featurePrevWord = "PrevWord=" + tokens[(idx - 1)]
         maybe_add_feature(currentFeature, indexer, add, featurePrevWord)
     else:
         featurePrevWord = "PrevWord=" + "BOS"
         maybe_add_feature(currentFeature, indexer, add, featurePrevWord)
-        # prevWordIndex = indexer.add_and_get_index(featurePrevWord, add)
+    #     # prevWordIndex = indexer.add_and_get_index(featurePrevWord, add)
 
     featureCurrWord = "CurrWord=" + tokens[idx]
     maybe_add_feature(currentFeature, indexer, add, featureCurrWord)
@@ -191,25 +188,79 @@ def get_feature_vector(indexer, tokens, idx, add=True):
         featureNextWord = "NextWord=" + "EOS"
         maybe_add_feature(currentFeature, indexer, add, featureNextWord)
 
+    # Last word in the dev is always a ".". So EOS should be the word before that
+    try:
+        if(tokens[idx+1] == '.'):
+            featureLastWord = "LastWord"
+            maybe_add_feature(currentFeature, indexer, add, featureLastWord)
+    except:
+        pass
+
     if (idx - 2) >= 0:
         featureSecondLastWord = "secondLastWord=" + tokens[(idx-2)]
         maybe_add_feature(currentFeature, indexer, add, featureSecondLastWord)
 
-    try:
-        featureSecondWord = "secondWord=" + tokens[(idx+2)]
-        maybe_add_feature(currentFeature, indexer, add, featureSecondWord)
-    except:
-        pass
+    maybe_add_feature(currentFeature, indexer, add, "Bias")
+    ## TODO: Commenting out second word as it tends to push down accuracy
+    # try:
+    #     featureSecondWord = "secondWord=" + tokens[(idx+2)]
+    #     maybe_add_feature(currentFeature, indexer, add, featureSecondWord)
+    # except:
+    #     pass
 
     # if (idx - 3) >= 0:
     #     featureThirdLastWord = "thirdLastWord=" + tokens[(idx-3)]
     #     maybe_add_feature(currentFeature, indexer, add, featureThirdLastWord)
     #
+    ## TODO: Commenting out third word as it tends to push down accuracy
     # try:
     #     featureThirdWord = "thirdWord=" + tokens[(idx+3)]
     #     maybe_add_feature(currentFeature, indexer, add, featureThirdWord)
     # except:
     #     pass
+
+    ## TODO: Commenting out fourth word as it tends to push down accuracy
+    # try:
+    #     featureFourthWord = "fourthWord=" + tokens[(idx+4)]
+    #     maybe_add_feature(currentFeature, indexer, add, featureFourthWord)
+    # except:
+    #     pass
+
+    ## Additional features
+    # TODO: Features: Noun?, positionOfCurrWordInSentence: Numeric??
+    ## TODO: If the word in context is a noun
+    ## TODO: Used POS tags to get this feautre
+    # If the word is a noun
+    # if pos_tags[idx] == 'NNP':
+    #     maybe_add_feature(currentFeature, indexer, add, "isProperNoun")
+
+    ## TODO: Experiment and fix the punctuation feature
+
+    # if idx-1 >= 0:
+    #     TODO: NOTE: PrevWord cap seems to add a lot of negative weight and contributes to wrong classification
+    #     if tokens[idx-1][0].isupper():
+    #         maybe_add_feature(currentFeature, indexer, add, "PrevWordCap")
+    #     # Previous word is a punctuation mark
+    #     if tokens[idx-1] in string.punctuation:
+    #         maybe_add_feature(currentFeature, indexer, add, "prevWordPunc")
+    # # if len(tokens[idx]) >= 4:
+    # #     maybe_add_feature(currentFeature, indexer, add, "isCurrWordLong")
+    #
+
+    #
+    # # Next word is capitalized
+    try:
+        if tokens[idx+1][0].isupper():
+            maybe_add_feature(currentFeature, indexer, add, "NextWordCap")
+        #     if tokens[idx+1][0] in string.punctuation:
+        #         maybe_add_feature(currentFeature, indexer, add, "NextWordPunctuation")
+    except:
+        pass
+
+    ## Position of the word in a sentence
+    max_sen_leng = 32
+    if(len(tokens) < 32):
+        maybe_add_feature(currentFeature, indexer, add, "SentencePosition"+str(idx))
 
     return currentFeature
 
@@ -233,24 +284,31 @@ def train_classifier(ner_exs: List[PersonExample]):
     # Model Hyper-parameters
     batch_size = 1
     ## TODO: Change epoch size to 20
-    training_epochs = 20
+    training_epochs = 25
 
     # TODO: Finalize on the optimizer to be used
     # Initialize the optimizer
-    # optimizer = SGDOptimizer(np.zeros(featureLength), alpha = 0.15)
-    optimizer = L1RegularizedAdagradTrainer(np.zeros(featureLength), lamb=1e-8, eta=1.0, use_regularization=True)
+    # optimizer = SGDOptimizer(np.zeros(featureLength), alpha = 1)
+    # optimizer = UnregularizedAdagradTrainer(np.zeros(featureLength), eta=1.0)
+    ## TODO: Change the eta and lambda value to the highest so far? lamb -10, eta 5.0
+    optimizer = L1RegularizedAdagradTrainer(np.zeros(featureLength), lamb=1e-10, eta=5.0, use_regularization=True)
 
     # Loop over epochs
     for epoch in range(0, training_epochs):
+        epoch_start_time = time.time()
+        print("Training epoch: ", epoch)
+        print("=========================")
         for training_idx in range(0, len(training_set)):
             training_instance = training_set[training_idx]
             logistics_score = logistic(training_instance, optimizer.weights)
             gradient_update = compute_gradient(logistics_score, training_instance, labels[training_idx])
             # Gradient Update
             optimizer.apply_gradient_update(gradient_update, batch_size)
-            if training_idx % 1000 == 0:
-                print("training done for {0} of {1} items".format(training_idx, len(training_set)))
-                print("objective: ", logistics_score)
+            # if training_idx % 1000 == 0:
+                # print("training done for {0} of {1} items".format(training_idx, len(training_set)))
+                # print("objective: ", logistics_score)
+        print("For epoch ", epoch, "Training took %f seconds" % (time.time() - epoch_start_time))
+        # evaluate_classifier(ner_exs, PersonClassifier(optimizer.get_final_weights(), featureIndex))
     return(PersonClassifier(optimizer.get_final_weights(), featureIndex))
 
 def evaluate_classifier(exs: List[PersonExample], classifier: PersonClassifier):
@@ -264,7 +322,16 @@ def evaluate_classifier(exs: List[PersonExample], classifier: PersonClassifier):
     for ex in exs:
         for idx in range(0, len(ex)):
             golds.append(ex.labels[idx])
-            predictions.append(classifier.predict(ex.tokens, idx))
+            pred_label = classifier.predict(ex.tokens, idx)
+            predictions.append(pred_label)
+            ## TODO: Debugging: Comment out prints in evaluate classifier
+            # print("========================New Example==========================")
+            # if ex.labels[idx] != pred_label:
+            #     print("example:", ex.tokens)
+            #     print("token of interest", ex.tokens[idx])
+            #     print("Gold Label for above: ", ex.labels[idx])
+            #     print("Predicted label for above: ", pred_label)
+            #     print("===============================================================")
     print_evaluation(golds, predictions)
 
 
@@ -314,8 +381,6 @@ def predict_write_output_to_file(exs: List[PersonExample], classifier: PersonCla
     f = open(outfile, 'w')
     for ex in exs:
         for idx in range(0, len(ex)):
-            ## TODO: Change due to threading in the pos tags in the write output to file section
-            # prediction = classifier.predict(ex.tokens, ex.pos_tags, idx)
             prediction = classifier.predict(ex.tokens, idx)
             f.write(ex.tokens[idx] + " " + repr(int(prediction)) + "\n")
         f.write("\n")
@@ -329,15 +394,26 @@ if __name__ == '__main__':
     ## TODO: Change the dataset to the full dataset
     # train_class_exs = list(transform_for_classification(read_data("data/eng.train.small")))
     train_class_exs = list(transform_for_classification(read_data(args.train_path)))
+
+    ## TODO: Change the dev set to the full dev set
     dev_class_exs = list(transform_for_classification(read_data(args.dev_path)))
+    # dev_class_exs = list(transform_for_classification(read_data("data/eng.test.small")))
+    ## TODO: Cleanup changes done for debugging: Uncomment training code
     # Train the model
     if args.model == "BAD":
         classifier = train_count_based_binary_classifier(train_class_exs)
     else:
         classifier = train_classifier(train_class_exs)
     print("Data reading and training took %f seconds" % (time.time() - start_time))
+
+    ## Pickle dump for debugging
+    # with open("./model/model_dump.pkl", "wb") as f:
+    #     pickle.dump(classifier, f)
+    # with open("./model/model_dump.pkl", "rb") as f:
+    #     classifier = pickle.load(f)
     # Evaluate on training, development, and test data
     print("===Train accuracy===")
+    ## TODO: Uncomment the training accuracy part
     evaluate_classifier(train_class_exs, classifier)
     ##TODO: Hyperparameter tuning on Dev set
     print("===Dev accuracy===")

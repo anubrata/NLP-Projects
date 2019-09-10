@@ -1,0 +1,22 @@
+Features:
+isFirstLetterCap, isFirstCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of NextWord,
+PrevWord is Beginning of Sentence, NextWord is End of Sentence
+============================================
+Model Specs:
+Optimizer: RegularizedAdaGrad
+eta: 1.0
+lambda: 1e-8
+use_regularization = True
+Epochs: 20
+============================================
+Data reading and training took 172.580375 seconds
+===Train accuracy===
+Accuracy: 204557 / 204567 = 0.999951
+Precision: 11118 / 11118 = 1.000000
+Recall: 11118 / 11128 = 0.999101
+F1: 0.999550
+===Dev accuracy===
+Accuracy: 50979 / 51578 = 0.988387
+Precision: 2703 / 2856 = 0.946429
+Recall: 2703 / 3149 = 0.858368
+F1: 0.900250
