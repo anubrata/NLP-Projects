@@ -156,27 +156,12 @@ def get_feature_vector(indexer, tokens, idx, add=True):
     # currentFeature = [prevWordIndex, currWordIndex, nextWordIndex]
     currentFeature = []
 
-    ## TODO: Experimenting with commenting out isfirstLetterCap : Improved accuracy
-    # If the first letter of the word is capitalized
-    # if(tokens[idx][0].isupper()):
-    #     maybe_add_feature(currentFeature, indexer, add, "isFirstLetterCap")
-
-    # If the first word is cap but second letter of the word not capitalized
-    if len(tokens[idx])>1 and tokens[idx][0].isupper() and tokens[idx][1].islower():
-        maybe_add_feature(currentFeature, indexer, add, "isFirstCapSecondNotCap")
-
-    # Increase the sliding window size to use two words before and two words after the word of interest
-    # if (idx - 1) < 0:
-    #     featurePrevWord = "PrevWord=" + "BOS"
-    # else:
-
     if (idx - 1) >= 0:
         featurePrevWord = "PrevWord=" + tokens[(idx - 1)]
         maybe_add_feature(currentFeature, indexer, add, featurePrevWord)
     else:
         featurePrevWord = "PrevWord=" + "BOS"
         maybe_add_feature(currentFeature, indexer, add, featurePrevWord)
-    #     # prevWordIndex = indexer.add_and_get_index(featurePrevWord, add)
 
     featureCurrWord = "CurrWord=" + tokens[idx]
     maybe_add_feature(currentFeature, indexer, add, featureCurrWord)
@@ -197,10 +182,35 @@ def get_feature_vector(indexer, tokens, idx, add=True):
         pass
 
     if (idx - 2) >= 0:
-        featureSecondLastWord = "secondLastWord=" + tokens[(idx-2)]
+        featureSecondLastWord = "prev-1Word=" + tokens[(idx-2)]
         maybe_add_feature(currentFeature, indexer, add, featureSecondLastWord)
 
+    ## TODO: Experimenting with commenting out isfirstLetterCap : Improved accuracy
+    # If the first letter of the word is capitalized
+    # if(tokens[idx][0].isupper()):
+    #     maybe_add_feature(currentFeature, indexer, add, "isFirstLetterCap")
+
+    # If the first word is cap but second letter of the word not capitalized
+    if len(tokens[idx]) > 1 and tokens[idx][0].isupper() and tokens[idx][1].islower():
+        maybe_add_feature(currentFeature, indexer, add, "isFirstCapSecondNotCap")
+
+    # # Next word is capitalized
+    try:
+        if tokens[idx + 1][0].isupper():
+            maybe_add_feature(currentFeature, indexer, add, "NextWordCap")
+    #     #     if tokens[idx+1][0] in string.punctuation:
+    #     #         maybe_add_feature(currentFeature, indexer, add, "NextWordPunctuation")
+    except:
+        pass
+
+    ## Position of the word in a sentence
+    # max_sen_leng = 32
+    # if (len(tokens) < 32):
+    #     maybe_add_feature(currentFeature, indexer, add, "SentencePosition" + str(idx))
+
+    ## Bias feature
     maybe_add_feature(currentFeature, indexer, add, "Bias")
+
     ## TODO: Commenting out second word as it tends to push down accuracy
     # try:
     #     featureSecondWord = "secondWord=" + tokens[(idx+2)]
@@ -247,21 +257,6 @@ def get_feature_vector(indexer, tokens, idx, add=True):
     # #     maybe_add_feature(currentFeature, indexer, add, "isCurrWordLong")
     #
 
-    #
-    # # Next word is capitalized
-    try:
-        if tokens[idx+1][0].isupper():
-            maybe_add_feature(currentFeature, indexer, add, "NextWordCap")
-        #     if tokens[idx+1][0] in string.punctuation:
-        #         maybe_add_feature(currentFeature, indexer, add, "NextWordPunctuation")
-    except:
-        pass
-
-    ## Position of the word in a sentence
-    max_sen_leng = 32
-    if(len(tokens) < 32):
-        maybe_add_feature(currentFeature, indexer, add, "SentencePosition"+str(idx))
-
     return currentFeature
 
 def train_classifier(ner_exs: List[PersonExample]):
@@ -283,7 +278,7 @@ def train_classifier(ner_exs: List[PersonExample]):
 
     # Model Hyper-parameters
     batch_size = 1
-    ## TODO: Change epoch size to 20
+    ## TODO: Change epoch size to 25
     training_epochs = 25
 
     # TODO: Finalize on the optimizer to be used
@@ -415,7 +410,6 @@ if __name__ == '__main__':
     print("===Train accuracy===")
     ## TODO: Uncomment the training accuracy part
     evaluate_classifier(train_class_exs, classifier)
-    ##TODO: Hyperparameter tuning on Dev set
     print("===Dev accuracy===")
     evaluate_classifier(dev_class_exs, classifier)
 

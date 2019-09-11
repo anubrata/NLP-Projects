@@ -1,0 +1,126 @@
+========== Base System : 1 ======================
+=========== features =============================
+PrevWord
+BOS
+CurrWord
+NextWord
+EOS
+isFirstCapSecondNotCap
+=========== Training Params ======================
+lamb=1e-8, eta=1.0, epoch = 25
+=========== Results ==============================
+Data reading and training took 155.512942 seconds
+===Train accuracy===
+Accuracy: 204536 / 204567 = 0.999848
+Precision: 11104 / 11111 = 0.999370
+Recall: 11104 / 11128 = 0.997843
+F1: 0.998606
+===Dev accuracy===
+Accuracy: 50954 / 51578 = 0.987902
+Precision: 2778 / 3031 = 0.916529
+Recall: 2778 / 3149 = 0.882185
+F1: 0.899029
+
+
+========== System : 2 ======================
+=========== features =============================
+PrevWord
+BOS
+CurrWord
+NextWord
+EOS
+isFirstCapSecondNotCap
+bias
+=========== Training Params ======================
+lamb=1e-8, eta=1.0, epoch = 25
+=========== Results ==============================
+Data reading and training took 184.291490 seconds
+===Train accuracy===
+Accuracy: 204540 / 204567 = 0.999868
+Precision: 11107 / 11113 = 0.999460
+Recall: 11107 / 11128 = 0.998113
+F1: 0.998786
+===Dev accuracy===
+Accuracy: 51058 / 51578 = 0.989918
+Precision: 2715 / 2801 = 0.969297
+Recall: 2715 / 3149 = 0.862178
+F1: 0.912605
+
+========== System : 3 ======================
+=========== features =============================
+PrevWord
+BOS
+CurrWord
+NextWord
+EOS
+isFirstCapSecondNotCap
+bias
+NextWordCap
+=========== Training Params ======================
+lamb=1e-8, eta=1.0, epoch = 25
+=========== Results ==============================
+Data reading and training took 188.370992 seconds
+===Train accuracy===
+Accuracy: 204541 / 204567 = 0.999873
+Precision: 11108 / 11114 = 0.999460
+Recall: 11108 / 11128 = 0.998203
+F1: 0.998831
+===Dev accuracy===
+Accuracy: 51052 / 51578 = 0.989802
+Precision: 2739 / 2855 = 0.959370
+Recall: 2739 / 3149 = 0.869800
+F1: 0.912392
+
+==========  System : 4 =========================
+=========== features =============================
+PrevWord
+BOS
+CurrWord
+NextWord
+EOS
+LastWord before '.'
+prev-1Word
+isFirstCapSecondNotCap
+NextWordCap
+Bias
+=========== Training Params ======================
+lamb=1e-8, eta=4.0, epoch = 25
+=========== Results ==============================
+Data reading and training took 233.422234 seconds
+===Train accuracy===
+Accuracy: 204565 / 204567 = 0.999990
+Precision: 11126 / 11126 = 1.000000
+Recall: 11126 / 11128 = 0.999820
+F1: 0.999910
+===Dev accuracy===
+Accuracy: 51059 / 51578 = 0.989938
+Precision: 2722 / 2814 = 0.967306
+Recall: 2722 / 3149 = 0.864401
+F1: 0.912963
+
+==========  Best System : 5 =========================
+=========== features =============================
+PrevWord
+BOS
+CurrWord
+NextWord
+EOS
+LastWord before '.'
+prev-1Word
+isFirstCapSecondNotCap
+NextWordCap
+Bias
+=========== Training Params ======================
+lamb=1e-10, eta=5.0, epoch = 25
+=========== Results ==============================
+Data reading and training took 227.266287 seconds
+===Train accuracy===
+Accuracy: 204565 / 204567 = 0.999990
+Precision: 11126 / 11126 = 1.000000
+Recall: 11126 / 11128 = 0.999820
+F1: 0.999910
+===Dev accuracy===
+Accuracy: 51074 / 51578 = 0.990228
+Precision: 2737 / 2829 = 0.967480
+Recall: 2737 / 3149 = 0.869165
+F1: 0.915691

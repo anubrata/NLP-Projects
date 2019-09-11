@@ -166,26 +166,26 @@ F1: 0.908048
 
 ==================System 4 =====================
 Features: isFirstLetterCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of Next Word,
-BOS, EOS, Bias, Suit of last to last word, LastWord indicator if the next word is a "."
+BOS, EOS, Bias, Suit of last to last word
 =================================
 epoch: 25
-lambda: 1e-8, eta = 4.0
+lambda: 1e-10, eta = 5.0
 =================================
-Data reading and training took 253.350936 seconds
+Data reading and training took 251.912678 seconds
 ===Train accuracy===
 Accuracy: 204565 / 204567 = 0.999990
 Precision: 11126 / 11126 = 1.000000
 Recall: 11126 / 11128 = 0.999820
 F1: 0.999910
 ===Dev accuracy===
-Accuracy: 51033 / 51578 = 0.989433
-Precision: 2691 / 2778 = 0.968683
-Recall: 2691 / 3149 = 0.854557
-F1: 0.908048
+Accuracy: 51065 / 51578 = 0.990054
+Precision: 2723 / 2810 = 0.969039
+Recall: 2723 / 3149 = 0.864719
+F1: 0.913912
 
-=========================== System 6 ==============
+=========================== System 5 ==============
 Features: isFirstLetterCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of Next Word,
-BOS, EOS, Bias, Suit of last to last word, LastWord indicator if the next word is a "."
+BOS, EOS, Bias, Suit of last to last word, LastWord indicator if the next word is a ".", NextWordCap
 ===================================================
 epoch: 25
 lambda: 1e-10, eta = 5.0
@@ -206,19 +206,20 @@ F1: 0.914094
 
 ================== Unreported System  =====================
 Features: isFirstLetterCapSecondNotCap, Suite of PrevWord, Suite of CurrWord, Suite of Next Word,
-BOS, EOS, Bias, Suit of last to last word
+BOS, EOS, Bias, Suit of last to last word, LastWord indicator if the next word is a "."
 =================================
 epoch: 25
-lambda: 1e-10, eta = 5.0
+lambda: 1e-8, eta = 4.0
 =================================
-Data reading and training took 251.912678 seconds
+Data reading and training took 253.350936 seconds
 ===Train accuracy===
 Accuracy: 204565 / 204567 = 0.999990
 Precision: 11126 / 11126 = 1.000000
 Recall: 11126 / 11128 = 0.999820
 F1: 0.999910
 ===Dev accuracy===
-Accuracy: 51065 / 51578 = 0.990054
-Precision: 2723 / 2810 = 0.969039
-Recall: 2723 / 3149 = 0.864719
-F1: 0.913912
+Accuracy: 51033 / 51578 = 0.989433
+Precision: 2691 / 2778 = 0.968683
+Recall: 2691 / 3149 = 0.854557
+F1: 0.908048
+
