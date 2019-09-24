@@ -1,0 +1,10 @@
+Single epoch
+Eval on the Dev
+Labeled F1: 81.72, precision: 4930/6122 = 80.53, recall: 4930/5943 = 82.95
+Epoch 5: (Transitions handled only at the inference time)
+Labeled F1: 86.67, precision: 5161/5966 = 86.51, recall: 5161/5943 = 86.84
+
+Epoch 5: (Transitions handled at the training time)
+Labeled F1: 88.00, precision: 5164/5793 = 89.14, recall: 5164/5943 = 86.89
+
+

@@ -8,6 +8,7 @@ from collections import Counter
 from typing import List
 
 import numpy as np
+from scipy.misc import logsumexp
 
 
 class ProbabilisticSequenceScorer(object):
@@ -81,8 +82,8 @@ class HmmNerModel(object):
         viterbi = np.zeros((len(sentence_tokens), len(self.tag_indexer)))
         back_pointers = np.zeros((len(sentence_tokens), len(self.tag_indexer)))
 
-        print("Current Sentence: ", sentence_tokens)
-         # Initial State
+        # print("Current Sentence: ", sentence_tokens)
+        # Initial State
         word_index = self.word_indexer.index_of(sentence_tokens[0].word)
         if (word_index == -1):
             word_index = self.word_indexer.index_of("UNK")
@@ -115,11 +116,10 @@ class HmmNerModel(object):
             predicted_tags.append(self.tag_indexer.get_object(best_final_state))
 
         predicted_tags.reverse()
-        print(predicted_tags)
+        # print(predicted_tags)
 
         predicted_chunks = chunks_from_bio_tag_seq(predicted_tags)
         return LabeledSentence(sentence_tokens, predicted_chunks)
-
 
 def train_hmm_model(sentences: List[LabeledSentence]) -> HmmNerModel:
     """
@@ -192,16 +192,170 @@ def get_word_index(word_indexer: Indexer, word_counter: Counter, word: str) -> i
     else:
         return word_indexer.add_and_get_index(word)
 
+## TODO: Implement the Feature Based Scorer
+class FeatureBasedSequenceScorer(object):
+    """
+    Scoring function for sequence models based on features.
+    Scores are provided for three potentials in the model: initial scores (applied to the first tag),
+    emissions, and transitions. Note that CRFs typically don't use potentials of the first type.
+
+    Attributes:
+        tag_indexer: Indexer mapping BIO tags to indices. Useful for dynamic programming
+        word_indexer: Indexer mapping words to indices in the emission probabilities matrix
+        trainsition_potentials: [num_tags, num_tags] matrix containing transition log probabilities (prev, curr)
+        emission_potentials: [num_tags, num_words] matrix containing emission log probabilities (tag, word)
+    """
+    def __init__(self, tag_indexer: Indexer, word_indexer: Indexer, transition_features: np.ndarray, emission_potentials: np.ndarray):
+        self.tag_indexer = tag_indexer
+        self.word_indexer = word_indexer
+        self.trainsition_potentials = transition_potentials
+        self.emission_potentials = emission_potentials
+
+    def score_init(self, sentence_tokens: List[Token], tag_idx: int):
+        return self.init_log_probs[tag_idx]
+
+    def score_transition(self, sentence_tokens: List[Token], prev_tag_idx: int, curr_tag_idx: int):
+        return self.trainsition_potentials[prev_tag_idx, curr_tag_idx]
+
+    def score_emission(self, sentence_tokens: List[Token], tag_idx: int, word_posn: int):
+        word = sentence_tokens[word_posn].word
+        word_idx = self.word_indexer.index_of(word) if self.word_indexer.contains(word) else self.word_indexer.index_of("UNK")
+        return self.emission_potentials[tag_idx, word_idx]
+
 
 class CrfNerModel(object):
     def __init__(self, tag_indexer, feature_indexer, feature_weights):
         self.tag_indexer = tag_indexer
         self.feature_indexer = feature_indexer
         self.feature_weights = feature_weights
+        self.transition_matrix = np.zeros((len(self.tag_indexer), len(self.tag_indexer)))
+        for tag_idx_r in range(0, len(self.tag_indexer)):
+            for tag_idx_c in range(0, len(self.tag_indexer)):
+                prev_state = self.tag_indexer.get_object(tag_idx_r)
+                curr_state = self.tag_indexer.get_object(tag_idx_c)
+                if curr_state.split("-")[0] == "I":
+                    if prev_state.split("-")[-1] != curr_state.split("-")[-1]:
+                        self.transition_matrix[tag_idx_r][tag_idx_c] = -np.Inf
+
+    def get_max_prev(self, current_state_idx, time_step, viterbi):
+        prev_value_list = np.ma.masked_array(np.zeros(len(self.tag_indexer)), mask = self.transition_matrix[ : ,current_state_idx].T)
+        # prev_value_list = Counter()
+
+        for prev_state_idx in range(0, len(self.tag_indexer)):
+            if self.transition_matrix[prev_state_idx][current_state_idx] != -np.Inf:
+                prev_value_list[prev_state_idx] = viterbi[time_step-1, prev_state_idx]
+            # else:
+            #     print("Invalid state, ignored", self.tag_indexer.get_object(prev_state_idx), self.tag_indexer.get_object(current_state_idx))
+
+        max_prev = np.max(prev_value_list)
+        max_from_prev = np.argmax(prev_value_list)
+        # print("predicted transition", self.tag_indexer.get_object(max_from_prev),
+        #       self.tag_indexer.get_object(current_state_idx))
+
+        return max_prev, max_from_prev
 
     def decode(self, sentence_tokens):
-        raise Exception("IMPLEMENT ME")
+        viterbi = np.zeros((len(sentence_tokens), len(self.tag_indexer)))
+        back_pointers = np.zeros((len(sentence_tokens), len(self.tag_indexer)))
 
+        # print("Current Sentence: ", sentence_tokens)
+
+        # initial state
+        for curr_state_idx in range(0, len(self.tag_indexer)):
+            # print("Current Word - Current State:", sentence_tokens[0].word, self.tag_indexer.get_object(curr_state_idx))
+            tag = self.tag_indexer.get_object(curr_state_idx)
+            feat = extract_emission_features(sentence_tokens, 0, tag,self.feature_indexer, False)
+            viterbi[0, curr_state_idx] = sum(self.feature_weights[feat])
+
+        # Viterbi lattice
+        for time_step in range(1, len(sentence_tokens)):
+            for curr_state_idx in range(0, len(self.tag_indexer)):
+                max_prev, arg_bck_ptr = self.get_max_prev(curr_state_idx, time_step, viterbi)
+                tag = self.tag_indexer.get_object(curr_state_idx)
+                feat = extract_emission_features(sentence_tokens, time_step, tag, self.feature_indexer, False)
+                viterbi[time_step, curr_state_idx] = sum(self.feature_weights[feat]) + max_prev
+                back_pointers[time_step, curr_state_idx] = arg_bck_ptr
+
+        # print(viterbi)
+        # print(back_pointers)
+
+        # Best Final State
+        best_final_state = np.argmax(viterbi[len(sentence_tokens) - 1,])
+
+        predicted_tags = []
+        predicted_tags.append(self.tag_indexer.get_object(best_final_state))
+
+        for rows in range(len(sentence_tokens) - 1, 0, -1):
+            best_final_state = back_pointers[rows, int(best_final_state)]
+            predicted_tags.append(self.tag_indexer.get_object(best_final_state))
+
+        predicted_tags.reverse()
+        print(predicted_tags)
+
+        predicted_chunks = chunks_from_bio_tag_seq(predicted_tags)
+        return LabeledSentence(sentence_tokens, predicted_chunks)
+
+        # raise Exception("IMPLEMENT ME")
+
+
+
+def phi_e(tag_idx, word_idx, sentence_idx, w, feature_cache):
+    phi_value = 0
+    feat = feature_cache[sentence_idx][word_idx][tag_idx]
+    for i in feat:
+        phi_value += w[i]
+    return phi_value
+
+## TODO: Implement Forward backward
+def forward_backward_crf(sentence_tokens, sentence_idx, tag_indexer, feature_cache, weights, transition_matrix):
+
+    ## Forward pass
+    alpha = np.zeros((len(sentence_tokens), len(tag_indexer)))
+
+    for word_idx in range(0, len(sentence_tokens)):
+        for tag_idx in range(0, len(tag_indexer)):
+            if word_idx == 0:
+                ## Real space
+                # alpha[0][tag_idx] = np.exp(phi_e(tag_idx, 0, sentence_idx, weights, feature_cache))
+                ## log space
+                alpha[0][tag_idx] = phi_e(tag_idx, 0, sentence_idx, weights, feature_cache)
+            else:
+                prev_alpha = []
+                for prev_tag_idx in range(0, len(tag_indexer)):
+                    ## Real Space
+                    ## TODO: Real_space vs log_space alpha calculation
+                    # alpha[word_idx][tag_idx] += alpha[word_idx - 1][prev_tag_idx]* np.exp(phi_e(tag_idx, word_idx, sentence_idx, weights, feature_cache)) * transition_matrix[prev_tag_idx][tag_idx]
+                    ## TODO: Handling transition at inference for alpha
+                    if transition_matrix[prev_tag_idx][tag_idx] != 0:
+                        prev_alpha.append(alpha[word_idx-1][prev_tag_idx] + phi_e(tag_idx, word_idx, sentence_idx, weights, feature_cache))
+                # alpha[word_idx][tag_idx] = sum(prev_alpha) + phi_e(tag_idx, word_idx, sentence_idx, weights, feature_cache)
+                alpha[word_idx][tag_idx] = logsumexp(prev_alpha)
+
+    # Backward pass
+    beta = np.zeros((len(sentence_tokens), len(tag_indexer)))
+    for word_idx in range(len(sentence_tokens)-1, -1, -1):
+        for tag_idx in range(0, len(tag_indexer)):
+            if word_idx == len(sentence_tokens)-1:
+                ## Real space
+                # beta[word_idx][tag_idx] = 1
+                ## log space
+                beta[word_idx][tag_idx] = np.log(1)
+            else:
+                beta_next = []
+                for next_tag_idx in range(0,len(tag_indexer)):
+                    ## real space
+                    # beta[word_idx][tag_idx] += beta[word_idx+1][next_tag_idx] \
+                    #                            * np.exp(phi_e(next_tag_idx, word_idx+1, sentence_idx, weights, feature_cache)) \
+                    #                            * transition_matrix[tag_idx][next_tag_idx]
+
+                    ## log space
+                    ## TODO: Handling transition at inference for beta
+                    if transition_matrix[tag_idx, next_tag_idx] != 0:
+                        beta_next.append(beta[word_idx + 1][next_tag_idx] + phi_e(next_tag_idx, word_idx + 1, sentence_idx, weights, feature_cache))
+                beta[word_idx][tag_idx] = logsumexp(beta_next)
+                # beta[word_idx][tag_idx] = (beta_next)
+
+    return alpha, beta
 
 # Trains a CrfNerModel on the given corpus of sentences.
 def train_crf_model(sentences):
@@ -219,8 +373,97 @@ def train_crf_model(sentences):
         for word_idx in range(0, len(sentences[sentence_idx])):
             for tag_idx in range(0, len(tag_indexer)):
                 feature_cache[sentence_idx][word_idx][tag_idx] = extract_emission_features(sentences[sentence_idx].tokens, word_idx, tag_indexer.get_object(tag_idx), feature_indexer, add_to_indexer=True)
+
+    # Transition validity
+    print("Getting valid transitions")
+    transitional_feature_indexer = Indexer()
+    transition_matrix = np.ones((len(tag_indexer), len(tag_indexer)))
+    for tag_idx_r in range(0,len(tag_indexer)):
+        for tag_idx_c in range (0, len(tag_indexer)):
+            prev_state = tag_indexer.get_object(tag_idx_r)
+            curr_state = tag_indexer.get_object(tag_idx_c)
+            if curr_state.split("-")[0] == "I":
+                if prev_state.split("-")[-1] == curr_state.split("-")[-1]:
+                    # transition_matrix[tag_idx_r][tag_idx_c] = 0
+                    transitional_feature_indexer.add_and_get_index(prev_state+":to:"+curr_state)
+                else:
+                    transition_matrix[tag_idx_r][tag_idx_c] = 0
+            else:
+                transitional_feature_indexer.add_and_get_index(prev_state + ":to:" + curr_state)
+    print(transition_matrix)
+
+    # Constant transitional features
+    f_t = np.ones(len(transitional_feature_indexer))
+
+    epochs = 5
+
     print("Training")
-    raise Exception("IMPLEMENT THE REST OF ME")
+    feature_size = len(feature_indexer)
+    # feature_size = len(feature_indexer) + len(transitional_feature_indexer)
+    optimizer = UnregularizedAdagradTrainer(np.zeros(feature_size), eta=1.0)
+    # optimizer = L1RegularizedAdagradTrainer(np.zeros(feature_size), lamb=1e-8, eta=1.0)
+
+    for epoch in range(0, epochs):
+        for sentence_idx in range(0, len(sentences)):
+            sentence_tokens = sentences[sentence_idx].tokens
+            bio_tags = sentences[sentence_idx].get_bio_tags()
+            weights = optimizer.get_final_weights()
+            alpha, beta = forward_backward_crf(sentence_tokens, sentence_idx, tag_indexer, feature_cache, weights, transition_matrix)
+            # print(alpha)
+            # print(beta)
+
+            # Compute denominator for the posterior and check for stability
+            # Since all values are same for the marginals, the z value for the first word
+            # should do.
+            ## TODO: Sum or logsum?
+            z = logsumexp(alpha[0] + beta[0])
+            # print(z)
+            # if z == 0:
+            #     print("divided by 0 error")
+            #     print(sentence_tokens)
+            #     z = logsum(alpha[0] + beta[0])
+            #     print(z)
+            ## Commented out code for stability check
+            # for word_idx in range(0, len(sentence_tokens)):
+            #     z_test = []
+            #     z = logsumexp(alpha[word_idx] + beta[word_idx])
+            #     z_test.append(z)
+            #     print(z)
+            # if len(set(z_test)) != 1:
+            #     print("Unstable marginal!")
+
+            gold_counter = Counter()
+            marginal_counter = Counter()
+            for word_idx in range(0, len(sentence_tokens)):
+                for feat in feature_cache[sentence_idx][word_idx][tag_indexer.index_of(bio_tags[word_idx])]:
+                    gold_counter[feat] += 1
+                for tag_idx in range(0, len(tag_indexer)):
+                    # print("Computing marginal for state {0}".format(tag_indexer.get_object(tag_idx)))
+                    ## TODO: Sum or logsum?
+                    # numerator = logsumexp(alpha[word_idx][tag_idx], beta[word_idx][tag_idx])
+                    numerator = alpha[word_idx][tag_idx] + beta[word_idx][tag_idx]
+                    marginal_value = numerator - z
+                    # Convert the marginals back to real_value
+                    # print("log - marginal", marginal_value)
+                    marginal_value = np.exp(marginal_value)
+                    # print("marginals", marginal_value)
+                    for feat in feature_cache[sentence_idx][word_idx][tag_idx]:
+                        marginal_counter[feat] += marginal_value
+            # print(gold_counter.keys())
+            # print(marginal_counter.keys())
+            gold_counter.subtract(marginal_counter)
+            # print(np.mean(list(gold_counter.values())))
+            # print(gold_counter.keys())
+            optimizer.apply_gradient_update(gold_counter, 1)
+            if sentence_idx % 100 == 0:
+                print("Training finished for {0}/{1}".format(sentence_idx, len(sentences)))
+                objective = 0
+                weights_for_test = optimizer.get_final_weights()
+                for word_idx in range(0, len(sentence_tokens)):
+                    objective += sum(weights_for_test[feature_cache[sentence_idx][word_idx][tag_indexer.index_of(bio_tags[word_idx])]])
+                # print("Objective: {0}".format(objective - z))
+        print("End of training for epoch {0}".format(epoch))
+    return CrfNerModel(tag_indexer, feature_indexer, optimizer.get_final_weights())
 
 
 def extract_emission_features(sentence_tokens: List[Token], word_index: int, tag: str, feature_indexer: Indexer, add_to_indexer: bool):

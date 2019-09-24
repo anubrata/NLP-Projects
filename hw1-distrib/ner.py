@@ -89,13 +89,18 @@ if __name__ == '__main__':
         dev_decoded = [bad_model.decode(test_ex.tokens) for test_ex in dev]
     elif system_to_run == "HMM":
         hmm_model = train_hmm_model(train)
-        ## TODO: Run for the whole dev set
+        ## TODO: Run for the whole dev set: HMM
         dev_decoded = [hmm_model.decode(test_ex.tokens) for test_ex in dev]
         # dev_decoded = [hmm_model.decode(dev[-1].tokens)]
     elif system_to_run == "CRF":
+        ## TODO: When done debugging comment out the following line to train on the whole dataset
+        # train = read_data("./data/eng.train.small")
         crf_model = train_crf_model(train)
         print("Data reading and training took %f seconds" % (time.time() - start_time))
+        ## TODO: Comment out to get the dev scores: CRF
+        # dev = read_data("./data/eng.train.small")
         dev_decoded = [crf_model.decode(test_ex.tokens) for test_ex in dev]
+        print_evaluation(dev, dev_decoded)
         if args.run_on_test:
             print("Running on test")
             test = read_data(args.blind_test_path)
@@ -104,4 +109,4 @@ if __name__ == '__main__':
     else:
         raise Exception("Pass in either BAD, HMM, or CRF to run the appropriate system")
     # Print the evaluation statistics
-    print_evaluation(dev, dev_decoded)
+    # print_evaluation(dev, dev_decoded)
