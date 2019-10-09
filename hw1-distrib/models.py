@@ -9,7 +9,14 @@ from typing import List
 
 import numpy as np
 from scipy.misc import logsumexp
+from tqdm import tqdm
 
+# External global resources
+from bpemb import BPEmb
+
+
+bpemb_de = BPEmb(lang="de", dim=100)
+bpemb_en = BPEmb(lang="en", dim=100)
 
 class ProbabilisticSequenceScorer(object):
     """
@@ -265,6 +272,9 @@ class CrfNerModel(object):
             # print("Current Word - Current State:", sentence_tokens[0].word, self.tag_indexer.get_object(curr_state_idx))
             tag = self.tag_indexer.get_object(curr_state_idx)
             feat = extract_emission_features(sentence_tokens, 0, tag,self.feature_indexer, False)
+            for f in feat:
+                if f == -1:
+                    print("Out of vocab")
             viterbi[0, curr_state_idx] = sum(self.feature_weights[feat])
 
         # Viterbi lattice
@@ -290,7 +300,7 @@ class CrfNerModel(object):
             predicted_tags.append(self.tag_indexer.get_object(best_final_state))
 
         predicted_tags.reverse()
-        print(predicted_tags)
+        # print(predicted_tags)
 
         predicted_chunks = chunks_from_bio_tag_seq(predicted_tags)
         return LabeledSentence(sentence_tokens, predicted_chunks)
@@ -360,6 +370,7 @@ def forward_backward_crf(sentence_tokens, sentence_idx, tag_indexer, feature_cac
 # Trains a CrfNerModel on the given corpus of sentences.
 def train_crf_model(sentences):
     tag_indexer = Indexer()
+    vocab = Indexer()
     for sentence in sentences:
         for tag in sentence.get_bio_tags():
             tag_indexer.add_and_get_index(tag)
@@ -371,6 +382,7 @@ def train_crf_model(sentences):
         if sentence_idx % 100 == 0:
             print("Ex %i/%i" % (sentence_idx, len(sentences)))
         for word_idx in range(0, len(sentences[sentence_idx])):
+            vocab.add_and_get_index(sentences[sentence_idx].tokens[word_idx].word.lower())
             for tag_idx in range(0, len(tag_indexer)):
                 feature_cache[sentence_idx][word_idx][tag_idx] = extract_emission_features(sentences[sentence_idx].tokens, word_idx, tag_indexer.get_object(tag_idx), feature_indexer, add_to_indexer=True)
 
@@ -404,7 +416,7 @@ def train_crf_model(sentences):
     # optimizer = L1RegularizedAdagradTrainer(np.zeros(feature_size), lamb=1e-8, eta=1.0)
 
     for epoch in range(0, epochs):
-        for sentence_idx in range(0, len(sentences)):
+        for sentence_idx in tqdm(range(0, len(sentences))):
             sentence_tokens = sentences[sentence_idx].tokens
             bio_tags = sentences[sentence_idx].get_bio_tags()
             weights = optimizer.get_final_weights()
@@ -415,7 +427,6 @@ def train_crf_model(sentences):
             # Compute denominator for the posterior and check for stability
             # Since all values are same for the marginals, the z value for the first word
             # should do.
-            ## TODO: Sum or logsum?
             z = logsumexp(alpha[0] + beta[0])
             # print(z)
             # if z == 0:
@@ -439,8 +450,6 @@ def train_crf_model(sentences):
                     gold_counter[feat] += 1
                 for tag_idx in range(0, len(tag_indexer)):
                     # print("Computing marginal for state {0}".format(tag_indexer.get_object(tag_idx)))
-                    ## TODO: Sum or logsum?
-                    # numerator = logsumexp(alpha[word_idx][tag_idx], beta[word_idx][tag_idx])
                     numerator = alpha[word_idx][tag_idx] + beta[word_idx][tag_idx]
                     marginal_value = numerator - z
                     # Convert the marginals back to real_value
@@ -455,13 +464,14 @@ def train_crf_model(sentences):
             # print(np.mean(list(gold_counter.values())))
             # print(gold_counter.keys())
             optimizer.apply_gradient_update(gold_counter, 1)
-            if sentence_idx % 100 == 0:
-                print("Training finished for {0}/{1}".format(sentence_idx, len(sentences)))
-                objective = 0
-                weights_for_test = optimizer.get_final_weights()
-                for word_idx in range(0, len(sentence_tokens)):
-                    objective += sum(weights_for_test[feature_cache[sentence_idx][word_idx][tag_indexer.index_of(bio_tags[word_idx])]])
-                # print("Objective: {0}".format(objective - z))
+            # if sentence_idx % 100 == 0:
+            #     print("Training finished for {0}/{1}".format(sentence_idx, len(sentences)))
+            #     objective = 0
+            #     weights_for_test = optimizer.get_final_weights()
+            #     for word_idx in range(0, len(sentence_tokens)):
+            #         objective += sum(weights_for_test[feature_cache
+            #         sentence_idx][word_idx][tag_indexer.index_of(bio_tags[word_idx])]])
+            #     print("Objective: {0}".format(objective - z))
         print("End of training for epoch {0}".format(epoch))
     return CrfNerModel(tag_indexer, feature_indexer, optimizer.get_final_weights())
 
@@ -490,21 +500,48 @@ def extract_emission_features(sentence_tokens: List[Token], word_index: int, tag
             active_word = sentence_tokens[word_index + idx_offset].word
         if word_index + idx_offset < 0:
             active_pos = "<S>"
+            active_lemma = "<S>"
+            active_chunk = "<S>"
+            word_in_context = "<S>"
         elif word_index + idx_offset >= len(sentence_tokens):
             active_pos = "</S>"
+            active_lemma = "</S>"
+            active_chunk = "</S>"
+            word_in_context = "</S>"
         else:
             active_pos = sentence_tokens[word_index + idx_offset].pos
+            active_lemma = sentence_tokens[word_index + idx_offset].lemma
+            active_chunk = sentence_tokens[word_index + idx_offset].chunk
+            word_in_context = sentence_tokens[word_index + idx_offset].word
         maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":Word" + repr(idx_offset) + "=" + active_word)
+        ## TODO: Add more POS feature
         maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":Pos" + repr(idx_offset) + "=" + active_pos)
+
+        ## Add Lemma Feature
+        ## TODO: German Features
+        maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":Lemma" + repr(idx_offset) + "=" + active_lemma)
+
+        ## Add chunk feature
+        maybe_add_feature(feats, feature_indexer, add_to_indexer,
+                          tag + ":Chunk" + repr(idx_offset) + "=" + active_chunk)
+
+        # Subword features
+        # if word_in_context != "<S>" or word_in_context != "<S>":
+        #     subwords = bpemb_de.encode(word_in_context)
+        #     for subword in subwords:
+        #         maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":HasSubword:" + subword)
+
     # Character n-grams of the current word
-    max_ngram_size = 3
+    # TODO: For english 3, For German 5
+    max_ngram_size = 5
     for ngram_size in range(1, max_ngram_size+1):
         start_ngram = curr_word[0:min(ngram_size, len(curr_word))]
         maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":StartNgram=" + start_ngram)
         end_ngram = curr_word[max(0, len(curr_word) - ngram_size):]
         maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":EndNgram=" + end_ngram)
     # Look at a few word shape features
-    maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":IsCap=" + repr(curr_word[0].isupper()))
+    ## TODO: Commenting out Word Shape related features for German
+    # maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":IsCap=" + repr(curr_word[0].isupper()))
     # Compute word shape
     new_word = []
     for i in range(0, len(curr_word)):
@@ -517,5 +554,52 @@ def extract_emission_features(sentence_tokens: List[Token], word_index: int, tag
         else:
             new_word += "?"
     maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":WordShape=" + repr(new_word))
+
+    # ## German Feature
+    if len(curr_word) > 5:
+        if len(curr_word) < 10:
+            maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + "WordLength:6-10")
+        if len(curr_word) > 10:
+            maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + "WordLength>10")
+    #
+    # ## Position in a sentence
+    # max_sen_leng = 32
+    # if word_index < max_sen_leng:
+    #     maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":position:" + str(word_index))
+
+
+    ## TODO: German Features
+    if sentence_tokens[word_index].pos == "NE":
+        maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":POS=NE:" + curr_word)
+
+    # maybe_add_feature(feats, feature_indexer, add_to_indexer, "Bias")
+    # subwords = bpemb_de.encode(curr_word)
+    subwords = bpemb_de.encode(curr_word)
+    subword_len = len(subwords)
+
+    for subword in subwords:
+        maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":HasSubword:" + subword)
+
+    # max_subword_size = 4
+    # for subword_size in range(1, max_subword_size+1):
+    #     start_subword = curr_word[0:min(subword_size, subword_len)]
+    #     maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":StartSubWord=" + start_subword)
+    #     end_subword = curr_word[max(0, subword_len - subword_size):]
+    #     maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":EndNgram=" + end_subword)
+
+
+
     return np.asarray(feats, dtype=int)
+
+def get_best_features(model: CrfNerModel):
+    weights = model.feature_weights
+    features = model.feature_indexer
+    feature_counter = Counter()
+
+    for feat_idx in range(0, len(model.feature_weights)):
+        feature_counter[features.get_object(feat_idx)] = weights[feat_idx]
+
+    print(feature_counter.most_common(50))
+
+
 

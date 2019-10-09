@@ -6,5 +6,6 @@ Labeled F1: 86.67, precision: 5161/5966 = 86.51, recall: 5161/5943 = 86.84
 
 Epoch 5: (Transitions handled at the training time)
 Labeled F1: 88.00, precision: 5164/5793 = 89.14, recall: 5164/5943 = 86.89
+Data reading and training took 1417.526489 seconds
 
 

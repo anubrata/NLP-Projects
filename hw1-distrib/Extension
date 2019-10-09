@@ -1,0 +1,82 @@
+German
+===============
+Command Parameters for German
+
+--model CRF --train_path data/deu.train --dev_path data/deu.testa --blind_test_path data/deu.testb --no_run_on_test
+
+All the results below are on simple Lemma feature and no POS
+
+Epoch 5. Training took longer: Data reading and training took 2305.688007 seconds.
+
+With the same model: Labeled F1: 63.81, precision: 2695/3614 = 74.57, recall: 2695/4833 = 55.76
+
+# Note: The Data has a lot of words with first word capitalized but they are not
+
+Epochs 1:
+No Word shape related features, Increased the character N-grams to 5
+Labeled F1: 61.91, precision: 2675/3808 = 70.25, recall: 2675/4833 = 55.35
+
+Epochs 5:
+Data reading and training took 1544.035723 seconds
+Labeled F1: 62.63, precision: 2677/3715 = 72.06, recall: 2677/4833 = 55.39
+
+Epochs 5:
+Turned on the shape features but no first letter capitalized feature
+Labeled F1: 65.47, precision: 2820/3782 = 74.56, recall: 2820/4833 = 58.35
+
+Epoch 5:
+Length feature based on the observation
+Labeled F1: 65.13, precision: 2800/3765 = 74.37, recall: 2800/4833 = 57.94
+
+Epoch 5:
+With word length
+Labeled F1: 64.80, precision: 2784/3759 = 74.06, recall: 2784/4833 = 57.60
+
+Fixed bug at data reading and now reading POS, added Lemma feature, no word length
+Data reading and training took 2055.377268 seconds
+Labeled F1: 66.85, precision: 2925/3918 = 74.66, recall: 2925/4833 = 60.52
+
+Added chunk feature
+epoch 1:
+Labeled F1: 64.68, precision: 2880/4073 = 70.71, recall: 2880/4833 = 59.59
+
+Chunk, POS, Lemma, Word Length
+epoch 1:
+Labeled F1: 64.83, precision: 2889/4080 = 70.81, recall: 2889/4833 = 59.78
+
+Epoch 1: If a word is NE
+Labeled F1: 65.08, precision: 2904/4092 = 70.97, recall: 2904/4833 = 60.09
+
+Epoch 1: BPE based subword features
+Labeled F1: 65.78, precision: 2946/4124 = 71.44, recall: 2946/4833 = 60.96
+
+Epoch 5:
+Labeled F1: 66.86, precision: 2943/3970 = 74.13, recall: 2943/4833 = 60.89
+
+Epoch 5: 1st and last subword feature
+Labeled F1: 65.63, precision: 2877/3934 = 73.13, recall: 2877/4833 = 59.53
+
+Epoch 1, all subwords for current, previous and the next word
+Labeled F1: 65.38, precision: 2943/4170 = 70.58, recall: 2943/4833 = 60.89
+
+Epoch 1, subwords with a window of 4
+Labeled F1: 63.01, precision: 2807/4077 = 68.85, recall: 2807/4833 = 58.08
+
+Add all subwords : Epoch 1: Labeled F1: 65.84, precision: 2946/4116 = 71.57, recall: 2946/4833 = 60.96
+
+2005.937621 seconds Epoch 5: Labeled F1: 66.98, precision: 2952/3981 = 74.15, recall: 2952/4833 = 61.08
+
+
+Beam Search
+================
+
+
+Features
+================
+
+
+Struct SVM
+================
+
+
+--model CRF --train_path data/deu.train --dev_path data/deu.testa --blind_test_path data/deu.testb --no_run_on_test

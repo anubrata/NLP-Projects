@@ -1,0 +1,39 @@
+Part 1:
+
+73.07 with the same model as the example. Only difference is, I am using RELU
+
+============================
+Loss on epoch 0: 4759.387695
+Loss on epoch 1: 4315.017578
+Loss on epoch 2: 4182.855469
+Loss on epoch 3: 4064.750244
+Loss on epoch 4: 3971.475830
+Loss on epoch 5: 3930.592285
+Loss on epoch 6: 3826.836182
+Loss on epoch 7: 3745.047852
+Loss on epoch 8: 3672.899658
+Loss on epoch 9: 3588.831543
+Loss on epoch 10: 3505.548096
+Loss on epoch 11: 3386.977295
+Loss on epoch 12: 3290.855957
+Loss on epoch 13: 3211.279785
+Loss on epoch 14: 3080.060791
+Loss on epoch 15: 2969.566650
+Loss on epoch 16: 2857.232422
+Loss on epoch 17: 2761.494873
+Loss on epoch 18: 2669.689209
+Loss on epoch 19: 2596.232178
+done
+795/1066 correct after dev
+train accuracy 0.7457786116322702
+
+
+================================
+fancy
+
+with 10 epochs and learning rate of 0.001
+architecture: embed->lstm->fc->softmax
+accuracy on dev 535/1066
+
+
+

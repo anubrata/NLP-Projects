@@ -99,7 +99,7 @@ if __name__ == '__main__':
         print("Data reading and training took %f seconds" % (time.time() - start_time))
         ## TODO: Comment out to get the dev scores: CRF
         # dev = read_data("./data/eng.train.small")
-        dev_decoded = [crf_model.decode(test_ex.tokens) for test_ex in dev]
+        dev_decoded = [crf_model.decode(test_ex.tokens) for test_ex in tqdm(dev)]
         print_evaluation(dev, dev_decoded)
         if args.run_on_test:
             print("Running on test")
@@ -109,4 +109,4 @@ if __name__ == '__main__':
     else:
         raise Exception("Pass in either BAD, HMM, or CRF to run the appropriate system")
     # Print the evaluation statistics
-    # print_evaluation(dev, dev_decoded)
+    print_evaluation(dev, dev_decoded)

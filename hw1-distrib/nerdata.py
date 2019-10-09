@@ -12,13 +12,18 @@ class Token:
         chunk: string representation of the syntactic chunk (e.g., I-NP). These can be useful
         features but you don't need to use them.
     """
-    def __init__(self, word: str, pos: str, chunk: str):
+    def __init__(self, word: str, pos: str, chunk: str, lemma: str):
         self.word = word
         self.pos = pos
         self.chunk = chunk
+        # TODO: added lemma for german
+        self.lemma = lemma
 
     def __repr__(self):
-        return "Token(%s, %s, %s)" % (self.word, self.pos, self.chunk)
+        return "Token(%s, %s, %s, %s)" % (self.word, self.pos, self.chunk, self.lemma)
+        # return "Token(%s, %s, %s)" % (self.word, self.pos, self.chunk)
+
+
 
     def __str__(self):
         return self.__repr__()
@@ -190,8 +195,12 @@ def read_data(file: str) -> List[LabeledSentence]:
         stripped = line.strip()
         if stripped != "":
             fields = stripped.split(" ")
-            if len(fields) == 4 or len(fields) == 5:
-                curr_tokens.append(Token(fields[0], fields[1], fields[2]))
+            ## TODO: Uncomment for English
+            # if len(fields) == 4 or len(fields) == 5:
+            #     curr_tokens.append(Token(fields[0], fields[1], fields[2]))
+            #     curr_bio_tags.append(fields[-1])
+            if len(fields) == 5:
+                curr_tokens.append(Token(fields[0], fields[2], fields[3], fields[1]))
                 curr_bio_tags.append(fields[-1])
         elif stripped == "" and len(curr_tokens) > 0:
             sentences.append(LabeledSentence(curr_tokens, chunks_from_bio_tag_seq(curr_bio_tags)))
