@@ -117,30 +117,39 @@ class RNNEncoder(nn.Module):
         return (output, context_mask, h_t)
 
 
-## TODO:Decoder implementation: Copied from the RNNEncoder class
+## TODO:Decoder implementation: Copied from the RNNEncoder class and modified
 class RNNDecoder(nn.Module):
 
     # Define the model
-    def __init__(self, hidden_size: int, output_size: int):
+    def __init__(self, hidden_size: int, output_size: int, emb_dim: int):
         super(RNNDecoder, self).__init__()
         self.hidden_size = hidden_size
         self.output_size = output_size
 
+        # TODO: Seperate embedding layer for decoder?
+        # self.embedding = nn.Embedding(output_size, hidden_size)
         # Single cell LSTM
         # PyTorch initialize the LSTM Cell weights
-        self.rnn = nn.LSTMCell(hidden_size, hidden_size, bias=True)
+        self.rnn = nn.LSTM(emb_dim, hidden_size, bias=True)
         # Feed forward layer
         self.fc = nn.Linear(hidden_size, output_size)
         # softmax
-        self.softmax = nn.LogSoftmax(dim=1)
+        # self.softmax = nn.LogSoftmax(dim=1)
 
-    def forward(self, encoded_vec, hidden):
-        ## TODO: This needs to be changed to get the hidden layer same as mini2?
-        ## Input goes to a single cell LSTM
-        output, (h_, c_) = self.rnn(encoded_vec, hidden)
-        ## Output of the LSTM goes to a feed forward
-        output = self.fc(h_[-1])
-        ## softmax over voacbulary (output_size = vocab size)
-        output = self.softmax(output)
-        return output, h_
+    def forward(self, input_wrd, hidden):
+        # TODO: Seperate embedding layer in the decoder forward
+        # output = self.embedding(input_wrd).view(1, 1, -1)
+        # TODO: This needs to be changed to get the hidden layer same as mini2?
+        # Input goes to a single cell LSTM
+        output, hn = self.rnn(input_wrd, hidden)
+        h, c = hn[0], hn[1]
+        # Output of the LSTM goes to a feed forward
+        output = self.fc(h[0])
+        # softmax over vocabulary (output_size = vocab size)
+        # output = self.softmax(output)
+        return output, (h, c)
+
+# class AttentionDecoder(nn.module):
+#     def __index__(self):
+
 

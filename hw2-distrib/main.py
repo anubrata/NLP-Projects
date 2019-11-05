@@ -76,13 +76,52 @@ class NearestNeighborSemanticParser(object):
 
 
 class Seq2SeqSemanticParser(object):
-    def __init__(self):
-        raise Exception("implement me!")
-        # Add any args you need here
+    def __init__(self, embed_layer_input, embed_layer_output, encoder, decoder, output_indexer, output_maxlen):
+        self.embed_layer_input = embed_layer_input
+        self.embed_layer_output = embed_layer_output
+        self.encoder = encoder
+        self.decoder = decoder
+        self.max_len = output_maxlen
+        self.output_indexer = output_indexer
 
     def decode(self, test_data: List[Example]) -> List[List[Derivation]]:
+        test_seq_lens = np.asarray([len(ex.x_indexed) for ex in test_data])
+        derivations_list = []
 
-        raise Exception("implement me!")
+        self.embed_layer_input.eval()
+        self.embed_layer_output.eval()
+        self.encoder.eval()
+        self.decoder.eval()
+
+        for test_data_idx in range(0, len(test_data)):
+            x_indexed = [i.x_indexed for i in test_data[test_data_idx:test_data_idx+1]]
+            input_tensor = torch.as_tensor(x_indexed)
+            input_lens_tensor = torch.as_tensor(test_seq_lens[test_data_idx:test_data_idx+1])
+            emb_out = self.embed_layer_input.forward(input_tensor)
+            # Pass the embedding layer output to the Encoder
+            ## TODO: enc_output_each_word might not be working correctly
+            # (enc_output_each_word, enc_context_mask, enc_final_states) = self.encoder.forward(emb_out, input_lens_tensor)
+            (enc_output_each_word, enc_context_mask, enc_final_states) = encode_input_for_decoder(input_tensor, input_lens_tensor, self.embed_layer_input, self.encoder)
+            # print("end of encoding")
+
+            # Decoding
+            decoder_input = output_indexer.index_of(SOS_SYMBOL)
+            ## TODO: Is it the right hidden value to be passed to the decoder at inference time?
+            decoder_hidden = enc_final_states
+            y_toks_idx = []
+            p = []
+            for output_wrd_idx in range(0, self.max_len):
+                decoder_embed = self.embed_layer_output.forward(torch.tensor([decoder_input]).unsqueeze(0))
+                decoder_output, decoder_hidden = self.decoder.forward(decoder_embed, decoder_hidden)
+                decoder_input = torch.argmax(decoder_output).unsqueeze(0)
+                if output_indexer.get_object(decoder_input.detach().numpy()[0]) == "<EOS>":
+                    break
+                y_toks_idx.append(torch.argmax(decoder_output).unsqueeze(0).detach().numpy()[0])
+                p.append(torch.max(decoder_output).unsqueeze(0).detach().numpy()[0])
+            y_toks = [output_indexer.get_object(tok_idx) for tok_idx in y_toks_idx]
+            derivation = Derivation(test_data[test_data_idx], p, y_toks)
+            derivations_list.append([derivation])
+        return derivations_list
 
 
 def make_padded_input_tensor(exs: List[Example], input_indexer: Indexer, max_len: int, reverse_input=False) -> np.ndarray:
@@ -160,7 +199,9 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
     # Create indexed input
     input_max_len = np.max(np.asarray([len(ex.x_indexed) for ex in train_data]))
     all_train_input_data = make_padded_input_tensor(train_data, input_indexer, input_max_len, reverse_input=False)
+    train_input_lens = np.asarray([len(ex.x_indexed) for ex in train_data])
     all_test_input_data = make_padded_input_tensor(test_data, input_indexer, input_max_len, reverse_input=False)
+    test_input_lens = np.asarray([len(ex.x_indexed) for ex in test_data])
 
     output_max_len = np.max(np.asarray([len(ex.y_indexed) for ex in train_data]))
     all_train_output_data = make_padded_output_tensor(train_data, output_indexer, output_max_len)
@@ -173,39 +214,133 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
     # First create a model. Then loop over epochs, loop over examples, and given some indexed words, call
     # the encoder, call your decoder, accumulate losses, update parameters
 
-    total_dict_size = len(input_indexer) + len(output_indexer)
+    total_dict_input = len(input_indexer)
+    total_dict_output = len(output_indexer)
     # Model hyper parameters
-    teacher_forcing_prob = 1.0
-    emb_dim = 50
-    hidden_size = 100
+    # teacher_forcing_prob = 1.0
+    emb_dim = 300
+    hidden_size = 150
     emb_dropout_rate = 0.2
     num_epochs = 10
-    learning_rate = 0.1
+    learning_rate = 0.001
     # Declare the model
-    embed_layer = EmbeddingLayer(emb_dim, total_dict_size, emb_dropout_rate)
+    embed_layer_input = EmbeddingLayer(emb_dim, total_dict_input, emb_dropout_rate)
+    embed_layer_output = EmbeddingLayer(emb_dim, total_dict_output, emb_dropout_rate)
     encoder = RNNEncoder(emb_dim, hidden_size, bidirect=False)
-    decoder = RNNDecoder(hidden_size, total_dict_size)
+    decoder = RNNDecoder(hidden_size, total_dict_output, emb_dim)
+
+    embed_layer_input.train()
+    embed_layer_output.train()
+    encoder.train()
+    decoder.train()
 
     # Optimizers
     enc_optim = torch.optim.Adam(encoder.parameters(), learning_rate)
     dec_optim = torch.optim.Adam(decoder.parameters(), learning_rate)
+    emb_inp_optim = torch.optim.Adam(embed_layer_input.parameters(), learning_rate)
+    emb_out_optim = torch.optim.Adam(embed_layer_output.parameters(), learning_rate)
+    ##TODO: Normal softmax for attention
+    loss = nn.CrossEntropyLoss()
+
+    print("Total number of parameters to train in encoder: ", sum(param.numel()
+                                                                  for param in encoder.parameters()
+                                                                  if param.requires_grad))
+    print("Total number of parameters to train in decoder: ", sum(param.numel()
+                                                                  for param in decoder.parameters()
+                                                                  if param.requires_grad))
 
     # Training Loop
     for epoch in range(0, num_epochs):
+        epoch_loss = 0
         print("Training epoch {0}".format(epoch+1))
+
         for input_idx in range(0, len(all_train_input_data)):
+            # Optimizer initialization
             encoder.zero_grad()
             decoder.zero_grad()
-            # Get the embeddings
+            embed_layer_input.zero_grad()
+            embed_layer_output.zero_grad()
+
+            # Initialize loss
+            loss_out = 0
+
+            # Convert the input to pytorch tensors
+            input_tensor = torch.from_numpy(all_train_input_data[input_idx:input_idx+args.batch_size])
+            input_lens_tensor = torch.as_tensor(train_input_lens[input_idx:input_idx+args.batch_size])
+
+           # Get the embeddings for input sequenc
+            emb_out_enc = embed_layer_input.forward(input_tensor)
 
             # Pass the embedding layer output to the Encoder
-            enc_out, context_mask, h_t = encoder.forward(all_train_input_data[input_idx], )
+            ## TODO: enc_output_each_word might not be working correctly
+            # (enc_output_each_word, enc_context_mask, enc_final_states) = encoder.forward(emb_out_enc, input_lens_tensor)
+            (enc_output_each_word, enc_context_mask, enc_final_states) = encode_input_for_decoder(input_tensor, input_lens_tensor, embed_layer_input, encoder)
+            print(enc_output_each_word.size())
+            print(enc_context_mask.size())
+            print(enc_final_states[0].size())
+            print(enc_final_states[1].size())
+            print("end of encoding")
 
-            # Collect the encoder output / hidden layer to the decoder each step at a time
-            for out_put_word_idx in range(0, len(all_train_output_data[input_idx])):
-                print(all_train_output_data[out_put_word_idx])
+            # Decoding
+            decoder_input = output_indexer.index_of(SOS_SYMBOL)
+            ## TODO: Is it the right hidden value to be passed to the decoder?
+            decoder_hidden = enc_final_states
+            output_tensor = torch.as_tensor(all_train_output_data[input_idx])
+            output_len = len(train_data[input_idx].y_indexed)
+            y_tok_hat_list = []
+            for output_wrd_idx in range(0, output_len):
+                decoder_embed = embed_layer_output.forward(torch.tensor([decoder_input]).unsqueeze(0))
+                decoder_output, decoder_hidden = decoder.forward(decoder_embed, decoder_hidden)
+                # torch.nn.Softmax(decoder_output)
+                # Debugging Decoder
+                # print("print decoder output in training {0}".format(decoder_output))
+                y_tok_id_hat = torch.argmax(decoder_output).unsqueeze(0).detach().numpy()[0]
+                y_tok_hat_list.append(output_indexer.get_object(y_tok_id_hat))
+                #####
+                loss_out += loss(decoder_output, output_tensor[output_wrd_idx].unsqueeze(0))
+                decoder_input = output_tensor[output_wrd_idx]
+            print("Loss after one example: {0}".format(loss_out))
+            print("Tokens for this input: {0}".format(y_tok_hat_list))
 
-    raise Exception("Implement the rest of me to train your encoder-decoder model")
+            loss_out.backward()
+
+            # check for the norm of gradient after each example
+            for p in encoder.parameters():
+                if p.grad is not None:
+                    param_norm = p.grad.data.norm(2)
+                    print(param_norm)
+            for p in decoder.parameters():
+                if p.grad is not None:
+                    param_norm = p.grad.data.norm(2)
+                    print(param_norm)
+            for p in embed_layer_input.parameters():
+                if p.grad is not None:
+                    param_norm = p.grad.data.norm(2)
+                    print(param_norm)
+            for p in embed_layer_output.parameters():
+                if p.grad is not None:
+                    param_norm = p.grad.data.norm(2)
+                    print(param_norm)
+
+            # Learn all the optimizers
+            enc_optim.step()
+            dec_optim.step()
+            emb_inp_optim.step()
+            emb_out_optim.step()
+
+            # Calculate the eoch loss
+            epoch_loss += loss_out
+
+            # Check if the network weights are updating
+            # for weight_index in range(0, len(encoder.rnn.all_weights[0])):
+            #     print("{0} weights {1}:\n {2}".format(input_idx, encoder.rnn._all_weights[0][weight_index], encoder.rnn.all_weights[0][weight_index]))
+            # print("{0} Decoder weights {1} \n Decoder weights {2} \n".format(input_idx, decoder.rnn.weight_hh, decoder.rnn.weight_ih))
+            # print("{0} Embed_input weights {1}".format(input_idx, embed_layer_input.word_embedding.weight[0]))
+            # print("Embed_output_weights {0}".format(embed_layer_output.word_embedding.weight[0]))
+        print("end of one training sample")
+    print("end of epoch {0} with accumulated epoch loss {1}".format(epoch, epoch_loss))
+    # raise Exception("Implement the rest of me to train your encoder-decoder model")
+    return Seq2SeqSemanticParser(embed_layer_input, embed_layer_output, encoder, decoder, output_indexer, output_max_len)
 
 
 def evaluate(test_data: List[Example], decoder, example_freq=50, print_output=True, outfile=None):
@@ -258,6 +393,7 @@ if __name__ == '__main__':
         evaluate(dev_data_indexed, decoder)
     else:
         decoder = train_model_encdec(train_data_indexed, dev_data_indexed, input_indexer, output_indexer, args)
+    evaluate(dev_data_indexed, decoder, print_output=True)
     print("=======FINAL EVALUATION ON BLIND TEST=======")
     evaluate(test_data_indexed, decoder, print_output=False, outfile="geo_test_output.tsv")
 

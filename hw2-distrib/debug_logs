@@ -1,0 +1,13 @@
+gold: 0 syntax errors, 0 executor errors
+predicted: 79 syntax errors, 32 executor errors
+Example 49
+  x      = "what is the city with the smallest population ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_cityid', '(', "'", 'baton', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'alaska', ')', ')', ')', ')', ')', ')']"
+Example 99
+  x      = "which states does not border texas ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '\\+', '(', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', 'V0', ',', '(', 'V0', ')', ',', '_next_to', '(', 'V0', ',', '_cityid', '(', 'NV', ',', '_', ')', ')', ')', ')', ')', ')', ')', ')', ')', ')']"
+Exact logical form matches: 0 / 120 = 0.000
+Token-level accuracy: 1335 / 3908 = 0.342
+Denotation matches: 0 / 120 = 0.000
