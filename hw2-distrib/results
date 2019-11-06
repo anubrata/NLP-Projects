@@ -139,4 +139,30 @@ Example 249
   y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
   y_pred = "['_answer', '(', 'NV', ',', '_largest', '(', 'NV', ',', '(', '_state', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
 
+------------------------------------------------------------------------------------------------------------------------------------------
+emb_dim = 300
+hidden_size = 150
+emb_dropout_rate = 0.2
+num_epochs = 30
+learning_rate = 0.01 (LOW Learning rates led to very bad result)
+
+
+emb_dim = 300
+hidden_size = 150
+emb_dropout_rate = 0.2
+num_epochs = 50
+learning_rate = 0.001
+
+predicted: 4 syntax errors, 2 executor errors
+Example 49
+  x      = "what is the city with the smallest population ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+Example 99
+  x      = "which states does not border texas ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '\\+', '(', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')']"
+Exact logical form matches: 59 / 120 = 0.492
+Token-level accuracy: 3125 / 3908 = 0.800
+Denotation matches: 69 / 120 = 0.575
 

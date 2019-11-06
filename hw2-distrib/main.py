@@ -228,8 +228,8 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
     emb_dim = 300
     hidden_size = 150
     emb_dropout_rate = 0.2
-    attn_dropout_rate = 0.2
-    num_epochs = 30
+    attn_dropout_rate = 0.1
+    num_epochs = 50
     learning_rate = 0.001
     # Declare the model
     embed_layer_input = EmbeddingLayer(emb_dim, total_dict_input, emb_dropout_rate)
