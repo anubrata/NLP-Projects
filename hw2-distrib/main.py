@@ -35,6 +35,9 @@ def _parse_args():
     # 65 is all you need for GeoQuery
     parser.add_argument('--decoder_len_limit', type=int, default=65, help='output length limit of the decoder')
 
+    # argument added for Switching the decoder to and from attention
+    parser.add_argument('--use_attn', type=bool, default=True, help='Attention based decoder')
+
     # Feel free to add other hyperparameters for your input dimension, etc. to control your network
     # 50-200 might be a good range to start with for embedding and LSTM sizes
     args = parser.parse_args()
@@ -76,7 +79,7 @@ class NearestNeighborSemanticParser(object):
 
 
 class Seq2SeqSemanticParser(object):
-    def __init__(self, embed_layer_input, embed_layer_output, encoder, decoder, output_indexer, output_maxlen):
+    def __init__(self, embed_layer_input, embed_layer_output, encoder, decoder, output_indexer, output_maxlen, args):
         self.embed_layer_input = embed_layer_input
         self.embed_layer_output = embed_layer_output
         self.encoder = encoder
@@ -112,7 +115,11 @@ class Seq2SeqSemanticParser(object):
             p = []
             for output_wrd_idx in range(0, self.max_len):
                 decoder_embed = self.embed_layer_output.forward(torch.tensor([decoder_input]).unsqueeze(0))
-                decoder_output, decoder_hidden = self.decoder.forward(decoder_embed, decoder_hidden)
+                if args.use_attn:
+                    ## TODO: Change the call to the decoder based on the changes in Training of the attention layer
+                    decoder_output, decoder_hidden = self.decoder.forward(decoder_embed, decoder_hidden, enc_output_each_word)
+                else:
+                    decoder_output, decoder_hidden = self.decoder.forward(decoder_embed, decoder_hidden)
                 decoder_input = torch.argmax(decoder_output).unsqueeze(0)
                 if output_indexer.get_object(decoder_input.detach().numpy()[0]) == "<EOS>":
                     break
@@ -221,13 +228,18 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
     emb_dim = 300
     hidden_size = 150
     emb_dropout_rate = 0.2
-    num_epochs = 10
+    attn_dropout_rate = 0.2
+    num_epochs = 30
     learning_rate = 0.001
     # Declare the model
     embed_layer_input = EmbeddingLayer(emb_dim, total_dict_input, emb_dropout_rate)
     embed_layer_output = EmbeddingLayer(emb_dim, total_dict_output, emb_dropout_rate)
     encoder = RNNEncoder(emb_dim, hidden_size, bidirect=False)
-    decoder = RNNDecoder(hidden_size, total_dict_output, emb_dim)
+
+    if args.use_attn:
+        decoder = AttentionDecoder(hidden_size, total_dict_output, emb_dim, input_max_len, attn_dropout_rate)
+    else:
+        decoder = RNNDecoder(hidden_size, total_dict_output, emb_dim)
 
     embed_layer_input.train()
     embed_layer_output.train()
@@ -254,6 +266,14 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
         epoch_loss = 0
         print("Training epoch {0}".format(epoch+1))
 
+        #TODO: Marker for passing all of encoder together
+        # if args.use_attn:
+        #     input_tensor = torch.from_numpy(all_train_input_data)
+        #     input_lens_tensor = torch.as_tensor(train_input_lens)
+        #     (enc_output_each_word, enc_context_mask, enc_final_states) = encode_input_for_decoder(input_tensor,
+        #                                                                                           input_lens_tensor,
+        #                                                                                           embed_layer_input, encoder)
+
         for input_idx in range(0, len(all_train_input_data)):
             # Optimizer initialization
             encoder.zero_grad()
@@ -264,17 +284,21 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
             # Initialize loss
             loss_out = 0
 
+            ## TODO: Comment out the following for the old normal decoder to work
             # Convert the input to pytorch tensors
             input_tensor = torch.from_numpy(all_train_input_data[input_idx:input_idx+args.batch_size])
             input_lens_tensor = torch.as_tensor(train_input_lens[input_idx:input_idx+args.batch_size])
 
            # Get the embeddings for input sequenc
-            emb_out_enc = embed_layer_input.forward(input_tensor)
+           #  emb_out_enc = embed_layer_input.forward(input_tensor)
 
             # Pass the embedding layer output to the Encoder
             ## TODO: enc_output_each_word might not be working correctly
             # (enc_output_each_word, enc_context_mask, enc_final_states) = encoder.forward(emb_out_enc, input_lens_tensor)
-            (enc_output_each_word, enc_context_mask, enc_final_states) = encode_input_for_decoder(input_tensor, input_lens_tensor, embed_layer_input, encoder)
+            (enc_output_each_word, enc_context_mask, enc_final_states) = encode_input_for_decoder(input_tensor,
+                                                                                                  input_lens_tensor,
+                                                                                                  embed_layer_input,
+                                                                                                  encoder)
             print(enc_output_each_word.size())
             print(enc_context_mask.size())
             print(enc_final_states[0].size())
@@ -290,8 +314,12 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
             y_tok_hat_list = []
             for output_wrd_idx in range(0, output_len):
                 decoder_embed = embed_layer_output.forward(torch.tensor([decoder_input]).unsqueeze(0))
-                decoder_output, decoder_hidden = decoder.forward(decoder_embed, decoder_hidden)
-                # torch.nn.Softmax(decoder_output)
+                if args.use_attn:
+                    #TODO: Change the decoder function call with attention accordingly
+                    #TODO: Use Mask
+                    decoder_output, decoder_hidden = decoder.forward(decoder_embed, decoder_hidden, enc_output_each_word)
+                else:
+                    decoder_output, decoder_hidden = decoder.forward(decoder_embed, decoder_hidden)
                 # Debugging Decoder
                 # print("print decoder output in training {0}".format(decoder_output))
                 y_tok_id_hat = torch.argmax(decoder_output).unsqueeze(0).detach().numpy()[0]
@@ -305,22 +333,22 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
             loss_out.backward()
 
             # check for the norm of gradient after each example
-            for p in encoder.parameters():
-                if p.grad is not None:
-                    param_norm = p.grad.data.norm(2)
-                    print(param_norm)
-            for p in decoder.parameters():
-                if p.grad is not None:
-                    param_norm = p.grad.data.norm(2)
-                    print(param_norm)
-            for p in embed_layer_input.parameters():
-                if p.grad is not None:
-                    param_norm = p.grad.data.norm(2)
-                    print(param_norm)
-            for p in embed_layer_output.parameters():
-                if p.grad is not None:
-                    param_norm = p.grad.data.norm(2)
-                    print(param_norm)
+            # for p in encoder.parameters():
+            #     if p.grad is not None:
+            #         param_norm = p.grad.data.norm(2)
+            #         print(param_norm)
+            # for p in decoder.parameters():
+            #     if p.grad is not None:
+            #         param_norm = p.grad.data.norm(2)
+            #         print(param_norm)
+            # for p in embed_layer_input.parameters():
+            #     if p.grad is not None:
+            #         param_norm = p.grad.data.norm(2)
+            #         print(param_norm)
+            # for p in embed_layer_output.parameters():
+            #     if p.grad is not None:
+            #         param_norm = p.grad.data.norm(2)
+            #         print(param_norm)
 
             # Learn all the optimizers
             enc_optim.step()
@@ -340,7 +368,7 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
         print("end of one training sample")
     print("end of epoch {0} with accumulated epoch loss {1}".format(epoch, epoch_loss))
     # raise Exception("Implement the rest of me to train your encoder-decoder model")
-    return Seq2SeqSemanticParser(embed_layer_input, embed_layer_output, encoder, decoder, output_indexer, output_max_len)
+    return Seq2SeqSemanticParser(embed_layer_input, embed_layer_output, encoder, decoder, output_indexer, output_max_len, args)
 
 
 def evaluate(test_data: List[Example], decoder, example_freq=50, print_output=True, outfile=None):

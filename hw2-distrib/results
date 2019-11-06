@@ -1,3 +1,5 @@
+IMPORTANT: SET --BATCH_SIZE to 1 when running the code
+
 Basic decoder:
 
 Hyper-parameters:
@@ -22,3 +24,59 @@ Example 99
 Exact logical form matches: 4 / 120 = 0.033
 Token-level accuracy: 2564 / 3908 = 0.656
 Denotation matches: 6 / 120 = 0.050
+
+=================================================
+Basic Decoder:
+Same Hyper parameters as above
+
+Different Machine
+
+gold: 0 syntax errors, 0 executor errors
+predicted: 11 syntax errors, 1 executor errors
+Example 49
+  x      = "what is the city with the smallest population ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_largest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+Example 99
+  x      = "which states does not border texas ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '\\+', '(', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')']"
+Exact logical form matches: 2 / 120 = 0.017
+Token-level accuracy: 2677 / 3908 = 0.685
+Denotation matches: 12 / 120 = 0.100
+
+
+Attention based decoder
+================================
+Hyper parameters:
+------------------------
+emb_dim = 300
+hidden_size = 150
+emb_dropout_rate = 0.2
+num_epochs = 10
+learning_rate = 0.001
+-----------------------
+
+end of epoch 9 with accumulated epoch loss 1619.5513916015625
+Loading JAR files: evaluator.jar
+gold: 0 syntax errors, 0 executor errors
+predicted: 1 syntax errors, 6 executor errors
+Example 49
+  x      = "what is the city with the smallest population ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '(', '_city', '(', 'V0', ')', ',', '_loc', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'alaska', ')', ')', ')', ')', ')']"
+Example 99
+  x      = "which states does not border texas ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '\\+', '(', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')']"
+Exact logical form matches: 26 / 120 = 0.217
+Token-level accuracy: 2918 / 3908 = 0.747
+Denotation matches: 39 / 120 = 0.325
+
+---------------------------------------------------
+emb_dim = 300
+hidden_size = 150
+emb_dropout_rate = 0.2
+num_epochs = 30
+learning_rate = 0.0001
+

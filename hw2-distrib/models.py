@@ -125,31 +125,109 @@ class RNNDecoder(nn.Module):
         super(RNNDecoder, self).__init__()
         self.hidden_size = hidden_size
         self.output_size = output_size
+        self.emb_dim = emb_dim
 
         # TODO: Seperate embedding layer for decoder?
         # self.embedding = nn.Embedding(output_size, hidden_size)
-        # Single cell LSTM
+        # Single Cell LSTM (As it is getting only one time step
         # PyTorch initialize the LSTM Cell weights
-        self.rnn = nn.LSTM(emb_dim, hidden_size, bias=True)
+        self.rnn = nn.LSTM(self.emb_dim, self.hidden_size, bias=True)
         # Feed forward layer
-        self.fc = nn.Linear(hidden_size, output_size)
+        self.fc = nn.Linear(self.hidden_size, self.output_size)
         # softmax
         # self.softmax = nn.LogSoftmax(dim=1)
 
     def forward(self, input_wrd, hidden):
-        # TODO: Seperate embedding layer in the decoder forward
-        # output = self.embedding(input_wrd).view(1, 1, -1)
-        # TODO: This needs to be changed to get the hidden layer same as mini2?
-        # Input goes to a single cell LSTM
+        # Input goes to an LSTM
         output, hn = self.rnn(input_wrd, hidden)
         h, c = hn[0], hn[1]
         # Output of the LSTM goes to a feed forward
         output = self.fc(h[0])
-        # softmax over vocabulary (output_size = vocab size)
-        # output = self.softmax(output)
         return output, (h, c)
 
-# class AttentionDecoder(nn.module):
-#     def __index__(self):
+
+class AttentionDecoder(nn.Module):
+    def __init__(self, hidden_size: int,
+                 output_size: int,
+                 emb_dim: int,
+                 inp_max_len: int,
+                 attn_dropout_rate: float):
+
+        super(AttentionDecoder, self).__init__()
+        self.hidden_size = hidden_size
+        self.emb_dim = emb_dim
+        self.output_size = output_size
+        self.max_len = inp_max_len
+        self.attn_dropout_rate = attn_dropout_rate
+
+        # Layer to calculate attention over input sequence
+        ## TODO: attention layer takes an input of concatenated tensor of embedding and hidden
+        ## TODO: Changing the output length
+        # self.attention = nn.Linear(self.hidden_size + self.emb_dim, self.max_len)
+        self.attention = nn.Linear(self.hidden_size * 2, self.hidden_size)
+        # A set of parameters for weighted sum of the attention
+        self.W = nn.Parameter(torch.rand(hidden_size))
+
+        # # Layer to combine previous hidden state with current attention
+        # self.attention_combine = nn.Linear(self.hidden_size * 2, self.hidden_size)
+        # self.dropout = nn.Dropout(self.attn_dropout_rate)
+
+        # Same as the simple decoder above
+        # TODO: Change to self.hidden_size, self.hidden_size for after implementation
+        self.rnn = nn.LSTM(self.hidden_size + self.emb_dim, self.hidden_size, bias=True)
+        self.fc = nn.Linear(self.hidden_size, self.output_size)
+
+    def forward(self, input_wrd, decoder_hidden, enc_output_each_word):
+
+        batch_size = enc_output_each_word.shape[1]
+        sen_len = enc_output_each_word.shape[0]
+
+        ##TODO: Potential bug here?
+        hidden = decoder_hidden[0][0].unsqueeze(1).repeat(1, sen_len, 1)
+        enc_output_each_word = enc_output_each_word.permute(1, 0, 2)
+
+        energy = torch.tanh(self.attention(torch.cat((hidden, enc_output_each_word), 2)))
+        energy = energy.permute(0, 2, 1)
+
+        w = self.W.repeat(batch_size, 1).unsqueeze(1)
+        attention_weights = torch.bmm(w, energy).squeeze(1)
+
+        attention_weights = F.softmax(attention_weights).unsqueeze(1)
+        attention_combined = torch.bmm(attention_weights, enc_output_each_word).permute(1, 0, 2)
+
+        decoder_inp_from_attn = torch.cat((input_wrd, attention_combined), dim=2)
+
+        output, hn = self.rnn(decoder_inp_from_attn, decoder_hidden)
+
+        h, c = hn[0], hn[1]
+        # Output of the LSTM goes to a feed forward
+        output = self.fc(h[0])
+        return output, (h, c)
 
 
+        # Bahdanou
+
+        # output = self.attention(torch.cat((input_wrd, hidden[0]), 2))
+
+        # # TODO: is this softmax useful at all?
+
+        # # attn_weights = F.softmax(output)
+        # # attn_applied = torch.bmm(F.softmax(output), enc_output_each_word.reshape(1, self.max_len, self.hidden_size))
+        #
+        # attn_applied = torch.bmm(output, enc_output_each_word.permute(1, 2, 0))
+        # output = self.attention_combine(torch.cat((input_wrd, attn_applied), 2))
+        # output, hn = self.rnn(output, hidden)
+        # h, c = hn[0], hn[1]
+        # output = self.fc(h[0])
+
+        # After RNN Cell as per Luong
+        # Same step as simple decoder
+        # output, hn = self.rnn(input_wrd, hidden)
+        # h, c = hn[0], hn[1]
+        # # Output of the LSTM goes to a feed forward
+        # output = self.fc(h[0])
+        #
+        # # Attention
+        # # Dot product for each word and hidden state from the RNN
+        # e = torch.bmm(h, enc_output_each_word.reshape([1, 150, 19]))
+        # a = F.softmax(e)
