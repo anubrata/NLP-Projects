@@ -80,3 +80,63 @@ emb_dropout_rate = 0.2
 num_epochs = 30
 learning_rate = 0.0001
 
+end of epoch 29 with accumulated epoch loss 2407.92919921875
+Loading JAR files: evaluator.jar
+gold: 0 syntax errors, 0 executor errors
+predicted: 6 syntax errors, 2 executor errors
+Example 49
+  x      = "what is the city with the smallest population ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_largest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+Example 99
+  x      = "which states does not border texas ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '\\+', '(', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')']"
+Exact logical form matches: 21 / 120 = 0.175
+Token-level accuracy: 2844 / 3908 = 0.728
+Denotation matches: 24 / 120 = 0.200
+
+
+-----------------------------------------------------------
+emb_dim = 300
+hidden_size = 150
+emb_dropout_rate = 0.2
+num_epochs = 30
+learning_rate = 0.001
+
+gold: 0 syntax errors, 0 executor errors
+predicted: 2 syntax errors, 5 executor errors
+Example 49
+  x      = "what is the city with the smallest population ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+Example 99
+  x      = "which states does not border texas ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '\\+', '(', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')']"
+Exact logical form matches: 53 / 120 = 0.442
+Token-level accuracy: 2932 / 3908 = 0.750
+Denotation matches: 59 / 120 = 0.492
+
+Example 49
+  x      = "what state has the most major cities ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_most', '(', 'V0', ',', 'NV', ',', '(', '_state', '(', 'V1', ')', ',', '_loc', '(', 'V0', ',', 'V1', ')', ',', '_city', '(', 'V0', ')', ')', ')', ')']"
+Example 99
+  x      = "what are the major cities in the usa ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_major', '(', 'V0', ')', ',', '_city', '(', 'V0', ')', ',', '_loc', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_countryid', '(', 'usa', ')', ')', ')', ')']"
+Example 149
+  x      = "which state has the lowest point that borders idaho ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_state', '(', 'V1', ')', ',', '_next_to', '(', 'V0', ',', 'V1', ')', ')', ')', ')']"
+Example 199
+  x      = "how long is the longest river in california ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_len', '(', 'NV', ',', 'V1', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'california', ')', ')', ')', ')']"
+Example 249
+  x      = "what state bordering nevada has the largest population ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_largest', '(', 'NV', ',', '(', '_state', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+
+

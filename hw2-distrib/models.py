@@ -192,7 +192,7 @@ class AttentionDecoder(nn.Module):
         w = self.W.repeat(batch_size, 1).unsqueeze(1)
         attention_weights = torch.bmm(w, energy).squeeze(1)
 
-        attention_weights = F.softmax(attention_weights).unsqueeze(1)
+        attention_weights = F.softmax(attention_weights, dim=1).unsqueeze(1)
         attention_combined = torch.bmm(attention_weights, enc_output_each_word).permute(1, 0, 2)
 
         decoder_inp_from_attn = torch.cat((input_wrd, attention_combined), dim=2)
