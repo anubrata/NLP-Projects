@@ -37,6 +37,7 @@ def _parse_args():
 
     # argument added for Switching the decoder to and from attention
     parser.add_argument('--use_attn', type=bool, default=True, help='Attention based decoder')
+    parser.add_argument('--use_gen_attn', type=bool, default=False, help='Attention based decoder implementing Luong')
 
     # Feel free to add other hyperparameters for your input dimension, etc. to control your network
     # 50-200 might be a good range to start with for embedding and LSTM sizes
@@ -238,6 +239,8 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
 
     if args.use_attn:
         decoder = AttentionDecoder(hidden_size, total_dict_output, emb_dim, input_max_len, attn_dropout_rate)
+        if args.use_gen_attn:
+            decoder = AttentionDecoderGeneral(hidden_size, total_dict_output, emb_dim, input_max_len, attn_dropout_rate)
     else:
         decoder = RNNDecoder(hidden_size, total_dict_output, emb_dim)
 

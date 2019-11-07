@@ -182,21 +182,28 @@ class AttentionDecoder(nn.Module):
         batch_size = enc_output_each_word.shape[1]
         sen_len = enc_output_each_word.shape[0]
 
-        # RNN Output
-        output, hn = self.rnn(input_wrd, decoder_hidden)
-        h, c = hn[0], hn[1]
-        # Output of the LSTM goes to a feed forward
-        output = self.fc(h[0])
 
         ##TODO: Potential bug here in attention?
         hidden = decoder_hidden[0][0].unsqueeze(1).repeat(1, sen_len, 1)
         enc_output_each_word = enc_output_each_word.permute(1, 0, 2)
 
-        e = torch.bmm(h, enc_output_each_word)
-        a = F.softmax(e, dim=1)
-        context = torch.bmm(a, decoder_hidden)
-        output = self.fc(torch.cat((context, h), dim=1))
+        energy = torch.tanh(self.attention(torch.cat((hidden, enc_output_each_word), 2)))
+        energy = energy.permute(0, 2, 1)
 
+        w = self.W.repeat(batch_size, 1).unsqueeze(1)
+        attention_weights = torch.bmm(w, energy).squeeze(1)
+
+        attention_weights = F.softmax(attention_weights, dim=1).unsqueeze(1)
+        attention_combined = torch.bmm(attention_weights, enc_output_each_word).permute(1, 0, 2)
+
+        decoder_inp_from_attn = torch.cat((input_wrd, attention_combined), dim=2)
+
+        output, hn = self.rnn(decoder_inp_from_attn, decoder_hidden)
+
+        h, c = hn[0], hn[1]
+
+        # Output of the LSTM goes to a feed forward
+        output = self.fc(h[0])
         return output, (h, c)
 
 
@@ -224,30 +231,46 @@ class AttentionDecoderGeneral(nn.Module):
         self.attention = nn.Linear(self.hidden_size * 2, self.hidden_size)
 
     def forward(self, input_wrd, decoder_hidden, enc_output_each_word):
+        # batch_size = enc_output_each_word.shape[1]
+        # sen_len = enc_output_each_word.shape[0]
+        #
+        # ##TODO: Potential bug here in attention?
+        # hidden = decoder_hidden[0][0].unsqueeze(1).repeat(1, sen_len, 1)
+        # enc_output_each_word = enc_output_each_word.permute(1, 0, 2)
+        #
+        # energy = torch.tanh(self.attention(torch.cat((hidden, enc_output_each_word), 2)))
+        # energy = energy.permute(0, 2, 1)
+        #
+        # w = self.W.repeat(batch_size, 1).unsqueeze(1)
+        # attention_weights = torch.bmm(w, energy).squeeze(1)
+        #
+        # attention_weights = F.softmax(attention_weights, dim=1).unsqueeze(1)
+        # attention_combined = torch.bmm(attention_weights, enc_output_each_word).permute(1, 0, 2)
+        #
+        # decoder_inp_from_attn = torch.cat((input_wrd, attention_combined), dim=2)
+        #
+        # output, hn = self.rnn(decoder_inp_from_attn, decoder_hidden)
+        #
+        # h, c = hn[0], hn[1]
+        # # Output of the LSTM goes to a feed forward
+        # output = self.fc(h[0])
+        # return output, (h, c)
 
         batch_size = enc_output_each_word.shape[1]
         sen_len = enc_output_each_word.shape[0]
 
-
+        # RNN Output
+        output, hn = self.rnn(input_wrd, decoder_hidden)
+        h, c = hn[0], hn[1]
 
         ##TODO: Potential bug here in attention?
-        hidden = decoder_hidden[0][0].unsqueeze(1).repeat(1, sen_len, 1)
-        enc_output_each_word = enc_output_each_word.permute(1, 0, 2)
+        # hidden = decoder_hidden[0][0].unsqueeze(1).repeat(1, sen_len, 1)
+        # enc_output_each_word = enc_output_each_word.permute(1, 0, 2)
 
-        energy = torch.tanh(self.attention(torch.cat((hidden, enc_output_each_word), 2)))
-        energy = energy.permute(0, 2, 1)
+        e = torch.bmm(h, enc_output_each_word.permute(1,2,0))
+        a = F.softmax(e, dim=1)
+        context = torch.bmm(a, decoder_hidden[0])
+        output = self.fc(torch.cat((context, h), dim=1))
 
-        w = self.W.repeat(batch_size, 1).unsqueeze(1)
-        attention_weights = torch.bmm(w, energy).squeeze(1)
-
-        attention_weights = F.softmax(attention_weights, dim=1).unsqueeze(1)
-        attention_combined = torch.bmm(attention_weights, enc_output_each_word).permute(1, 0, 2)
-
-        decoder_inp_from_attn = torch.cat((input_wrd, attention_combined), dim=2)
-
-        output, hn = self.rnn(decoder_inp_from_attn, decoder_hidden)
-
-        h, c = hn[0], hn[1]
-        # Output of the LSTM goes to a feed forward
-        output = self.fc(h[0])
         return output, (h, c)
+
