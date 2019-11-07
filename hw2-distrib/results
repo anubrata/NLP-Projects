@@ -232,3 +232,76 @@ Example 249
   x      = "what state bordering nevada has the largest population ?"
   y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
   y_pred = "['_answer', '(', 'NV', ',', '_largest', '(', 'NV', ',', '(', '_state', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+
+
+=================================================
+epoch = For epoch  1 Training took 39.234804 seconds
+
+
+=======================================================
+Batch_size = 2
+Epoch = 20
+
+
+end of epoch 20 with accumulated epoch loss 345.0846862792969
+For epoch  20 Training took 35.789886 seconds
+Loading JAR files: evaluator.jar
+gold: 0 syntax errors, 0 executor errors
+predicted: 12 syntax errors, 4 executor errors
+Example 49
+  x      = "what is the city with the smallest population ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+Example 99
+  x      = "which states does not border texas ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '\\+', '(', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')']"
+Exact logical form matches: 51 / 120 = 0.425
+Token-level accuracy: 3075 / 3908 = 0.787
+Denotation matches: 56 / 120 = 0.467
+
+
+Batch_size = 16, epochs 100,
+
+end of epoch 100 with accumulated epoch loss 5.901244640350342
+For epoch  100 Training took 7.009473 seconds
+
+predicted: 8 syntax errors, 3 executor errors
+Example 49
+  x      = "what is the city with the smallest population ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_smallest', '(', 'NV', ',', '(', '_city', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+Example 99
+  x      = "which states does not border texas ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '\\+', '(', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '_next_to', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'texas', ')', ')', ')', ')']"
+Exact logical form matches: 64 / 120 = 0.533
+Token-level accuracy: 3341 / 3908 = 0.855
+Denotation matches: 75 / 120 = 0.625
+=======FINAL EVALUATION ON BLIND TEST=======
+Loading JAR files: evaluator.jar
+gold: 0 syntax errors, 0 executor errors
+predicted: 13 syntax errors, 5 executor errors
+Example 49
+  x      = "what state has the most major cities ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_most', '(', 'V0', ',', 'NV', ',', '(', '_state', '(', 'V1', ')', ',', '_loc', '(', 'V0', ',', 'V1', ')', ',', '_city', '(', 'V0', ')', ')', ')', ')']"
+Example 99
+  x      = "what are the major cities in the usa ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_major', '(', 'V0', ')', ',', '_city', '(', 'V0', ')', ',', '_loc', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_countryid', '(', 'usa', ')', ')', ')', ')']"
+Example 149
+  x      = "which state has the lowest point that borders idaho ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_state', '(', 'V0', ')', ',', '_loc', '(', 'NV', ',', 'V1', ')', ',', '_lowest', '(', 'V0', ',', '(', '_place', '(', 'V0', ')', ',', '_loc', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'california', ')', ')', ')', ')', ')']"
+Example 199
+  x      = "how long is the longest river in california ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '(', '_len', '(', 'NV', ',', 'V1', ')', ',', '_longest', '(', 'V0', ',', '(', '_river', '(', 'V0', ')', ',', '_loc', '(', 'V0', ',', 'NV', ')', ',', '_const', '(', 'V0', ',', '_stateid', '(', 'california', ')', ')', ')', ')', ')', ')']"
+Example 249
+  x      = "what state bordering nevada has the largest population ?"
+  y_tok  = "['_answer', '(', 'NV', ',', '_largest', '(', 'V0', ',', '_state', '(', 'V0', ')', ')', ')']"
+  y_pred = "['_answer', '(', 'NV', ',', '_largest', '(', 'NV', ',', '(', '_state', '(', 'V1', ')', ',', '_population', '(', 'V1', ',', 'V0', ')', ')', ')', ')']"
+
+Process finished with exit code 0
+

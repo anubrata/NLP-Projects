@@ -177,7 +177,7 @@ class AttentionDecoder(nn.Module):
         self.rnn = nn.LSTM(self.hidden_size + self.emb_dim, self.hidden_size, bias=True)
         self.fc = nn.Linear(self.hidden_size, self.output_size)
 
-    def forward(self, input_wrd, decoder_hidden, enc_output_each_word):
+    def forward(self, input_wrd, decoder_hidden, enc_output_each_word, mask):
 
         batch_size = enc_output_each_word.shape[1]
         sen_len = enc_output_each_word.shape[0]
@@ -185,6 +185,7 @@ class AttentionDecoder(nn.Module):
 
         ##TODO: Potential bug here in attention?
         hidden = decoder_hidden[0][0].unsqueeze(1).repeat(1, sen_len, 1)
+        # hidden = decoder_hidden[0].squeeze(0).unsqueeze(1).repeat(1, sen_len, 1)
         enc_output_each_word = enc_output_each_word.permute(1, 0, 2)
 
         energy = torch.tanh(self.attention(torch.cat((hidden, enc_output_each_word), 2)))
@@ -192,8 +193,13 @@ class AttentionDecoder(nn.Module):
 
         w = self.W.repeat(batch_size, 1).unsqueeze(1)
         attention_weights = torch.bmm(w, energy).squeeze(1)
-
+        ## TODO: adding mask for batching
+        # -1e10 through softmax becomes 0
+        attention_weights = attention_weights.masked_fill(mask == 0, -1e10)
         attention_weights = F.softmax(attention_weights, dim=1).unsqueeze(1)
+        # End of attention layer
+
+        #Starting of decoding
         attention_combined = torch.bmm(attention_weights, enc_output_each_word).permute(1, 0, 2)
 
         decoder_inp_from_attn = torch.cat((input_wrd, attention_combined), dim=2)
@@ -204,7 +210,7 @@ class AttentionDecoder(nn.Module):
 
         # Output of the LSTM goes to a feed forward
         output = self.fc(h[0])
-        return output, (h, c)
+        return output, (h, c), attention_weights
 
 
 class AttentionDecoderGeneral(nn.Module):
