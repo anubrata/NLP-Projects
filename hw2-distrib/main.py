@@ -12,6 +12,12 @@ from typing import List
 
 from torch.utils.data import DataLoader, TensorDataset
 
+import matplotlib.pyplot as plt
+plt.switch_backend('agg')
+import matplotlib.ticker as ticker
+import matplotlib.axes as axes
+import numpy as np
+
 def _parse_args():
     """
     Command-line arguments to the system. --model switches between the main modes you'll need to use. The other arguments
@@ -46,6 +52,30 @@ def _parse_args():
     args = parser.parse_args()
     return args
 
+
+def showPlot(points):
+    plt.figure()
+    fig, ax = plt.subplots()
+    plt.plot(np.arange(1, len(points) + 1, step=1), points)
+    plt.xlabel("Epochs")
+    plt.ylabel("Loss")
+    plt.xticks(np.arange(1, len(points) + 1, step=1), rotation=45)
+    # plt.show()
+
+    plt.savefig('./plots/losses.png')
+
+
+def showAttention(input_sentence, output_words, attentions, srl):
+
+    fig = plt.matshow(attentions, cmap='BuGn_r')
+    # ax = plt.gca()
+    # plt.colorbar()
+    x_ = input_sentence.split(' ')
+    y_ = output_words.split(' ')
+    plt.xticks(np.arange(0, len(x_), 1), labels=x_, rotation=90)
+    plt.yticks(np.arange(0, len(y_), 1), labels=y_)
+    # plt.show()
+    plt.savefig('./plots/attention_{0}.png'.format(srl))
 
 class NearestNeighborSemanticParser(object):
     """
@@ -141,11 +171,12 @@ class Seq2SeqSemanticParser(object):
 
                 y_toks_idx.append(torch.argmax(decoder_output).unsqueeze(0).detach().numpy()[0])
                 p.append(torch.max(decoder_output).unsqueeze(0).detach().numpy()[0])
-                attention_list.append(attention.squeeze(0)[0])
+                attention_list.append(attention.squeeze(0)[0].detach().numpy())
 
             y_toks = [output_indexer.get_object(tok_idx) for tok_idx in y_toks_idx]
             derivation = Derivation(test_data[test_data_idx], p, y_toks)
             derivations_list.append([derivation])
+            # showAttention(' '.join(test_data[test_data_idx].x_tok), ' '.join(y_toks), attention_list, test_data_idx)
         return derivations_list
 
 
@@ -248,7 +279,7 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
     hidden_size = 150
     emb_dropout_rate = 0.2
     attn_dropout_rate = 0.1
-    num_epochs = 100
+    num_epochs = 1
     learning_rate = 0.001
     # Declare the model
     embed_layer_input = EmbeddingLayer(emb_dim, total_dict_input, emb_dropout_rate)
@@ -287,6 +318,8 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
     # tensor_train_seq_len = torch.LongTensor(train_seq_lens)
     train_data_loader = DataLoader(TensorDataset(torch.from_numpy(all_train_input_data), torch.from_numpy(train_input_lens),
                                                  torch.from_numpy(all_train_output_data), ), batch_size=args.batch_size, shuffle=False)
+
+    training_losses = []
 
     # Training Loop
     for epoch in range(0, num_epochs):
@@ -410,7 +443,9 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
         # print("end of one training sample")
         print("end of epoch {0} with accumulated epoch loss {1}".format(epoch+1, epoch_loss))
         print("For epoch ", epoch+1, "Training took %f seconds" % (time.time() - epoch_start_time))
+        training_losses.append(np.round(epoch_loss.detach().numpy() / args.batch_size, 2))
     # raise Exception("Implement the rest of me to train your encoder-decoder model")
+    showPlot(training_losses)
     return Seq2SeqSemanticParser(embed_layer_input, embed_layer_output, encoder, decoder, output_indexer, output_max_len, args)
 
 
